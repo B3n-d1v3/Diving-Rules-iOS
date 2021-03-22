@@ -7,19 +7,63 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B58610952603976300A44778 /* OwnershipRefereeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58610942603976300A44778 /* OwnershipRefereeButton.swift */; };
+		B586109A2603AE7500A44778 /* OwnershipJudgeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58610992603AE7500A44778 /* OwnershipJudgeButton.swift */; };
+		B586109D2603AF8500A44778 /* PenaltyZeroPtsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B586109C2603AF8500A44778 /* PenaltyZeroPtsButton.swift */; };
+		B58610A12603B1DF00A44778 /* PenaltyMaxTwoPtsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58610A02603B1DF00A44778 /* PenaltyMaxTwoPtsButton.swift */; };
+		B58610A42603B29300A44778 /* PenaltyMaxFourHalfPtsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58610A32603B29300A44778 /* PenaltyMaxFourHalfPtsButton.swift */; };
+		B58610A72603B31600A44778 /* PenaltyMinusTwoPtsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58610A62603B31600A44778 /* PenaltyMinusTwoPtsButton.swift */; };
+		B58610AA2603B39D00A44778 /* PenaltyMinusHalfToTwoPtsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58610A92603B39D00A44778 /* PenaltyMinusHalfToTwoPtsButton.swift */; };
+		B58610AD2603B40200A44778 /* PenaltyJudgeOpinionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58610AC2603B40200A44778 /* PenaltyJudgeOpinionButton.swift */; };
+		B58610CB2608FFE800A44778 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B58610CD2608FFE800A44778 /* Localizable.strings */; };
 		B5D0DC6925FA086300CDA3D3 /* Diving_RulesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D0DC6825FA086300CDA3D3 /* Diving_RulesApp.swift */; };
 		B5D0DC6B25FA086300CDA3D3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D0DC6A25FA086300CDA3D3 /* ContentView.swift */; };
 		B5D0DC6D25FA086500CDA3D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5D0DC6C25FA086500CDA3D3 /* Assets.xcassets */; };
 		B5D0DC7025FA086500CDA3D3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5D0DC6F25FA086500CDA3D3 /* Preview Assets.xcassets */; };
+		B5D0DC7925FA0E0300CDA3D3 /* QuizzQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D0DC7825FA0E0300CDA3D3 /* QuizzQuestionView.swift */; };
+		B5D0DC8425FA168C00CDA3D3 /* divingPenaltiesSummary.json in Resources */ = {isa = PBXBuildFile; fileRef = B5D0DC8225FA168C00CDA3D3 /* divingPenaltiesSummary.json */; };
+		B5D0DC8525FA168C00CDA3D3 /* divingPenaltiesSanctions.json in Resources */ = {isa = PBXBuildFile; fileRef = B5D0DC8325FA168C00CDA3D3 /* divingPenaltiesSanctions.json */; };
+		B5D0DC8825FA16DE00CDA3D3 /* Sanction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D0DC8725FA16DE00CDA3D3 /* Sanction.swift */; };
+		B5D0DC8B25FA16FB00CDA3D3 /* Penalty.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D0DC8A25FA16FB00CDA3D3 /* Penalty.swift */; };
+		B5D0DC8E25FA1BBD00CDA3D3 /* RuleBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D0DC8D25FA1BBD00CDA3D3 /* RuleBookView.swift */; };
+		B5D0DC9125FA1BD000CDA3D3 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D0DC9025FA1BD000CDA3D3 /* SearchView.swift */; };
+		B5D0DC9725FA2FF600CDA3D3 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D0DC9625FA2FF600CDA3D3 /* ModelData.swift */; };
+		B5D0DCBA25FA6D1600CDA3D3 /* PenaltyRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D0DCB925FA6D1600CDA3D3 /* PenaltyRowView.swift */; };
+		B5D0DCBE25FA6FA200CDA3D3 /* PenaltiesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D0DCBD25FA6FA200CDA3D3 /* PenaltiesListView.swift */; };
+		B5D0DCC725FA836500CDA3D3 /* PenaltyDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D0DCC625FA836500CDA3D3 /* PenaltyDetailView.swift */; };
+		B5D0DCCC25FD380400CDA3D3 /* 2017-2021_fina-diving_16032018.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B5D0DCCB25FD380400CDA3D3 /* 2017-2021_fina-diving_16032018.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B58610942603976300A44778 /* OwnershipRefereeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnershipRefereeButton.swift; sourceTree = "<group>"; };
+		B58610992603AE7500A44778 /* OwnershipJudgeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnershipJudgeButton.swift; sourceTree = "<group>"; };
+		B586109C2603AF8500A44778 /* PenaltyZeroPtsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenaltyZeroPtsButton.swift; sourceTree = "<group>"; };
+		B58610A02603B1DF00A44778 /* PenaltyMaxTwoPtsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenaltyMaxTwoPtsButton.swift; sourceTree = "<group>"; };
+		B58610A32603B29300A44778 /* PenaltyMaxFourHalfPtsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenaltyMaxFourHalfPtsButton.swift; sourceTree = "<group>"; };
+		B58610A62603B31600A44778 /* PenaltyMinusTwoPtsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenaltyMinusTwoPtsButton.swift; sourceTree = "<group>"; };
+		B58610A92603B39D00A44778 /* PenaltyMinusHalfToTwoPtsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenaltyMinusHalfToTwoPtsButton.swift; sourceTree = "<group>"; };
+		B58610AC2603B40200A44778 /* PenaltyJudgeOpinionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenaltyJudgeOpinionButton.swift; sourceTree = "<group>"; };
+		B58610CC2608FFE800A44778 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B58610CF2608FFEF00A44778 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B58610D02608FFF000A44778 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B5D0DC6525FA086300CDA3D3 /* Diving Rules.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Diving Rules.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5D0DC6825FA086300CDA3D3 /* Diving_RulesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diving_RulesApp.swift; sourceTree = "<group>"; };
 		B5D0DC6A25FA086300CDA3D3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B5D0DC6C25FA086500CDA3D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5D0DC6F25FA086500CDA3D3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B5D0DC7125FA086500CDA3D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5D0DC7825FA0E0300CDA3D3 /* QuizzQuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzQuestionView.swift; sourceTree = "<group>"; };
+		B5D0DC8225FA168C00CDA3D3 /* divingPenaltiesSummary.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = divingPenaltiesSummary.json; sourceTree = "<group>"; };
+		B5D0DC8325FA168C00CDA3D3 /* divingPenaltiesSanctions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = divingPenaltiesSanctions.json; sourceTree = "<group>"; };
+		B5D0DC8725FA16DE00CDA3D3 /* Sanction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sanction.swift; sourceTree = "<group>"; };
+		B5D0DC8A25FA16FB00CDA3D3 /* Penalty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Penalty.swift; sourceTree = "<group>"; };
+		B5D0DC8D25FA1BBD00CDA3D3 /* RuleBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleBookView.swift; sourceTree = "<group>"; };
+		B5D0DC9025FA1BD000CDA3D3 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		B5D0DC9625FA2FF600CDA3D3 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		B5D0DCB925FA6D1600CDA3D3 /* PenaltyRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenaltyRowView.swift; sourceTree = "<group>"; };
+		B5D0DCBD25FA6FA200CDA3D3 /* PenaltiesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenaltiesListView.swift; sourceTree = "<group>"; };
+		B5D0DCC625FA836500CDA3D3 /* PenaltyDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenaltyDetailView.swift; sourceTree = "<group>"; };
+		B5D0DCCB25FD380400CDA3D3 /* 2017-2021_fina-diving_16032018.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "2017-2021_fina-diving_16032018.pdf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +77,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B58610972603AE2900A44778 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				B58610942603976300A44778 /* OwnershipRefereeButton.swift */,
+				B58610992603AE7500A44778 /* OwnershipJudgeButton.swift */,
+				B586109C2603AF8500A44778 /* PenaltyZeroPtsButton.swift */,
+				B58610A02603B1DF00A44778 /* PenaltyMaxTwoPtsButton.swift */,
+				B58610A32603B29300A44778 /* PenaltyMaxFourHalfPtsButton.swift */,
+				B58610A62603B31600A44778 /* PenaltyMinusTwoPtsButton.swift */,
+				B58610A92603B39D00A44778 /* PenaltyMinusHalfToTwoPtsButton.swift */,
+				B58610AC2603B40200A44778 /* PenaltyJudgeOpinionButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
 		B5D0DC5C25FA086300CDA3D3 = {
 			isa = PBXGroup;
 			children = (
@@ -53,6 +112,10 @@
 			isa = PBXGroup;
 			children = (
 				B5D0DC6825FA086300CDA3D3 /* Diving_RulesApp.swift */,
+				B58610CD2608FFE800A44778 /* Localizable.strings */,
+				B5D0DC9E25FA32B300CDA3D3 /* Views */,
+				B5D0DC9F25FA32C400CDA3D3 /* Models */,
+				B5D0DCA025FA32D100CDA3D3 /* Ressources */,
 				B5D0DC6A25FA086300CDA3D3 /* ContentView.swift */,
 				B5D0DC6C25FA086500CDA3D3 /* Assets.xcassets */,
 				B5D0DC7125FA086500CDA3D3 /* Info.plist */,
@@ -67,6 +130,40 @@
 				B5D0DC6F25FA086500CDA3D3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B5D0DC9E25FA32B300CDA3D3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B5D0DC8D25FA1BBD00CDA3D3 /* RuleBookView.swift */,
+				B5D0DCBD25FA6FA200CDA3D3 /* PenaltiesListView.swift */,
+				B5D0DCB925FA6D1600CDA3D3 /* PenaltyRowView.swift */,
+				B5D0DC7825FA0E0300CDA3D3 /* QuizzQuestionView.swift */,
+				B5D0DCC625FA836500CDA3D3 /* PenaltyDetailView.swift */,
+				B5D0DC9025FA1BD000CDA3D3 /* SearchView.swift */,
+				B58610972603AE2900A44778 /* Buttons */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B5D0DC9F25FA32C400CDA3D3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B5D0DC8A25FA16FB00CDA3D3 /* Penalty.swift */,
+				B5D0DC8725FA16DE00CDA3D3 /* Sanction.swift */,
+				B5D0DC9625FA2FF600CDA3D3 /* ModelData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B5D0DCA025FA32D100CDA3D3 /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				B5D0DC8225FA168C00CDA3D3 /* divingPenaltiesSummary.json */,
+				B5D0DC8325FA168C00CDA3D3 /* divingPenaltiesSanctions.json */,
+				B5D0DCCB25FD380400CDA3D3 /* 2017-2021_fina-diving_16032018.pdf */,
+			);
+			path = Ressources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,6 +207,8 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
+				es,
 			);
 			mainGroup = B5D0DC5C25FA086300CDA3D3;
 			productRefGroup = B5D0DC6625FA086300CDA3D3 /* Products */;
@@ -127,6 +226,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5D0DC7025FA086500CDA3D3 /* Preview Assets.xcassets in Resources */,
+				B58610CB2608FFE800A44778 /* Localizable.strings in Resources */,
+				B5D0DC8525FA168C00CDA3D3 /* divingPenaltiesSanctions.json in Resources */,
+				B5D0DC8425FA168C00CDA3D3 /* divingPenaltiesSummary.json in Resources */,
+				B5D0DCCC25FD380400CDA3D3 /* 2017-2021_fina-diving_16032018.pdf in Resources */,
 				B5D0DC6D25FA086500CDA3D3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,12 +241,42 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5D0DC8E25FA1BBD00CDA3D3 /* RuleBookView.swift in Sources */,
+				B5D0DC8825FA16DE00CDA3D3 /* Sanction.swift in Sources */,
+				B5D0DCBE25FA6FA200CDA3D3 /* PenaltiesListView.swift in Sources */,
+				B5D0DCC725FA836500CDA3D3 /* PenaltyDetailView.swift in Sources */,
+				B58610952603976300A44778 /* OwnershipRefereeButton.swift in Sources */,
+				B58610A42603B29300A44778 /* PenaltyMaxFourHalfPtsButton.swift in Sources */,
+				B58610A12603B1DF00A44778 /* PenaltyMaxTwoPtsButton.swift in Sources */,
+				B58610AD2603B40200A44778 /* PenaltyJudgeOpinionButton.swift in Sources */,
 				B5D0DC6B25FA086300CDA3D3 /* ContentView.swift in Sources */,
 				B5D0DC6925FA086300CDA3D3 /* Diving_RulesApp.swift in Sources */,
+				B5D0DC7925FA0E0300CDA3D3 /* QuizzQuestionView.swift in Sources */,
+				B5D0DC9725FA2FF600CDA3D3 /* ModelData.swift in Sources */,
+				B5D0DC8B25FA16FB00CDA3D3 /* Penalty.swift in Sources */,
+				B586109D2603AF8500A44778 /* PenaltyZeroPtsButton.swift in Sources */,
+				B5D0DC9125FA1BD000CDA3D3 /* SearchView.swift in Sources */,
+				B58610A72603B31600A44778 /* PenaltyMinusTwoPtsButton.swift in Sources */,
+				B58610AA2603B39D00A44778 /* PenaltyMinusHalfToTwoPtsButton.swift in Sources */,
+				B586109A2603AE7500A44778 /* OwnershipJudgeButton.swift in Sources */,
+				B5D0DCBA25FA6D1600CDA3D3 /* PenaltyRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B58610CD2608FFE800A44778 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B58610CC2608FFE800A44778 /* fr */,
+				B58610CF2608FFEF00A44778 /* es */,
+				B58610D02608FFF000A44778 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B5D0DC7225FA086500CDA3D3 /* Debug */ = {

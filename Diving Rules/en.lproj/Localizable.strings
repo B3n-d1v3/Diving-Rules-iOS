@@ -1,0 +1,49 @@
+/* 
+  Localizable.strings
+  Diving Rules
+
+  Created by Benoit SUZANNE on 22/03/2021.
+  
+*/
+
+/* Navigation - Rules Menu Item */
+"Navigation-Menu-Rules" = "Rules";
+/* Navigation - Penalties Menu Item */
+"Navigation-Menu-Penalties" = "Penalties";
+/* Navigation - Quizz Menu Item */
+"Navigation-Menu-Quizz" = "Quizz";
+/* Navigation - Search Menu Item */
+"Navigation-Menu-Search" = "Search";
+
+/* Penalties List Page */
+/* Penalties List Page - Title */
+"Penalties-List-Title" = "Penalty Cases";
+
+/* Penalty Detail Page */
+/* Penalty - Rule Title */
+"Penalty-Rule" = "Rule";
+/* Penalty - Description Section Title */
+"Penalty-Description" = "Description";
+/* Penalty - Penalty Section Title */
+"Penalty-Penalty" = "Penalty";
+/* Penalty - Ownership Section Title */
+"Penalty-Ownership" = "Ownership";
+
+/* Penalty Detail Page Buttons */
+/* Penalty - Penalty Section Button 0 pts */
+"Button-0pts" = "0 pts";
+/* Penalty - Penalty Section Button max 2 pts */
+"Button-max2pts" = "max 2 pts";
+/* Penalty - Penalty Section Button max 4 ½ pts */
+"Button-max4halfpts" = "max 4 ½ pts";
+/* Penalty - Penalty Section Button -2 pts */
+"Button--2pts" = "-2 pts";
+/* Penalty - Penalty Section Button - ½ to 2 pts */
+"Button--halfto2pts" = "- ½ to 2 pts";
+/* Penalty - Penalty Section Button judge Opinion */
+"Button-judgeOpinion" = "judge opinion";
+
+/* Penalty - Ownership Section Button Referee */
+"Button-Referee" = "Referee";
+/* Penalty - Ownership Section Button Judge */
+"Button-Judge" = "Judge";
