@@ -43,16 +43,26 @@
 "Button-max2pts" = "máx. 2 puntos";
 
 /*Penalty - Penalty Section Button max 4 ½ pts*/
-"Button-max4halfpts" = "máx. 4 ½ pts";
+"Button-max4halfpts" = "máx. 4 ½ puntos";
 
 /*Penalty - Penalty Section Button -2 pts*/
 "Button--2pts" = "-2 puntos";
 
 /*Penalty - Penalty Section Button - ½ to 2 pts*/
-"Button--halfto2pts" = "- ½ a 2 pts";
+"Button--halfto2pts" = "- ½ a 2 puntos";
 
 /*Penalty - Penalty Section Button judge Opinion*/
 "Button-judgeOpinion" = "opinión del juez";
 
 /*Penalty - Ownership Section Button Referee*/
 "Button-Referee" = "Árbitro";
+
+/*Quizz Selection Page
+ Quizz - Intro Title*/
+"Quizz-Intro-Title" = "Toma una prueba";
+
+/*Quizz - Intro Description*/
+"Quizz-Intro-Description" = "Para practicar las reglas de buceo Fina, con esta prueba podrás repasar las reglas con preguntas sobre las diferentes reglas.\n\n Seleccione el tipo de cuestionario que desea responder y la cantidad de preguntas que desea en su cuestionario.";
+
+/*Quizz - Intro Start Button*/
+"Quizz-Intro-Start-Button" = "Iniciar cuestionario";
