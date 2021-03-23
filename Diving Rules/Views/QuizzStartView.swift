@@ -12,6 +12,7 @@ struct QuizzStartView: View {
         VStack {
             Text("Quizz-Intro-Title")
                 .font(.largeTitle)
+                .multilineTextAlignment(.center)
                 .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             Text ("Quizz-Intro-Description")
                 .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
