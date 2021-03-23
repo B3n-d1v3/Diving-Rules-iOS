@@ -1,49 +1,58 @@
-/* 
-  Localizable.strings
+
+/*Localizable.strings
   Diving Rules
 
   Created by Benoit SUZANNE on 22/03/2021.
   
-*/
 
-/* Navigation - Rules Menu Item */
+ Navigation - Rules Menu Item*/
 "Navigation-Menu-Rules" = "Reglas";
-/* Navigation - Penalties Menu Item */
+
+/*Navigation - Penalties Menu Item*/
 "Navigation-Menu-Penalties" = "Sanciones";
-/* Navigation - Quizz Menu Item */
-"Navigation-Menu-Quizz" = "Cuestionario";
-/* Navigation - Search Menu Item */
-"Navigation-Menu-Search" = "Buscar";
 
-/* Penalties List Page */
-/* Penalties List Page - Title */
-"Penalties-List-Title" = "Penalty Cases";
+/*Navigation - Quizz Menu Item*/
+"Navigation-Menu-Quizz" = "Quizz";
 
-/* Penalty Detail Page */
-/* Penalty - Rule Title */
-"Penalty-Rule" = "Rule";
-/* Penalty - Description Section Title */
-"Penalty-Description" = "Description";
-/* Penalty - Penalty Section Title */
-"Penalty-Penalty" = "Penalty";
-/* Penalty - Ownership Section Title */
-"Penalty-Ownership" = "Ownership";
+/*Navigation - Search Menu Item*/
+"Navigation-Menu-Search" = "Buscar en";
 
-/* Penalty Detail Page Buttons */
-/* Penalty - Penalty Section Button 0 pts */
-"Button-0pts" = "0 pts";
-/* Penalty - Penalty Section Button max 2 pts */
-"Button-max2pts" = "max 2 pts";
-/* Penalty - Penalty Section Button max 4 ½ pts */
-"Button-max4halfpts" = "max 4 ½ pts";
-/* Penalty - Penalty Section Button -2 pts */
-"Button--2pts" = "-2 pts";
-/* Penalty - Penalty Section Button - ½ to 2 pts */
-"Button--halfto2pts" = "- ½ to 2 pts";
-/* Penalty - Penalty Section Button judge Opinion */
-"Button-judgeOpinion" = "judge opinion";
+/*Penalties List Page 
+ Penalties List Page - Title*/
+"Penalties-List-Title" = "Casos penales";
+"Button-Judge" = "Juez";
 
-/* Penalty - Ownership Section Button Referee */
-"Button-Referee" = "Referee";
-/* Penalty -  Ownership Section Button Judge */
-"Button-Judge" = "Judge";
+/*Penalty Detail Page 
+ Penalty - Rule Title*/
+"Penalty-Rule" = "Regla";
+
+/*Penalty - Description Section Title*/
+"Penalty-Description" = "Descripción";
+
+/*Penalty - Penalty Section Title*/
+"Penalty-Penalty" = "Penalización";
+
+/*Penalty - Ownership Section Title*/
+"Penalty-Ownership" = "Propiedad";
+
+/*Penalty Detail Page Buttons 
+ Penalty - Penalty Section Button 0 pts*/
+"Button-0pts" = "0 puntos";
+
+/*Penalty - Penalty Section Button max 2 pts*/
+"Button-max2pts" = "máx. 2 puntos";
+
+/*Penalty - Penalty Section Button max 4 ½ pts*/
+"Button-max4halfpts" = "máx. 4 ½ pts";
+
+/*Penalty - Penalty Section Button -2 pts*/
+"Button--2pts" = "-2 puntos";
+
+/*Penalty - Penalty Section Button - ½ to 2 pts*/
+"Button--halfto2pts" = "- ½ a 2 pts";
+
+/*Penalty - Penalty Section Button judge Opinion*/
+"Button-judgeOpinion" = "opinión del juez";
+
+/*Penalty - Ownership Section Button Referee*/
+"Button-Referee" = "Árbitro";
