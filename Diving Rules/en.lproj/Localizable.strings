@@ -15,12 +15,12 @@
 /* Navigation - Search Menu Item */
 "Navigation-Menu-Search" = "Search";
 
-/* Penalties List Page */
-/* Penalties List Page - Title */
+/* Penalties List Page
+ Penalties List Page - Title */
 "Penalties-List-Title" = "Penalty Cases";
 
-/* Penalty Detail Page */
-/* Penalty - Rule Title */
+/* Penalty Detail Page
+ Penalty - Rule Title */
 "Penalty-Rule" = "Rule";
 /* Penalty - Description Section Title */
 "Penalty-Description" = "Description";
@@ -29,8 +29,8 @@
 /* Penalty - Ownership Section Title */
 "Penalty-Ownership" = "Ownership";
 
-/* Penalty Detail Page Buttons */
-/* Penalty - Penalty Section Button 0 pts */
+/* Penalty Detail Page Buttons
+ Penalty - Penalty Section Button 0 pts */
 "Button-0pts" = "0 pts";
 /* Penalty - Penalty Section Button max 2 pts */
 "Button-max2pts" = "max 2 pts";
