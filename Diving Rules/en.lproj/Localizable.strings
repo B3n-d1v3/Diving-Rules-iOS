@@ -59,7 +59,12 @@
 /*Penalty - Ownership Section Button Referee*/
 "Button-Referee" = "Referee";
 
-
 /* Quizz Selection Page
  Quizz - Intro Title*/
-"Quizz-Intro-Title"
+"Quizz-Intro-Title" = "Take A Quizz";
+
+/* Quizz - Intro Description*/
+"Quizz-Intro-Description" = "In order to train yourself on the Fina Diving Rules, with this test you will be able to review the Rule Book through questions on the various rules. \n\n Select the type of Quizz you would like to take and the number of questions you would like in your quizz.";
+
+/* Quizz - Intro Start Button*/
+"Quizz-Intro-Start-Button" = "Start Quizz";

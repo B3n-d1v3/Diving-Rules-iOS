@@ -9,7 +9,16 @@ import SwiftUI
 
 struct QuizzStartView: View {
     var body: some View {
-        Text("Quizz-Intro-Title")
+        VStack {
+            Text("Quizz-Intro-Title")
+                .font(.largeTitle)
+                .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+            Text ("Quizz-Intro-Description")
+                .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+            Spacer ()
+            Text("Quizz-Intro-Start-Button")
+            Spacer ()
+        }
     }
 }
 
