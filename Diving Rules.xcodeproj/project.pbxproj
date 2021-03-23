@@ -32,6 +32,7 @@
 		B5D0DCBE25FA6FA200CDA3D3 /* PenaltiesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D0DCBD25FA6FA200CDA3D3 /* PenaltiesListView.swift */; };
 		B5D0DCC725FA836500CDA3D3 /* PenaltyDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D0DCC625FA836500CDA3D3 /* PenaltyDetailView.swift */; };
 		B5D0DCCC25FD380400CDA3D3 /* 2017-2021_fina-diving_16032018.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B5D0DCCB25FD380400CDA3D3 /* 2017-2021_fina-diving_16032018.pdf */; };
+		B5E2B4C92609E43300530303 /* QuizzStartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E2B4C82609E43300530303 /* QuizzStartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		B5D0DCBD25FA6FA200CDA3D3 /* PenaltiesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenaltiesListView.swift; sourceTree = "<group>"; };
 		B5D0DCC625FA836500CDA3D3 /* PenaltyDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenaltyDetailView.swift; sourceTree = "<group>"; };
 		B5D0DCCB25FD380400CDA3D3 /* 2017-2021_fina-diving_16032018.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "2017-2021_fina-diving_16032018.pdf"; sourceTree = "<group>"; };
+		B5E2B4C82609E43300530303 /* QuizzStartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzStartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 				B5D0DC8D25FA1BBD00CDA3D3 /* RuleBookView.swift */,
 				B5D0DCBD25FA6FA200CDA3D3 /* PenaltiesListView.swift */,
 				B5D0DCB925FA6D1600CDA3D3 /* PenaltyRowView.swift */,
+				B5E2B4C82609E43300530303 /* QuizzStartView.swift */,
 				B5D0DC7825FA0E0300CDA3D3 /* QuizzQuestionView.swift */,
 				B5D0DCC625FA836500CDA3D3 /* PenaltyDetailView.swift */,
 				B5D0DC9025FA1BD000CDA3D3 /* SearchView.swift */,
@@ -248,6 +251,7 @@
 				B58610952603976300A44778 /* OwnershipRefereeButton.swift in Sources */,
 				B58610A42603B29300A44778 /* PenaltyMaxFourHalfPtsButton.swift in Sources */,
 				B58610A12603B1DF00A44778 /* PenaltyMaxTwoPtsButton.swift in Sources */,
+				B5E2B4C92609E43300530303 /* QuizzStartView.swift in Sources */,
 				B58610AD2603B40200A44778 /* PenaltyJudgeOpinionButton.swift in Sources */,
 				B5D0DC6B25FA086300CDA3D3 /* ContentView.swift in Sources */,
 				B5D0DC6925FA086300CDA3D3 /* Diving_RulesApp.swift in Sources */,

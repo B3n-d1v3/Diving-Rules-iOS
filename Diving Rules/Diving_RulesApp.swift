@@ -31,7 +31,7 @@ struct Diving_RulesApp: App {
                 }
                 
                 NavigationView {
-                   // QuizzQuestionView(quizzQuestion: <#T##QuizzQuestion#>)
+                    QuizzStartView()
                 }
                 .tabItem {
                     Image (systemName: "checkmark")
