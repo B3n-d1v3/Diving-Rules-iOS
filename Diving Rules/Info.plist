@@ -29,8 +29,10 @@
 	<true/>
 	<key>UILaunchScreen</key>
 	<dict>
+		<key>UIColorName</key>
+		<string>LaunchScreenBackgroundColor</string>
 		<key>UIImageName</key>
-		<string>launchScreen</string>
+		<string>DivingRulesLogo</string>
 		<key>UIImageRespectsSafeAreaInsets</key>
 		<false/>
 	</dict>
