@@ -23,7 +23,7 @@ struct PenaltyMaxFourHalfPtsButton: View {
             }
             .frame(width: 80.0)
             .padding(.all, 10.0)
-            .foregroundColor((isSet ? Color("AccentColor") : Color.gray))
+            .foregroundColor((isSet ? Color("AccentColor") : Color.secondary))
             }
     }
     

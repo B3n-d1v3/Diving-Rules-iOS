@@ -25,7 +25,7 @@ struct OwnershipJudgeButton: View {
                     .font(.caption)
                     
             }
-            .foregroundColor((isSet ? Color("AccentColor") : Color.gray))
+            .foregroundColor((isSet ? Color("AccentColor") : Color.secondary))
         }
         
     }
