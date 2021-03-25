@@ -52,7 +52,7 @@
 "Button--halfto2pts" = "- ½ a 2 puntos";
 
 /*Penalty - Penalty Section Button judge Opinion*/
-"Button-judgeOpinion" = "opinión del juez";
+"Button-judgeOpinion" = "según opinión";
 
 /*Penalty - Ownership Section Button Referee*/
 "Button-Referee" = "Árbitro";
@@ -66,3 +66,15 @@
 
 /*Quizz - Intro Start Button*/
 "Quizz-Intro-Start-Button" = "Iniciar cuestionario";
+
+/*Quizz - Question Page Next Button*/
+"Quizz-Next" = "Siguiente";
+
+/*Quizz - Question Page Score Message*/
+"Quizz-Score-Message" = "Su puntuación es";
+
+/*Quizz - Question Page Score Title Good Answer*/
+"Quizz-Score-Message-Correct" = "Respuesta correcta";
+
+/*Quizz - Question Page Score Title Wrong Answer*/
+"Quizz-Score-Message-Wrong" = "Respuesta incorrecta";
