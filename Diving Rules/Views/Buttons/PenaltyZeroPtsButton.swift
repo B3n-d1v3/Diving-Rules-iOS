@@ -22,7 +22,7 @@ struct PenaltyZeroPtsButton: View {
                 }
                 .frame(width: 80.0)
                 .padding(.all, 10.0)
-                .foregroundColor((isSet ? Color.blue : Color.gray))
+                .foregroundColor((isSet ? Color("AccentColor") : Color.gray))
                 }
         }
         

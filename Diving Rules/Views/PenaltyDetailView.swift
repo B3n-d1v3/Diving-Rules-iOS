@@ -18,13 +18,13 @@ struct PenaltyDetailView: View {
                     VStack (alignment: .leading) {
                         Text("Penalty-Rule")
                             .font(.title)
-                            .foregroundColor(Color.blue)
+                            .foregroundColor(Color.accentColor)
                             .padding(.bottom, 1.0)
 
 
                         Text("Penalty-Description")
                             .font(.title2)
-                            .foregroundColor(Color.blue)
+                            .foregroundColor(Color.accentColor)
                             .padding(.bottom)
                             
                         Text(penalty.description)
@@ -45,7 +45,7 @@ struct PenaltyDetailView: View {
                 //What is the saction for this penalty
                 Text("Penalty-Penalty")
                     .font(.title2)
-                    .foregroundColor(Color.blue)
+                    .foregroundColor(Color.accentColor)
                     .multilineTextAlignment(.leading)
                     .padding(.bottom)
 
@@ -88,7 +88,7 @@ struct PenaltyDetailView: View {
                 // who is can take the sanction
                 Text("Penalty-Ownership")
                     .font(.title2)
-                    .foregroundColor(Color.blue)
+                    .foregroundColor(Color.accentColor)
                     .multilineTextAlignment(.leading)
                     .padding(.bottom)
                 

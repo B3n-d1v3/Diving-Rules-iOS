@@ -13,11 +13,14 @@ struct QuizzStartView: View {
             Text("Quizz-Intro-Title")
                 .font(.largeTitle)
                 .multilineTextAlignment(.center)
-                .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                .padding(.all)
             Text ("Quizz-Intro-Description")
-                .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                .padding(.all)
             Spacer ()
-            Text("Quizz-Intro-Start-Button")
+            Text("Quizz-Intro-Start-Button").padding()
+                .foregroundColor(.white)
+                .background(Color.accentColor)
+                .cornerRadius(20)
             Spacer ()
         }
     }
