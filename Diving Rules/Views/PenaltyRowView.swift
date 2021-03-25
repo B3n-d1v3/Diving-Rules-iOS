@@ -14,7 +14,7 @@ struct PenaltyRowView: View {
         // show one line of penalty
         HStack {
             Image (systemName: "star.circle.fill")
-            //Change the icon dependong on the penalty sanction
+            // ToDo >>>>>> Change the icon dependong on the penalty sanction
             //Image (systemName: sanctions.icon[penalties.sanctionValue])
             Text(penalties.description)
             Spacer ()

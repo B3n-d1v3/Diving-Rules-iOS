@@ -9,6 +9,8 @@ import Foundation
 import SwiftUI
 
 //struct Penalty: Hashable, Codable, Identifiable {
+
+// one penalty description
 struct Penalty: Decodable,Identifiable {
     let id: Int
     let description: String

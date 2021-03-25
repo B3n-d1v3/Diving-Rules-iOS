@@ -17,10 +17,19 @@ struct QuizzStartView: View {
             Text ("Quizz-Intro-Description")
                 .padding(.all)
             Spacer ()
-            Text("Quizz-Intro-Start-Button").padding()
-                .foregroundColor(.white)
-                .background(Color.accentColor)
-                .cornerRadius(20)
+
+            NavigationLink(destination: QuizzQuestionView ()) {
+                Text("Quizz-Intro-Start-Button")
+                    .font(.title3)
+                    .fontWeight(.semibold)
+                Image (systemName: "play.circle.fill")
+                    .font(.title)
+            }
+            .padding(10.0)
+            .foregroundColor(.white)
+            .background(Color.accentColor)
+            .cornerRadius(40)
+            
             Spacer ()
         }
     }
