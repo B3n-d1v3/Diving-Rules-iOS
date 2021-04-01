@@ -9,6 +9,8 @@ import SwiftUI
 
 @main
 struct Diving_RulesApp: App {
+//    environment penalties: Penalty
+    
     var body: some Scene {
         WindowGroup {
             TabView {

@@ -25,7 +25,12 @@ struct Rule: Decodable {
     let ruleId: String
 }
 
-struct PenaltySanction {
-    var penalty: Penalty
-    
-}
+//struct PenaltySanction {
+//    var penalty: Int
+//    //    0 > ZeroPts
+//    //    1 > MinusTwoPts
+//    //    2 > MaxTwoPts
+//    //    3 > MaxFourHalfPts
+//    //    4 > MinusHalfToTwoPts
+//    //    5> JudgeOpinion
+//}

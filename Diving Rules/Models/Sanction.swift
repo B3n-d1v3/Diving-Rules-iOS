@@ -12,13 +12,3 @@ struct Sanction: Hashable, Codable, Identifiable {
     var description: String
     var icon: String
 }
-
-//struct PenaltySanction: Codable {
-//    var isPenaltyZeroPts: Bool
-//    var isPenaltyMaxTwoPts: Bool
-//    var isPenaltyMaxFourHalfPts: Bool
-//    var isPenaltyMinusTwoPts: Bool
-//    var isPenaltyMinusHalfToTwoPts: Bool
-//    var isPenaltyJudgeOpinion: Bool
-//
-//}

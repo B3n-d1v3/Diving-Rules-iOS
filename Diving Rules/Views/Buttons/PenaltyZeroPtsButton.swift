@@ -8,10 +8,18 @@
 import SwiftUI
 
 struct PenaltyZeroPtsButton: View {
-        @State var isSet: Bool
-        var body: some View {
+    @State var isOn: Bool
+    @Binding var sanctionSelection: Int
+    
+    var body: some View {
              Button(action: {
-                    isSet.toggle()
+                isOn.toggle()
+                // Does this action get executed ?????
+                if (isOn == true) {
+                    sanctionSelection = 0
+                } else {
+                    sanctionSelection = 10
+                }
             }) {
                 VStack {
                     Image (systemName: "0.circle")
@@ -22,15 +30,20 @@ struct PenaltyZeroPtsButton: View {
                 }
                 .frame(width: 80.0)
                 .padding(.all, 10.0)
-                .foregroundColor((isSet ? Color("AccentColor") : Color.secondary))
-                }
-        }
+                .foregroundColor((isOn ? Color("AccentColor") : Color.secondary))
+             }
+//             .onAppear {
+//                isSet = (sanctionSelection == 0)
+//             }
+    }
         
     }
 
 
 struct PenaltyZeroPtsButton_Previews: PreviewProvider {
+    @State static var sanctionPreview = 10
+    
     static var previews: some View {
-        PenaltyZeroPtsButton(isSet: true)
+        PenaltyZeroPtsButton(isOn: true, sanctionSelection: $sanctionPreview)
     }
 }

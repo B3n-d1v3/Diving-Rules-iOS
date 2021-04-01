@@ -3,9 +3,14 @@
   Diving Rules
 
   Created by Benoit SUZANNE on 22/03/2021.
-  
 
- Navigation - Rules Menu Item*/
+ App Name - Full App name*/
+ "CFBundleDisplayName" = "Diving Rules";
+
+/*App Name - Short App name 16 car*/
+"CFBundleName" = "Diving Rules";
+
+ /* Navigation - Rules Menu Item*/
 "Navigation-Menu-Rules" = "Rules";
 
 /*Navigation - Penalties Menu Item*/
@@ -73,7 +78,7 @@
 "Quizz-Next" = "Next";
 
 /* Quizz - Question Page Score Message*/
-"Quizz-Score-Message" = "Your score is";
+"Quizz-Score-Message %@" = "Your score is %@";
 
 /* Quizz - Question Page Score Title Good Answer*/
 "Quizz-Score-Message-Correct" = "Correct Answer";

@@ -9,11 +9,15 @@ import SwiftUI
 
 struct PenaltyDetailView: View {
     var penalty: Penalty
+    var penaltyIconImageWidth: CGFloat = 40.0
+    var penaltyIconImageHeight: CGFloat = 40.0
+    @State private var userSanctionSelection = 50
+//    var ruleSanctionId: Int
+
     
     var body: some View {
         ScrollView {
             VStack(alignment: .leading) {
-
                     //Rule Description
                     VStack (alignment: .leading) {
                         Text("Penalty-Rule")
@@ -54,15 +58,17 @@ struct PenaltyDetailView: View {
                         //Penalty Line 1
                         Spacer ()
                         // 0 pts
-                        PenaltyZeroPtsButton(isSet: (penalty.sanctionValue == 0))
+                        PenaltyButton (buttonImage: "0.circle", buttonText: NSLocalizedString("Button-0pts", comment: "Button Description"), buttonImageWidth: penaltyIconImageWidth, buttonImageHeight: penaltyIconImageHeight, isOn: (penalty.sanctionValue == 0), sanctionSelection:$userSanctionSelection , sanctionID: penalty.sanctionValue)
+//                        PenaltyZeroPtsButton(isOn: (penalty.sanctionValue == 0), sanctionSelection: penalty.sanctionValue)
                             .disabled(true)
                         Spacer ()
                         // Max 2 pts
-                        PenaltyMaxTwoPtsButton (isSet: (penalty.sanctionValue == 2))
+                        // ToDo >>>>> Change other buttons in this screen
+                        PenaltyMaxTwoPtsButton (isOn: (penalty.sanctionValue == 2))
                             .disabled(true)
                         Spacer ()
                         // Max 4 1/2 pts
-                        PenaltyMaxFourHalfPtsButton (isSet: (penalty.sanctionValue == 3))
+                        PenaltyMaxFourHalfPtsButton (isOn: (penalty.sanctionValue == 3))
                             .disabled(true)
                         Spacer ()
                    }
@@ -70,15 +76,15 @@ struct PenaltyDetailView: View {
                         //Penalty Line 2
                         Spacer ()
                         // -2 pts
-                        PenaltyMinusTwoPtsButton (isSet: (penalty.sanctionValue == 1))
+                        PenaltyMinusTwoPtsButton (isOn: (penalty.sanctionValue == 1))
                             .disabled(true)
                         Spacer ()
                         // -1/2 to 2 pts
-                        PenaltyMinusHalfToTwoPtsButton (isSet: (penalty.sanctionValue == 4))
+                        PenaltyMinusHalfToTwoPtsButton (isOn: (penalty.sanctionValue == 4))
                             .disabled(true)
                         Spacer ()
                         // judge Opinion
-                        PenaltyJudgeOpinionButton (isSet: (penalty.sanctionValue == 5))
+                        PenaltyJudgeOpinionButton (isOn: (penalty.sanctionValue == 5))
                             .disabled(true)
                         Spacer ()
                     }
@@ -95,7 +101,7 @@ struct PenaltyDetailView: View {
                 VStack {
                     HStack {
                         // Ownership Referee
-                        OwnershipRefereeButton (isSet: penalty.referee)
+                        OwnershipRefereeButton (isOn: penalty.referee)
                             .disabled(true)
 
 //                        .onTapGesture {
@@ -103,12 +109,13 @@ struct PenaltyDetailView: View {
 //                        }
                         Spacer ()
                         // Ownership Judge
-                        OwnershipJudgeButton (isSet: penalty.judge)
+                        OwnershipJudgeButton (isOn: penalty.judge)
                             .disabled(true)
                     }
                     .padding(.horizontal, 30.0)
                 }
                 .frame(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                Spacer ()
                 
 
             }

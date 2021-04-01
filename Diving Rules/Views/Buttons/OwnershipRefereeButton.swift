@@ -9,13 +9,13 @@ import SwiftUI
 
 struct OwnershipRefereeButton: View {
 //    @Binding var isSet: Bool
-    @State var isSet: Bool
+    @State var isOn: Bool
 //    Color(red: 0.0, green: 0.38, blue: 0.62, opacity: 1.0)
 
     var body: some View {
         
         Button(action: {
-            isSet.toggle()
+            isOn.toggle()
         }) {
             VStack {
                 // Ownership Referee
@@ -25,7 +25,7 @@ struct OwnershipRefereeButton: View {
                 Text ("Button-Referee")
                     .font(.caption)
             }
-            .foregroundColor((isSet ? Color("AccentColor") : Color.secondary))
+            .foregroundColor((isOn ? Color("AccentColor") : Color.secondary))
         }
         
     }
@@ -33,6 +33,6 @@ struct OwnershipRefereeButton: View {
 
 struct OwnershipRefereeButton_Previews: PreviewProvider {
     static var previews: some View {
-        OwnershipRefereeButton(isSet: false)
+        OwnershipRefereeButton(isOn: false)
     }
 }

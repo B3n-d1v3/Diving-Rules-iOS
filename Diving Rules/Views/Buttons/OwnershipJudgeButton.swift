@@ -9,12 +9,12 @@ import SwiftUI
 
 struct OwnershipJudgeButton: View {
 //    @Binding var isSet: Bool
-    @State var isSet: Bool
+    @State var isOn: Bool
 
     var body: some View {
         
         Button(action: {
-            isSet.toggle()
+            isOn.toggle()
         }) {
             VStack {
                 // Ownership Referee
@@ -25,7 +25,7 @@ struct OwnershipJudgeButton: View {
                     .font(.caption)
                     
             }
-            .foregroundColor((isSet ? Color("AccentColor") : Color.secondary))
+            .foregroundColor((isOn ? Color("AccentColor") : Color.secondary))
         }
         
     }
@@ -33,6 +33,6 @@ struct OwnershipJudgeButton: View {
 
 struct OwnershipJudgeButton_Previews: PreviewProvider {
     static var previews: some View {
-        OwnershipJudgeButton(isSet: true)
+        OwnershipJudgeButton(isOn: true)
     }
 }

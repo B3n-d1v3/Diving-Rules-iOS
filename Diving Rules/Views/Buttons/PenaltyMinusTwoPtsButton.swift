@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct PenaltyMinusTwoPtsButton: View {
-    @State var isSet: Bool
+    @State var isOn: Bool
     
     var body: some View {
     Button(action: {
-           isSet.toggle()
+        isOn.toggle()
    }) {
         VStack {
             Image (systemName: "gobackward.minus")
@@ -23,7 +23,7 @@ struct PenaltyMinusTwoPtsButton: View {
         }
        .frame(width: 80.0)
        .padding(.all, 10.0)
-       .foregroundColor((isSet ? Color("AccentColor") : Color.secondary))
+       .foregroundColor((isOn ? Color("AccentColor") : Color.secondary))
        }
 }
 
@@ -31,6 +31,6 @@ struct PenaltyMinusTwoPtsButton: View {
 
 struct PenaltyMinusTwoPtsButton_Previews: PreviewProvider {
     static var previews: some View {
-        PenaltyMinusTwoPtsButton(isSet: true)
+        PenaltyMinusTwoPtsButton(isOn: true)
     }
 }

@@ -5,7 +5,13 @@
   Created by Benoit SUZANNE on 22/03/2021.
   
 
- Navigation - Rules Menu Item*/
+ App Name - Full App name*/
+ "CFBundleDisplayName" = "Règles Plongeon";
+
+/*App Name - Short App name 16 car*/
+"CFBundleName" = "Règles Plongeon";
+
+ /* Navigation - Rules Menu Item*/
 "Navigation-Menu-Rules" = "Règles";
 
 /*Navigation - Penalties Menu Item*/
@@ -71,7 +77,7 @@
 "Quizz-Next" = "Suivant";
 
 /*Quizz - Question Page Score Message*/
-"Quizz-Score-Message" = "Votre score est";
+"Quizz-Score-Message %@" = "Votre score est %@";
 
 /*Quizz - Question Page Score Title Good Answer*/
 "Quizz-Score-Message-Correct" = "Bonne réponse";

@@ -17,7 +17,7 @@ struct PenaltiesListView: View {
                 }
             }
             .navigationTitle("Penalties-List-Title")
-            
+            Spacer ()
         }
 }
 }
