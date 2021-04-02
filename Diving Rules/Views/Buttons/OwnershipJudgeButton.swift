@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct OwnershipJudgeButton: View {
-//    @Binding var isSet: Bool
-    @State var isOn: Bool
+    @Binding var isOn: Bool
+//    @State var isOn: Bool
 
     var body: some View {
         
@@ -25,14 +25,16 @@ struct OwnershipJudgeButton: View {
                     .font(.caption)
                     
             }
-            .foregroundColor((isOn ? Color("AccentColor") : Color.secondary))
+            .foregroundColor((isOn ? Color("AccentColor") : Color.gray))
         }
         
     }
 }
 
 struct OwnershipJudgeButton_Previews: PreviewProvider {
+    @State static var ownerJudgeOn = true
+    
     static var previews: some View {
-        OwnershipJudgeButton(isOn: true)
+        OwnershipJudgeButton(isOn: $ownerJudgeOn)
     }
 }

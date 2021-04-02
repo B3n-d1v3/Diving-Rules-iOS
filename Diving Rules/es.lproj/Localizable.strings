@@ -85,6 +85,9 @@
 /*Quizz - Question Page Score Title Good Answer*/
 "Quizz-Score-Message-Correct" = "Respuesta correcta";
 
+/* Quizz - Question Page Score Title missing an owner saction*/
+"Quizz-Score-Message-Partly" = "Almost Good";
+
 /*Quizz - Question Page Score Title Wrong Answer*/
 "Quizz-Score-Message-Wrong" = "Respuesta incorrecta";
 

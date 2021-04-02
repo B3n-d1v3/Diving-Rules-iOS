@@ -18,8 +18,9 @@ struct QuizzQuestionView: View {
 //    @State private var penalty = penalties[penatlyNumber]
     
     @State private var showingScore = false
+    @State private var askForAnswer = false
     @State private var scoreTitle = ""
-    @State private var score = 0
+    @State private var score = 0.0
     @State private var answeredQuestions = 0 
     @State private var userSanctionSelection = 55
     var penaltyIconImageWidth: CGFloat = 40.0
@@ -32,6 +33,8 @@ struct QuizzQuestionView: View {
     @State private var penaltyMinusTwoPts = false
     @State private var penaltyMinusHalfToTwoPts = false
     @State private var penaltyJudgeOpinion = false
+    @State private var ownershipReferee = false
+    @State private var ownershipJudge = false
     
     // ToDo Init with all penalties sanctions to unselected
     
@@ -115,14 +118,11 @@ struct QuizzQuestionView: View {
                 VStack {
                     HStack {
                         // Ownership Referee
-                        OwnershipRefereeButton (isOn: false)
+                        OwnershipRefereeButton (isOn: $ownershipReferee)
 
-//                        .onTapGesture {
-//                            isOwnerReferee.toggle()
-//                        }
                         Spacer ()
                         // Ownership Judge
-                        OwnershipJudgeButton (isOn: false)
+                        OwnershipJudgeButton (isOn: $ownershipJudge)
                     }
                     .padding(.horizontal, 30.0)
                 }
@@ -149,9 +149,15 @@ struct QuizzQuestionView: View {
                     
                     .alert(isPresented: $showingScore) {
                         // ToDo >>>> Look how to update Translation string with parameter
-                        Alert(title: Text(scoreTitle), message: Text(NSLocalizedString("Quizz-Score-Message \(score)/\(answeredQuestions)", comment: "Alert Quizz Message")), dismissButton: .default(Text("Quizz-Next")) {
+                        Alert(title: Text(scoreTitle), message: Text(NSLocalizedString("Quizz-Score-Message \(score) / \(answeredQuestions)", comment: "Alert Quizz Message")), dismissButton: .default(Text("Quizz-Next")) {
                             self.askNewQuestion()
                         })
+                        // ToDo  >>>>>> Alert in case the answers have not been provided
+//                    .alert(isPresented: $askForAnswer) {
+//
+//                            Alert(title: Text(scoreTitle), message: Text(NSLocalizedString("Quizz-Score-Message \(score)/\(answeredQuestions)", comment: "Alert Quizz Message")), dismissButton: .default(Text("Quizz-Next")) {
+//                                self.askNewQuestion()
+//                            })
                     }
                     
                 }
@@ -164,18 +170,35 @@ struct QuizzQuestionView: View {
     }
    
     func nextQuestion(_ penalty : Penalty) {
-        // ToDo  >>>>>> Check that the user has provided answers
-        // Check if the answer is correct
-        if userSanctionSelection == penalty.sanctionValue {
-            scoreTitle = NSLocalizedString("Quizz-Score-Message-Correct", comment: "Alert Quizz Title OK")
-            score += 1
-            print("[nextQuestion] Score updated to: \(score)")
+        print("[nextQuestion] userSanctionSelection: \(userSanctionSelection) - ownershipReferee: \(ownershipReferee) - ownershipJudge: \(ownershipJudge)")
+        if (userSanctionSelection > 6) || (!ownershipReferee && !ownershipJudge) {
+            // As the user provided an answer at least one penalty and one owner
+            askForAnswer = true
+            print("[nextQuestion] Missing answer")
         } else {
-            scoreTitle = NSLocalizedString("Quizz-Score-Message-Wrong", comment: "Alert Quizz Title error")
-            print("[nextQuestion] Wrong answer")
+            if userSanctionSelection == penalty.sanctionValue {
+                // if the penalty answer is correct
+                    if (ownershipReferee == penalty.referee) && (ownershipJudge == penalty.judge) {
+                        // if the Ownership answer is correct
+                        scoreTitle = NSLocalizedString("Quizz-Score-Message-Correct", comment: "Alert Quizz Title OK")
+                        score += 1
+                        print("[nextQuestion] Good answer")
+                    } else if (ownershipReferee == penalty.referee) || (ownershipJudge == penalty.judge){
+                       // if the ownership is shared between Referee and Judge and only one was selected
+                        scoreTitle = NSLocalizedString("Quizz-Score-Message-Partly", comment: "Alert Quizz Title Almost")
+                        score += 0.5
+                        print("[nextQuestion] Partial answer")
+                    }
+                    print("[nextQuestion] Score updated to: \(score)")
+                
+                } else {
+                    // if the penalty is wrong
+                    scoreTitle = NSLocalizedString("Quizz-Score-Message-Wrong", comment: "Alert Quizz Title error")
+                    print("[nextQuestion] Wrong answer")
+                }
+                answeredQuestions += 1
+                showingScore = true
         }
-        answeredQuestions += 1
-        showingScore = true
     }
 
     
@@ -191,7 +214,8 @@ struct QuizzQuestionView: View {
         penaltyMinusTwoPts = false
         penaltyMinusHalfToTwoPts = false
         penaltyJudgeOpinion = false
-
+        ownershipReferee = false
+        ownershipJudge = false
     }
 
 }

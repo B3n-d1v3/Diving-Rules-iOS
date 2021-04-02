@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct OwnershipRefereeButton: View {
-//    @Binding var isSet: Bool
-    @State var isOn: Bool
+    @Binding var isOn: Bool
+//    @State var isOn: Bool
 //    Color(red: 0.0, green: 0.38, blue: 0.62, opacity: 1.0)
 
     var body: some View {
@@ -25,14 +25,16 @@ struct OwnershipRefereeButton: View {
                 Text ("Button-Referee")
                     .font(.caption)
             }
-            .foregroundColor((isOn ? Color("AccentColor") : Color.secondary))
+            .foregroundColor((isOn ? Color("AccentColor") : Color.gray))
         }
         
     }
 }
 
 struct OwnershipRefereeButton_Previews: PreviewProvider {
+    @State static var ownerRefereeOn = true
+    
     static var previews: some View {
-        OwnershipRefereeButton(isOn: false)
+        OwnershipRefereeButton(isOn: $ownerRefereeOn)
     }
 }

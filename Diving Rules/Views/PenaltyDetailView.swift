@@ -12,6 +12,16 @@ struct PenaltyDetailView: View {
     var penaltyIconImageWidth: CGFloat = 40.0
     var penaltyIconImageHeight: CGFloat = 40.0
     @State private var userSanctionSelection = 50
+    
+//    @State private var penaltyZeroPts = false
+//    @State private var penaltyMaxTwoPts = false
+//    @State private var penaltyMaxFourHalfPts = false
+//    @State private var penaltyMinusTwoPts = false
+//    @State private var penaltyMinusHalfToTwoPts = false
+//    @State private var penaltyJudgeOpinion = false
+    @State private var ownershipReferee = false
+    @State private var ownershipJudge = false
+
 //    var ruleSanctionId: Int
 
     
@@ -100,8 +110,13 @@ struct PenaltyDetailView: View {
                 
                 VStack {
                     HStack {
+//                        ownershipReferee = penalty.referee
+//                        ownershipJudge = penalty.judge
+                        
+                        // ToDo >>>>>> Missing link from penalty ownership value to the binding ownership
+                        
                         // Ownership Referee
-                        OwnershipRefereeButton (isOn: penalty.referee)
+                        OwnershipRefereeButton (isOn: $ownershipReferee)
                             .disabled(true)
 
 //                        .onTapGesture {
@@ -109,7 +124,7 @@ struct PenaltyDetailView: View {
 //                        }
                         Spacer ()
                         // Ownership Judge
-                        OwnershipJudgeButton (isOn: penalty.judge)
+                        OwnershipJudgeButton (isOn: $ownershipJudge)
                             .disabled(true)
                     }
                     .padding(.horizontal, 30.0)
