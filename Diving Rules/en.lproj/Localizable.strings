@@ -65,7 +65,10 @@
 "Button-Referee" = "Referee";
 
 /* Quizz Selection Page
- Quizz - Intro Title*/
+ Quizz - Title*/
+"Quizz-Title" = "Quizz";
+
+/* Quizz - Intro Title*/
 "Quizz-Intro-Title" = "Take A Quizz";
 
 /* Quizz - Intro Description*/
@@ -78,10 +81,18 @@
 "Quizz-Next" = "Next";
 
 /* Quizz - Question Page Score Message*/
-"Quizz-Score-Message %@" = "Your score is %@";
+"Quizz-Score-Message %@" = "Your score is %@ points.";
 
 /* Quizz - Question Page Score Title Good Answer*/
 "Quizz-Score-Message-Correct" = "Correct Answer";
 
 /* Quizz - Question Page Score Title Wrong Answer*/
 "Quizz-Score-Message-Wrong" = "Wrong Answer";
+
+/* Search Selection Page
+ Search - Title*/
+"Search-Title" = "Search The Rules";
+
+/* Rule Book Selection Page
+ Rule Book - Title*/
+"RuleBook-Title" = "Rule Book";

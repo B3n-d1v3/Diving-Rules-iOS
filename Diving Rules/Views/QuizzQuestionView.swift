@@ -20,11 +20,18 @@ struct QuizzQuestionView: View {
     @State private var showingScore = false
     @State private var scoreTitle = ""
     @State private var score = 0
-//    @State private var resetPenalties = false
-    
+    @State private var answeredQuestions = 0 
     @State private var userSanctionSelection = 55
     var penaltyIconImageWidth: CGFloat = 40.0
     var penaltyIconImageHeight: CGFloat = 40.0
+
+    // All the buttons status
+    @State private var penaltyZeroPts = false
+    @State private var penaltyMaxTwoPts = false
+    @State private var penaltyMaxFourHalfPts = false
+    @State private var penaltyMinusTwoPts = false
+    @State private var penaltyMinusHalfToTwoPts = false
+    @State private var penaltyJudgeOpinion = false
     
     // ToDo Init with all penalties sanctions to unselected
     
@@ -40,13 +47,13 @@ struct QuizzQuestionView: View {
                             .foregroundColor(Color.accentColor)
                             .padding(.bottom, 1.0)
 
-
                         Text("Penalty-Description")
                             .font(.title2)
                             .foregroundColor(Color.accentColor)
                             .padding(.bottom)
                             
                         Text(penalty.description)
+                            .fixedSize(horizontal: false, vertical: true)
                     }
 
 
@@ -65,15 +72,17 @@ struct QuizzQuestionView: View {
                         //Penalty Line 1
                         Spacer ()
                         // 0 pts
-                        PenaltyButton (buttonImage: "0.circle", buttonText: NSLocalizedString("Button-0pts", comment: "Button Description"), buttonImageWidth: penaltyIconImageWidth, buttonImageHeight: penaltyIconImageHeight, isOn: (userSanctionSelection == 0), sanctionSelection: $userSanctionSelection, sanctionID: 0)
+                        PenaltyButton (buttonImage: "0.circle", buttonText: NSLocalizedString("Button-0pts", comment: "Button Description"), buttonImageWidth: penaltyIconImageWidth, buttonImageHeight: penaltyIconImageHeight, isOn: $penaltyZeroPts, sanctionSelection: $userSanctionSelection, sanctionID: 0, penaltyZeroPts: $penaltyZeroPts, penaltyMaxTwoPts: $penaltyMaxTwoPts, penaltyMaxFourHalfPts: $penaltyMaxFourHalfPts, penaltyMinusTwoPts: $penaltyMinusTwoPts, penaltyMinusHalfToTwoPts: $penaltyMinusHalfToTwoPts, penaltyJudgeOpinion: $penaltyJudgeOpinion)
+                        //        penaltyZeroPts: $penaltyZeroPts, penaltyMaxTwoPts: $penaltyMaxTwoPts, penaltyMaxFourHalfPts: $penaltyMaxFourHalfPts, penaltyMinusTwoPts: $penaltyMinusTwoPts, penaltyMinusHalfToTwoPts: $penaltyMinusHalfToTwoPts, penaltyJudgeOpinion: $penaltyJudgeOpinion
+
 
                         Spacer ()
                         // Max 2 pts
-                        PenaltyButton (buttonImage: "lessthan.circle.fill", buttonText: NSLocalizedString("Button-max2pts", comment: "Button Description"), buttonImageWidth: penaltyIconImageWidth, buttonImageHeight: penaltyIconImageHeight, isOn: (userSanctionSelection == 2), sanctionSelection: $userSanctionSelection, sanctionID: 2)
+                        PenaltyButton (buttonImage: "lessthan.circle.fill", buttonText: NSLocalizedString("Button-max2pts", comment: "Button Description"), buttonImageWidth: penaltyIconImageWidth, buttonImageHeight: penaltyIconImageHeight, isOn: $penaltyMaxTwoPts, sanctionSelection: $userSanctionSelection, sanctionID: 2, penaltyZeroPts: $penaltyZeroPts, penaltyMaxTwoPts: $penaltyMaxTwoPts, penaltyMaxFourHalfPts: $penaltyMaxFourHalfPts, penaltyMinusTwoPts: $penaltyMinusTwoPts, penaltyMinusHalfToTwoPts: $penaltyMinusHalfToTwoPts, penaltyJudgeOpinion: $penaltyJudgeOpinion)
 //                        PenaltyMaxTwoPtsButton (isSet: resetPenalties)
                         Spacer ()
                         // Max 4 1/2 pts
-                        PenaltyButton (buttonImage: "lessthan.circle", buttonText: NSLocalizedString("Button-max4halfpts", comment: "Button Description"), buttonImageWidth: penaltyIconImageWidth, buttonImageHeight: penaltyIconImageHeight, isOn: (userSanctionSelection == 3), sanctionSelection: $userSanctionSelection, sanctionID: 3)
+                        PenaltyButton (buttonImage: "lessthan.circle", buttonText: NSLocalizedString("Button-max4halfpts", comment: "Button Description"), buttonImageWidth: penaltyIconImageWidth, buttonImageHeight: penaltyIconImageHeight, isOn: $penaltyMaxFourHalfPts, sanctionSelection: $userSanctionSelection, sanctionID: 3, penaltyZeroPts: $penaltyZeroPts, penaltyMaxTwoPts: $penaltyMaxTwoPts, penaltyMaxFourHalfPts: $penaltyMaxFourHalfPts, penaltyMinusTwoPts: $penaltyMinusTwoPts, penaltyMinusHalfToTwoPts: $penaltyMinusHalfToTwoPts, penaltyJudgeOpinion: $penaltyJudgeOpinion)
 //                        PenaltyMaxFourHalfPtsButton (isSet: resetPenalties)
                         Spacer ()
                    }
@@ -81,15 +90,15 @@ struct QuizzQuestionView: View {
                         //Penalty Line 2
                         Spacer ()
                         // -2 pts
-                        PenaltyButton (buttonImage: "gobackward.minus", buttonText: NSLocalizedString("Button--2pts", comment: "Button Description"), buttonImageWidth: penaltyIconImageWidth, buttonImageHeight: penaltyIconImageHeight, isOn: (userSanctionSelection == 1), sanctionSelection: $userSanctionSelection, sanctionID: 1)
+                        PenaltyButton (buttonImage: "gobackward.minus", buttonText: NSLocalizedString("Button--2pts", comment: "Button Description"), buttonImageWidth: penaltyIconImageWidth, buttonImageHeight: penaltyIconImageHeight, isOn: $penaltyMinusTwoPts, sanctionSelection: $userSanctionSelection, sanctionID: 1, penaltyZeroPts: $penaltyZeroPts, penaltyMaxTwoPts: $penaltyMaxTwoPts, penaltyMaxFourHalfPts: $penaltyMaxFourHalfPts, penaltyMinusTwoPts: $penaltyMinusTwoPts, penaltyMinusHalfToTwoPts: $penaltyMinusHalfToTwoPts, penaltyJudgeOpinion: $penaltyJudgeOpinion)
 //                        PenaltyMinusTwoPtsButton (isSet: resetPenalties)
                         Spacer ()
                         // -1/2 to 2 pts
-                        PenaltyButton (buttonImage: "arrow.left.and.right.circle", buttonText: NSLocalizedString("Button--halfto2pts", comment: "Button Description"), buttonImageWidth: penaltyIconImageWidth, buttonImageHeight: penaltyIconImageHeight, isOn: (userSanctionSelection == 4), sanctionSelection: $userSanctionSelection, sanctionID: 4)
+                        PenaltyButton (buttonImage: "arrow.left.and.right.circle", buttonText: NSLocalizedString("Button--halfto2pts", comment: "Button Description"), buttonImageWidth: penaltyIconImageWidth, buttonImageHeight: penaltyIconImageHeight, isOn: $penaltyMinusHalfToTwoPts, sanctionSelection: $userSanctionSelection, sanctionID: 4, penaltyZeroPts: $penaltyZeroPts, penaltyMaxTwoPts: $penaltyMaxTwoPts, penaltyMaxFourHalfPts: $penaltyMaxFourHalfPts, penaltyMinusTwoPts: $penaltyMinusTwoPts, penaltyMinusHalfToTwoPts: $penaltyMinusHalfToTwoPts, penaltyJudgeOpinion: $penaltyJudgeOpinion)
 //                        PenaltyMinusHalfToTwoPtsButton (isSet: resetPenalties)
                         Spacer ()
                         // judge Opinion
-                        PenaltyButton (buttonImage: "plusminus.circle", buttonText: NSLocalizedString("Button-judgeOpinion", comment: "Button Description"), buttonImageWidth: penaltyIconImageWidth, buttonImageHeight: penaltyIconImageHeight, isOn: (userSanctionSelection == 5), sanctionSelection: $userSanctionSelection, sanctionID: 4)
+                        PenaltyButton (buttonImage: "plusminus.circle", buttonText: NSLocalizedString("Button-judgeOpinion", comment: "Button Description"), buttonImageWidth: penaltyIconImageWidth, buttonImageHeight: penaltyIconImageHeight, isOn: $penaltyJudgeOpinion, sanctionSelection: $userSanctionSelection, sanctionID: 5, penaltyZeroPts: $penaltyZeroPts, penaltyMaxTwoPts: $penaltyMaxTwoPts, penaltyMaxFourHalfPts: $penaltyMaxFourHalfPts, penaltyMinusTwoPts: $penaltyMinusTwoPts, penaltyMinusHalfToTwoPts: $penaltyMinusHalfToTwoPts, penaltyJudgeOpinion: $penaltyJudgeOpinion)
 //                        PenaltyJudgeOpinionButton (isSet: resetPenalties)
                         Spacer ()
                     }
@@ -140,7 +149,7 @@ struct QuizzQuestionView: View {
                     
                     .alert(isPresented: $showingScore) {
                         // ToDo >>>> Look how to update Translation string with parameter
-                        Alert(title: Text(scoreTitle), message: Text(NSLocalizedString("Quizz-Score-Message  \(score)", comment: "Alert Quizz Message")), dismissButton: .default(Text("Quizz-Next")) {
+                        Alert(title: Text(scoreTitle), message: Text(NSLocalizedString("Quizz-Score-Message \(score)/\(answeredQuestions)", comment: "Alert Quizz Message")), dismissButton: .default(Text("Quizz-Next")) {
                             self.askNewQuestion()
                         })
                     }
@@ -150,6 +159,7 @@ struct QuizzQuestionView: View {
 
             }
             .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+            Spacer ()
         }
     }
    
@@ -159,9 +169,12 @@ struct QuizzQuestionView: View {
         if userSanctionSelection == penalty.sanctionValue {
             scoreTitle = NSLocalizedString("Quizz-Score-Message-Correct", comment: "Alert Quizz Title OK")
             score += 1
+            print("[nextQuestion] Score updated to: \(score)")
         } else {
             scoreTitle = NSLocalizedString("Quizz-Score-Message-Wrong", comment: "Alert Quizz Title error")
+            print("[nextQuestion] Wrong answer")
         }
+        answeredQuestions += 1
         showingScore = true
     }
 
@@ -172,6 +185,13 @@ struct QuizzQuestionView: View {
         penatlyNumber = Int.random(in: 0...45)
         userSanctionSelection = 40
 //        resetPenalties = false
+        penaltyZeroPts = false
+        penaltyMaxTwoPts = false
+        penaltyMaxFourHalfPts = false
+        penaltyMinusTwoPts = false
+        penaltyMinusHalfToTwoPts = false
+        penaltyJudgeOpinion = false
+
     }
 
 }

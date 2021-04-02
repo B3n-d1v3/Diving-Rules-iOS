@@ -16,6 +16,7 @@ struct Diving_RulesApp: App {
             TabView {
                 NavigationView {
                     RuleBookView()
+                        .navigationBarTitle("RuleBook-Title", displayMode: NavigationBarItem.TitleDisplayMode.inline)
                 }
                 .tabItem {
                     Image (systemName: "book")
@@ -26,6 +27,7 @@ struct Diving_RulesApp: App {
                 
                 NavigationView {
                     PenaltiesListView()
+                        .navigationBarTitle("Penalties-List-Title")
                 }
                 .tabItem {
                     Image (systemName: "square.fill.text.grid.1x2")
@@ -34,6 +36,7 @@ struct Diving_RulesApp: App {
                 
                 NavigationView {
                     QuizzStartView()
+                        .navigationBarTitle("Quizz-Title")
                 }
                 .tabItem {
                     Image (systemName: "checkmark")
@@ -41,6 +44,7 @@ struct Diving_RulesApp: App {
                 }
                 NavigationView {
                     SearchView()
+                        .navigationBarTitle("Search-Title")
                 }
                 .tabItem {
                     Image (systemName: "magnifyingglass")

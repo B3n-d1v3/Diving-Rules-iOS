@@ -16,7 +16,7 @@ struct PenaltiesListView: View {
                     //PenaltyRowView (penalties: penalty, sanctions: sanction)
                 }
             }
-            .navigationTitle("Penalties-List-Title")
+//            .navigationTitle("Penalties-List-Title")
             Spacer ()
         }
 }

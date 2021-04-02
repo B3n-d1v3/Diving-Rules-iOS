@@ -32,6 +32,7 @@ struct PenaltyDetailView: View {
                             .padding(.bottom)
                             
                         Text(penalty.description)
+//                            .fixedSize(horizontal: false, vertical: true)
                     }
                     HStack {
                         Spacer()
@@ -58,8 +59,7 @@ struct PenaltyDetailView: View {
                         //Penalty Line 1
                         Spacer ()
                         // 0 pts
-                        PenaltyButton (buttonImage: "0.circle", buttonText: NSLocalizedString("Button-0pts", comment: "Button Description"), buttonImageWidth: penaltyIconImageWidth, buttonImageHeight: penaltyIconImageHeight, isOn: (penalty.sanctionValue == 0), sanctionSelection:$userSanctionSelection , sanctionID: penalty.sanctionValue)
-//                        PenaltyZeroPtsButton(isOn: (penalty.sanctionValue == 0), sanctionSelection: penalty.sanctionValue)
+                        PenaltyZeroPtsButton(isOn: (penalty.sanctionValue == 0))
                             .disabled(true)
                         Spacer ()
                         // Max 2 pts

@@ -64,7 +64,10 @@
 "Button-Referee" = "Árbitro";
 
 /*Quizz Selection Page
- Quizz - Intro Title*/
+ Quizz - Title*/
+"Quizz-Title" = "Quizz";
+
+/* Quizz - Intro Title*/
 "Quizz-Intro-Title" = "Toma una prueba";
 
 /*Quizz - Intro Description*/
@@ -84,3 +87,11 @@
 
 /*Quizz - Question Page Score Title Wrong Answer*/
 "Quizz-Score-Message-Wrong" = "Respuesta incorrecta";
+
+/* Search Selection Page
+ Search - Title*/
+"Search-Title" = "Search The Rules";
+
+/* Rule Book Selection Page
+ Rule Book - Title*/
+"RuleBook-Title" = "Rule Book";

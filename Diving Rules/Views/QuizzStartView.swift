@@ -7,6 +7,10 @@
 
 import SwiftUI
 
+
+// ToDo >>>>> update the page to ask for the type of quiz and the number of questions
+//       https://www.youtube.com/watch?v=Ho88Eid9gi0
+
 struct QuizzStartView: View {
     var body: some View {
         VStack {

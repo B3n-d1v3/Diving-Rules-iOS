@@ -18,7 +18,7 @@
 "Navigation-Menu-Penalties" = "Pénalités";
 
 /*Navigation - Quizz Menu Item*/
-"Navigation-Menu-Quizz" = "Questionnaire";
+"Navigation-Menu-Quizz" = "Quiz";
 
 /*Navigation - Search Menu Item*/
 "Navigation-Menu-Search" = "Recherche";
@@ -64,7 +64,10 @@
 "Button-Referee" = "Arbitre";
 
 /*Quizz Selection Page
- Quizz - Intro Title*/
+ Quizz - Title*/
+"Quizz-Title" = "Quiz";
+
+/* Quizz - Intro Title*/
 "Quizz-Intro-Title" = "Testez vos connaissances";
 
 /*Quizz - Intro Description*/
@@ -77,10 +80,18 @@
 "Quizz-Next" = "Suivant";
 
 /*Quizz - Question Page Score Message*/
-"Quizz-Score-Message %@" = "Votre score est %@";
+"Quizz-Score-Message %@" = "Votre avez marqué %@ points.";
 
 /*Quizz - Question Page Score Title Good Answer*/
 "Quizz-Score-Message-Correct" = "Bonne réponse";
 
 /*Quizz - Question Page Score Title Wrong Answer*/
 "Quizz-Score-Message-Wrong" = "Mauvaise réponse";
+
+/* Search Selection Page
+ Search - Title*/
+"Search-Title" = "Rechercher Règlement";
+
+/* Rule Book Selection Page
+ Rule Book - Title*/
+"RuleBook-Title" = "Règlement Plongeon";
