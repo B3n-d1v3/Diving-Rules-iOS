@@ -21,6 +21,8 @@ struct PenaltyDetailView: View {
 //    @State private var penaltyJudgeOpinion = false
     @State private var ownershipReferee = false
     @State private var ownershipJudge = false
+    @State private var nextQuestion = false
+
 
 //    var ruleSanctionId: Int
 
@@ -116,15 +118,15 @@ struct PenaltyDetailView: View {
                         // ToDo >>>>>> Missing link from penalty ownership value to the binding ownership
                         
                         // Ownership Referee
-                        OwnershipRefereeButton (isOn: $ownershipReferee)
+                        OwnershipRefereeButton (isOn: $ownershipReferee, sanctionSelection: $userSanctionSelection, ownershipJudge: $ownershipJudge, nextQuestion: $nextQuestion)
                             .disabled(true)
-
+                        
 //                        .onTapGesture {
 //                            isOwnerReferee.toggle()
 //                        }
                         Spacer ()
                         // Ownership Judge
-                        OwnershipJudgeButton (isOn: $ownershipJudge)
+                        OwnershipJudgeButton (isOn: $ownershipJudge, sanctionSelection: $userSanctionSelection, ownershipReferee: $ownershipReferee, nextQuestion: $nextQuestion)
                             .disabled(true)
                     }
                     .padding(.horizontal, 30.0)

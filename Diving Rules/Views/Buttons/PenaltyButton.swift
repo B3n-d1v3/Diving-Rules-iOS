@@ -16,18 +16,24 @@ struct PenaltyButton: View {
     @Binding var sanctionSelection: Int
     var sanctionID: Int
     
+    // button status
     @Binding var penaltyZeroPts: Bool
     @Binding var penaltyMaxTwoPts: Bool
     @Binding var penaltyMaxFourHalfPts: Bool
     @Binding var penaltyMinusTwoPts: Bool
     @Binding var penaltyMinusHalfToTwoPts: Bool
     @Binding var penaltyJudgeOpinion: Bool
+    
+    // Next Status
+    @Binding var ownershipReferee: Bool
+    @Binding var ownershipJudge: Bool
+    @Binding var nextQuestion: Bool
 
     
     var body: some View {
              Button(action: {
                 isOn.toggle()
-                // Does this action get executed ?????
+                // when button is turned on
                 if isOn {
                     sanctionSelection = sanctionID
                     if (sanctionID == 0) {penaltyZeroPts = true} else {penaltyZeroPts = false}
@@ -36,8 +42,8 @@ struct PenaltyButton: View {
                     if (sanctionID == 1) {penaltyMinusTwoPts = true} else {penaltyMinusTwoPts = false}
                     if (sanctionID == 4) {penaltyMinusHalfToTwoPts = true} else {penaltyMinusHalfToTwoPts = false}
                     if (sanctionID == 5) {penaltyJudgeOpinion = true} else {penaltyJudgeOpinion = false}
-
                 } else {
+                    // when button is turned off
                     sanctionSelection = 50
                     if (sanctionID == 0) {penaltyZeroPts = false}
                     if (sanctionID == 2) {penaltyMaxTwoPts = false}
@@ -46,7 +52,14 @@ struct PenaltyButton: View {
                     if (sanctionID == 4) {penaltyMinusHalfToTwoPts = false}
                     if (sanctionID == 5) {penaltyJudgeOpinion = false}
                 }
-                print("[PenaltyButton] Button activated: \(sanctionID) - toggle: \(isOn) -  sanctionSelection: \(sanctionSelection)")
+                if (sanctionSelection > 6) || (!ownershipReferee && !ownershipJudge) {
+                    // next button should be turned off
+                    nextQuestion = false
+                } else {
+                    // next button should be turned on
+                    nextQuestion = true
+                }
+                print("[PenaltyButton] Button activated: \(sanctionID) - toggle: \(isOn) -  sanctionSelection: \(sanctionSelection) - nextQuestion: \(nextQuestion)")
 
              }) {
                 VStack {
@@ -98,8 +111,12 @@ struct PenaltyButton_Previews: PreviewProvider {
     @State static var penaltyMinusTwoPts = false
     @State static var penaltyMinusHalfToTwoPts = false
     @State static var penaltyJudgeOpinion = false
+    @State static var ownershipReferee = false
+    @State static var ownershipJudge = false
+    @State static var nextQuestion = false
+
 
     static var previews: some View {
-        PenaltyButton(buttonImage: "0.circle", buttonText: "Button-0pts", buttonImageWidth: 40.0, buttonImageHeight: 40.0, isOn: $penaltyOn, sanctionSelection: $sanctionPreview, sanctionID: 0, penaltyZeroPts: $penaltyZeroPts, penaltyMaxTwoPts: $penaltyMaxTwoPts, penaltyMaxFourHalfPts: $penaltyMaxFourHalfPts, penaltyMinusTwoPts: $penaltyMinusTwoPts, penaltyMinusHalfToTwoPts: $penaltyMinusHalfToTwoPts, penaltyJudgeOpinion: $penaltyJudgeOpinion)
+        PenaltyButton(buttonImage: "0.circle", buttonText: "Button-0pts", buttonImageWidth: 40.0, buttonImageHeight: 40.0, isOn: $penaltyOn, sanctionSelection: $sanctionPreview, sanctionID: 0, penaltyZeroPts: $penaltyZeroPts, penaltyMaxTwoPts: $penaltyMaxTwoPts, penaltyMaxFourHalfPts: $penaltyMaxFourHalfPts, penaltyMinusTwoPts: $penaltyMinusTwoPts, penaltyMinusHalfToTwoPts: $penaltyMinusHalfToTwoPts, penaltyJudgeOpinion: $penaltyJudgeOpinion, ownershipReferee: $ownershipReferee, ownershipJudge: $ownershipJudge, nextQuestion: $nextQuestion)
     }
 }

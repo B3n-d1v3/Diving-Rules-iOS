@@ -34,6 +34,9 @@
 		B5D0DCCC25FD380400CDA3D3 /* 2017-2021_fina-diving_16032018.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B5D0DCCB25FD380400CDA3D3 /* 2017-2021_fina-diving_16032018.pdf */; };
 		B5E2B4C92609E43300530303 /* QuizzStartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E2B4C82609E43300530303 /* QuizzStartView.swift */; };
 		B5F697352613212E00A42E31 /* PenaltyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F697342613212D00A42E31 /* PenaltyButton.swift */; };
+		B5F697422618597200A42E31 /* StickerGood.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F697412618597200A42E31 /* StickerGood.swift */; };
+		B5F697452618E4F400A42E31 /* StickerWrong.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F697442618E4F400A42E31 /* StickerWrong.swift */; };
+		B5F697482618E54D00A42E31 /* StickerPartial.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F697472618E54D00A42E31 /* StickerPartial.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +71,9 @@
 		B5D0DCCB25FD380400CDA3D3 /* 2017-2021_fina-diving_16032018.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "2017-2021_fina-diving_16032018.pdf"; sourceTree = "<group>"; };
 		B5E2B4C82609E43300530303 /* QuizzStartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzStartView.swift; sourceTree = "<group>"; };
 		B5F697342613212D00A42E31 /* PenaltyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenaltyButton.swift; sourceTree = "<group>"; };
+		B5F697412618597200A42E31 /* StickerGood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerGood.swift; sourceTree = "<group>"; };
+		B5F697442618E4F400A42E31 /* StickerWrong.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerWrong.swift; sourceTree = "<group>"; };
+		B5F697472618E54D00A42E31 /* StickerPartial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerPartial.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +154,7 @@
 				B5D0DC7825FA0E0300CDA3D3 /* QuizzQuestionView.swift */,
 				B5D0DC9025FA1BD000CDA3D3 /* SearchView.swift */,
 				B58610972603AE2900A44778 /* Buttons */,
+				B5F6973C2618591100A42E31 /* Stickers */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -170,6 +177,16 @@
 				B5D0DCCB25FD380400CDA3D3 /* 2017-2021_fina-diving_16032018.pdf */,
 			);
 			path = Ressources;
+			sourceTree = "<group>";
+		};
+		B5F6973C2618591100A42E31 /* Stickers */ = {
+			isa = PBXGroup;
+			children = (
+				B5F697412618597200A42E31 /* StickerGood.swift */,
+				B5F697442618E4F400A42E31 /* StickerWrong.swift */,
+				B5F697472618E54D00A42E31 /* StickerPartial.swift */,
+			);
+			path = Stickers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5D0DC8E25FA1BBD00CDA3D3 /* RuleBookView.swift in Sources */,
+				B5F697482618E54D00A42E31 /* StickerPartial.swift in Sources */,
 				B5D0DC8825FA16DE00CDA3D3 /* Sanction.swift in Sources */,
 				B5D0DCBE25FA6FA200CDA3D3 /* PenaltiesListView.swift in Sources */,
 				B5D0DCC725FA836500CDA3D3 /* PenaltyDetailView.swift in Sources */,
@@ -257,10 +275,12 @@
 				B5E2B4C92609E43300530303 /* QuizzStartView.swift in Sources */,
 				B58610AD2603B40200A44778 /* PenaltyJudgeOpinionButton.swift in Sources */,
 				B5D0DC6B25FA086300CDA3D3 /* ContentView.swift in Sources */,
+				B5F697452618E4F400A42E31 /* StickerWrong.swift in Sources */,
 				B5D0DC6925FA086300CDA3D3 /* Diving_RulesApp.swift in Sources */,
 				B5D0DC7925FA0E0300CDA3D3 /* QuizzQuestionView.swift in Sources */,
 				B5D0DC9725FA2FF600CDA3D3 /* ModelData.swift in Sources */,
 				B5D0DC8B25FA16FB00CDA3D3 /* Penalty.swift in Sources */,
+				B5F697422618597200A42E31 /* StickerGood.swift in Sources */,
 				B586109D2603AF8500A44778 /* PenaltyZeroPtsButton.swift in Sources */,
 				B5D0DC9125FA1BD000CDA3D3 /* SearchView.swift in Sources */,
 				B5F697352613212E00A42E31 /* PenaltyButton.swift in Sources */,
