@@ -20,7 +20,7 @@ struct QuizzQuestionView: View {
     @State private var showingScore = false
     @State private var askForAnswer = false
     @State private var scoreTitle = ""
-    @State private var score = 0.0
+    @State private var score = 0
     @State private var answeredQuestions = 0 
     @State private var userSanctionSelection = 55
     var penaltyIconImageWidth: CGFloat = 40.0
@@ -183,12 +183,12 @@ struct QuizzQuestionView: View {
                     if (ownershipReferee == penalty.referee) && (ownershipJudge == penalty.judge) {
                         // if the Ownership answer is correct
                         scoreTitle = NSLocalizedString("Quizz-Score-Message-Correct", comment: "Alert Quizz Title OK")
-                        score += 1
+                        score += 10
                         print("[nextQuestion] Good answer")
                     } else if (ownershipReferee == penalty.referee) || (ownershipJudge == penalty.judge){
                        // if the ownership is shared between Referee and Judge and only one was selected
                         scoreTitle = NSLocalizedString("Quizz-Score-Message-Partly", comment: "Alert Quizz Title Almost")
-                        score += 0.5
+                        score += 5
                         print("[nextQuestion] Partial answer")
                     }
                     print("[nextQuestion] Score updated to: \(score)")
