@@ -5,13 +5,7 @@
   Created by Benoit SUZANNE on 22/03/2021.
   
 
- App Name - Full App name*/
- "CFBundleDisplayName" = "Diving Rules";
-
-/*App Name - Short App name 16 car*/
-"CFBundleName" = "Diving Rules";
-
- /*Navigation - Rules Menu Item*/
+ Navigation - Rules Menu Item*/
 "Navigation-Menu-Rules" = "Reglas";
 
 /*Navigation - Penalties Menu Item*/
@@ -64,10 +58,7 @@
 "Button-Referee" = "Árbitro";
 
 /*Quizz Selection Page
- Quizz - Title*/
-"Quizz-Title" = "Quizz";
-
-/* Quizz - Intro Title*/
+ Quizz - Intro Title*/
 "Quizz-Intro-Title" = "Toma una prueba";
 
 /*Quizz - Intro Description*/
@@ -80,21 +71,63 @@
 "Quizz-Next" = "Siguiente";
 
 /*Quizz - Question Page Score Message*/
-"Quizz-Score-Message %@" = "Su puntuación es %@";
+"Quizz-Score-Message" = "Su puntuación es";
 
 /*Quizz - Question Page Score Title Good Answer*/
 "Quizz-Score-Message-Correct" = "Respuesta correcta";
 
-/* Quizz - Question Page Score Title missing an owner saction*/
-"Quizz-Score-Message-Partly" = "Almost Good";
-
 /*Quizz - Question Page Score Title Wrong Answer*/
 "Quizz-Score-Message-Wrong" = "Respuesta incorrecta";
 
-/* Search Selection Page
- Search - Title*/
-"Search-Title" = "Search The Rules";
+/*Localizable.strings
+  Diving Rules
 
-/* Rule Book Selection Page
+  Created by Benoit SUZANNE on 22/03/2021.
+
+ App Name - Full App name*/
+"CFBundleDisplayName" = "Reglas de buceo";
+
+/*App Name - Short App name 16 car*/
+"CFBundleName" = "Reglas de buceo";
+
+/*Quizz Selection Page
+ Quizz - Title*/
+"Quizz-Title" = "Encuesta";
+
+/*Quizz - Question Page Score Message*/
+"Quizz-Score-Message %@" = "Has marcado% @ puntos.";
+
+/*Quizz - Question Page Score Title missing an owner saction*/
+"Quizz-Score-Message-Partly" = "Casi";
+
+/*Quizz - Result Title*/
+"Quizz-Result-Title" = "Resultado de la prueba";
+
+/*Quizz - Intro Description*/
+"Quizz-Result-Description" = "Aquí está su resultado en el cuestionario: ";
+
+/*Quizz - Result Start Button*/
+"Quizz-Result-Start-Button" = "Prueba nueva";
+
+/*Quizz - Good Sticker*/
+"Good" = "Bien";
+
+/*Quizz - Wrong Sticker*/
+"Wrong" = "No";
+
+/*Quizz - Good Sticker*/
+"Almost" = "Casi";
+
+/*Quizz - Good Sticker*/
+"Passed" = "Éxito";
+
+/*Quizz - Good Sticker*/
+"Failed" = "Ha fallado";
+
+/*Search Selection Page
+ Search - Title*/
+"Search-Title" = "Buscar las reglas";
+
+/*Rule Book Selection Page
  Rule Book - Title*/
-"RuleBook-Title" = "Rule Book";
+"RuleBook-Title" = "Normas";
