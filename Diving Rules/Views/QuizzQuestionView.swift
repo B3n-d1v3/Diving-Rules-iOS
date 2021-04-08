@@ -21,7 +21,8 @@ struct QuizzQuestionView: View {
     @State private var askForAnswer = false
     @State private var scoreTitle = ""
     @State private var score = 0
-    @State private var answeredQuestions = 0 
+    @State private var currentQuestion = 0
+    @State private var questionNumber = 5
     @State private var userSanctionSelection = 55
     var penaltyIconImageWidth: CGFloat = 40.0
     var penaltyIconImageHeight: CGFloat = 40.0
@@ -36,6 +37,7 @@ struct QuizzQuestionView: View {
     @State private var ownershipReferee = false
     @State private var ownershipJudge = false
     @State private var nextQuestion = false
+    @State private var lastQuestion = false
     
     // ToDo Init with all penalties sanctions to unselected
     
@@ -132,9 +134,30 @@ struct QuizzQuestionView: View {
                 Divider ()
                 // Navigation
                 HStack {
+                    HStack {
+                        Text(" \(currentQuestion+1) / \(questionNumber)")
+                            .font(.title3)
+                            .fontWeight(.semibold)
+                    }
+                    .padding(15.0)
+                    .foregroundColor(Color.white)
+                    .background(Color.gray)
+                    .cornerRadius(200)
+                    Spacer ()
+                    HStack {
+                        Text(" \(score) pts")
+                            .font(.title3)
+                            .fontWeight(.semibold)
+                    }
+                    .padding(15.0)
+                    .foregroundColor(Color.white)
+                    .background(Color.gray)
+                    .cornerRadius(200)
                     Spacer ()
                     Button (action: {
                         self.nextQuestion(penalty)
+                        lastQuestion = (currentQuestion >= questionNumber)
+                        print("[Next Button] lastQuestion: \(lastQuestion)")
                     }) {
                         Text("Quizz-Next")
                             .font(.title3)
@@ -147,20 +170,14 @@ struct QuizzQuestionView: View {
 //                    .background(Color.accentColor)
                     .background((nextQuestion ? Color("AccentColor") : Color.gray))
                     .cornerRadius(400)
+                    NavigationLink(destination: QuizzResultView (score: score, questionNumber: questionNumber), isActive: $lastQuestion) {}
                     
-                    
-                    .alert(isPresented: $showingScore) {
-                        // ToDo >>>> Look how to update Translation string with parameter
-                        Alert(title: Text(scoreTitle), message: Text(NSLocalizedString("Quizz-Score-Message \(score) / \(answeredQuestions)", comment: "Alert Quizz Message")), dismissButton: .default(Text("Quizz-Next")) {
-                            self.askNewQuestion()
-                        })
-                        // ToDo  >>>>>> Alert in case the answers have not been provided
-//                    .alert(isPresented: $askForAnswer) {
-//
-//                            Alert(title: Text(scoreTitle), message: Text(NSLocalizedString("Quizz-Score-Message \(score)/\(answeredQuestions)", comment: "Alert Quizz Message")), dismissButton: .default(Text("Quizz-Next")) {
-//                                self.askNewQuestion()
-//                            })
-                    }
+//                    .alert(isPresented: $showingScore) {
+//                        // ToDo >>>> Look how to update Translation string with parameter
+//                        Alert(title: Text(scoreTitle), message: Text(NSLocalizedString("Quizz-Score-Message \(score) / \(currentQuestion)", comment: "Alert Quizz Message")), dismissButton: .default(Text("Quizz-Next")) {
+//                            self.askNewQuestion()
+//                        })
+//                    }
                     
                 }
                 .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
@@ -198,8 +215,19 @@ struct QuizzQuestionView: View {
                     scoreTitle = NSLocalizedString("Quizz-Score-Message-Wrong", comment: "Alert Quizz Title error")
                     print("[nextQuestion] Wrong answer")
                 }
-                answeredQuestions += 1
-                showingScore = true
+            currentQuestion += 1
+            print("Question Status - currentQuestion: \(currentQuestion) / questionNumber: \(questionNumber)")
+//            showingScore = true
+            if currentQuestion < questionNumber{
+                // if the are still questions to answer
+                print("Jumpt to the Next Question")
+                self.askNewQuestion()
+            } else {
+                // if this was the last question
+                print("End of Quizz - switch to Result Page")
+                //change to QuestionResultView
+//                QuizzResultView (score: score, questionNumber: questionNumber)
+            }
         }
     }
 

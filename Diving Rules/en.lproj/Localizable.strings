@@ -92,6 +92,30 @@
 /* Quizz - Question Page Score Title Wrong Answer*/
 "Quizz-Score-Message-Wrong" = "Wrong Answer";
 
+/* Quizz - Result Title*/
+"Quizz-Result-Title" = "Quizz Result";
+
+/* Quizz - Intro Description*/
+"Quizz-Result-Description" = "Here is the result of your answer to this Quizz: ";
+
+/* Quizz - Result Start Button*/
+"Quizz-Result-Start-Button" = "New Quizz";
+
+/* Quizz - Good Sticker*/
+"Good" = "Good";
+
+/* Quizz - Wrong Sticker*/
+"Wrong" = "Wrong";
+
+/* Quizz - Good Sticker*/
+"Almost" = "Almost";
+
+/* Quizz - Good Sticker*/
+"Passed" = "Passed";
+
+/* Quizz - Good Sticker*/
+"Failed" = "Failed";
+
 /* Search Selection Page
  Search - Title*/
 "Search-Title" = "Search The Rules";

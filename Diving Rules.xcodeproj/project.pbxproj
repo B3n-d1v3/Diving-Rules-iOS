@@ -37,6 +37,10 @@
 		B5F697422618597200A42E31 /* StickerGood.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F697412618597200A42E31 /* StickerGood.swift */; };
 		B5F697452618E4F400A42E31 /* StickerWrong.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F697442618E4F400A42E31 /* StickerWrong.swift */; };
 		B5F697482618E54D00A42E31 /* StickerPartial.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F697472618E54D00A42E31 /* StickerPartial.swift */; };
+		B5F69750261DEC8E00A42E31 /* QuizzResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F6974F261DEC8E00A42E31 /* QuizzResultView.swift */; };
+		B5F69753261DF01400A42E31 /* Sticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F69752261DF01400A42E31 /* Sticker.swift */; };
+		B5F69756261DF4EB00A42E31 /* StickerPassed.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F69755261DF4EB00A42E31 /* StickerPassed.swift */; };
+		B5F69759261DF58800A42E31 /* StickerFailed.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F69758261DF58800A42E31 /* StickerFailed.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +78,10 @@
 		B5F697412618597200A42E31 /* StickerGood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerGood.swift; sourceTree = "<group>"; };
 		B5F697442618E4F400A42E31 /* StickerWrong.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerWrong.swift; sourceTree = "<group>"; };
 		B5F697472618E54D00A42E31 /* StickerPartial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerPartial.swift; sourceTree = "<group>"; };
+		B5F6974F261DEC8E00A42E31 /* QuizzResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzResultView.swift; sourceTree = "<group>"; };
+		B5F69752261DF01400A42E31 /* Sticker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sticker.swift; sourceTree = "<group>"; };
+		B5F69755261DF4EB00A42E31 /* StickerPassed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerPassed.swift; sourceTree = "<group>"; };
+		B5F69758261DF58800A42E31 /* StickerFailed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerFailed.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +160,7 @@
 				B5D0DCC625FA836500CDA3D3 /* PenaltyDetailView.swift */,
 				B5E2B4C82609E43300530303 /* QuizzStartView.swift */,
 				B5D0DC7825FA0E0300CDA3D3 /* QuizzQuestionView.swift */,
+				B5F6974F261DEC8E00A42E31 /* QuizzResultView.swift */,
 				B5D0DC9025FA1BD000CDA3D3 /* SearchView.swift */,
 				B58610972603AE2900A44778 /* Buttons */,
 				B5F6973C2618591100A42E31 /* Stickers */,
@@ -183,8 +192,11 @@
 			isa = PBXGroup;
 			children = (
 				B5F697412618597200A42E31 /* StickerGood.swift */,
+				B5F69755261DF4EB00A42E31 /* StickerPassed.swift */,
+				B5F69758261DF58800A42E31 /* StickerFailed.swift */,
 				B5F697442618E4F400A42E31 /* StickerWrong.swift */,
 				B5F697472618E54D00A42E31 /* StickerPartial.swift */,
+				B5F69752261DF01400A42E31 /* Sticker.swift */,
 			);
 			path = Stickers;
 			sourceTree = "<group>";
@@ -268,11 +280,14 @@
 				B5F697482618E54D00A42E31 /* StickerPartial.swift in Sources */,
 				B5D0DC8825FA16DE00CDA3D3 /* Sanction.swift in Sources */,
 				B5D0DCBE25FA6FA200CDA3D3 /* PenaltiesListView.swift in Sources */,
+				B5F69759261DF58800A42E31 /* StickerFailed.swift in Sources */,
 				B5D0DCC725FA836500CDA3D3 /* PenaltyDetailView.swift in Sources */,
+				B5F69753261DF01400A42E31 /* Sticker.swift in Sources */,
 				B58610952603976300A44778 /* OwnershipRefereeButton.swift in Sources */,
 				B58610A42603B29300A44778 /* PenaltyMaxFourHalfPtsButton.swift in Sources */,
 				B58610A12603B1DF00A44778 /* PenaltyMaxTwoPtsButton.swift in Sources */,
 				B5E2B4C92609E43300530303 /* QuizzStartView.swift in Sources */,
+				B5F69756261DF4EB00A42E31 /* StickerPassed.swift in Sources */,
 				B58610AD2603B40200A44778 /* PenaltyJudgeOpinionButton.swift in Sources */,
 				B5D0DC6B25FA086300CDA3D3 /* ContentView.swift in Sources */,
 				B5F697452618E4F400A42E31 /* StickerWrong.swift in Sources */,
@@ -281,6 +296,7 @@
 				B5D0DC9725FA2FF600CDA3D3 /* ModelData.swift in Sources */,
 				B5D0DC8B25FA16FB00CDA3D3 /* Penalty.swift in Sources */,
 				B5F697422618597200A42E31 /* StickerGood.swift in Sources */,
+				B5F69750261DEC8E00A42E31 /* QuizzResultView.swift in Sources */,
 				B586109D2603AF8500A44778 /* PenaltyZeroPtsButton.swift in Sources */,
 				B5D0DC9125FA1BD000CDA3D3 /* SearchView.swift in Sources */,
 				B5F697352613212E00A42E31 /* PenaltyButton.swift in Sources */,
