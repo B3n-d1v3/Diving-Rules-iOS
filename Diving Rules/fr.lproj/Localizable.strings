@@ -70,15 +70,6 @@
 /*Quizz - Question Page Next Button*/
 "Quizz-Next" = "Suivant";
 
-/*Quizz - Question Page Score Message*/
-"Quizz-Score-Message" = "Votre score est";
-
-/*Quizz - Question Page Score Title Good Answer*/
-"Quizz-Score-Message-Correct" = "Bonne réponse";
-
-/*Quizz - Question Page Score Title Wrong Answer*/
-"Quizz-Score-Message-Wrong" = "Mauvaise réponse";
-
 /*Localizable.strings
   Diving Rules
 
@@ -93,12 +84,6 @@
 /*Quizz Selection Page
  Quizz - Title*/
 "Quizz-Title" = "Questionnaire";
-
-/*Quizz - Question Page Score Message*/
-"Quizz-Score-Message %@" = "Vous avez marqué %@ points.";
-
-/*Quizz - Question Page Score Title missing an owner saction*/
-"Quizz-Score-Message-Partly" = "Presque";
 
 /*Quizz - Result Title*/
 "Quizz-Result-Title" = "Résultat du Quizz";

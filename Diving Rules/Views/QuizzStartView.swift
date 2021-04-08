@@ -21,12 +21,15 @@ struct QuizzStartView: View {
                 .padding(.all)
             Text ("Quizz-Intro-Description")
                 .padding(.all)
+            Divider ()
 //            Spacer ()
-            Form (content: {
+//            Form (content: {
                 Stepper(value: $questionNumber, in: 5...40, step: 5) {
                     Text("Number of Questions: \(questionNumber)")
                 }
-            })
+                .padding(.all)
+//            })
+            Divider ()
             Spacer ()
             NavigationLink(destination: QuizzQuestionView (questionNumber: questionNumber)) {
                 Text("Quizz-Intro-Start-Button")

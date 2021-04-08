@@ -19,7 +19,6 @@ struct QuizzQuestionView: View {
     
     @State private var showingScore = false
     @State private var askForAnswer = false
-    @State private var scoreTitle = ""
     @State private var score = 0
     @State private var currentQuestion = 0
 //    @State private var questionNumber = 5
@@ -158,14 +157,7 @@ struct QuizzQuestionView: View {
                     .background((nextQuestion ? Color("AccentColor") : Color.gray))
                     .cornerRadius(400)
                     NavigationLink(destination: QuizzResultView (score: score, questionNumber: questionNumber), isActive: $lastQuestion) {}
-                    
-                    //                    .alert(isPresented: $showingScore) {
-                    //                        // ToDo >>>> Look how to update Translation string with parameter
-                    //                        Alert(title: Text(scoreTitle), message: Text(NSLocalizedString("Quizz-Score-Message \(score) / \(currentQuestion)", comment: "Alert Quizz Message")), dismissButton: .default(Text("Quizz-Next")) {
-                    //                            self.askNewQuestion()
-                    //                        })
-                    //                    }
-                    
+                                        
                     Spacer ()
                     Text(" \(currentQuestion+1) / \(questionNumber)")
                         .padding(10.0)
@@ -192,12 +184,10 @@ struct QuizzQuestionView: View {
                 // if the penalty answer is correct
                     if (ownershipReferee == penalty.referee) && (ownershipJudge == penalty.judge) {
                         // if the Ownership answer is correct
-                        scoreTitle = NSLocalizedString("Quizz-Score-Message-Correct", comment: "Alert Quizz Title OK")
                         score += 10
                         print("[nextQuestion] Good answer")
                     } else if (ownershipReferee == penalty.referee) || (ownershipJudge == penalty.judge){
                        // if the ownership is shared between Referee and Judge and only one was selected
-                        scoreTitle = NSLocalizedString("Quizz-Score-Message-Partly", comment: "Alert Quizz Title Almost")
                         score += 5
                         print("[nextQuestion] Partial answer")
                     }
@@ -205,12 +195,10 @@ struct QuizzQuestionView: View {
                 
                 } else {
                     // if the penalty is wrong
-                    scoreTitle = NSLocalizedString("Quizz-Score-Message-Wrong", comment: "Alert Quizz Title error")
                     print("[nextQuestion] Wrong answer")
                 }
             currentQuestion += 1
             print("Question Status - currentQuestion: \(currentQuestion) / questionNumber: \(questionNumber)")
-//            showingScore = true
             if currentQuestion < questionNumber{
                 // if the are still questions to answer
                 print("Jumpt to the Next Question")
@@ -218,8 +206,6 @@ struct QuizzQuestionView: View {
             } else {
                 // if this was the last question
                 print("End of Quizz - switch to Result Page")
-                //change to QuestionResultView
-//                QuizzResultView (score: score, questionNumber: questionNumber)
             }
         }
     }
