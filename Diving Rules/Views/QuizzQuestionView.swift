@@ -22,7 +22,8 @@ struct QuizzQuestionView: View {
     @State private var scoreTitle = ""
     @State private var score = 0
     @State private var currentQuestion = 0
-    @State private var questionNumber = 5
+//    @State private var questionNumber = 5
+    var questionNumber: Int
     @State private var userSanctionSelection = 55
     var penaltyIconImageWidth: CGFloat = 40.0
     var penaltyIconImageHeight: CGFloat = 40.0
@@ -45,25 +46,25 @@ struct QuizzQuestionView: View {
         ScrollView {
             let penalty = penalties[penatlyNumber]
             VStack(alignment: .leading) {
-
-                    //Rule Description
-                    VStack (alignment: .leading) {
-                        Text("Penalty-Rule")
-                            .font(.title)
-                            .foregroundColor(Color.accentColor)
-                            .padding(.bottom, 1.0)
-
-                        Text("Penalty-Description")
-                            .font(.title2)
-                            .foregroundColor(Color.accentColor)
-                            .padding(.bottom)
-                            
-                        Text(penalty.description)
-                            .fixedSize(horizontal: false, vertical: true)
-                    }
-
-
-
+                
+                //Rule Description
+                VStack (alignment: .leading) {
+                    Text("Penalty-Rule")
+                        .font(.title)
+                        .foregroundColor(Color.accentColor)
+                        .padding(.bottom, 1.0)
+                    
+                    Text("Penalty-Description")
+                        .font(.title2)
+                        .foregroundColor(Color.accentColor)
+                        .padding(.bottom)
+                    
+                    Text(penalty.description)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
+                
+                
+                
                 Spacer()
                 Divider ()
                 //What is the saction for this penalty
@@ -72,7 +73,7 @@ struct QuizzQuestionView: View {
                     .foregroundColor(Color.accentColor)
                     .multilineTextAlignment(.leading)
                     .padding(.bottom)
-
+                
                 VStack(alignment: .center) {
                     HStack{
                         //Penalty Line 1
@@ -80,32 +81,32 @@ struct QuizzQuestionView: View {
                         // 0 pts
                         PenaltyButton (buttonImage: "0.circle", buttonText: NSLocalizedString("Button-0pts", comment: "Button Description"), buttonImageWidth: penaltyIconImageWidth, buttonImageHeight: penaltyIconImageHeight, isOn: $penaltyZeroPts, sanctionSelection: $userSanctionSelection, sanctionID: 0, penaltyZeroPts: $penaltyZeroPts, penaltyMaxTwoPts: $penaltyMaxTwoPts, penaltyMaxFourHalfPts: $penaltyMaxFourHalfPts, penaltyMinusTwoPts: $penaltyMinusTwoPts, penaltyMinusHalfToTwoPts: $penaltyMinusHalfToTwoPts, penaltyJudgeOpinion: $penaltyJudgeOpinion, ownershipReferee: $ownershipReferee, ownershipJudge: $ownershipJudge, nextQuestion: $nextQuestion)
                         //        penaltyZeroPts: $penaltyZeroPts, penaltyMaxTwoPts: $penaltyMaxTwoPts, penaltyMaxFourHalfPts: $penaltyMaxFourHalfPts, penaltyMinusTwoPts: $penaltyMinusTwoPts, penaltyMinusHalfToTwoPts: $penaltyMinusHalfToTwoPts, penaltyJudgeOpinion: $penaltyJudgeOpinion
-
-
+                        
+                        
                         Spacer ()
                         // Max 2 pts
                         PenaltyButton (buttonImage: "lessthan.circle.fill", buttonText: NSLocalizedString("Button-max2pts", comment: "Button Description"), buttonImageWidth: penaltyIconImageWidth, buttonImageHeight: penaltyIconImageHeight, isOn: $penaltyMaxTwoPts, sanctionSelection: $userSanctionSelection, sanctionID: 2, penaltyZeroPts: $penaltyZeroPts, penaltyMaxTwoPts: $penaltyMaxTwoPts, penaltyMaxFourHalfPts: $penaltyMaxFourHalfPts, penaltyMinusTwoPts: $penaltyMinusTwoPts, penaltyMinusHalfToTwoPts: $penaltyMinusHalfToTwoPts, penaltyJudgeOpinion: $penaltyJudgeOpinion, ownershipReferee: $ownershipReferee, ownershipJudge: $ownershipJudge, nextQuestion: $nextQuestion)
-//                        PenaltyMaxTwoPtsButton (isSet: resetPenalties)
+                        //                        PenaltyMaxTwoPtsButton (isSet: resetPenalties)
                         Spacer ()
                         // Max 4 1/2 pts
                         PenaltyButton (buttonImage: "lessthan.circle", buttonText: NSLocalizedString("Button-max4halfpts", comment: "Button Description"), buttonImageWidth: penaltyIconImageWidth, buttonImageHeight: penaltyIconImageHeight, isOn: $penaltyMaxFourHalfPts, sanctionSelection: $userSanctionSelection, sanctionID: 3, penaltyZeroPts: $penaltyZeroPts, penaltyMaxTwoPts: $penaltyMaxTwoPts, penaltyMaxFourHalfPts: $penaltyMaxFourHalfPts, penaltyMinusTwoPts: $penaltyMinusTwoPts, penaltyMinusHalfToTwoPts: $penaltyMinusHalfToTwoPts, penaltyJudgeOpinion: $penaltyJudgeOpinion, ownershipReferee: $ownershipReferee, ownershipJudge: $ownershipJudge, nextQuestion: $nextQuestion)
-//                        PenaltyMaxFourHalfPtsButton (isSet: resetPenalties)
+                        //                        PenaltyMaxFourHalfPtsButton (isSet: resetPenalties)
                         Spacer ()
-                   }
+                    }
                     HStack{
                         //Penalty Line 2
                         Spacer ()
                         // -2 pts
                         PenaltyButton (buttonImage: "gobackward.minus", buttonText: NSLocalizedString("Button--2pts", comment: "Button Description"), buttonImageWidth: penaltyIconImageWidth, buttonImageHeight: penaltyIconImageHeight, isOn: $penaltyMinusTwoPts, sanctionSelection: $userSanctionSelection, sanctionID: 1, penaltyZeroPts: $penaltyZeroPts, penaltyMaxTwoPts: $penaltyMaxTwoPts, penaltyMaxFourHalfPts: $penaltyMaxFourHalfPts, penaltyMinusTwoPts: $penaltyMinusTwoPts, penaltyMinusHalfToTwoPts: $penaltyMinusHalfToTwoPts, penaltyJudgeOpinion: $penaltyJudgeOpinion, ownershipReferee: $ownershipReferee, ownershipJudge: $ownershipJudge, nextQuestion: $nextQuestion)
-//                        PenaltyMinusTwoPtsButton (isSet: resetPenalties)
+                        //                        PenaltyMinusTwoPtsButton (isSet: resetPenalties)
                         Spacer ()
                         // -1/2 to 2 pts
                         PenaltyButton (buttonImage: "arrow.left.and.right.circle", buttonText: NSLocalizedString("Button--halfto2pts", comment: "Button Description"), buttonImageWidth: penaltyIconImageWidth, buttonImageHeight: penaltyIconImageHeight, isOn: $penaltyMinusHalfToTwoPts, sanctionSelection: $userSanctionSelection, sanctionID: 4, penaltyZeroPts: $penaltyZeroPts, penaltyMaxTwoPts: $penaltyMaxTwoPts, penaltyMaxFourHalfPts: $penaltyMaxFourHalfPts, penaltyMinusTwoPts: $penaltyMinusTwoPts, penaltyMinusHalfToTwoPts: $penaltyMinusHalfToTwoPts, penaltyJudgeOpinion: $penaltyJudgeOpinion, ownershipReferee: $ownershipReferee, ownershipJudge: $ownershipJudge, nextQuestion: $nextQuestion)
-//                        PenaltyMinusHalfToTwoPtsButton (isSet: resetPenalties)
+                        //                        PenaltyMinusHalfToTwoPtsButton (isSet: resetPenalties)
                         Spacer ()
                         // judge Opinion
                         PenaltyButton (buttonImage: "plusminus.circle", buttonText: NSLocalizedString("Button-judgeOpinion", comment: "Button Description"), buttonImageWidth: penaltyIconImageWidth, buttonImageHeight: penaltyIconImageHeight, isOn: $penaltyJudgeOpinion, sanctionSelection: $userSanctionSelection, sanctionID: 5, penaltyZeroPts: $penaltyZeroPts, penaltyMaxTwoPts: $penaltyMaxTwoPts, penaltyMaxFourHalfPts: $penaltyMaxFourHalfPts, penaltyMinusTwoPts: $penaltyMinusTwoPts, penaltyMinusHalfToTwoPts: $penaltyMinusHalfToTwoPts, penaltyJudgeOpinion: $penaltyJudgeOpinion, ownershipReferee: $ownershipReferee, ownershipJudge: $ownershipJudge, nextQuestion: $nextQuestion)
-//                        PenaltyJudgeOpinionButton (isSet: resetPenalties)
+                        //                        PenaltyJudgeOpinionButton (isSet: resetPenalties)
                         Spacer ()
                     }
                 }
@@ -122,37 +123,23 @@ struct QuizzQuestionView: View {
                     HStack {
                         // Ownership Referee
                         OwnershipRefereeButton (isOn: $ownershipReferee, sanctionSelection: $userSanctionSelection, ownershipJudge: $ownershipJudge, nextQuestion: $nextQuestion)
-
+                        
                         Spacer ()
                         // Ownership Judge
                         OwnershipJudgeButton (isOn: $ownershipJudge, sanctionSelection: $userSanctionSelection, ownershipReferee: $ownershipReferee, nextQuestion: $nextQuestion)
                     }
                     .padding(.horizontal, 30.0)
                 }
-                .frame(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                .frame(alignment: .center)
                 
                 Divider ()
                 // Navigation
                 HStack {
-                    HStack {
-                        Text(" \(currentQuestion+1) / \(questionNumber)")
-                            .font(.title3)
-                            .fontWeight(.semibold)
-                    }
-                    .padding(15.0)
-                    .foregroundColor(Color.white)
-                    .background(Color.gray)
-                    .cornerRadius(200)
-                    Spacer ()
-                    HStack {
-                        Text(" \(score) pts")
-                            .font(.title3)
-                            .fontWeight(.semibold)
-                    }
-                    .padding(15.0)
-                    .foregroundColor(Color.white)
-                    .background(Color.gray)
-                    .cornerRadius(200)
+                    Text(" \(score) pts")
+                        .padding(10.0)
+                        .foregroundColor(Color.white)
+                        .background(Color("Score"))
+                        .cornerRadius(20)
                     Spacer ()
                     Button (action: {
                         self.nextQuestion(penalty)
@@ -167,23 +154,29 @@ struct QuizzQuestionView: View {
                     }
                     .padding(10.0)
                     .foregroundColor(.white)
-//                    .background(Color.accentColor)
+                    //                    .background(Color.accentColor)
                     .background((nextQuestion ? Color("AccentColor") : Color.gray))
                     .cornerRadius(400)
                     NavigationLink(destination: QuizzResultView (score: score, questionNumber: questionNumber), isActive: $lastQuestion) {}
                     
-//                    .alert(isPresented: $showingScore) {
-//                        // ToDo >>>> Look how to update Translation string with parameter
-//                        Alert(title: Text(scoreTitle), message: Text(NSLocalizedString("Quizz-Score-Message \(score) / \(currentQuestion)", comment: "Alert Quizz Message")), dismissButton: .default(Text("Quizz-Next")) {
-//                            self.askNewQuestion()
-//                        })
-//                    }
+                    //                    .alert(isPresented: $showingScore) {
+                    //                        // ToDo >>>> Look how to update Translation string with parameter
+                    //                        Alert(title: Text(scoreTitle), message: Text(NSLocalizedString("Quizz-Score-Message \(score) / \(currentQuestion)", comment: "Alert Quizz Message")), dismissButton: .default(Text("Quizz-Next")) {
+                    //                            self.askNewQuestion()
+                    //                        })
+                    //                    }
                     
+                    Spacer ()
+                    Text(" \(currentQuestion+1) / \(questionNumber)")
+                        .padding(10.0)
+                        .foregroundColor(Color.white)
+                        .background(Color("Score"))
+                        .cornerRadius(20)
                 }
-                .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-
+                .padding(.vertical)
+                
             }
-            .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+            .padding(.all)
             Spacer ()
         }
     }
@@ -246,13 +239,14 @@ struct QuizzQuestionView: View {
         penaltyJudgeOpinion = false
         ownershipReferee = false
         ownershipJudge = false
+        nextQuestion = false
     }
 
 }
     
 struct QuizzQuestionView_Previews: PreviewProvider {
     static var previews: some View {
-        QuizzQuestionView ()
+        QuizzQuestionView (questionNumber: 5)
             .environment(\.locale, .init(identifier: "en"))
     }
 }

@@ -16,14 +16,19 @@ struct QuizzResultView: View {
                 .font(.largeTitle)
                 .multilineTextAlignment(.center)
                 .padding(.all)
-            
             Text ("Quizz-Result-Description")
                 .padding(.all)
+            
+            Spacer ()
             
             Text ("\(score) pts")
                 .font(.title)
                 .fontWeight(.heavy)
-                .padding(.all)
+            
+            Text ("(max \(questionNumber * 10) pts)")
+                .font(.caption)
+                .fontWeight(.thin)
+
             Spacer ()
             if (score >= (questionNumber * 8)) {
                 StickerPassed ()
@@ -31,7 +36,7 @@ struct QuizzResultView: View {
                 StickerFailed ()
             }
             Spacer ()
-            NavigationLink(destination: QuizzQuestionView ()) {
+            NavigationLink(destination: QuizzQuestionView (questionNumber: questionNumber)) {
                 Text("Quizz-Result-Start-Button")
                     .font(.title3)
                     .fontWeight(.semibold)

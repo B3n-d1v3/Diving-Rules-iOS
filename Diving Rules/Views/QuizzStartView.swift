@@ -12,6 +12,7 @@ import SwiftUI
 //       https://www.youtube.com/watch?v=Ho88Eid9gi0
 
 struct QuizzStartView: View {
+    @State private var questionNumber = 20
     var body: some View {
         VStack {
             Text("Quizz-Intro-Title")
@@ -20,9 +21,14 @@ struct QuizzStartView: View {
                 .padding(.all)
             Text ("Quizz-Intro-Description")
                 .padding(.all)
+//            Spacer ()
+            Form (content: {
+                Stepper(value: $questionNumber, in: 5...40, step: 5) {
+                    Text("Number of Questions: \(questionNumber)")
+                }
+            })
             Spacer ()
-
-            NavigationLink(destination: QuizzQuestionView ()) {
+            NavigationLink(destination: QuizzQuestionView (questionNumber: questionNumber)) {
                 Text("Quizz-Intro-Start-Button")
                     .font(.title3)
                     .fontWeight(.semibold)
