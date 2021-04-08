@@ -5,20 +5,14 @@
   Created by Benoit SUZANNE on 22/03/2021.
   
 
- App Name - Full App name*/
- "CFBundleDisplayName" = "Règles Plongeon";
-
-/*App Name - Short App name 16 car*/
-"CFBundleName" = "Règles Plongeon";
-
- /* Navigation - Rules Menu Item*/
+ Navigation - Rules Menu Item*/
 "Navigation-Menu-Rules" = "Règles";
 
 /*Navigation - Penalties Menu Item*/
 "Navigation-Menu-Penalties" = "Pénalités";
 
 /*Navigation - Quizz Menu Item*/
-"Navigation-Menu-Quizz" = "Quiz";
+"Navigation-Menu-Quizz" = "Questionnaire";
 
 /*Navigation - Search Menu Item*/
 "Navigation-Menu-Search" = "Recherche";
@@ -64,10 +58,7 @@
 "Button-Referee" = "Arbitre";
 
 /*Quizz Selection Page
- Quizz - Title*/
-"Quizz-Title" = "Quiz";
-
-/* Quizz - Intro Title*/
+ Quizz - Intro Title*/
 "Quizz-Intro-Title" = "Testez vos connaissances";
 
 /*Quizz - Intro Description*/
@@ -80,21 +71,63 @@
 "Quizz-Next" = "Suivant";
 
 /*Quizz - Question Page Score Message*/
-"Quizz-Score-Message %@" = "Votre avez marqué %@ points.";
+"Quizz-Score-Message" = "Votre score est";
 
 /*Quizz - Question Page Score Title Good Answer*/
 "Quizz-Score-Message-Correct" = "Bonne réponse";
 
-/* Quizz - Question Page Score Title missing an owner saction*/
-"Quizz-Score-Message-Partly" = "Presque ça";
-
 /*Quizz - Question Page Score Title Wrong Answer*/
 "Quizz-Score-Message-Wrong" = "Mauvaise réponse";
 
-/* Search Selection Page
- Search - Title*/
-"Search-Title" = "Rechercher Règlement";
+/*Localizable.strings
+  Diving Rules
 
-/* Rule Book Selection Page
+  Created by Benoit SUZANNE on 22/03/2021.
+
+ App Name - Full App name*/
+"CFBundleDisplayName" = "Règles Plongeon";
+
+/*App Name - Short App name 16 car*/
+"CFBundleName" = "Règles Plongeon";
+
+/*Quizz Selection Page
+ Quizz - Title*/
+"Quizz-Title" = "Questionnaire";
+
+/*Quizz - Question Page Score Message*/
+"Quizz-Score-Message %@" = "Vous avez marqué %@ points.";
+
+/*Quizz - Question Page Score Title missing an owner saction*/
+"Quizz-Score-Message-Partly" = "Presque";
+
+/*Quizz - Result Title*/
+"Quizz-Result-Title" = "Résultat du Quizz";
+
+/*Quizz - Intro Description*/
+"Quizz-Result-Description" = "Voici votre résultat au questionnaire : ";
+
+/*Quizz - Result Start Button*/
+"Quizz-Result-Start-Button" = "Nouveau Quizz";
+
+/*Quizz - Good Sticker*/
+"Good" = "Bravo";
+
+/*Quizz - Wrong Sticker*/
+"Wrong" = "Non";
+
+/*Quizz - Good Sticker*/
+"Almost" = "Presque";
+
+/*Quizz - Good Sticker*/
+"Passed" = "Réussi";
+
+/*Quizz - Good Sticker*/
+"Failed" = "Echoué";
+
+/*Search Selection Page
+ Search - Title*/
+"Search-Title" = "Rechercher les Règles";
+
+/*Rule Book Selection Page
  Rule Book - Title*/
-"RuleBook-Title" = "Règlement Plongeon";
+"RuleBook-Title" = "Règlement";
