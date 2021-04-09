@@ -12,20 +12,7 @@ struct PenaltyDetailView: View {
     var penaltyIconImageWidth: CGFloat = 40.0
     var penaltyIconImageHeight: CGFloat = 40.0
     @State private var userSanctionSelection = 50
-    
-//    @State private var penaltyZeroPts = false
-//    @State private var penaltyMaxTwoPts = false
-//    @State private var penaltyMaxFourHalfPts = false
-//    @State private var penaltyMinusTwoPts = false
-//    @State private var penaltyMinusHalfToTwoPts = false
-//    @State private var penaltyJudgeOpinion = false
-    @State private var ownershipReferee = false
-    @State private var ownershipJudge = false
     @State private var nextQuestion = false
-
-
-//    var ruleSanctionId: Int
-
     
     var body: some View {
         ScrollView {
@@ -37,14 +24,12 @@ struct PenaltyDetailView: View {
                             .foregroundColor(Color.accentColor)
                             .padding(.bottom, 1.0)
 
-
                         Text("Penalty-Description")
                             .font(.title2)
                             .foregroundColor(Color.accentColor)
                             .padding(.bottom)
                             
                         Text(penalty.description)
-//                            .fixedSize(horizontal: false, vertical: true)
                     }
                     HStack {
                         Spacer()
@@ -53,9 +38,7 @@ struct PenaltyDetailView: View {
                             .fontWeight(.ultraLight)
                             .foregroundColor(.secondary)
                             .multilineTextAlignment(.trailing)
-                        
                     }
-
 
                 Spacer()
                 Divider ()
@@ -71,16 +54,15 @@ struct PenaltyDetailView: View {
                         //Penalty Line 1
                         Spacer ()
                         // 0 pts
-                        PenaltyZeroPtsButton(isOn: (penalty.sanctionValue == 0))
+                        PenaltyViewButton(buttonImage: "0.circle", buttonText: NSLocalizedString("Button-0pts", comment: "Button Description"), isOn: (penalty.sanctionValue == 0))
                             .disabled(true)
                         Spacer ()
                         // Max 2 pts
-                        // ToDo >>>>> Change other buttons in this screen
-                        PenaltyMaxTwoPtsButton (isOn: (penalty.sanctionValue == 2))
+                        PenaltyViewButton(buttonImage: "lessthan.circle.fill", buttonText: NSLocalizedString("Button-max2pts", comment: "Button Description"), isOn: (penalty.sanctionValue == 2))
                             .disabled(true)
                         Spacer ()
                         // Max 4 1/2 pts
-                        PenaltyMaxFourHalfPtsButton (isOn: (penalty.sanctionValue == 3))
+                        PenaltyViewButton(buttonImage: "lessthan.circle", buttonText: NSLocalizedString("Button-max4halfpts", comment: "Button Description"), isOn: (penalty.sanctionValue == 3))
                             .disabled(true)
                         Spacer ()
                    }
@@ -88,15 +70,15 @@ struct PenaltyDetailView: View {
                         //Penalty Line 2
                         Spacer ()
                         // -2 pts
-                        PenaltyMinusTwoPtsButton (isOn: (penalty.sanctionValue == 1))
+                        PenaltyViewButton(buttonImage: "gobackward.minus", buttonText: NSLocalizedString("Button--2pts", comment: "Button Description"), isOn: (penalty.sanctionValue == 1))
                             .disabled(true)
                         Spacer ()
                         // -1/2 to 2 pts
-                        PenaltyMinusHalfToTwoPtsButton (isOn: (penalty.sanctionValue == 4))
+                        PenaltyViewButton(buttonImage: "arrow.left.and.right.circle", buttonText: NSLocalizedString("Button--halfto2pts", comment: "Button Description"), isOn: (penalty.sanctionValue == 4))
                             .disabled(true)
                         Spacer ()
                         // judge Opinion
-                        PenaltyJudgeOpinionButton (isOn: (penalty.sanctionValue == 5))
+                        PenaltyViewButton(buttonImage: "plusminus.circle", buttonText: NSLocalizedString("Button-judgeOpinion", comment: "Button Description"), isOn: (penalty.sanctionValue == 5))
                             .disabled(true)
                         Spacer ()
                     }
@@ -112,21 +94,12 @@ struct PenaltyDetailView: View {
                 
                 VStack {
                     HStack {
-//                        ownershipReferee = penalty.referee
-//                        ownershipJudge = penalty.judge
-                        
-                        // ToDo >>>>>> Missing link from penalty ownership value to the binding ownership
-                        
                         // Ownership Referee
-                        OwnershipRefereeButton (isOn: $ownershipReferee, sanctionSelection: $userSanctionSelection, ownershipJudge: $ownershipJudge, nextQuestion: $nextQuestion)
+                        OwnerViewButton(buttonImage: "person.fill.and.arrow.left.and.arrow.right", imageWidth: 60.0, imageHeigth: 40.0, buttonText: NSLocalizedString("Button-Referee", comment: "Button Description"), isOn: penalty.referee)
                             .disabled(true)
-                        
-//                        .onTapGesture {
-//                            isOwnerReferee.toggle()
-//                        }
                         Spacer ()
                         // Ownership Judge
-                        OwnershipJudgeButton (isOn: $ownershipJudge, sanctionSelection: $userSanctionSelection, ownershipReferee: $ownershipReferee, nextQuestion: $nextQuestion)
+                        OwnerViewButton(buttonImage: "person.3.fill", imageWidth: 85.0, imageHeigth: 40.0, buttonText: NSLocalizedString("Button-Judge", comment: "Button Description"), isOn: penalty.judge)
                             .disabled(true)
                     }
                     .padding(.horizontal, 30.0)

@@ -7,11 +7,9 @@
 
 import SwiftUI
 
-struct PenaltyButton: View {
+struct PenaltySelectionButton: View {
     var buttonImage: String
     var buttonText: String
-    var buttonImageWidth: CGFloat
-    var buttonImageHeight: CGFloat
     @Binding var isOn: Bool
     @Binding var sanctionSelection: Int
     var sanctionID: Int
@@ -65,44 +63,18 @@ struct PenaltyButton: View {
                 VStack {
                     Image (systemName: buttonImage)
                         .resizable()
-                        .frame(width: buttonImageWidth, height: buttonImageHeight)
+                        .frame(width: 40.0, height: 40.0)
                     Text (buttonText)
                         .font(.caption)
                 }
                 .frame(width: 80.0)
                 .padding(.all, 10.0)
-//                .foregroundColor((isSet ? Color("AccentColor") : Color.secondary))
                 .foregroundColor((isOn ? Color("AccentColor") : Color.gray))
-
-//             .onTapGesture {
-//                // Does this action get executed ?????
-//                if isOn {
-//                    sanctionSelection = sanctionID
-//                } else {
-//                    sanctionSelection = 50
-//                }
-//             }
-        
              }
-
-        
-    }
-    
-    func ToogleButtons(buttonOn: Int) {
-        if (buttonOn == 0) {
-            
-        }
-//        penaltyZeroPts = false
-//        penaltyMaxTwoPts = false
-//        penaltyMaxFourHalfPts = false
-//        penaltyMinusTwoPts = false
-//        penaltyMinusHalfToTwoPts = false
-//        penaltyJudgeOpinion = false
-
     }
 }
 
-struct PenaltyButton_Previews: PreviewProvider {
+struct PenaltySelectionButton_Previews: PreviewProvider {
     @State static var sanctionPreview = 10
     @State static var penaltyOn = true
     @State static var penaltyZeroPts = false
@@ -117,6 +89,6 @@ struct PenaltyButton_Previews: PreviewProvider {
 
 
     static var previews: some View {
-        PenaltyButton(buttonImage: "0.circle", buttonText: "Button-0pts", buttonImageWidth: 40.0, buttonImageHeight: 40.0, isOn: $penaltyOn, sanctionSelection: $sanctionPreview, sanctionID: 0, penaltyZeroPts: $penaltyZeroPts, penaltyMaxTwoPts: $penaltyMaxTwoPts, penaltyMaxFourHalfPts: $penaltyMaxFourHalfPts, penaltyMinusTwoPts: $penaltyMinusTwoPts, penaltyMinusHalfToTwoPts: $penaltyMinusHalfToTwoPts, penaltyJudgeOpinion: $penaltyJudgeOpinion, ownershipReferee: $ownershipReferee, ownershipJudge: $ownershipJudge, nextQuestion: $nextQuestion)
+        PenaltySelectionButton(buttonImage: "0.circle", buttonText: "Button-0pts", isOn: $penaltyOn, sanctionSelection: $sanctionPreview, sanctionID: 0, penaltyZeroPts: $penaltyZeroPts, penaltyMaxTwoPts: $penaltyMaxTwoPts, penaltyMaxFourHalfPts: $penaltyMaxFourHalfPts, penaltyMinusTwoPts: $penaltyMinusTwoPts, penaltyMinusHalfToTwoPts: $penaltyMinusHalfToTwoPts, penaltyJudgeOpinion: $penaltyJudgeOpinion, ownershipReferee: $ownershipReferee, ownershipJudge: $ownershipJudge, nextQuestion: $nextQuestion)
     }
 }
