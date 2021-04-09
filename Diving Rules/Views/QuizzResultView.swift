@@ -31,9 +31,9 @@ struct QuizzResultView: View {
 
             Spacer ()
             if (score >= (questionNumber * 8)) {
-                StickerPassed ()
+                Sticker(stickerImage: "checkmark.circle", stickerColor: "Good", stickerText: "Passed")
             } else {
-                StickerFailed ()
+                Sticker(stickerImage: "xmark.octagon.fill", stickerColor: "Bad", stickerText: "Failed")
             }
             Spacer ()
             NavigationLink(destination: QuizzQuestionView (questionNumber: questionNumber)) {
