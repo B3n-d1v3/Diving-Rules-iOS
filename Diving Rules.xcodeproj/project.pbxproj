@@ -32,6 +32,7 @@
 		B5F69753261DF01400A42E31 /* Sticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F69752261DF01400A42E31 /* Sticker.swift */; };
 		B5F697602620522400A42E31 /* QuizzQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F6975F2620522300A42E31 /* QuizzQuestions.swift */; };
 		B5F6976726208C2B00A42E31 /* PenaltyViewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F6976626208C2B00A42E31 /* PenaltyViewButton.swift */; };
+		B5F6976B262093D100A42E31 /* OwnerViewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F6976A262093D100A42E31 /* OwnerViewButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		B5F69752261DF01400A42E31 /* Sticker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sticker.swift; sourceTree = "<group>"; };
 		B5F6975F2620522300A42E31 /* QuizzQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzQuestions.swift; sourceTree = "<group>"; };
 		B5F6976626208C2B00A42E31 /* PenaltyViewButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenaltyViewButton.swift; sourceTree = "<group>"; };
+		B5F6976A262093D100A42E31 /* OwnerViewButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerViewButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			children = (
 				B58610942603976300A44778 /* OwnershipRefereeButton.swift */,
 				B58610992603AE7500A44778 /* OwnershipJudgeButton.swift */,
+				B5F6976A262093D100A42E31 /* OwnerViewButton.swift */,
 				B5F697342613212D00A42E31 /* PenaltySelectionButton.swift */,
 				B5F6976626208C2B00A42E31 /* PenaltyViewButton.swift */,
 			);
@@ -259,6 +262,7 @@
 				B5E2B4C92609E43300530303 /* QuizzStartView.swift in Sources */,
 				B5D0DC6B25FA086300CDA3D3 /* ContentView.swift in Sources */,
 				B5D0DC6925FA086300CDA3D3 /* Diving_RulesApp.swift in Sources */,
+				B5F6976B262093D100A42E31 /* OwnerViewButton.swift in Sources */,
 				B5D0DC7925FA0E0300CDA3D3 /* QuizzQuestionView.swift in Sources */,
 				B5F697602620522400A42E31 /* QuizzQuestions.swift in Sources */,
 				B5D0DC9725FA2FF600CDA3D3 /* ModelData.swift in Sources */,
