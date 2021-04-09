@@ -111,3 +111,6 @@
 /* Rule Book Selection Page
  Rule Book - Title*/
 "RuleBook-Title" = "Rule Book";
+
+/* Test Git*/
+"Git" = "Git uopdate 2";
