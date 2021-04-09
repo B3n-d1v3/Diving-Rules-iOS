@@ -9,12 +9,6 @@
 /* Begin PBXBuildFile section */
 		B58610952603976300A44778 /* OwnershipRefereeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58610942603976300A44778 /* OwnershipRefereeButton.swift */; };
 		B586109A2603AE7500A44778 /* OwnershipJudgeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58610992603AE7500A44778 /* OwnershipJudgeButton.swift */; };
-		B586109D2603AF8500A44778 /* PenaltyZeroPtsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B586109C2603AF8500A44778 /* PenaltyZeroPtsButton.swift */; };
-		B58610A12603B1DF00A44778 /* PenaltyMaxTwoPtsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58610A02603B1DF00A44778 /* PenaltyMaxTwoPtsButton.swift */; };
-		B58610A42603B29300A44778 /* PenaltyMaxFourHalfPtsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58610A32603B29300A44778 /* PenaltyMaxFourHalfPtsButton.swift */; };
-		B58610A72603B31600A44778 /* PenaltyMinusTwoPtsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58610A62603B31600A44778 /* PenaltyMinusTwoPtsButton.swift */; };
-		B58610AA2603B39D00A44778 /* PenaltyMinusHalfToTwoPtsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58610A92603B39D00A44778 /* PenaltyMinusHalfToTwoPtsButton.swift */; };
-		B58610AD2603B40200A44778 /* PenaltyJudgeOpinionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58610AC2603B40200A44778 /* PenaltyJudgeOpinionButton.swift */; };
 		B58610CB2608FFE800A44778 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B58610CD2608FFE800A44778 /* Localizable.strings */; };
 		B5D0DC6925FA086300CDA3D3 /* Diving_RulesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D0DC6825FA086300CDA3D3 /* Diving_RulesApp.swift */; };
 		B5D0DC6B25FA086300CDA3D3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D0DC6A25FA086300CDA3D3 /* ContentView.swift */; };
@@ -33,21 +27,16 @@
 		B5D0DCC725FA836500CDA3D3 /* PenaltyDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D0DCC625FA836500CDA3D3 /* PenaltyDetailView.swift */; };
 		B5D0DCCC25FD380400CDA3D3 /* 2017-2021_fina-diving_16032018.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B5D0DCCB25FD380400CDA3D3 /* 2017-2021_fina-diving_16032018.pdf */; };
 		B5E2B4C92609E43300530303 /* QuizzStartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E2B4C82609E43300530303 /* QuizzStartView.swift */; };
-		B5F697352613212E00A42E31 /* PenaltyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F697342613212D00A42E31 /* PenaltyButton.swift */; };
+		B5F697352613212E00A42E31 /* PenaltySelectionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F697342613212D00A42E31 /* PenaltySelectionButton.swift */; };
 		B5F69750261DEC8E00A42E31 /* QuizzResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F6974F261DEC8E00A42E31 /* QuizzResultView.swift */; };
 		B5F69753261DF01400A42E31 /* Sticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F69752261DF01400A42E31 /* Sticker.swift */; };
 		B5F697602620522400A42E31 /* QuizzQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F6975F2620522300A42E31 /* QuizzQuestions.swift */; };
+		B5F6976726208C2B00A42E31 /* PenaltyViewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F6976626208C2B00A42E31 /* PenaltyViewButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B58610942603976300A44778 /* OwnershipRefereeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnershipRefereeButton.swift; sourceTree = "<group>"; };
 		B58610992603AE7500A44778 /* OwnershipJudgeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnershipJudgeButton.swift; sourceTree = "<group>"; };
-		B586109C2603AF8500A44778 /* PenaltyZeroPtsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenaltyZeroPtsButton.swift; sourceTree = "<group>"; };
-		B58610A02603B1DF00A44778 /* PenaltyMaxTwoPtsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenaltyMaxTwoPtsButton.swift; sourceTree = "<group>"; };
-		B58610A32603B29300A44778 /* PenaltyMaxFourHalfPtsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenaltyMaxFourHalfPtsButton.swift; sourceTree = "<group>"; };
-		B58610A62603B31600A44778 /* PenaltyMinusTwoPtsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenaltyMinusTwoPtsButton.swift; sourceTree = "<group>"; };
-		B58610A92603B39D00A44778 /* PenaltyMinusHalfToTwoPtsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenaltyMinusHalfToTwoPtsButton.swift; sourceTree = "<group>"; };
-		B58610AC2603B40200A44778 /* PenaltyJudgeOpinionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenaltyJudgeOpinionButton.swift; sourceTree = "<group>"; };
 		B58610CC2608FFE800A44778 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B58610CF2608FFEF00A44778 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B58610D02608FFF000A44778 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -70,10 +59,11 @@
 		B5D0DCC625FA836500CDA3D3 /* PenaltyDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenaltyDetailView.swift; sourceTree = "<group>"; };
 		B5D0DCCB25FD380400CDA3D3 /* 2017-2021_fina-diving_16032018.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "2017-2021_fina-diving_16032018.pdf"; sourceTree = "<group>"; };
 		B5E2B4C82609E43300530303 /* QuizzStartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzStartView.swift; sourceTree = "<group>"; };
-		B5F697342613212D00A42E31 /* PenaltyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenaltyButton.swift; sourceTree = "<group>"; };
+		B5F697342613212D00A42E31 /* PenaltySelectionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenaltySelectionButton.swift; sourceTree = "<group>"; };
 		B5F6974F261DEC8E00A42E31 /* QuizzResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzResultView.swift; sourceTree = "<group>"; };
 		B5F69752261DF01400A42E31 /* Sticker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sticker.swift; sourceTree = "<group>"; };
 		B5F6975F2620522300A42E31 /* QuizzQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzQuestions.swift; sourceTree = "<group>"; };
+		B5F6976626208C2B00A42E31 /* PenaltyViewButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenaltyViewButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,13 +82,8 @@
 			children = (
 				B58610942603976300A44778 /* OwnershipRefereeButton.swift */,
 				B58610992603AE7500A44778 /* OwnershipJudgeButton.swift */,
-				B586109C2603AF8500A44778 /* PenaltyZeroPtsButton.swift */,
-				B58610A02603B1DF00A44778 /* PenaltyMaxTwoPtsButton.swift */,
-				B58610A32603B29300A44778 /* PenaltyMaxFourHalfPtsButton.swift */,
-				B58610A62603B31600A44778 /* PenaltyMinusTwoPtsButton.swift */,
-				B58610A92603B39D00A44778 /* PenaltyMinusHalfToTwoPtsButton.swift */,
-				B58610AC2603B40200A44778 /* PenaltyJudgeOpinionButton.swift */,
-				B5F697342613212D00A42E31 /* PenaltyButton.swift */,
+				B5F697342613212D00A42E31 /* PenaltySelectionButton.swift */,
+				B5F6976626208C2B00A42E31 /* PenaltyViewButton.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -270,10 +255,8 @@
 				B5D0DCC725FA836500CDA3D3 /* PenaltyDetailView.swift in Sources */,
 				B5F69753261DF01400A42E31 /* Sticker.swift in Sources */,
 				B58610952603976300A44778 /* OwnershipRefereeButton.swift in Sources */,
-				B58610A42603B29300A44778 /* PenaltyMaxFourHalfPtsButton.swift in Sources */,
-				B58610A12603B1DF00A44778 /* PenaltyMaxTwoPtsButton.swift in Sources */,
+				B5F6976726208C2B00A42E31 /* PenaltyViewButton.swift in Sources */,
 				B5E2B4C92609E43300530303 /* QuizzStartView.swift in Sources */,
-				B58610AD2603B40200A44778 /* PenaltyJudgeOpinionButton.swift in Sources */,
 				B5D0DC6B25FA086300CDA3D3 /* ContentView.swift in Sources */,
 				B5D0DC6925FA086300CDA3D3 /* Diving_RulesApp.swift in Sources */,
 				B5D0DC7925FA0E0300CDA3D3 /* QuizzQuestionView.swift in Sources */,
@@ -281,11 +264,8 @@
 				B5D0DC9725FA2FF600CDA3D3 /* ModelData.swift in Sources */,
 				B5D0DC8B25FA16FB00CDA3D3 /* Penalty.swift in Sources */,
 				B5F69750261DEC8E00A42E31 /* QuizzResultView.swift in Sources */,
-				B586109D2603AF8500A44778 /* PenaltyZeroPtsButton.swift in Sources */,
 				B5D0DC9125FA1BD000CDA3D3 /* SearchView.swift in Sources */,
-				B5F697352613212E00A42E31 /* PenaltyButton.swift in Sources */,
-				B58610A72603B31600A44778 /* PenaltyMinusTwoPtsButton.swift in Sources */,
-				B58610AA2603B39D00A44778 /* PenaltyMinusHalfToTwoPtsButton.swift in Sources */,
+				B5F697352613212E00A42E31 /* PenaltySelectionButton.swift in Sources */,
 				B586109A2603AE7500A44778 /* OwnershipJudgeButton.swift in Sources */,
 				B5D0DCBA25FA6D1600CDA3D3 /* PenaltyRowView.swift in Sources */,
 			);
