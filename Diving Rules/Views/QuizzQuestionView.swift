@@ -14,8 +14,9 @@ import SwiftUI
 struct QuizzQuestionView: View {
     
     // ToDo >>>>>> ADD count the number of penalties to random from   <<<<<<
-    @State private var penatlyNumber = Int.random(in: 0...45)
+//    @State private var penatlyNumber = Int.random(in: 0...45)
 //    @State private var penalty = penalties[penatlyNumber]
+    @State private var penatlyNumber = 100
     
     @State private var showingScore = false
     @State private var askForAnswer = false
@@ -37,11 +38,17 @@ struct QuizzQuestionView: View {
     @State private var nextQuestion = false
     @State private var lastQuestion = false
     
-    // ToDo Init with all penalties sanctions to unselected
-    
     var body: some View {
         ScrollView {
             let penalty = penalties[penatlyNumber]
+            // Set the new question list
+//            let newQuizzList = newList(quizzQuestionNumber: questionNumber)
+//            var newQuizz = Quizz()
+//            newQuizz.questions = newList(of: questionNumber)
+//            let questionList = newList(of: questionNumber)
+//            penatlyNumber = questionList[currentQuestion]
+//            userQuizzList.append (newQuizz)
+            
             VStack(alignment: .leading) {
                 
                 //Rule Description

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct Sanction: Hashable, Codable, Identifiable {
     var id: Int
