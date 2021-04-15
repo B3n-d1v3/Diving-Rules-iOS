@@ -154,9 +154,9 @@ struct QuizzQuestionView: View {
                         .cornerRadius(20)
                     Spacer ()
                     Button (action: {
-                        self.nextQuestion(penalty)
-                        lastQuestion = (currentQuestion >= questionList.count)
+                        lastQuestion = (currentQuestion + 1 >= questionList.count)
                         print("[Next Button] lastQuestion: \(lastQuestion)")
+                        self.nextQuestion(penalty)
 //                        print("[Next Button] lastQuestion: \(lastQuestion) - penatlyNumber (questionList[currentQuestion]): \(questionList[currentQuestion])")
                     }) {
                         Text("Quizz-Next")
@@ -211,12 +211,13 @@ struct QuizzQuestionView: View {
                     // if the penalty is wrong
                     print("[nextQuestion] Wrong answer")
                 }
-//            print("[nextQuestion] Question Status before count - currentQuestion: \(currentQuestion) / questionNumber(questionList.count): \(questionList.count) - penatlyNumber (questionList[currentQuestion]): \(questionList[currentQuestion])")
-            currentQuestion += 1
-            print("[nextQuestion] Question Status after count - currentQuestion: \(currentQuestion)")
-            if currentQuestion < questionList.count{
+            print("[nextQuestion] Question Status before count - currentQuestion: \(currentQuestion) / questionNumber(questionList.count): \(questionList.count) - penatlyNumber (questionList[currentQuestion]): \(questionList[currentQuestion])")
+//            if currentQuestion < questionList.count{
+            if !lastQuestion{
                 // if the are still questions to answer
                 print("Jumpt to the Next Question")
+                currentQuestion += 1
+                print("[nextQuestion] Question Status after count - currentQuestion: \(currentQuestion)")
                 self.askNewQuestion()
             } else {
                 // if this was the last question
