@@ -30,7 +30,7 @@
 		B5F697352613212E00A42E31 /* PenaltySelectionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F697342613212D00A42E31 /* PenaltySelectionButton.swift */; };
 		B5F69750261DEC8E00A42E31 /* QuizzResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F6974F261DEC8E00A42E31 /* QuizzResultView.swift */; };
 		B5F69753261DF01400A42E31 /* Sticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F69752261DF01400A42E31 /* Sticker.swift */; };
-		B5F697602620522400A42E31 /* QuizzQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F6975F2620522300A42E31 /* QuizzQuestions.swift */; };
+		B5F697602620522400A42E31 /* Quizz.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F6975F2620522300A42E31 /* Quizz.swift */; };
 		B5F6976726208C2B00A42E31 /* PenaltyViewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F6976626208C2B00A42E31 /* PenaltyViewButton.swift */; };
 		B5F6976B262093D100A42E31 /* OwnerViewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F6976A262093D100A42E31 /* OwnerViewButton.swift */; };
 /* End PBXBuildFile section */
@@ -55,7 +55,7 @@
 		B5D0DC8D25FA1BBD00CDA3D3 /* RuleBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleBookView.swift; sourceTree = "<group>"; };
 		B5D0DC9025FA1BD000CDA3D3 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		B5D0DC9625FA2FF600CDA3D3 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
-		B5D0DCB925FA6D1600CDA3D3 /* PenaltyRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenaltyRowView.swift; sourceTree = "<group>"; };
+		B5D0DCB925FA6D1600CDA3D3 /* PenaltyRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenaltyRowView.swift; sourceTree = "<group>"; tabWidth = 4; };
 		B5D0DCBD25FA6FA200CDA3D3 /* PenaltiesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenaltiesListView.swift; sourceTree = "<group>"; };
 		B5D0DCC625FA836500CDA3D3 /* PenaltyDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenaltyDetailView.swift; sourceTree = "<group>"; };
 		B5D0DCCB25FD380400CDA3D3 /* 2017-2021_fina-diving_16032018.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "2017-2021_fina-diving_16032018.pdf"; sourceTree = "<group>"; };
@@ -63,7 +63,7 @@
 		B5F697342613212D00A42E31 /* PenaltySelectionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenaltySelectionButton.swift; sourceTree = "<group>"; };
 		B5F6974F261DEC8E00A42E31 /* QuizzResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzResultView.swift; sourceTree = "<group>"; };
 		B5F69752261DF01400A42E31 /* Sticker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sticker.swift; sourceTree = "<group>"; };
-		B5F6975F2620522300A42E31 /* QuizzQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzQuestions.swift; sourceTree = "<group>"; };
+		B5F6975F2620522300A42E31 /* Quizz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quizz.swift; sourceTree = "<group>"; };
 		B5F6976626208C2B00A42E31 /* PenaltyViewButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenaltyViewButton.swift; sourceTree = "<group>"; };
 		B5F6976A262093D100A42E31 /* OwnerViewButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerViewButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -154,7 +154,7 @@
 				B5D0DC8A25FA16FB00CDA3D3 /* Penalty.swift */,
 				B5D0DC8725FA16DE00CDA3D3 /* Sanction.swift */,
 				B5D0DC9625FA2FF600CDA3D3 /* ModelData.swift */,
-				B5F6975F2620522300A42E31 /* QuizzQuestions.swift */,
+				B5F6975F2620522300A42E31 /* Quizz.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -264,7 +264,7 @@
 				B5D0DC6925FA086300CDA3D3 /* Diving_RulesApp.swift in Sources */,
 				B5F6976B262093D100A42E31 /* OwnerViewButton.swift in Sources */,
 				B5D0DC7925FA0E0300CDA3D3 /* QuizzQuestionView.swift in Sources */,
-				B5F697602620522400A42E31 /* QuizzQuestions.swift in Sources */,
+				B5F697602620522400A42E31 /* Quizz.swift in Sources */,
 				B5D0DC9725FA2FF600CDA3D3 /* ModelData.swift in Sources */,
 				B5D0DC8B25FA16FB00CDA3D3 /* Penalty.swift in Sources */,
 				B5F69750261DEC8E00A42E31 /* QuizzResultView.swift in Sources */,

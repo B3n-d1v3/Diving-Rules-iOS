@@ -31,7 +31,8 @@ struct QuizzStartView: View {
 //            })
             Divider ()
             Spacer ()
-            NavigationLink(destination: QuizzQuestionView (questionNumber: questionNumber)) {
+//            NavigationLink(destination: QuizzQuestionView (questionNumber: questionNumber)) {
+            NavigationLink(destination: QuizzQuestionView (questionList: newList(of: questionNumber))) {
                 Text("Quizz-Intro-Start-Button")
                     .font(.title3)
                     .fontWeight(.semibold)

@@ -9,13 +9,14 @@ import SwiftUI
 
 struct PenaltyRowView: View {
     var penalties: Penalty
-    //let sanctions: Sanction
     var body: some View {
         // show one line of penalty
+
         HStack {
-            Image (systemName: "star.circle.fill")
-            // ToDo >>>>>> Change the icon dependong on the penalty sanction
-            //Image (systemName: sanctions.icon[penalties.sanctionValue])
+            Image (systemName: sanctions[penalties.sanctionValue].icon)
+            .font(.title)
+            .foregroundColor(Color.accentColor)
+
             Text(penalties.description)
             Spacer ()
         }
