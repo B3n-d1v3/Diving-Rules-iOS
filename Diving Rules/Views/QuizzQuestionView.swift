@@ -16,12 +16,13 @@ struct QuizzQuestionView: View {
     // ToDo >>>>>> ADD count the number of penalties to random from   <<<<<<
 
     // Quizz Context
+    var questionList: [Int]
 //    var questionNumber: Int
-    @State private var penatlyNumber = Int.random(in: 0...45)
-//    @State private var penatlyNumber = 0
+//    @State private var penatlyNumber = Int.random(in: 0...45)
+//    @State private var penatlyNumber = questionList[currentQuestion]
     @State private var score = 0
     @State private var currentQuestion = 0
-    var questionList: [Int]
+    
 
     // User Answer Management
     @State private var askForAnswer = false
@@ -40,7 +41,9 @@ struct QuizzQuestionView: View {
     
     var body: some View {
         ScrollView {
-            let penalty = penalties[penatlyNumber]
+//            penatlyNumber = questionList[currentQuestion]
+            let penalty = penalties[questionList[currentQuestion]]
+            
             // Set the new question list
 //            let newQuizzList = newList(quizzQuestionNumber: questionNumber)
 //            var newQuizz = Quizz()
@@ -154,6 +157,7 @@ struct QuizzQuestionView: View {
                         self.nextQuestion(penalty)
                         lastQuestion = (currentQuestion >= questionList.count)
                         print("[Next Button] lastQuestion: \(lastQuestion)")
+//                        print("[Next Button] lastQuestion: \(lastQuestion) - penatlyNumber (questionList[currentQuestion]): \(questionList[currentQuestion])")
                     }) {
                         Text("Quizz-Next")
                             .font(.title3)
@@ -207,8 +211,9 @@ struct QuizzQuestionView: View {
                     // if the penalty is wrong
                     print("[nextQuestion] Wrong answer")
                 }
+//            print("[nextQuestion] Question Status before count - currentQuestion: \(currentQuestion) / questionNumber(questionList.count): \(questionList.count) - penatlyNumber (questionList[currentQuestion]): \(questionList[currentQuestion])")
             currentQuestion += 1
-            print("Question Status - currentQuestion: \(currentQuestion) / questionNumber: \(questionList.count)")
+            print("[nextQuestion] Question Status after count - currentQuestion: \(currentQuestion)")
             if currentQuestion < questionList.count{
                 // if the are still questions to answer
                 print("Jumpt to the Next Question")
@@ -224,7 +229,8 @@ struct QuizzQuestionView: View {
     func askNewQuestion() {
         //select another penalty
         // ToDo >>>>>> ADD count the number of penalties to random from   <<<<<<
-        penatlyNumber = Int.random(in: 0...45)
+//        penatlyNumber = Int.random(in: 0...45)
+//        penatlyNumber = questionList[currentQuestion]
         userSanctionSelection = 40
 //        resetPenalties = false
         penaltyZeroPts = false

@@ -27,14 +27,6 @@ struct Quizz {
     }
 }
 
-// Check if the Penalty struct is enough
-//struct PenaltyAnswer  {
-//    let sanctionValue: Int
-//    let referee: Bool
-//    let judge: Bool
-//}
-
-
 // create a new Quizz list
 func newList (of quizzQuestionNumber: Int) -> [Int]
 {
@@ -45,6 +37,8 @@ func newList (of quizzQuestionNumber: Int) -> [Int]
     while (newList.count < quizzQuestionNumber) {
          newList.append(Int.random(in: 0...(totalQuestionNumber-1)))
         print("[Quizz.NewList] newList: \(newList)")
+        newList = newList.removingDuplicates()
+        print("[Quizz.NewList] newList - delete duplicates: \(newList)")
     }
     // use Set (array with no duplicates
     // then change Set to Array
@@ -52,5 +46,17 @@ func newList (of quizzQuestionNumber: Int) -> [Int]
     return newList
 }
 
-// declaration objet array
-// 
+// Delete Duplicated in a table
+extension Array where Element: Hashable {
+    func removingDuplicates() -> [Element] {
+        var addedDict = [Element: Bool]()
+
+        return filter {
+            addedDict.updateValue(true, forKey: $0) == nil
+        }
+    }
+
+    mutating func removeDuplicates() {
+        self = self.removingDuplicates()
+    }
+}
