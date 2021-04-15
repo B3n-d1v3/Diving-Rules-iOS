@@ -14,18 +14,18 @@ import SwiftUI
 struct QuizzQuestionView: View {
     
     // ToDo >>>>>> ADD count the number of penalties to random from   <<<<<<
-//    @State private var penatlyNumber = Int.random(in: 0...45)
-//    @State private var penalty = penalties[penatlyNumber]
-    @State private var penatlyNumber = 100
-    
-    @State private var showingScore = false
-    @State private var askForAnswer = false
+
+    // Quizz Context
+//    var questionNumber: Int
+    @State private var penatlyNumber = Int.random(in: 0...45)
+//    @State private var penatlyNumber = 0
     @State private var score = 0
     @State private var currentQuestion = 0
-//    @State private var questionNumber = 5
-    var questionNumber: Int
-    @State private var userSanctionSelection = 55
+    var questionList: [Int]
 
+    // User Answer Management
+    @State private var askForAnswer = false
+    @State private var userSanctionSelection = 55
     // All the buttons status
     @State private var penaltyZeroPts = false
     @State private var penaltyMaxTwoPts = false
@@ -45,9 +45,14 @@ struct QuizzQuestionView: View {
 //            let newQuizzList = newList(quizzQuestionNumber: questionNumber)
 //            var newQuizz = Quizz()
 //            newQuizz.questions = newList(of: questionNumber)
-//            let questionList = newList(of: questionNumber)
+            
+            // dummy values test
+//            questionList = [10,3,20,25,14]
+//            penatlyNumber = questionList[0]
+            
+            // define the real list without the newQuizz Object
+//            questionList = newList(of: questionNumber)
 //            penatlyNumber = questionList[currentQuestion]
-//            userQuizzList.append (newQuizz)
             
             VStack(alignment: .leading) {
                 
@@ -147,7 +152,7 @@ struct QuizzQuestionView: View {
                     Spacer ()
                     Button (action: {
                         self.nextQuestion(penalty)
-                        lastQuestion = (currentQuestion >= questionNumber)
+                        lastQuestion = (currentQuestion >= questionList.count)
                         print("[Next Button] lastQuestion: \(lastQuestion)")
                     }) {
                         Text("Quizz-Next")
@@ -161,10 +166,10 @@ struct QuizzQuestionView: View {
                     //                    .background(Color.accentColor)
                     .background((nextQuestion ? Color("AccentColor") : Color.gray))
                     .cornerRadius(400)
-                    NavigationLink(destination: QuizzResultView (score: score, questionNumber: questionNumber), isActive: $lastQuestion) {}
+                    NavigationLink(destination: QuizzResultView (score: score, questionNumber: questionList.count), isActive: $lastQuestion) {}
                                         
                     Spacer ()
-                    Text(" \(currentQuestion+1) / \(questionNumber)")
+                    Text(" \(currentQuestion+1) / \(questionList.count)")
                         .padding(10.0)
                         .foregroundColor(Color.white)
                         .background(Color("Score"))
@@ -203,8 +208,8 @@ struct QuizzQuestionView: View {
                     print("[nextQuestion] Wrong answer")
                 }
             currentQuestion += 1
-            print("Question Status - currentQuestion: \(currentQuestion) / questionNumber: \(questionNumber)")
-            if currentQuestion < questionNumber{
+            print("Question Status - currentQuestion: \(currentQuestion) / questionNumber: \(questionList.count)")
+            if currentQuestion < questionList.count{
                 // if the are still questions to answer
                 print("Jumpt to the Next Question")
                 self.askNewQuestion()
@@ -237,7 +242,7 @@ struct QuizzQuestionView: View {
     
 struct QuizzQuestionView_Previews: PreviewProvider {
     static var previews: some View {
-        QuizzQuestionView (questionNumber: 5)
+        QuizzQuestionView (questionList: newList(of: 5))
             .environment(\.locale, .init(identifier: "en"))
     }
 }

@@ -1,32 +1,32 @@
 [
   {
     "id" : 0,
-    "sanction" : "0 points",
+    "description" : "0 points",
     "icon" : "0.circle"
   },
   {
     "id" : 1,
-    "sanction" : "2 points deduction",
+    "description" : "2 points deduction",
     "icon" : "gobackward.minus"
   },
   {
     "id" : 2,
-    "sanction" : "2 points maximum",
+    "description" : "2 points maximum",
     "icon" : "lessthan.circle.fill"
   },
   {
     "id" : 3,
-    "sanction" : "4 ½ points maximum",
+    "description" : "4 ½ points maximum",
     "icon" : "lessthan.circle"
   },
   {
     "id" : 4,
-    "sanction" : "From ½ to 2 points deduction",
+    "description" : "From ½ to 2 points deduction",
     "icon" : "arrow.left.and.right.circle"
   },
   {
     "id" : 5,
-    "sanction" : "Deduct according to judge's opinion",
+    "description" : "Deduct according to judge's opinion",
     "icon" : "plusminus.circle"
   }
 ]

@@ -36,7 +36,7 @@ struct QuizzResultView: View {
                 Sticker(stickerImage: "xmark.octagon.fill", stickerColor: "Bad", stickerText: "Failed")
             }
             Spacer ()
-            NavigationLink(destination: QuizzQuestionView (questionNumber: questionNumber)) {
+            NavigationLink(destination: QuizzQuestionView (questionList: newList(of: questionNumber))) {
                 Text("Quizz-Result-Start-Button")
                     .font(.title3)
                     .fontWeight(.semibold)
