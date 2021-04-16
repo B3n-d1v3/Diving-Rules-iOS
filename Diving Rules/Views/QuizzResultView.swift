@@ -21,11 +21,11 @@ struct QuizzResultView: View {
             
             Spacer ()
             
-            Text ("\(score) pts")
+            Text ("\((score*10)/questionNumber) %")
                 .font(.title)
                 .fontWeight(.heavy)
             
-            Text ("(max \(questionNumber * 10) pts)")
+            Text ("(\(score) pts / max \(questionNumber * 10) pts)")
                 .font(.caption)
                 .fontWeight(.thin)
 

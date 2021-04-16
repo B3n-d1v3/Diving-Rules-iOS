@@ -14,46 +14,67 @@ struct Diving_RulesApp: App {
     var body: some Scene {
         WindowGroup {
             TabView {
+                // PDF Rule Book
                 NavigationView {
                     RuleBookView()
                         .navigationBarTitle("RuleBook-Title", displayMode: NavigationBarItem.TitleDisplayMode.inline)
+//                        .navigationBarItems(
+//                                trailing:
+//                                    Button(action: {
+//                                        // Button Action
+//                                   }) {
+//                                        Image(systemName: "magnifyingglass.circle.fill")
+//                                            .font(.title2)
+//    //                                        .fontWeight(.black)
+//                                            .foregroundColor(Color.accentColor)
+//                                        }
+//                                    
+//                        )
                 }
-                .tabItem {
-                    Image (systemName: "book")
-                        .resizable()
-                        .frame(width: 50.0, height: 50.0)
-                    Text ("Navigation-Menu-Rules")
-                }
+                    .tabItem {
+                        Image (systemName: "book")
+                            .resizable()
+                            .frame(width: 50.0, height: 50.0)
+                        Text ("Navigation-Menu-Rules")
+                    }
+
                 
+                // Penalty explorer
                 NavigationView {
                     PenaltiesListView()
-                        .navigationBarTitle("Penalties-List-Title")
+                        .navigationBarTitle("Penalties-List-Title", displayMode: .inline)
                 }
-                .tabItem {
-                    Image (systemName: "square.fill.text.grid.1x2")
-                    Text ("Navigation-Menu-Penalties")
-                }
+                    .tabItem {
+                        Image (systemName: "square.fill.text.grid.1x2")
+                        Text ("Navigation-Menu-Penalties")
+                            
+                    }
                 
+                // Quizz Access
                 NavigationView {
                     QuizzStartView()
                         .navigationBarTitle("Quizz-Title")
                 }
-                .tabItem {
-                    Image (systemName: "checkmark")
-                    Text ("Navigation-Menu-Quizz")
-                }
-                NavigationView {
-                    SearchView()
-                        .navigationBarTitle("Search-Title")
-                }
-                .tabItem {
-                    Image (systemName: "magnifyingglass")
-                    Text ("Navigation-Menu-Search")
-                }
-                //.environmentObject(sanctions)
-                //.environmentObject(quizzQuestions)
+                    .tabItem {
+                        Image (systemName: "checkmark")
+                        Text ("Navigation-Menu-Quizz")
+                    }
+                    .navigationViewStyle(StackNavigationViewStyle())
+                
+                // Search Page
+//                NavigationView {
+//                    SearchView()
+//                        .navigationBarTitle("Search-Title")
+//                }
+//                    .tabItem {
+//                        Image (systemName: "magnifyingglass")
+//                        Text ("Navigation-Menu-Search")
+//                    }
+                
             }
-            
+            //.environmentObject(sanctions)
+            //.environmentObject(quizzQuestions)
+
         }
     }
 }

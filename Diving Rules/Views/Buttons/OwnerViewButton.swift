@@ -44,5 +44,6 @@ struct OwnerViewButton_Previews: PreviewProvider {
     
     static var previews: some View {
         OwnerViewButton(buttonImage: "person.fill.and.arrow.left.and.arrow.right", imageWidth: 60.0, imageHeigth: 40.0, buttonText: "Button-Referee", isOn: true)
+            .previewLayout(.sizeThatFits)
     }
 }

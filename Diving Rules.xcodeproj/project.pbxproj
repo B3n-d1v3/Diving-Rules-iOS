@@ -10,6 +10,8 @@
 		B58610952603976300A44778 /* OwnershipRefereeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58610942603976300A44778 /* OwnershipRefereeButton.swift */; };
 		B586109A2603AE7500A44778 /* OwnershipJudgeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58610992603AE7500A44778 /* OwnershipJudgeButton.swift */; };
 		B58610CB2608FFE800A44778 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B58610CD2608FFE800A44778 /* Localizable.strings */; };
+		B5B26932262895DD00C16C32 /* AppTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B26931262895DD00C16C32 /* AppTitleView.swift */; };
+		B5B269372628A10600C16C32 /* DiverLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B269362628A10600C16C32 /* DiverLogo.swift */; };
 		B5D0DC6925FA086300CDA3D3 /* Diving_RulesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D0DC6825FA086300CDA3D3 /* Diving_RulesApp.swift */; };
 		B5D0DC6B25FA086300CDA3D3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D0DC6A25FA086300CDA3D3 /* ContentView.swift */; };
 		B5D0DC6D25FA086500CDA3D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5D0DC6C25FA086500CDA3D3 /* Assets.xcassets */; };
@@ -41,6 +43,8 @@
 		B58610CC2608FFE800A44778 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B58610CF2608FFEF00A44778 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B58610D02608FFF000A44778 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B5B26931262895DD00C16C32 /* AppTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTitleView.swift; sourceTree = "<group>"; };
+		B5B269362628A10600C16C32 /* DiverLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiverLogo.swift; sourceTree = "<group>"; };
 		B5D0DC6525FA086300CDA3D3 /* Diving Rules.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Diving Rules.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5D0DC6825FA086300CDA3D3 /* Diving_RulesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diving_RulesApp.swift; sourceTree = "<group>"; };
 		B5D0DC6A25FA086300CDA3D3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -89,6 +93,15 @@
 				B5F6976626208C2B00A42E31 /* PenaltyViewButton.swift */,
 			);
 			path = Buttons;
+			sourceTree = "<group>";
+		};
+		B5B269352628A0C400C16C32 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				B5B26931262895DD00C16C32 /* AppTitleView.swift */,
+				B5B269362628A10600C16C32 /* DiverLogo.swift */,
+			);
+			path = Header;
 			sourceTree = "<group>";
 		};
 		B5D0DC5C25FA086300CDA3D3 = {
@@ -144,6 +157,7 @@
 				B5D0DC9025FA1BD000CDA3D3 /* SearchView.swift */,
 				B58610972603AE2900A44778 /* Buttons */,
 				B5F6973C2618591100A42E31 /* Stickers */,
+				B5B269352628A0C400C16C32 /* Header */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -259,8 +273,10 @@
 				B5F69753261DF01400A42E31 /* Sticker.swift in Sources */,
 				B58610952603976300A44778 /* OwnershipRefereeButton.swift in Sources */,
 				B5F6976726208C2B00A42E31 /* PenaltyViewButton.swift in Sources */,
+				B5B269372628A10600C16C32 /* DiverLogo.swift in Sources */,
 				B5E2B4C92609E43300530303 /* QuizzStartView.swift in Sources */,
 				B5D0DC6B25FA086300CDA3D3 /* ContentView.swift in Sources */,
+				B5B26932262895DD00C16C32 /* AppTitleView.swift in Sources */,
 				B5D0DC6925FA086300CDA3D3 /* Diving_RulesApp.swift in Sources */,
 				B5F6976B262093D100A42E31 /* OwnerViewButton.swift in Sources */,
 				B5D0DC7925FA0E0300CDA3D3 /* QuizzQuestionView.swift in Sources */,

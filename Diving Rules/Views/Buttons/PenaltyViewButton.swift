@@ -22,9 +22,10 @@ struct PenaltyViewButton: View {
                 .frame(width: 40.0, height: 40.0)
             Text (buttonText)
                 .font(.caption)
+                .multilineTextAlignment(.center)
         }
-        .frame(width: 80.0)
-        .padding(.all, 10.0)
+        .frame(width: 90.0)
+        .padding(.all, 5.0)
         .foregroundColor((isOn ? Color("AccentColor") : Color.gray))
      }    }
 }
@@ -32,5 +33,6 @@ struct PenaltyViewButton: View {
 struct PenaltyViewButton_Previews: PreviewProvider {
     static var previews: some View {
         PenaltyViewButton(buttonImage: "0.circle", buttonText: "Button-0pts", isOn: true)
+            .previewLayout(.sizeThatFits)
     }
 }

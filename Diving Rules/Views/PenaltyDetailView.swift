@@ -30,15 +30,16 @@ struct PenaltyDetailView: View {
                             .padding(.bottom)
                             
                         Text(penalty.description)
-                    }
+                    } // VStack Penalty description
                     HStack {
                         Spacer()
+                        //Penalty Reference
                         Text (rulesRelatedList (penaltyItem: penalty))
                             .font(.caption)
                             .fontWeight(.ultraLight)
                             .foregroundColor(.secondary)
                             .multilineTextAlignment(.trailing)
-                    }
+                    } // HStack Penalty Reference
 
                 Spacer()
                 Divider ()
@@ -50,6 +51,7 @@ struct PenaltyDetailView: View {
                     .padding(.bottom)
 
                 VStack(alignment: .center) {
+                    // Penalties: What sanction is appropriate
                     HStack{
                         //Penalty Line 1
                         Spacer ()
@@ -65,7 +67,7 @@ struct PenaltyDetailView: View {
                         PenaltyViewButton(buttonImage: "lessthan.circle", buttonText: NSLocalizedString("Button-max4halfpts", comment: "Button Description"), isOn: (penalty.sanctionValue == 3))
                             .disabled(true)
                         Spacer ()
-                   }
+                   } // HStack Penalty Line 1
                     HStack{
                         //Penalty Line 2
                         Spacer ()
@@ -81,11 +83,11 @@ struct PenaltyDetailView: View {
                         PenaltyViewButton(buttonImage: "plusminus.circle", buttonText: NSLocalizedString("Button-judgeOpinion", comment: "Button Description"), isOn: (penalty.sanctionValue == 5))
                             .disabled(true)
                         Spacer ()
-                    }
-                }
+                    } // HStack Penalty Line 2
+                } // VStack Penalty Buttons
                 
                 Divider ()
-                // who is can take the sanction
+                // Ownership : who is can take the sanction
                 Text("Penalty-Ownership")
                     .font(.title2)
                     .foregroundColor(Color.accentColor)
@@ -101,17 +103,17 @@ struct PenaltyDetailView: View {
                         // Ownership Judge
                         OwnerViewButton(buttonImage: "person.3.fill", imageWidth: 85.0, imageHeigth: 40.0, buttonText: NSLocalizedString("Button-Judge", comment: "Button Description"), isOn: penalty.judge)
                             .disabled(true)
-                    }
+                    }  // HStack Ownership
                     .padding(.horizontal, 30.0)
-                }
+                } // VStack Ownership
                 .frame(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 Spacer ()
                 
 
-            }
+            } // VStack Top
             .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-        }
-    }
+        } //ScrollView
+    } // Body
 }
 
 func rulesRelatedList(penaltyItem: Penalty) -> String {

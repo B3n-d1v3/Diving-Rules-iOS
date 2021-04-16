@@ -70,6 +70,9 @@
 /*Quizz - Question Page Next Button*/
 "Quizz-Next" = "Suivant";
 
+/* Quizz - Question*/
+"Quizz-Question" = "Question";
+
 /*Localizable.strings
   Diving Rules
 

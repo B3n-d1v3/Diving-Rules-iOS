@@ -27,5 +27,6 @@ struct PenaltyRowView: View {
 struct PenaltyRowView_Previews: PreviewProvider {
     static var previews: some View {
         PenaltyRowView(penalties: penalties [0])
+            .previewLayout(.sizeThatFits)
     }
 }
