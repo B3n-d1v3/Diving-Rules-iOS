@@ -57,7 +57,7 @@ struct PenaltySelectionButton: View {
                     // next button should be turned on
                     nextQuestion = true
                 }
-                print("[PenaltyButton] Button activated: \(sanctionID) - toggle: \(isOn) -  sanctionSelection: \(sanctionSelection) - nextQuestion: \(nextQuestion)")
+//                print("[PenaltyButton] Button activated: \(sanctionID) - toggle: \(isOn) -  sanctionSelection: \(sanctionSelection) - nextQuestion: \(nextQuestion)")
 
              }) {
                 VStack {
@@ -66,9 +66,10 @@ struct PenaltySelectionButton: View {
                         .frame(width: 40.0, height: 40.0)
                     Text (buttonText)
                         .font(.caption)
+                        .multilineTextAlignment(.center)
                 }
-                .frame(width: 80.0)
-                .padding(.all, 10.0)
+                .frame(width: 90.0)
+                .padding(.all, 5.0)
                 .foregroundColor((isOn ? Color("AccentColor") : Color.gray))
              }
     }
@@ -90,5 +91,6 @@ struct PenaltySelectionButton_Previews: PreviewProvider {
 
     static var previews: some View {
         PenaltySelectionButton(buttonImage: "0.circle", buttonText: "Button-0pts", isOn: $penaltyOn, sanctionSelection: $sanctionPreview, sanctionID: 0, penaltyZeroPts: $penaltyZeroPts, penaltyMaxTwoPts: $penaltyMaxTwoPts, penaltyMaxFourHalfPts: $penaltyMaxFourHalfPts, penaltyMinusTwoPts: $penaltyMinusTwoPts, penaltyMinusHalfToTwoPts: $penaltyMinusHalfToTwoPts, penaltyJudgeOpinion: $penaltyJudgeOpinion, ownershipReferee: $ownershipReferee, ownershipJudge: $ownershipJudge, nextQuestion: $nextQuestion)
+            .previewLayout(.sizeThatFits)
     }
 }

@@ -28,21 +28,18 @@ struct Quizz {
 }
 
 // create a new Quizz list
-func newList (of quizzQuestionNumber: Int) -> [Int]
-{
+func newList (of quizzQuestionNumber: Int) -> [Int] {
     var newList: [Int] = []
     let totalQuestionNumber = penalties.count
-    print("[Quizz.NewList] totalQuestionNumber: \(totalQuestionNumber)")
+//    print("[Quizz.NewList] totalQuestionNumber: \(totalQuestionNumber)")
     // While the total number of items in array not met add a new random number
     while (newList.count < quizzQuestionNumber) {
          newList.append(Int.random(in: 0...(totalQuestionNumber-1)))
-        print("[Quizz.NewList] newList: \(newList)")
+//        print("[Quizz.NewList] newList: \(newList)")
+        // Remove Duplicates
         newList = newList.removingDuplicates()
-        print("[Quizz.NewList] newList - delete duplicates: \(newList)")
+//        print("[Quizz.NewList] newList - delete duplicates: \(newList)")
     }
-    // use Set (array with no duplicates
-    // then change Set to Array
-    
     return newList
 }
 
@@ -50,12 +47,10 @@ func newList (of quizzQuestionNumber: Int) -> [Int]
 extension Array where Element: Hashable {
     func removingDuplicates() -> [Element] {
         var addedDict = [Element: Bool]()
-
         return filter {
             addedDict.updateValue(true, forKey: $0) == nil
         }
     }
-
     mutating func removeDuplicates() {
         self = self.removingDuplicates()
     }

@@ -40,31 +40,18 @@ struct QuizzQuestionView: View {
     @State private var lastQuestion = false
     
     var body: some View {
-        ScrollView {
-//            penatlyNumber = questionList[currentQuestion]
             let penalty = penalties[questionList[currentQuestion]]
             
-            // Set the new question list
-//            let newQuizzList = newList(quizzQuestionNumber: questionNumber)
-//            var newQuizz = Quizz()
-//            newQuizz.questions = newList(of: questionNumber)
-            
-            // dummy values test
-//            questionList = [10,3,20,25,14]
-//            penatlyNumber = questionList[0]
-            
-            // define the real list without the newQuizz Object
-//            questionList = newList(of: questionNumber)
-//            penatlyNumber = questionList[currentQuestion]
-            
             VStack(alignment: .leading) {
-                
                 //Rule Description
                 VStack (alignment: .leading) {
-                    Text("Penalty-Rule")
-                        .font(.title)
-                        .foregroundColor(Color.accentColor)
-                        .padding(.bottom, 1.0)
+                    HStack {
+                        Text("Quizz-Question")
+                        Text(" \(currentQuestion+1)")
+                    }
+                    .font(.title)
+                    .foregroundColor(Color.accentColor)
+                    .padding(.bottom, 1.0)
                     
                     Text("Penalty-Description")
                         .font(.title2)
@@ -73,77 +60,84 @@ struct QuizzQuestionView: View {
                     
                     Text(penalty.description)
                         .fixedSize(horizontal: false, vertical: true)
-                }
-                
-                
-                
+                } // VStack Penalty Description
+                 
                 Spacer()
                 Divider ()
-                //What is the saction for this penalty
-                Text("Penalty-Penalty")
-                    .font(.title2)
-                    .foregroundColor(Color.accentColor)
-                    .multilineTextAlignment(.leading)
-                    .padding(.bottom)
                 
-                VStack(alignment: .center) {
-                    HStack{
-                        //Penalty Line 1
-                        Spacer ()
-                        // 0 pts
-                        PenaltySelectionButton (buttonImage: "0.circle", buttonText: NSLocalizedString("Button-0pts", comment: "Button Description"), isOn: $penaltyZeroPts, sanctionSelection: $userSanctionSelection, sanctionID: 0, penaltyZeroPts: $penaltyZeroPts, penaltyMaxTwoPts: $penaltyMaxTwoPts, penaltyMaxFourHalfPts: $penaltyMaxFourHalfPts, penaltyMinusTwoPts: $penaltyMinusTwoPts, penaltyMinusHalfToTwoPts: $penaltyMinusHalfToTwoPts, penaltyJudgeOpinion: $penaltyJudgeOpinion, ownershipReferee: $ownershipReferee, ownershipJudge: $ownershipJudge, nextQuestion: $nextQuestion)
-                        //        penaltyZeroPts: $penaltyZeroPts, penaltyMaxTwoPts: $penaltyMaxTwoPts, penaltyMaxFourHalfPts: $penaltyMaxFourHalfPts, penaltyMinusTwoPts: $penaltyMinusTwoPts, penaltyMinusHalfToTwoPts: $penaltyMinusHalfToTwoPts, penaltyJudgeOpinion: $penaltyJudgeOpinion
-                        
-                        
-                        Spacer ()
-                        // Max 2 pts
-                        PenaltySelectionButton (buttonImage: "lessthan.circle.fill", buttonText: NSLocalizedString("Button-max2pts", comment: "Button Description"), isOn: $penaltyMaxTwoPts, sanctionSelection: $userSanctionSelection, sanctionID: 2, penaltyZeroPts: $penaltyZeroPts, penaltyMaxTwoPts: $penaltyMaxTwoPts, penaltyMaxFourHalfPts: $penaltyMaxFourHalfPts, penaltyMinusTwoPts: $penaltyMinusTwoPts, penaltyMinusHalfToTwoPts: $penaltyMinusHalfToTwoPts, penaltyJudgeOpinion: $penaltyJudgeOpinion, ownershipReferee: $ownershipReferee, ownershipJudge: $ownershipJudge, nextQuestion: $nextQuestion)
-                        //                        PenaltyMaxTwoPtsButton (isSet: resetPenalties)
-                        Spacer ()
-                        // Max 4 1/2 pts
-                        PenaltySelectionButton (buttonImage: "lessthan.circle", buttonText: NSLocalizedString("Button-max4halfpts", comment: "Button Description"), isOn: $penaltyMaxFourHalfPts, sanctionSelection: $userSanctionSelection, sanctionID: 3, penaltyZeroPts: $penaltyZeroPts, penaltyMaxTwoPts: $penaltyMaxTwoPts, penaltyMaxFourHalfPts: $penaltyMaxFourHalfPts, penaltyMinusTwoPts: $penaltyMinusTwoPts, penaltyMinusHalfToTwoPts: $penaltyMinusHalfToTwoPts, penaltyJudgeOpinion: $penaltyJudgeOpinion, ownershipReferee: $ownershipReferee, ownershipJudge: $ownershipJudge, nextQuestion: $nextQuestion)
-                        //                        PenaltyMaxFourHalfPtsButton (isSet: resetPenalties)
-                        Spacer ()
-                    }
-                    HStack{
-                        //Penalty Line 2
-                        Spacer ()
-                        // -2 pts
-                        PenaltySelectionButton (buttonImage: "gobackward.minus", buttonText: NSLocalizedString("Button--2pts", comment: "Button Description"), isOn: $penaltyMinusTwoPts, sanctionSelection: $userSanctionSelection, sanctionID: 1, penaltyZeroPts: $penaltyZeroPts, penaltyMaxTwoPts: $penaltyMaxTwoPts, penaltyMaxFourHalfPts: $penaltyMaxFourHalfPts, penaltyMinusTwoPts: $penaltyMinusTwoPts, penaltyMinusHalfToTwoPts: $penaltyMinusHalfToTwoPts, penaltyJudgeOpinion: $penaltyJudgeOpinion, ownershipReferee: $ownershipReferee, ownershipJudge: $ownershipJudge, nextQuestion: $nextQuestion)
-                        //                        PenaltyMinusTwoPtsButton (isSet: resetPenalties)
-                        Spacer ()
-                        // -1/2 to 2 pts
-                        PenaltySelectionButton (buttonImage: "arrow.left.and.right.circle", buttonText: NSLocalizedString("Button--halfto2pts", comment: "Button Description"), isOn: $penaltyMinusHalfToTwoPts, sanctionSelection: $userSanctionSelection, sanctionID: 4, penaltyZeroPts: $penaltyZeroPts, penaltyMaxTwoPts: $penaltyMaxTwoPts, penaltyMaxFourHalfPts: $penaltyMaxFourHalfPts, penaltyMinusTwoPts: $penaltyMinusTwoPts, penaltyMinusHalfToTwoPts: $penaltyMinusHalfToTwoPts, penaltyJudgeOpinion: $penaltyJudgeOpinion, ownershipReferee: $ownershipReferee, ownershipJudge: $ownershipJudge, nextQuestion: $nextQuestion)
-                        //                        PenaltyMinusHalfToTwoPtsButton (isSet: resetPenalties)
-                        Spacer ()
-                        // judge Opinion
-                        PenaltySelectionButton (buttonImage: "plusminus.circle", buttonText: NSLocalizedString("Button-judgeOpinion", comment: "Button Description"), isOn: $penaltyJudgeOpinion, sanctionSelection: $userSanctionSelection, sanctionID: 5, penaltyZeroPts: $penaltyZeroPts, penaltyMaxTwoPts: $penaltyMaxTwoPts, penaltyMaxFourHalfPts: $penaltyMaxFourHalfPts, penaltyMinusTwoPts: $penaltyMinusTwoPts, penaltyMinusHalfToTwoPts: $penaltyMinusHalfToTwoPts, penaltyJudgeOpinion: $penaltyJudgeOpinion, ownershipReferee: $ownershipReferee, ownershipJudge: $ownershipJudge, nextQuestion: $nextQuestion)
-                        //                        PenaltyJudgeOpinionButton (isSet: resetPenalties)
-                        Spacer ()
-                    }
-                }
-                
-                Divider ()
-                // who is can take the sanction
-                Text("Penalty-Ownership")
-                    .font(.title2)
-                    .foregroundColor(Color.accentColor)
-                    .multilineTextAlignment(.leading)
-                    .padding(.bottom)
-                
-                VStack {
-                    HStack {
-                        // Ownership Referee
-                        OwnershipRefereeButton (isOn: $ownershipReferee, sanctionSelection: $userSanctionSelection, ownershipJudge: $ownershipJudge, nextQuestion: $nextQuestion)
-                        
-                        Spacer ()
-                        // Ownership Judge
-                        OwnershipJudgeButton (isOn: $ownershipJudge, sanctionSelection: $userSanctionSelection, ownershipReferee: $ownershipReferee, nextQuestion: $nextQuestion)
-                    }
-                    .padding(.horizontal, 30.0)
-                }
-                .frame(alignment: .center)
-                
+                ScrollView {
+                    // ScrollView for the entire Buttons
+                    
+                    //What is the saction for this penalty
+                    Text("Penalty-Penalty")
+                        .font(.title2)
+                        .foregroundColor(Color.accentColor)
+                        .multilineTextAlignment(.leading)
+                        .padding(.bottom)
+                    
+                    VStack(alignment: .center) {
+                        // Penalties: What sanction is appropriate
+                        HStack{
+                            //Penalty Line 1
+                            Spacer ()
+                            // 0 pts
+                            PenaltySelectionButton (buttonImage: "0.circle", buttonText: NSLocalizedString("Button-0pts", comment: "Button Description"), isOn: $penaltyZeroPts, sanctionSelection: $userSanctionSelection, sanctionID: 0, penaltyZeroPts: $penaltyZeroPts, penaltyMaxTwoPts: $penaltyMaxTwoPts, penaltyMaxFourHalfPts: $penaltyMaxFourHalfPts, penaltyMinusTwoPts: $penaltyMinusTwoPts, penaltyMinusHalfToTwoPts: $penaltyMinusHalfToTwoPts, penaltyJudgeOpinion: $penaltyJudgeOpinion, ownershipReferee: $ownershipReferee, ownershipJudge: $ownershipJudge, nextQuestion: $nextQuestion)
+                            //        penaltyZeroPts: $penaltyZeroPts, penaltyMaxTwoPts: $penaltyMaxTwoPts, penaltyMaxFourHalfPts: $penaltyMaxFourHalfPts, penaltyMinusTwoPts: $penaltyMinusTwoPts, penaltyMinusHalfToTwoPts: $penaltyMinusHalfToTwoPts, penaltyJudgeOpinion: $penaltyJudgeOpinion
+                            
+                            
+                            Spacer ()
+                            // Max 2 pts
+                            PenaltySelectionButton (buttonImage: "lessthan.circle.fill", buttonText: NSLocalizedString("Button-max2pts", comment: "Button Description"), isOn: $penaltyMaxTwoPts, sanctionSelection: $userSanctionSelection, sanctionID: 2, penaltyZeroPts: $penaltyZeroPts, penaltyMaxTwoPts: $penaltyMaxTwoPts, penaltyMaxFourHalfPts: $penaltyMaxFourHalfPts, penaltyMinusTwoPts: $penaltyMinusTwoPts, penaltyMinusHalfToTwoPts: $penaltyMinusHalfToTwoPts, penaltyJudgeOpinion: $penaltyJudgeOpinion, ownershipReferee: $ownershipReferee, ownershipJudge: $ownershipJudge, nextQuestion: $nextQuestion)
+                            //                        PenaltyMaxTwoPtsButton (isSet: resetPenalties)
+                            Spacer ()
+                            // Max 4 1/2 pts
+                            PenaltySelectionButton (buttonImage: "lessthan.circle", buttonText: NSLocalizedString("Button-max4halfpts", comment: "Button Description"), isOn: $penaltyMaxFourHalfPts, sanctionSelection: $userSanctionSelection, sanctionID: 3, penaltyZeroPts: $penaltyZeroPts, penaltyMaxTwoPts: $penaltyMaxTwoPts, penaltyMaxFourHalfPts: $penaltyMaxFourHalfPts, penaltyMinusTwoPts: $penaltyMinusTwoPts, penaltyMinusHalfToTwoPts: $penaltyMinusHalfToTwoPts, penaltyJudgeOpinion: $penaltyJudgeOpinion, ownershipReferee: $ownershipReferee, ownershipJudge: $ownershipJudge, nextQuestion: $nextQuestion)
+                            //                        PenaltyMaxFourHalfPtsButton (isSet: resetPenalties)
+                            Spacer ()
+                        } // HStack Penalty Line 1
+                        HStack{
+                            //Penalty Line 2
+                            Spacer ()
+                            // -2 pts
+                            PenaltySelectionButton (buttonImage: "gobackward.minus", buttonText: NSLocalizedString("Button--2pts", comment: "Button Description"), isOn: $penaltyMinusTwoPts, sanctionSelection: $userSanctionSelection, sanctionID: 1, penaltyZeroPts: $penaltyZeroPts, penaltyMaxTwoPts: $penaltyMaxTwoPts, penaltyMaxFourHalfPts: $penaltyMaxFourHalfPts, penaltyMinusTwoPts: $penaltyMinusTwoPts, penaltyMinusHalfToTwoPts: $penaltyMinusHalfToTwoPts, penaltyJudgeOpinion: $penaltyJudgeOpinion, ownershipReferee: $ownershipReferee, ownershipJudge: $ownershipJudge, nextQuestion: $nextQuestion)
+                            //                        PenaltyMinusTwoPtsButton (isSet: resetPenalties)
+                            Spacer ()
+                            // -1/2 to 2 pts
+                            PenaltySelectionButton (buttonImage: "arrow.left.and.right.circle", buttonText: NSLocalizedString("Button--halfto2pts", comment: "Button Description"), isOn: $penaltyMinusHalfToTwoPts, sanctionSelection: $userSanctionSelection, sanctionID: 4, penaltyZeroPts: $penaltyZeroPts, penaltyMaxTwoPts: $penaltyMaxTwoPts, penaltyMaxFourHalfPts: $penaltyMaxFourHalfPts, penaltyMinusTwoPts: $penaltyMinusTwoPts, penaltyMinusHalfToTwoPts: $penaltyMinusHalfToTwoPts, penaltyJudgeOpinion: $penaltyJudgeOpinion, ownershipReferee: $ownershipReferee, ownershipJudge: $ownershipJudge, nextQuestion: $nextQuestion)
+                            //                        PenaltyMinusHalfToTwoPtsButton (isSet: resetPenalties)
+                            Spacer ()
+                            // judge Opinion
+                            PenaltySelectionButton (buttonImage: "plusminus.circle", buttonText: NSLocalizedString("Button-judgeOpinion", comment: "Button Description"), isOn: $penaltyJudgeOpinion, sanctionSelection: $userSanctionSelection, sanctionID: 5, penaltyZeroPts: $penaltyZeroPts, penaltyMaxTwoPts: $penaltyMaxTwoPts, penaltyMaxFourHalfPts: $penaltyMaxFourHalfPts, penaltyMinusTwoPts: $penaltyMinusTwoPts, penaltyMinusHalfToTwoPts: $penaltyMinusHalfToTwoPts, penaltyJudgeOpinion: $penaltyJudgeOpinion, ownershipReferee: $ownershipReferee, ownershipJudge: $ownershipJudge, nextQuestion: $nextQuestion)
+                            //                        PenaltyJudgeOpinionButton (isSet: resetPenalties)
+                            Spacer ()
+                        } // HStack Penalty Line 2
+                    } // VStack Penalty Buttons
+                    Divider ()
+                    // Ownership : who is can take the sanction
+                    Text("Penalty-Ownership")
+                        .font(.title2)
+                        .foregroundColor(Color.accentColor)
+                        .multilineTextAlignment(.leading)
+                        .padding(.bottom)
+                    
+                    VStack {
+                        HStack {
+                            Spacer ()
+                            // Ownership Referee
+                            OwnershipRefereeButton (isOn: $ownershipReferee, sanctionSelection: $userSanctionSelection, ownershipJudge: $ownershipJudge, nextQuestion: $nextQuestion)
+                            
+                            Spacer ()
+                            Spacer ()
+                            // Ownership Judge
+                            OwnershipJudgeButton (isOn: $ownershipJudge, sanctionSelection: $userSanctionSelection, ownershipReferee: $ownershipReferee, nextQuestion: $nextQuestion)
+                            Spacer ()
+                        } // HStack Ownership
+    //                    .padding(.horizontal, 30.0)
+                    } // VStack Ownership
+                    .frame(alignment: .center)
+ 
+                } // sub ScrollView for all buttons
+                      
                 Divider ()
                 // Navigation
                 HStack {
@@ -164,10 +158,10 @@ struct QuizzQuestionView: View {
                             .fontWeight(.semibold)
                         Image (systemName: "chevron.right.circle.fill")
                             .font(.title)
-                    }
+                    } // Button
                     .padding(10.0)
                     .foregroundColor(.white)
-                    //                    .background(Color.accentColor)
+//                    .background(Color.accentColor)
                     .background((nextQuestion ? Color("AccentColor") : Color.gray))
                     .cornerRadius(400)
                     NavigationLink(destination: QuizzResultView (score: score, questionNumber: questionList.count), isActive: $lastQuestion) {}
@@ -178,22 +172,21 @@ struct QuizzQuestionView: View {
                         .foregroundColor(Color.white)
                         .background(Color("Score"))
                         .cornerRadius(20)
-                }
-                .padding(.vertical)
+                } // HStack Navigation
+                .padding(.vertical, 10.0)
                 
-            }
+            } // VStack Top
             .padding(.all)
-            Spacer ()
-        }
-    }
+    } // Body
    
     func nextQuestion(_ penalty : Penalty) {
         print("[nextQuestion] userSanctionSelection: \(userSanctionSelection) - ownershipReferee: \(ownershipReferee) - ownershipJudge: \(ownershipJudge)")
         if (userSanctionSelection > 6) || (!ownershipReferee && !ownershipJudge) {
-            // As the user provided an answer at least one penalty and one owner
+            // Has the user provided an answer at least one penalty and one owner
             askForAnswer = true
             print("[nextQuestion] Missing answer")
         } else {
+            // else user has answered items
             if userSanctionSelection == penalty.sanctionValue {
                 // if the penalty answer is correct
                     if (ownershipReferee == penalty.referee) && (ownershipJudge == penalty.judge) {
@@ -223,8 +216,8 @@ struct QuizzQuestionView: View {
                 // if this was the last question
                 print("End of Quizz - switch to Result Page")
             }
-        }
-    }
+        } // end else user has answered items
+    } // NextQuestion
 
     
     func askNewQuestion() {

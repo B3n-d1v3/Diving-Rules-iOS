@@ -80,6 +80,9 @@
 /* Quizz - Question Page Next Button*/
 "Quizz-Next" = "Next";
 
+/* Quizz - Question*/
+"Quizz-Question" = "Question";
+
 /* Quizz - Result Title*/
 "Quizz-Result-Title" = "Quizz Result";
 

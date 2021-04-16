@@ -9,16 +9,26 @@ import SwiftUI
 
 struct PenaltiesListView: View {
     var body: some View {
-        NavigationView {
-            List (penalties) { penalty in
-                NavigationLink(destination: PenaltyDetailView(penalty: penalty)) {
-                    PenaltyRowView (penalties: penalty)
-                    //PenaltyRowView (penalties: penalty, sanctions: sanction)
-                }
-            }
+//        NavigationView {
+//            ZStack {
+//                VStack (spacing: 0){
+//                    // Testing to add a header with logo
+//                    AppTitleView()
+//                        .padding(.horizontal, 15)
+//                        .padding(.bottom)
+//                        .padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top)
+                    List (penalties) { penalty in
+                        NavigationLink(destination: PenaltyDetailView(penalty: penalty)) {
+                            PenaltyRowView (penalties: penalty)
+                            //PenaltyRowView (penalties: penalty, sanctions: sanction)
+                        }
+                    }
+//                    Spacer ()
+//                } // VStack
+//            } // Zstack
+//            .ignoresSafeArea(.all, edges: .top)
 //            .navigationTitle("Penalties-List-Title")
-            Spacer ()
-        }
+//        } // NavigationView
 }
 }
 

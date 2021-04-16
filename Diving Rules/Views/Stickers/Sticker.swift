@@ -44,5 +44,7 @@ struct Sticker_Previews: PreviewProvider {
         // Bad: "xmark.octagon.fill"
         // Almost: "exclamationmark.triangle.fill"
         Sticker(stickerImage: "checkmark.circle", stickerColor: "Good", stickerText: "Good")
+            .padding()
+            .previewLayout(.sizeThatFits)
     }
 }

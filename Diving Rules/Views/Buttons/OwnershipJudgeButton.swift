@@ -24,13 +24,13 @@ struct OwnershipJudgeButton: View {
                 // next button should be turned on
                 nextQuestion = true
             }
-            print("[RefereeButton] Button activated - toggle: \(isOn) -  sanctionSelection: \(sanctionSelection) - nextQuestion: \(nextQuestion)")
+//            print("[RefereeButton] Button activated - toggle: \(isOn) -  sanctionSelection: \(sanctionSelection) - nextQuestion: \(nextQuestion)")
         }) {
             VStack {
                 // Ownership Referee
                 Image (systemName: "person.3.fill")
                 .resizable()
-                    .frame(width: 89.0, height: 40.0)
+                    .frame(width: 80.0, height: 37.0)
                 Text ("Button-Judge")
                     .font(.caption)
                     
@@ -49,5 +49,6 @@ struct OwnershipJudgeButton_Previews: PreviewProvider {
 
     static var previews: some View {
         OwnershipJudgeButton(isOn: $ownerJudgeOn, sanctionSelection: $sanctionPreview, ownershipReferee: $ownershipReferee, nextQuestion: $nextQuestion)
+            .previewLayout(.sizeThatFits)
     }
 }
