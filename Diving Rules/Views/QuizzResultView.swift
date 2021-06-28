@@ -36,20 +36,42 @@ struct QuizzResultView: View {
                 Sticker(stickerImage: "xmark.octagon.fill", stickerColor: "Bad", stickerText: "Failed")
             }
             Spacer ()
-            NavigationLink(destination: QuizzQuestionView (questionList: newList(of: questionNumber))) {
-                Text("Quizz-Result-Start-Button")
-                    .font(.title3)
-                    .fontWeight(.semibold)
-                Image (systemName: "play.circle.fill")
-                    .font(.title)
-            }
-            .padding(10.0)
-            .foregroundColor(.white)
-            .background(Color.accentColor)
-            .cornerRadius(40)
+            
+            HStack {
+                //Todo: change this link to open the list with the list of questions of the last quizz
+                NavigationLink(destination: QuizzResultListView ()) {
+                    Image (systemName: "memories")
+                        .font(.title)
+                    Text("Quizz-Result-Review-Button")
+                        .font(.title3)
+                        .fontWeight(.semibold)
+                        .padding(.trailing, 10.0)
+                }
+                .padding(10.0)
+                .foregroundColor(.white)
+                .background(Color.accentColor)
+                .cornerRadius(40)
+                
+                Spacer ()
+                
+                NavigationLink(destination: QuizzQuestionView (questionList: newList(of: questionNumber))) {
+                    Text("Quizz-Result-Start-Button")
+                        .font(.title3)
+                        .fontWeight(.semibold)
+                        .padding(.leading, 10.0)
+                    Image (systemName: "play.circle.fill")
+                        .font(.title)
+                }
+                .padding(10.0)
+                .foregroundColor(.white)
+                .background(Color.accentColor)
+                .cornerRadius(40)
+            } // HStack Navigation
+            
             
             Spacer ()
         }
+        .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
     }
 }
 

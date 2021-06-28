@@ -15,7 +15,7 @@ struct QuizzQuestionView: View {
     
     // ToDo >>>>>> ADD count the number of penalties to random from   <<<<<<
 
-    // Quizz Context
+    // Quizz Context: Question list
     var questionList: [Int]
 //    var questionNumber: Int
 //    @State private var penatlyNumber = Int.random(in: 0...45)
@@ -58,7 +58,10 @@ struct QuizzQuestionView: View {
                         .foregroundColor(Color.accentColor)
                         .padding(.bottom)
                     
-                    Text(penalty.description)
+//                    Text(penalty.description)
+                    // Using tranlated penalty desciprion
+                    let penaltyDescription = "Penalty-" + String(penalty.id)
+                    Text(LocalizedStringKey( penaltyDescription))
                         .fixedSize(horizontal: false, vertical: true)
                 } // VStack Penalty Description
                  
@@ -156,6 +159,7 @@ struct QuizzQuestionView: View {
                         Text("Quizz-Next")
                             .font(.title3)
                             .fontWeight(.semibold)
+                            .padding(.leading, 10.0)
                         Image (systemName: "chevron.right.circle.fill")
                             .font(.title)
                     } // Button

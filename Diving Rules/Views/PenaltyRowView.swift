@@ -17,7 +17,10 @@ struct PenaltyRowView: View {
             .font(.title)
             .foregroundColor(Color.accentColor)
 
-            Text(penalties.description)
+//            Text(penalties.description)
+            // Using tranlated penalty desciprion
+            let penaltyDescription = "Penalty-" + String(penalties.id)
+            Text(LocalizedStringKey(penaltyDescription))
             Spacer ()
         }
         .padding(.all, 5.0)

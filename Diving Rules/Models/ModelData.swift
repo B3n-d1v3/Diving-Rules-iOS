@@ -11,7 +11,7 @@ var penalties: [Penalty] = load("divingPenaltiesSummary.json")
 
 var sanctions: [Sanction] = load("divingPenaltiesSanctions.json")
 
-var UserQuizzList: [Quizz] = []
+var UserQuizzHistory: [Quizz] = []
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data

@@ -97,6 +97,9 @@
 /*Quizz - Result Start Button*/
 "Quizz-Result-Start-Button" = "Prueba nueva";
 
+/* Quizz - Result Error Review Button*/
+"Quizz-Result-Review-Button" = "es-Errors";
+
 /*Quizz - Good Sticker*/
 "Good" = "Bien";
 
@@ -119,3 +122,146 @@
 /*Rule Book Selection Page
  Rule Book - Title*/
 "RuleBook-Title" = "Normas";
+
+
+/* Penalty Descripion List
+ Penalty 0 - D6.12 - If the diver takes more than one minute, after a warning.*/
+"Penalty-0" = "es-Penalty-0";
+
+/* Penalty 1 - D6.16 & D8.3.4 - If a diver double bounces on the end of the springboard or double jump on the end of the platform before take-off.*/
+"Penalty-1" = "es-Penalty-1";
+
+/* Penalty 2 - D6.17 & D8.3.3 - If the final step is not from one foot.*/
+"Penalty-2" = "es-Penalty-2";
+
+/* Penalty 3 - D6.18 & D8.4.3 - If the take-off on the springboard is not from both feet simultaneously.*/
+"Penalty-3" = "es-Penalty-3";
+
+/* Penalty 4 - D6.20 & D8.6.6- If a twist is greater or less than that announced by 90 degrees or more.*/
+"Penalty-4" = "es-Penalty-4";
+
+/* Penalty 5 - D6.21 & D8.1.7 - If a diver has performed a dive of a number other than that announced.*/
+"Penalty-5" = "es-Penalty-5";
+
+/* Penalty 6 - D6.22.1 - If the feet enter the water before the head or hands in a head first dive.*/
+"Penalty-6" = "es-Penalty-6";
+
+/* Penalty 7 - D6.22.2 - If the head or hands enter the water before the feet in a feet first dive.*/
+"Penalty-7" = "es-Penalty-7";
+
+/* Penalty 8 - D6.24 - If assistance has been given to the diver after the starting signal.*/
+"Penalty-8" = "es-Penalty-8";
+
+/* Penalty 9 - D6.27 - When a second attempt\n(a re-start) is unsuccessful.*/
+"Penalty-9" = "es-Penalty-9";
+
+/* Penalty 10 - D6.28 - If a diver refuses the execution of a dive.*/
+"Penalty-10" = "es-Penalty-10";
+
+/* Penalty 11 - D9.2 & D9.8 - In synchronised diving if a diver, or both divers, perform a dive of a different number or position.*/
+"Penalty-11" = "es-Penalty-11";
+
+/* Penalty 12 - D9.8 - In synchronised diving if all execution judges for one diver award zero (0) points.*/
+"Penalty-12" = "es-Penalty-12";
+
+/* Penalty 13 - D9.10 - In synchronised diving if all synchronisation judges award zero (0) points.*/
+"Penalty-13" = "es-Penalty-13";
+
+/* Penalty 14 - D9.8 - If an execution judge considers that a dive of a different number has been performed.*/
+"Penalty-14" = "es-Penalty-14";
+
+/* Penalty 15 - D6.25 - If a diver takes a step and stops in a running dive or stops the movement for a standing take-off after the legs have commenced to press.*/
+"Penalty-15" = "es-Penalty-15";
+
+/* Penalty 16 - D6.26 - If there is a \nre-start in a standing, running, or armstand dive.*/
+"Penalty-16" = "es-Penalty-16";
+
+/* Penalty 17 - D9.6 - In synchronised diving if there is a re-start by one or both divers.*/
+"Penalty-17" = "es-Penalty-17";
+
+/* Penalty 18 - D6.19 & D8.1.4 - If a diver performs a dive in a position other than that announced.*/
+"Penalty-18" = "es-Penalty-18";
+
+/* Penalty 19 - D8.5.4 - If in a dive, a diver is unsafely close to the springboard or platform or touches the end of the springboard or platform with his head.*/
+"Penalty-19" = "es-Penalty-19";
+
+/* Penalty 20 - D6.22, D8.6.3 & D8.6.4 - If a diver has one or both arms held above the head in a feet first entry or below the head in a head first entry.*/
+"Penalty-20" = "es-Penalty-20";
+
+/* Penalty 21 - D8.5.7 - If in a flying dive, a straight position is not clearly shown for at least one quarter of a somersault (90º) in dives with somersault.*/
+"Penalty-21" = "es-Penalty-21";
+
+/* Penalty 22 - D8.5.7 - If in a flying dive, a straight position is not clearly shown for at least a half somersault (180º) in dives with more than 1 somersault.*/
+"Penalty-22" = "es-Penalty-22";
+
+/* Penalty 23 - D8.1.6 - If a dive is not performed in a position as described.*/
+"Penalty-23" = "es-Penalty-23";
+
+/* Penalty 24 - D8.2.3 - If the starting position is not straight, head erect, with the arms straight in any position.*/
+"Penalty-24" = "es-Penalty-24";
+
+/* Penalty 25 - D8.2.4.3 - If the feet leave the springboard or platform (crow-hop) before the take-off in a standing dive.*/
+"Penalty-25" = "es-Penalty-25";
+
+/* Penalty 26 - D8.2.6.2 - If in an armstand dive, a stationary and steady balance in the straight vertical position is not shown.*/
+"Penalty-26" = "es-Penalty-26";
+
+/* Penalty 27 - D8.3.2 - If the run is not smooth, aesthetically pleasing in a forward direction to the end of the springboard or platform.*/
+"Penalty-27" = "es-Penalty-27";
+
+/* Penalty 28 - D8.4.5 - If the take-off is not bold, high, and confident.*/
+"Penalty-28" = "es-Penalty-28";
+
+/* Penalty 29 - D8.4.6 - If in a twist dive, the twisting is manifestly done from the springboard or platform.*/
+"Penalty-29" = "es-Penalty-29";
+
+/* Penalty 30 - D8.5.6 - If the straight position is not shown as described.*/
+"Penalty-30" = "es-Penalty-30";
+
+/* Penalty 31 - D8.5.9 - If the pike position is not shown as described.*/
+"Penalty-31" = "es-Penalty-31";
+
+/* Penalty 32 - D8.5.10 - If in a pike dive with twist, the pike position is not clearly shown.*/
+"Penalty-32" = "es-Penalty-32";
+
+/* Penalty 33 - D8.5.12 - If the tuck position is not shown as described.*/
+"Penalty-33" = "es-Penalty-33";
+
+/* Penalty 34 - D8.5.13 - If in a tuck dive with twist, the tuck position is not clearly shown.*/
+"Penalty-34" = "es-Penalty-34";
+
+/* Penalty 35 - D8.5.15 - If the free position is not shown as described.*/
+"Penalty-35" = "es-Penalty-35";
+
+/* Penalty 36 - D8.6.5 - If the arms are not in the correct position in either the head first or feet first entry.*/
+"Penalty-36" = "es-Penalty-36";
+
+/* Penalty 37 - D9.11 - In synchronised diving if\nsimilarity of the starting position, approach, take-off and height is not shown.*/
+"Penalty-37" = "es-Penalty-37";
+
+/* Penalty 38 - D9.11 - In synchronised diving if coordinated timing of the movement during the flight is not shown.*/
+"Penalty-38" = "es-Penalty-38";
+
+/* Penalty 39 - D9.11 - In synchronised diving if similarity of the vertical angles of the entries is not shown.*/
+"Penalty-39" = "es-Penalty-39";
+
+/* Penalty 40 - D9.11 - In synchronised diving if comparative distance from the springboard or platform of the entry is not shown.*/
+"Penalty-40" = "es-Penalty-40";
+
+/* Penalty 41 - D9.11 - In synchronised diving if coordinated timing of the entries is not shown.*/
+"Penalty-41" = "es-Penalty-41";
+
+/* Penalty 42 - D8.1.5 - If a dive is performed partially in a position other than that announced.*/
+"Penalty-42" = "es-Penalty-42";
+
+/* Penalty 43 - D8.5.2 - If in a dive, the diver dives to the side of the direct line of flight.*/
+"Penalty-43" = "es-Penalty-43";
+
+/* Penalty 44 - D8.5.3 - If in a dive, a diver touches the end of the springboard or platform with his feet or hands.*/
+"Penalty-44" = "es-Penalty-44";
+
+/* Penalty 45 - D8.6.2 - If the entry into the water is not vertical, or nearly so, or twisted with the body not straight, the feet not together, and the toes not pointed.*/
+"Penalty-45" = "es-Penalty-45";
+
+/* Penalty 46 - D9.5 - In synchronised diving if either diver enters the surface of the water before the other diver leaves the springboard or platform.*/
+"Penalty-46" = "es-Penalty-46";

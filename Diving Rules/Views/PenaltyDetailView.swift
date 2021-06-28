@@ -29,7 +29,12 @@ struct PenaltyDetailView: View {
                             .foregroundColor(Color.accentColor)
                             .padding(.bottom)
                             
-                        Text(penalty.description)
+//                        Text(penalty.description)
+                        
+                        // Using tranlated penalty desciprion
+                        let penaltyDescription = "Penalty-" + String(penalty.id)
+                        Text(LocalizedStringKey( penaltyDescription))
+
                     } // VStack Penalty description
                     HStack {
                         Spacer()
@@ -129,7 +134,12 @@ func rulesRelatedList(penaltyItem: Penalty) -> String {
 
 struct PenaltyDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        PenaltyDetailView(penalty: penalties[1])
+        Group {
+            PenaltyDetailView(penalty: penalties[1])
+                .environment(\.locale, .init(identifier: "en"))
+            PenaltyDetailView(penalty: penalties[1])
+                .environment(\.locale, .init(identifier: "fr"))
+        }
             
     }
 }

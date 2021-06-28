@@ -129,7 +129,7 @@
     "id" : 12,
     "description" : "In synchronised diving if all execution judges for one diver award zero (0) points.",
     "rules" : [
-      {"ruleId": "D9.9"}
+      {"ruleId": "D9.8"}
     ],
     "sanctionValue" : 0,
     "referee" : true,
@@ -139,7 +139,7 @@
     "id" : 13,
     "description" : "In synchronised diving if all synchronisation judges award zero (0) points.",
     "rules" : [
-        {"ruleId": "D9.11"}
+        {"ruleId": "D9.10"}
     ],
     "sanctionValue" : 0,
     "referee" : true,
@@ -149,7 +149,7 @@
     "id" : 14,
     "description" : "If an execution judge considers that a dive of a different number has been performed.",
     "rules" : [
-      {"ruleId": "D9.9"}
+      {"ruleId": "D9.8"}
     ],
     "sanctionValue" : 0,
     "referee" : true,
@@ -200,7 +200,7 @@
     "id" : 19,
     "description" : "If in a dive, a diver is unsafely close to the springboard or platform or touches the end of the springboard or platform with his head.",
     "rules" : [
-      {"ruleId": "D8.5.3"}
+      {"ruleId": "D8.5.4"}
     ],
     "sanctionValue" : 0,
     "referee" : false,
@@ -222,7 +222,7 @@
     "id" : 21,
     "description" : "If in a flying dive, a straight position is not clearly shown for at least one quarter of a somersault (90º) in dives with somersault.",
     "rules" : [
-      {"ruleId": "D8.5.6"}
+      {"ruleId": "D8.5.7"}
     ],
     "sanctionValue" : 3,
     "referee" : false,
@@ -232,7 +232,7 @@
     "id" : 22,
     "description" : "If in a flying dive, a straight position is not clearly shown for at least a half somersault (180º) in dives with more than 1 somersault.",
     "rules" : [
-      {"ruleId": "D8.5.6"}
+      {"ruleId": "D8.5.7"}
     ],
     "sanctionValue" : 3,
     "referee" : false,
@@ -312,7 +312,7 @@
     "id" : 30,
     "description" : "If the straight position is not shown as described.",
     "rules" : [
-      {"ruleId": "D8.5.4"}
+      {"ruleId": "D8.5.6"}
     ],
     "sanctionValue" : 4,
     "referee" : false,
@@ -322,7 +322,7 @@
     "id" : 31,
     "description" : "If the pike position is not shown as described.",
     "rules" : [
-      {"ruleId": "D8.5.4"}
+      {"ruleId": "D8.5.9"}
     ],
     "sanctionValue" : 4,
     "referee" : false,
@@ -332,7 +332,7 @@
     "id" : 32,
     "description" : "If in a pike dive with twist, the pike position is not clearly shown.",
     "rules" : [
-      {"ruleId": "D8.5.8"}
+      {"ruleId": "D8.5.10"}
     ],
     "sanctionValue" : 4,
     "referee" : false,
@@ -342,7 +342,7 @@
     "id" : 33,
     "description" : "If the tuck position is not shown as described.",
     "rules" : [
-      {"ruleId": "D8.5.4"}
+      {"ruleId": "D8.5.12"}
     ],
     "sanctionValue" : 4,
     "referee" : false,
@@ -352,7 +352,7 @@
     "id" : 34,
     "description" : "If in a tuck dive with twist, the tuck position is not clearly shown.",
     "rules" : [
-      {"ruleId": "D8.5.10"}
+      {"ruleId": "D8.5.13"}
     ],
     "sanctionValue" : 4,
     "referee" : false,
@@ -362,7 +362,7 @@
     "id" : 35,
     "description" : "If the free position is not shown as described.",
     "rules" : [
-      {"ruleId": "D8.5.4"}
+      {"ruleId": "D8.5.15"}
     ],
     "sanctionValue" : 4,
     "referee" : false,
@@ -382,7 +382,7 @@
     "id" : 37,
     "description" : "In synchronised diving if\nsimilarity of the starting position, approach, take-off and height is not shown.",
     "rules" : [
-      {"ruleId": "D9.12"}
+      {"ruleId": "D9.11"}
     ],
     "sanctionValue" : 4,
     "referee" : false,
@@ -392,7 +392,7 @@
     "id" : 38,
     "description" : "In synchronised diving if coordinated timing of the movement during the flight is not shown.",
     "rules" : [
-      {"ruleId": "D9.12"}
+      {"ruleId": "D9.11"}
     ],
     "sanctionValue" : 4,
     "referee" : false,
@@ -402,7 +402,7 @@
     "id" : 39,
     "description" : "In synchronised diving if similarity of the vertical angles of the entries is not shown.",
     "rules" : [
-      {"ruleId": "D9.12"}
+      {"ruleId": "D9.11"}
     ],
     "sanctionValue" : 4,
     "referee" : false,
@@ -412,7 +412,7 @@
     "id" : 40,
     "description" : "In synchronised diving if comparative distance from the springboard or platform of the entry is not shown.",
     "rules" : [
-      {"ruleId": "D9.12"}
+      {"ruleId": "D9.11"}
     ],
     "sanctionValue" : 4,
     "referee" : false,
@@ -422,7 +422,7 @@
     "id" : 41,
     "description" : "In synchronised diving if coordinated timing of the entries is not shown.",
     "rules" : [
-      {"ruleId": "D9.12"}
+      {"ruleId": "D9.11"}
     ],
     "sanctionValue" : 4,
     "referee" : false,
@@ -442,7 +442,7 @@
     "id" : 43,
     "description" : "If in a dive, the diver dives to the side of the direct line of flight.",
     "rules" : [
-      {"ruleId": "D8.5.1"}
+      {"ruleId": "D8.5.2"}
     ],
     "sanctionValue" : 5,
     "referee" : false,
@@ -452,7 +452,7 @@
     "id" : 44,
     "description" : "If in a dive, a diver touches the end of the springboard or platform with his feet or hands.",
     "rules" : [
-      {"ruleId": "D8.5.2"}
+      {"ruleId": "D8.5.3"}
     ],
     "sanctionValue" : 5,
     "referee" : false,

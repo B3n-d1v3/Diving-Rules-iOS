@@ -36,6 +36,7 @@ struct QuizzStartView: View {
                 Text("Quizz-Intro-Start-Button")
                     .font(.title3)
                     .fontWeight(.semibold)
+                    .padding(.leading, 10.0)
                 Image (systemName: "play.circle.fill")
                     .font(.title)
             }
