@@ -1,4 +1,3 @@
-
 /*Localizable.strings
   Diving Rules
 
@@ -95,6 +94,15 @@
 /* Quizz - Result Error Review Button*/
 "Quizz-Result-Review-Button" = "Errors";
 
+/* Quizz - Result Result Review Legend - unused */
+"Quizz-Result-Legend-unused" = "Unused";
+
+/* Quizz - Result Result Review Legend - unused */
+"Quizz-Result-Legend-user-answer" = "My answer";
+
+/* Quizz - Result Result Review Legend - unused */
+"Quizz-Result-Legend-real-answer" = "Good answer";
+
 /* Quizz - Good Sticker*/
 "Good" = "Good";
 
@@ -117,7 +125,6 @@
 /* Rule Book Selection Page
  Rule Book - Title*/
 "RuleBook-Title" = "Rule Book";
-
 
 /* Penalty Descripion List
  Penalty 0 - D6.12 - If the diver takes more than one minute, after a warning.*/

@@ -11,20 +11,7 @@ struct PenaltySelectionButton: View {
     var buttonImage: String
     var buttonText: String
     @Binding var isOn: Bool
-    @Binding var sanctionSelection: Int
     var sanctionID: Int
-    
-    // button status
-    @Binding var penaltyZeroPts: Bool
-    @Binding var penaltyMaxTwoPts: Bool
-    @Binding var penaltyMaxFourHalfPts: Bool
-    @Binding var penaltyMinusTwoPts: Bool
-    @Binding var penaltyMinusHalfToTwoPts: Bool
-    @Binding var penaltyJudgeOpinion: Bool
-    
-    // Next Status
-    @Binding var ownershipReferee: Bool
-    @Binding var ownershipJudge: Bool
     @Binding var nextQuestion: Bool
 
     
@@ -33,32 +20,32 @@ struct PenaltySelectionButton: View {
                 isOn.toggle()
                 // when button is turned on
                 if isOn {
-                    sanctionSelection = sanctionID
-                    if (sanctionID == 0) {penaltyZeroPts = true} else {penaltyZeroPts = false}
-                    if (sanctionID == 2) {penaltyMaxTwoPts = true} else {penaltyMaxTwoPts = false}
-                    if (sanctionID == 3) {penaltyMaxFourHalfPts = true} else {penaltyMaxFourHalfPts = false}
-                    if (sanctionID == 1) {penaltyMinusTwoPts = true} else {penaltyMinusTwoPts = false}
-                    if (sanctionID == 4) {penaltyMinusHalfToTwoPts = true} else {penaltyMinusHalfToTwoPts = false}
-                    if (sanctionID == 5) {penaltyJudgeOpinion = true} else {penaltyJudgeOpinion = false}
+                    penaltyButtonStatus.userSanctionSelection = sanctionID
+                    if (sanctionID == 0) {penaltyButtonStatus.penaltyZeroPts = true} else {penaltyButtonStatus.penaltyZeroPts = false}
+                    if (sanctionID == 2) {penaltyButtonStatus.penaltyMaxTwoPts = true} else {penaltyButtonStatus.penaltyMaxTwoPts = false}
+                    if (sanctionID == 3) {penaltyButtonStatus.penaltyMaxFourHalfPts = true} else {penaltyButtonStatus.penaltyMaxFourHalfPts = false}
+                    if (sanctionID == 1) {penaltyButtonStatus.penaltyMinusTwoPts = true} else {penaltyButtonStatus.penaltyMinusTwoPts = false}
+                    if (sanctionID == 4) {penaltyButtonStatus.penaltyMinusHalfToTwoPts = true} else {penaltyButtonStatus.penaltyMinusHalfToTwoPts = false}
+                    if (sanctionID == 5) {penaltyButtonStatus.penaltyJudgeOpinion = true} else {penaltyButtonStatus.penaltyJudgeOpinion = false}
                 } else {
                     // when button is turned off
-                    sanctionSelection = 50
-                    if (sanctionID == 0) {penaltyZeroPts = false}
-                    if (sanctionID == 2) {penaltyMaxTwoPts = false}
-                    if (sanctionID == 3) {penaltyMaxFourHalfPts = false}
-                    if (sanctionID == 1) {penaltyMinusTwoPts = false}
-                    if (sanctionID == 4) {penaltyMinusHalfToTwoPts = false}
-                    if (sanctionID == 5) {penaltyJudgeOpinion = false}
+                    penaltyButtonStatus.userSanctionSelection = 50
+                    if (sanctionID == 0) {penaltyButtonStatus.penaltyZeroPts = false}
+                    if (sanctionID == 2) {penaltyButtonStatus.penaltyMaxTwoPts = false}
+                    if (sanctionID == 3) {penaltyButtonStatus.penaltyMaxFourHalfPts = false}
+                    if (sanctionID == 1) {penaltyButtonStatus.penaltyMinusTwoPts = false}
+                    if (sanctionID == 4) {penaltyButtonStatus.penaltyMinusHalfToTwoPts = false}
+                    if (sanctionID == 5) {penaltyButtonStatus.penaltyJudgeOpinion = false}
                 }
-                if (sanctionSelection > 6) || (!ownershipReferee && !ownershipJudge) {
+                if (penaltyButtonStatus.userSanctionSelection > 6) || (!penaltyButtonStatus.ownershipReferee && !penaltyButtonStatus.ownershipJudge) {
                     // next button should be turned off
                     nextQuestion = false
                 } else {
                     // next button should be turned on
                     nextQuestion = true
                 }
-//                print("[PenaltyButton] Button activated: \(sanctionID) - toggle: \(isOn) -  sanctionSelection: \(sanctionSelection) - nextQuestion: \(nextQuestion)")
-
+//                print ("[PenaltyButton] Button activated:  \(sanctionID) - penaltyButtonStatus: ")
+//                print (penaltyButtonStatus)
              }) {
                 VStack {
                     Image (systemName: buttonImage)
@@ -76,21 +63,13 @@ struct PenaltySelectionButton: View {
 }
 
 struct PenaltySelectionButton_Previews: PreviewProvider {
-    @State static var sanctionPreview = 10
     @State static var penaltyOn = true
-    @State static var penaltyZeroPts = false
-    @State static var penaltyMaxTwoPts = false
-    @State static var penaltyMaxFourHalfPts = false
-    @State static var penaltyMinusTwoPts = false
-    @State static var penaltyMinusHalfToTwoPts = false
-    @State static var penaltyJudgeOpinion = false
-    @State static var ownershipReferee = false
-    @State static var ownershipJudge = false
     @State static var nextQuestion = false
 
 
     static var previews: some View {
-        PenaltySelectionButton(buttonImage: "0.circle", buttonText: "Button-0pts", isOn: $penaltyOn, sanctionSelection: $sanctionPreview, sanctionID: 0, penaltyZeroPts: $penaltyZeroPts, penaltyMaxTwoPts: $penaltyMaxTwoPts, penaltyMaxFourHalfPts: $penaltyMaxFourHalfPts, penaltyMinusTwoPts: $penaltyMinusTwoPts, penaltyMinusHalfToTwoPts: $penaltyMinusHalfToTwoPts, penaltyJudgeOpinion: $penaltyJudgeOpinion, ownershipReferee: $ownershipReferee, ownershipJudge: $ownershipJudge, nextQuestion: $nextQuestion)
+        PenaltySelectionButton(buttonImage: "0.circle", buttonText: "Button-0pts", isOn: $penaltyOn, sanctionID: 0, nextQuestion: $nextQuestion)
             .previewLayout(.sizeThatFits)
     }
+
 }

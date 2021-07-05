@@ -22,17 +22,13 @@ struct QuizzStartView: View {
             Text ("Quizz-Intro-Description")
                 .padding(.all)
             Divider ()
-//            Spacer ()
-//            Form (content: {
-                Stepper(value: $questionNumber, in: 5...40, step: 5) {
-                    Text("Number of Questions: \(questionNumber)")
+            Stepper(value: $questionNumber, in: 5...40, step: 5) {
+                Text("Number of Questions: \(questionNumber)")
                 }
                 .padding(.all)
-//            })
             Divider ()
             Spacer ()
-//            NavigationLink(destination: QuizzQuestionView (questionNumber: questionNumber)) {
-            NavigationLink(destination: QuizzQuestionView (questionList: newList(of: questionNumber)).navigationBarTitle("", displayMode: NavigationBarItem.TitleDisplayMode.inline)) {
+            NavigationLink(destination: QuizzQuestionView (questionList: newQuiz(of: questionNumber), penaltyButtonStatus: penaltyButtonStatus).navigationBarTitle("", displayMode: NavigationBarItem.TitleDisplayMode.inline)) {
                 Text("Quizz-Intro-Start-Button")
                     .font(.title3)
                     .fontWeight(.semibold)

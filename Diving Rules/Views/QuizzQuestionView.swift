@@ -12,32 +12,18 @@ import SwiftUI
 //}
 
 struct QuizzQuestionView: View {
-    
-    // ToDo >>>>>> ADD count the number of penalties to random from   <<<<<<
-
     // Quizz Context: Question list
     var questionList: [Int]
-//    var questionNumber: Int
-//    @State private var penatlyNumber = Int.random(in: 0...45)
-//    @State private var penatlyNumber = questionList[currentQuestion]
     @State private var score = 0
     @State private var currentQuestion = 0
     
 
     // User Answer Management
     @State private var askForAnswer = false
-    @State private var userSanctionSelection = 55
-    // All the buttons status
-    @State private var penaltyZeroPts = false
-    @State private var penaltyMaxTwoPts = false
-    @State private var penaltyMaxFourHalfPts = false
-    @State private var penaltyMinusTwoPts = false
-    @State private var penaltyMinusHalfToTwoPts = false
-    @State private var penaltyJudgeOpinion = false
-    @State private var ownershipReferee = false
-    @State private var ownershipJudge = false
     @State private var nextQuestion = false
     @State private var lastQuestion = false
+    
+    @ObservedObject var penaltyButtonStatus: ButtonsStatus
     
     var body: some View {
             let penalty = penalties[questionList[currentQuestion]]
@@ -84,34 +70,31 @@ struct QuizzQuestionView: View {
                             //Penalty Line 1
                             Spacer ()
                             // 0 pts
-                            PenaltySelectionButton (buttonImage: "0.circle", buttonText: NSLocalizedString("Button-0pts", comment: "Button Description"), isOn: $penaltyZeroPts, sanctionSelection: $userSanctionSelection, sanctionID: 0, penaltyZeroPts: $penaltyZeroPts, penaltyMaxTwoPts: $penaltyMaxTwoPts, penaltyMaxFourHalfPts: $penaltyMaxFourHalfPts, penaltyMinusTwoPts: $penaltyMinusTwoPts, penaltyMinusHalfToTwoPts: $penaltyMinusHalfToTwoPts, penaltyJudgeOpinion: $penaltyJudgeOpinion, ownershipReferee: $ownershipReferee, ownershipJudge: $ownershipJudge, nextQuestion: $nextQuestion)
-                            //        penaltyZeroPts: $penaltyZeroPts, penaltyMaxTwoPts: $penaltyMaxTwoPts, penaltyMaxFourHalfPts: $penaltyMaxFourHalfPts, penaltyMinusTwoPts: $penaltyMinusTwoPts, penaltyMinusHalfToTwoPts: $penaltyMinusHalfToTwoPts, penaltyJudgeOpinion: $penaltyJudgeOpinion
-                            
-                            
+                            PenaltySelectionButton (buttonImage: "0.circle", buttonText: NSLocalizedString("Button-0pts", comment: "Button Description"), isOn: $penaltyButtonStatus.penaltyZeroPts, sanctionID: 0, nextQuestion: $nextQuestion)
+
                             Spacer ()
                             // Max 2 pts
-                            PenaltySelectionButton (buttonImage: "lessthan.circle.fill", buttonText: NSLocalizedString("Button-max2pts", comment: "Button Description"), isOn: $penaltyMaxTwoPts, sanctionSelection: $userSanctionSelection, sanctionID: 2, penaltyZeroPts: $penaltyZeroPts, penaltyMaxTwoPts: $penaltyMaxTwoPts, penaltyMaxFourHalfPts: $penaltyMaxFourHalfPts, penaltyMinusTwoPts: $penaltyMinusTwoPts, penaltyMinusHalfToTwoPts: $penaltyMinusHalfToTwoPts, penaltyJudgeOpinion: $penaltyJudgeOpinion, ownershipReferee: $ownershipReferee, ownershipJudge: $ownershipJudge, nextQuestion: $nextQuestion)
-                            //                        PenaltyMaxTwoPtsButton (isSet: resetPenalties)
+                            PenaltySelectionButton (buttonImage: "lessthan.circle.fill", buttonText: NSLocalizedString("Button-max2pts", comment: "Button Description"), isOn: $penaltyButtonStatus.penaltyMaxTwoPts, sanctionID: 2, nextQuestion: $nextQuestion)
+
                             Spacer ()
                             // Max 4 1/2 pts
-                            PenaltySelectionButton (buttonImage: "lessthan.circle", buttonText: NSLocalizedString("Button-max4halfpts", comment: "Button Description"), isOn: $penaltyMaxFourHalfPts, sanctionSelection: $userSanctionSelection, sanctionID: 3, penaltyZeroPts: $penaltyZeroPts, penaltyMaxTwoPts: $penaltyMaxTwoPts, penaltyMaxFourHalfPts: $penaltyMaxFourHalfPts, penaltyMinusTwoPts: $penaltyMinusTwoPts, penaltyMinusHalfToTwoPts: $penaltyMinusHalfToTwoPts, penaltyJudgeOpinion: $penaltyJudgeOpinion, ownershipReferee: $ownershipReferee, ownershipJudge: $ownershipJudge, nextQuestion: $nextQuestion)
-                            //                        PenaltyMaxFourHalfPtsButton (isSet: resetPenalties)
+                            PenaltySelectionButton (buttonImage: "lessthan.circle", buttonText: NSLocalizedString("Button-max4halfpts", comment: "Button Description"), isOn: $penaltyButtonStatus.penaltyMaxFourHalfPts, sanctionID: 3, nextQuestion: $nextQuestion)
+
                             Spacer ()
                         } // HStack Penalty Line 1
                         HStack{
                             //Penalty Line 2
                             Spacer ()
                             // -2 pts
-                            PenaltySelectionButton (buttonImage: "gobackward.minus", buttonText: NSLocalizedString("Button--2pts", comment: "Button Description"), isOn: $penaltyMinusTwoPts, sanctionSelection: $userSanctionSelection, sanctionID: 1, penaltyZeroPts: $penaltyZeroPts, penaltyMaxTwoPts: $penaltyMaxTwoPts, penaltyMaxFourHalfPts: $penaltyMaxFourHalfPts, penaltyMinusTwoPts: $penaltyMinusTwoPts, penaltyMinusHalfToTwoPts: $penaltyMinusHalfToTwoPts, penaltyJudgeOpinion: $penaltyJudgeOpinion, ownershipReferee: $ownershipReferee, ownershipJudge: $ownershipJudge, nextQuestion: $nextQuestion)
-                            //                        PenaltyMinusTwoPtsButton (isSet: resetPenalties)
+                            PenaltySelectionButton (buttonImage: "gobackward.minus", buttonText: NSLocalizedString("Button--2pts", comment: "Button Description"), isOn: $penaltyButtonStatus.penaltyMinusTwoPts, sanctionID: 1, nextQuestion: $nextQuestion)
+
                             Spacer ()
                             // -1/2 to 2 pts
-                            PenaltySelectionButton (buttonImage: "arrow.left.and.right.circle", buttonText: NSLocalizedString("Button--halfto2pts", comment: "Button Description"), isOn: $penaltyMinusHalfToTwoPts, sanctionSelection: $userSanctionSelection, sanctionID: 4, penaltyZeroPts: $penaltyZeroPts, penaltyMaxTwoPts: $penaltyMaxTwoPts, penaltyMaxFourHalfPts: $penaltyMaxFourHalfPts, penaltyMinusTwoPts: $penaltyMinusTwoPts, penaltyMinusHalfToTwoPts: $penaltyMinusHalfToTwoPts, penaltyJudgeOpinion: $penaltyJudgeOpinion, ownershipReferee: $ownershipReferee, ownershipJudge: $ownershipJudge, nextQuestion: $nextQuestion)
-                            //                        PenaltyMinusHalfToTwoPtsButton (isSet: resetPenalties)
+                            PenaltySelectionButton (buttonImage: "arrow.left.and.right.circle", buttonText: NSLocalizedString("Button--halfto2pts", comment: "Button Description"), isOn: $penaltyButtonStatus.penaltyMinusHalfToTwoPts, sanctionID: 4, nextQuestion: $nextQuestion)
+
                             Spacer ()
                             // judge Opinion
-                            PenaltySelectionButton (buttonImage: "plusminus.circle", buttonText: NSLocalizedString("Button-judgeOpinion", comment: "Button Description"), isOn: $penaltyJudgeOpinion, sanctionSelection: $userSanctionSelection, sanctionID: 5, penaltyZeroPts: $penaltyZeroPts, penaltyMaxTwoPts: $penaltyMaxTwoPts, penaltyMaxFourHalfPts: $penaltyMaxFourHalfPts, penaltyMinusTwoPts: $penaltyMinusTwoPts, penaltyMinusHalfToTwoPts: $penaltyMinusHalfToTwoPts, penaltyJudgeOpinion: $penaltyJudgeOpinion, ownershipReferee: $ownershipReferee, ownershipJudge: $ownershipJudge, nextQuestion: $nextQuestion)
-                            //                        PenaltyJudgeOpinionButton (isSet: resetPenalties)
+                            PenaltySelectionButton (buttonImage: "plusminus.circle", buttonText: NSLocalizedString("Button-judgeOpinion", comment: "Button Description"), isOn: $penaltyButtonStatus.penaltyJudgeOpinion, sanctionID: 5, nextQuestion: $nextQuestion)
                             Spacer ()
                         } // HStack Penalty Line 2
                     } // VStack Penalty Buttons
@@ -127,12 +110,12 @@ struct QuizzQuestionView: View {
                         HStack {
                             Spacer ()
                             // Ownership Referee
-                            OwnershipRefereeButton (isOn: $ownershipReferee, sanctionSelection: $userSanctionSelection, ownershipJudge: $ownershipJudge, nextQuestion: $nextQuestion)
-                            
+                            OwnershipRefereeButton (isOn: $penaltyButtonStatus.ownershipReferee, nextQuestion: $nextQuestion)
+
                             Spacer ()
                             Spacer ()
                             // Ownership Judge
-                            OwnershipJudgeButton (isOn: $ownershipJudge, sanctionSelection: $userSanctionSelection, ownershipReferee: $ownershipReferee, nextQuestion: $nextQuestion)
+                            OwnershipJudgeButton (isOn: $penaltyButtonStatus.ownershipJudge, nextQuestion: $nextQuestion)
                             Spacer ()
                         } // HStack Ownership
     //                    .padding(.horizontal, 30.0)
@@ -184,20 +167,20 @@ struct QuizzQuestionView: View {
     } // Body
    
     func nextQuestion(_ penalty : Penalty) {
-        print("[nextQuestion] userSanctionSelection: \(userSanctionSelection) - ownershipReferee: \(ownershipReferee) - ownershipJudge: \(ownershipJudge)")
-        if (userSanctionSelection > 6) || (!ownershipReferee && !ownershipJudge) {
+//        print("[nextQuestion] userSanctionSelection: \(userSanctionSelection) - ownershipReferee: \(ownershipReferee) - ownershipJudge: \(ownershipJudge)")
+        if (penaltyButtonStatus.userSanctionSelection > 6) || (!penaltyButtonStatus.ownershipReferee && !penaltyButtonStatus.ownershipJudge) {
             // Has the user provided an answer at least one penalty and one owner
             askForAnswer = true
             print("[nextQuestion] Missing answer")
         } else {
             // else user has answered items
-            if userSanctionSelection == penalty.sanctionValue {
+            if penaltyButtonStatus.userSanctionSelection == penalty.sanctionValue {
                 // if the penalty answer is correct
-                    if (ownershipReferee == penalty.referee) && (ownershipJudge == penalty.judge) {
+                if (penaltyButtonStatus.ownershipReferee == penalty.referee) && (penaltyButtonStatus.ownershipJudge == penalty.judge) {
                         // if the Ownership answer is correct
                         score += 10
                         print("[nextQuestion] Good answer")
-                    } else if (ownershipReferee == penalty.referee) || (ownershipJudge == penalty.judge){
+                } else if (penaltyButtonStatus.ownershipReferee == penalty.referee) || (penaltyButtonStatus.ownershipJudge == penalty.judge){
                        // if the ownership is shared between Referee and Judge and only one was selected
                         score += 5
                         print("[nextQuestion] Partial answer")
@@ -208,45 +191,31 @@ struct QuizzQuestionView: View {
                     // if the penalty is wrong
                     print("[nextQuestion] Wrong answer")
                 }
-            print("[nextQuestion] Question Status before count - currentQuestion: \(currentQuestion) / questionNumber(questionList.count): \(questionList.count) - penatlyNumber (questionList[currentQuestion]): \(questionList[currentQuestion])")
+            //log user answer
+            logUserAnswer (userAnswerScore: score)
+//            print ( "[nextQuestion] Logged the User Answer in currentQuizz.answers: \(currentQuizz)")
+//            print("[nextQuestion] Question Status before count - currentQuestion: \(currentQuestion) / questionNumber(questionList.count): \(questionList.count) - penatlyNumber (questionList[currentQuestion]): \(questionList[currentQuestion])")
 //            if currentQuestion < questionList.count{
             if !lastQuestion{
                 // if the are still questions to answer
                 print("Jumpt to the Next Question")
                 currentQuestion += 1
                 print("[nextQuestion] Question Status after count - currentQuestion: \(currentQuestion)")
-                self.askNewQuestion()
+//                self.askNewQuestion()
+                //        will be replaced by
+                buttonStatusReset()
+
             } else {
                 // if this was the last question
                 print("End of Quizz - switch to Result Page")
             }
         } // end else user has answered items
     } // NextQuestion
-
-    
-    func askNewQuestion() {
-        //select another penalty
-        // ToDo >>>>>> ADD count the number of penalties to random from   <<<<<<
-//        penatlyNumber = Int.random(in: 0...45)
-//        penatlyNumber = questionList[currentQuestion]
-        userSanctionSelection = 40
-//        resetPenalties = false
-        penaltyZeroPts = false
-        penaltyMaxTwoPts = false
-        penaltyMaxFourHalfPts = false
-        penaltyMinusTwoPts = false
-        penaltyMinusHalfToTwoPts = false
-        penaltyJudgeOpinion = false
-        ownershipReferee = false
-        ownershipJudge = false
-        nextQuestion = false
-    }
-
 }
     
 struct QuizzQuestionView_Previews: PreviewProvider {
     static var previews: some View {
-        QuizzQuestionView (questionList: newList(of: 5))
+        QuizzQuestionView (questionList: newList(of: 5), penaltyButtonStatus: penaltyButtonStatus)
             .environment(\.locale, .init(identifier: "en"))
     }
 }

@@ -100,6 +100,15 @@
 /* Quizz - Result Error Review Button*/
 "Quizz-Result-Review-Button" = "Erreurs";
 
+/* Quizz - Result Result Review Legend - unused */
+"Quizz-Result-Legend-unused" = "Non utilisé";
+
+/* Quizz - Result Result Review Legend - unused */
+"Quizz-Result-Legend-user-answer" = "Ma réponse";
+
+/* Quizz - Result Result Review Legend - unused */
+"Quizz-Result-Legend-real-answer" = "Bonne Réponse";
+
 /*Quizz - Good Sticker*/
 "Good" = "Bravo";
 
@@ -122,7 +131,6 @@
 /*Rule Book Selection Page
  Rule Book - Title*/
 "RuleBook-Title" = "Règlement";
-
 
 /* Penalty Descripion List
  Penalty 0 - D6.12 - If the diver takes more than one minute, after a warning.*/
