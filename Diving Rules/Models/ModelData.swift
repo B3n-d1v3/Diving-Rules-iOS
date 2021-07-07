@@ -16,6 +16,9 @@ var sanctions: [Sanction] = load("divingPenaltiesSanctions.json")
 // The object with the current Quizz Data Logged in
 var currentQuizz: Quizz = Quizz()
 
+// The object containing the entire quizz history of the user
+var quizzHistory: [Quizz] = []
+
 // The object with the current question status dipslay model
 var penaltyButtonStatus: ButtonsStatus = ButtonsStatus()
 

@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct QuizzResultListView: View {
+    let lastQuizz: Int = quizzHistory.count
     var body: some View {
 //        List (penalties) { penalty in
 //            NavigationLink(destination: PenaltyDetailView(penalty: penalty)) {
 //                PenaltyRowView (penalties: penalty)
-        List (currentQuizz.answers) { penalty in
+//        List (currentQuizz.answers) { penalty in
+        List (quizzHistory[lastQuizz].answers) { penalty in
             NavigationLink(destination: QuizzResultAnswerView(quizzResponse: penalty)) {
                 QuizzResultRowView (penaltyRow: penalty)
             }
