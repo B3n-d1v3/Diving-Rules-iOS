@@ -54,7 +54,7 @@ struct QuizzResultView: View {
                 
                 Spacer ()
                 
-                NavigationLink(destination: QuizzQuestionView (questionList: newQuiz(of: questionNumber), penaltyButtonStatus: penaltyButtonStatus)) {
+                NavigationLink(destination: QuizzQuestionView (questionList: newQuizz(of: questionNumber), penaltyButtonStatus: penaltyButtonStatus)) {
                     Text("Quizz-Result-Start-Button")
                         .font(.title3)
                         .fontWeight(.semibold)

@@ -28,7 +28,7 @@ struct QuizzStartView: View {
                 .padding(.all)
             Divider ()
             Spacer ()
-            NavigationLink(destination: QuizzQuestionView (questionList: newQuiz(of: questionNumber), penaltyButtonStatus: penaltyButtonStatus).navigationBarTitle("", displayMode: NavigationBarItem.TitleDisplayMode.inline)) {
+            NavigationLink(destination: QuizzQuestionView (questionList: newQuizz(of: questionNumber), penaltyButtonStatus: penaltyButtonStatus).navigationBarTitle("", displayMode: NavigationBarItem.TitleDisplayMode.inline)) {
                 Text("Quizz-Intro-Start-Button")
                     .font(.title3)
                     .fontWeight(.semibold)
