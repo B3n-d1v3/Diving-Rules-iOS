@@ -14,7 +14,7 @@ struct QuizzResultListView: View {
 //                PenaltyRowView (penalties: penalty)
         List (currentQuizz.answers) { penalty in
             NavigationLink(destination: QuizzResultAnswerView(quizzResponse: penalty)) {
-                PenaltyRowView (penalties: penalty)
+                QuizzResultRowView (penaltyRow: penalty)
             }
         }
 
