@@ -202,7 +202,7 @@
     "rules" : [
       {"ruleId": "D8.5.4"}
     ],
-    "sanctionValue" : 0,
+    "sanctionValue" : 2,
     "referee" : false,
     "judge" : true
   },

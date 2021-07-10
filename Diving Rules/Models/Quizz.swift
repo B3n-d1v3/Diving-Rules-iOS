@@ -41,9 +41,9 @@ struct Quizz: CustomDebugStringConvertible {
 // Generate new Quizz question list in currentQuizz Object
 //func newQuiz(of quizzQuestionNumber: Int) -> [Int] {
 func newQuizz(of quizzQuestionNumber: Int) -> [Int] {
+    print ("[newQuizz] - launch newList func")
     logCurrentQuizz()
     currentQuizz = Quizz()
-    print ("[newQuizz] - launch newList func")
     currentQuizz.questions = newList(of: quizzQuestionNumber)
     return currentQuizz.questions
 }
