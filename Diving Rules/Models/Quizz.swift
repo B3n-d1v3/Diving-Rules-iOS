@@ -41,26 +41,11 @@ struct Quizz: CustomDebugStringConvertible {
 // Generate new Quizz question list in currentQuizz Object
 //func newQuiz(of quizzQuestionNumber: Int) -> [Int] {
 func newQuizz(of quizzQuestionNumber: Int) -> [Int] {
-//    currentQuizz = Quizz()
     print ("[newQuizz] - launch newList func")
+    logCurrentQuizz()
+    currentQuizz = Quizz()
     currentQuizz.questions = newList(of: quizzQuestionNumber)
     return currentQuizz.questions
-}
-
-
-// Log the answer provided by the user in currentQuizz Object
-func logUserAnswer (userAnswerScore: Int) {
-    let questionIndex: Int = currentQuizz.answers.count
-    var loggedPenalty = Penalty()
-    // transform view model to data model injected in currentQuizz
-    loggedPenalty.id = currentQuizz.questions[questionIndex]
-    loggedPenalty.judge = penaltyButtonStatus.ownershipJudge
-    loggedPenalty.referee = penaltyButtonStatus.ownershipReferee
-    loggedPenalty.sanctionValue = penaltyButtonStatus.userSanctionSelection
-    currentQuizz.answers.append (loggedPenalty)
-    currentQuizz.score = userAnswerScore
-    // Reset the penaltyButtonStatus
-    buttonStatusReset()
 }
 
 // create a new Quizz list
@@ -93,7 +78,26 @@ extension Array where Element: Hashable {
 }
 
 
+// Log the answer provided by the user in currentQuizz Object
+func logUserAnswer (userAnswerScore: Int) {
+    let questionIndex: Int = currentQuizz.answers.count
+    var loggedPenalty = Penalty()
+    // transform view model to data model injected in currentQuizz
+    loggedPenalty.id = currentQuizz.questions[questionIndex]
+    loggedPenalty.judge = penaltyButtonStatus.ownershipJudge
+    loggedPenalty.referee = penaltyButtonStatus.ownershipReferee
+    loggedPenalty.sanctionValue = penaltyButtonStatus.userSanctionSelection
+    currentQuizz.answers.append (loggedPenalty)
+    currentQuizz.score = userAnswerScore
+    // Reset the penaltyButtonStatus
+    buttonStatusReset()
+}
 
+// added to have 2 objects : one for the data of the previous and one ready to be used in the next quizz
+// Log Full Quizz Data in the Quizz History Objet
+func logCurrentQuizz () {
+    quizzHistory.append(currentQuizz)
+}
 
 
 // Question page - buttons model for view

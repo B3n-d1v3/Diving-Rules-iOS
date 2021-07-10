@@ -53,7 +53,7 @@ struct Diving_RulesApp: App {
                 // Quizz Access
                 NavigationView {
                     QuizzStartView()
-                        .navigationBarTitle("Quizz-Title")
+                        .navigationBarTitle("Quizz-Title", displayMode: .inline)
                 }
                     .tabItem {
                         Image (systemName: "checkmark")
