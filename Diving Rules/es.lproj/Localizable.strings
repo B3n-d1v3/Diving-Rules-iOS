@@ -107,16 +107,7 @@
 "Quizz-Result-Description" = "Aquí está su resultado del cuestionario: ";
 
 /*Quizz - Result Start Button*/
-"Quizz-Result-Start-Button" = "Nuevo Cuestionario";
-
-/*Quizz - Good Sticker*/
-"Good" = "Bien";
-
-/*Quizz - Wrong Sticker*/
-"Wrong" = "Equivocado";
-
-/*Quizz - Good Sticker*/
-"Almost" = "Casi";
+"Quizz-Result-Start-Button" = "Nuevo Cuestionario"; 
 
 /*Quizz - Good Sticker*/
 "Passed" = "Passed";

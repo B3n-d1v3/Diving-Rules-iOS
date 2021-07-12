@@ -33,7 +33,7 @@
 "Penalty-Penalty" = "Pénalité";
 
 /*Penalty - Ownership Section Title*/
-"Penalty-Ownership" = "Propriété";
+"Penalty-Ownership" = "Par qui";
 
 /*Penalty Detail Page Buttons 
  Penalty - Penalty Section Button 0 pts*/
@@ -65,7 +65,7 @@
 "Quizz-Intro-Description" = "Afin de vous entraîner sur les règles Fina du plongeon, avec ce test, vous serez en mesure de réviser les règles avec des questions sur les différentes règles.\n\n Sélectionnez le type de quiz auquel vous souhaitez répondre et le nombre de questions que vous souhaitez dans votre quiz.";
 
 /*Quizz - Intro Start Button*/
-"Quizz-Intro-Start-Button" = "Démarrer le quiz";
+"Quizz-Intro-Start-Button" = "Démarrer";
 
 /*Quizz - Question Page Next Button*/
 "Quizz-Next" = "Suivant";
@@ -108,15 +108,6 @@
 
 /* Quizz - Result Result Review Legend - unused */
 "Quizz-Result-Legend-real-answer" = "Bonne Réponse";
-
-/*Quizz - Good Sticker*/
-"Good" = "Bravo";
-
-/*Quizz - Wrong Sticker*/
-"Wrong" = "Non";
-
-/*Quizz - Good Sticker*/
-"Almost" = "Presque";
 
 /*Quizz - Good Sticker*/
 "Passed" = "Réussi";
