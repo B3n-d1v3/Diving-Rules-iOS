@@ -39,7 +39,7 @@
 "Penalty-Penalty" = "Penalty";
 
 /*Penalty - Ownership Section Title*/
-"Penalty-Ownership" = "Ownership";
+"Penalty-Ownership" = "By whom";
 
 /*Penalty Detail Page Buttons 
  Penalty - Penalty Section Button 0 pts*/
@@ -74,7 +74,7 @@
 "Quizz-Intro-Description" = "In order to train yourself on the Fina Diving Rules, with this test you will be able to review the Rule Book through questions on the various rules. \n\n Select the type of Quizz you would like to take and the number of questions you would like in your quizz.";
 
 /* Quizz - Intro Start Button*/
-"Quizz-Intro-Start-Button" = "Start Quizz";
+"Quizz-Intro-Start-Button" = "Start";
 
 /* Quizz - Question Page Next Button*/
 "Quizz-Next" = "Next";
@@ -102,15 +102,6 @@
 
 /* Quizz - Result Result Review Legend - unused */
 "Quizz-Result-Legend-real-answer" = "Good answer";
-
-/* Quizz - Good Sticker*/
-"Good" = "Good";
-
-/* Quizz - Wrong Sticker*/
-"Wrong" = "Wrong";
-
-/* Quizz - Good Sticker*/
-"Almost" = "Almost";
 
 /* Quizz - Good Sticker*/
 "Passed" = "Passed";
