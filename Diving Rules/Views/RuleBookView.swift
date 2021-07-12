@@ -9,12 +9,18 @@ import PDFKit
 import SwiftUI
 
 struct RuleBookView: UIViewRepresentable {
+    var currentLanguage = Locale.autoupdatingCurrent.languageCode
     
     func makeUIView(context: Context) -> PDFView {
         let pdfView = PDFView()
-        
         // PDF File Access
-        let path = Bundle.main.url(forResource: "2017-2021_fina-diving_16032018", withExtension: "pdf")
+//        let path = Bundle.main.url(forResource: "2017-2021_fina-diving_16032018", withExtension: "pdf")
+        var path = Bundle.main.url(forResource: "2017-2021_Fina_EN_Diving_Rules", withExtension: "pdf")
+        if (currentLanguage == "fr") {
+            path = Bundle.main.url(forResource: "2017-2021_Fina_FR_Reglements_Plongeon", withExtension: "pdf")
+        } else if (currentLanguage == "es") {
+            path = Bundle.main.url(forResource: "2017-2021_Fina_ES_Reglamento_Saltos", withExtension: "pdf")
+        }
         let doc = PDFDocument(url: path!)
         pdfView.document = doc
         pdfView.autoScales = true
@@ -55,6 +61,13 @@ struct RuleBookView: UIViewRepresentable {
 
 struct RuleBookView_Previews: PreviewProvider {
     static var previews: some View {
-        RuleBookView()
+        Group {
+            RuleBookView()
+                .environment(\.locale, .init(identifier: "en"))
+            RuleBookView()
+                .environment(\.locale, .init(identifier: "fr"))
+            RuleBookView()
+                .environment(\.locale, .init(identifier: "es"))
+        }
     }
 }

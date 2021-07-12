@@ -197,7 +197,7 @@
 "Penalty-22" = "If in a flying dive, a straight position is not clearly shown for at least a half somersault (180º) in dives with more than 1 somersault.";
 
 /* Penalty 23 - D8.1.6 - If a dive is not performed in a position as described.*/
-"Penalty-23" = "If a dive is not performed in a position as described.";
+"Penalty-23" = "If a dive is not performed in a position as described in the rules.";
 
 /* Penalty 24 - D8.2.3 - If the starting position is not straight, head erect, with the arms straight in any position.*/
 "Penalty-24" = "If the starting position is not straight, head erect, with the arms straight in any position.";
@@ -218,22 +218,22 @@
 "Penalty-29" = "If in a twist dive, the twisting is manifestly done from the springboard or platform.";
 
 /* Penalty 30 - D8.5.6 - If the straight position is not shown as described.*/
-"Penalty-30" = "If the straight position is not shown as described.";
+"Penalty-30" = "If the straight position is not shown as described in the rules.";
 
 /* Penalty 31 - D8.5.9 - If the pike position is not shown as described.*/
-"Penalty-31" = "If the pike position is not shown as described.";
+"Penalty-31" = "If the pike position is not shown as described in the rules.";
 
 /* Penalty 32 - D8.5.10 - If in a pike dive with twist, the pike position is not clearly shown.*/
 "Penalty-32" = "If in a pike dive with twist, the pike position is not clearly shown.";
 
 /* Penalty 33 - D8.5.12 - If the tuck position is not shown as described.*/
-"Penalty-33" = "If the tuck position is not shown as described.";
+"Penalty-33" = "If the tuck position is not shown as described in the rules.";
 
 /* Penalty 34 - D8.5.13 - If in a tuck dive with twist, the tuck position is not clearly shown.*/
 "Penalty-34" = "If in a tuck dive with twist, the tuck position is not clearly shown.";
 
 /* Penalty 35 - D8.5.15 - If the free position is not shown as described.*/
-"Penalty-35" = "If the free position is not shown as described.";
+"Penalty-35" = "If the free position is not shown as described in the rules.";
 
 /* Penalty 36 - D8.6.5 - If the arms are not in the correct position in either the head first or feet first entry.*/
 "Penalty-36" = "If the arms are not in the correct position in either the head first or feet first entry.";
