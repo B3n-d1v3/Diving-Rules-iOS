@@ -70,35 +70,20 @@
 /*Quizz - Question Page Next Button*/
 "Quizz-Next" = "Siguiente";
 
-/*Quizz - Question Page Score Message*/
-"Quizz-Score-Message" = "Su puntuación es";
-
-/*Quizz - Question Page Score Title Good Answer*/
-"Quizz-Score-Message-Correct" = "Respuesta correcta";
-
-/*Quizz - Question Page Score Title Wrong Answer*/
-"Quizz-Score-Message-Wrong" = "Respuesta incorrecta";
-
 /*Localizable.strings
   Diving Rules
 
   Created by Benoit SUZANNE on 22/03/2021.
 
  App Name - Full App name*/
-"CFBundleDisplayName" = "Reglas de Clavados";
+"CFBundleDisplayName" = "Diving Rules";
 
 /*App Name - Short App name 16 car*/
-"CFBundleName" = "Reglas de Clavados";
+"CFBundleName" = "Diving Rules";
 
 /*Quizz Selection Page
  Quizz - Title*/
 "Quizz-Title" = "Cuestionario";
-
-/*Quizz - Question Page Score Message*/
-"Quizz-Score-Message %@" = "Tu resultado es de 0 %";
-
-/*Quizz - Question Page Score Title missing an owner saction*/
-"Quizz-Score-Message-Partly" = "Casi";
 
 /*Quizz - Result Title*/
 "Quizz-Result-Title" = "Resultado del cuestionario";
@@ -107,17 +92,17 @@
 "Quizz-Result-Description" = "Aquí está su resultado del cuestionario: ";
 
 /*Quizz - Result Start Button*/
-"Quizz-Result-Start-Button" = "Nuevo Cuestionario"; 
+"Quizz-Result-Start-Button" = "Nuevo Cuestionario";
 
 /*Quizz - Good Sticker*/
 "Passed" = "Passed";
 
 /*Quizz - Good Sticker*/
-"Failed" = "Failed";
+"Failed" = "Fallado";
 
 /*Search Selection Page
  Search - Title*/
-"Search-Title" = "Buscar las Reglas";
+"Search-Title" = "Buscar la regla";
 
 /*Rule Book Selection Page
  Rule Book - Title*/
@@ -146,7 +131,7 @@
 "Penalty-1" = "Si un clavadista realiza un doble rebote en el extremo del trampolín o un doble salto en el extremo de la plataforma antes del despegue.";
 
 /*Penalty 2 - D6.17 & D8.3.3 - If the final step is not from one foot.*/
-"Penalty-2" = "D 6.17";
+"Penalty-2" = "Si el paso final no es con un pie.";
 
 /*Penalty 3 - D6.18 & D8.4.3 - If the take-off on the springboard is not from both feet simultaneously.*/
 "Penalty-3" = "Si el despegue en el trampolín no es con los dos pies simultáneamente.";
@@ -168,7 +153,7 @@
 
 /*Penalty 9 - D6.27 - When a second attempt
 (a re-start) is unsuccessful.*/
-"Penalty-9" = "Cuando un segundo intento\n(un reinicio) no tiene éxito.";
+"Penalty-9" = "Cuando un segundo intento (un reinicio) no tiene éxito.";
 
 /*Penalty 10 - D6.28 - If a diver refuses the execution of a dive.*/
 "Penalty-10" = "Si un clavadista rechaza la ejecución de un Calvados.";
