@@ -33,26 +33,26 @@
 "Penalty-Penalty" = "Penalidad";
 
 /*Penalty - Ownership Section Title*/
-"Penalty-Ownership" = "Quien da la penalidad";
+"Penalty-Ownership" = "Quien";
 
 /*Penalty Detail Page Buttons 
  Penalty - Penalty Section Button 0 pts*/
-"Button-0pts" = "0 puntos";
+"Button-0pts" = "0 pts";
 
 /*Penalty - Penalty Section Button max 2 pts*/
-"Button-max2pts" = "máx. 2 puntos";
+"Button-max2pts" = "máx. 2";
 
 /*Penalty - Penalty Section Button max 4 ½ pts*/
-"Button-max4halfpts" = "máx. 4 ½ puntos";
+"Button-max4halfpts" = "máx. 4 ½";
 
 /*Penalty - Penalty Section Button -2 pts*/
-"Button--2pts" = "-2 puntos";
+"Button--2pts" = "-2";
 
 /*Penalty - Penalty Section Button - ½ to 2 pts*/
-"Button--halfto2pts" = "- ½ a 2 puntos";
+"Button--halfto2pts" = "- ½ a 2";
 
 /*Penalty - Penalty Section Button judge Opinion*/
-"Button-judgeOpinion" = "Según propia opinión";
+"Button-judgeOpinion" = "Según opinión";
 
 /*Penalty - Ownership Section Button Referee*/
 "Button-Referee" = "Árbitro";
@@ -92,10 +92,10 @@
 "Quizz-Result-Description" = "Aquí está su resultado del cuestionario: ";
 
 /*Quizz - Result Start Button*/
-"Quizz-Result-Start-Button" = "Nuevo Cuestionario";
+"Quizz-Result-Start-Button" = "Nuevo";
 
 /*Quizz - Good Sticker*/
-"Passed" = "Exitoso";
+"Passed" = "Exito";
 
 /*Quizz - Good Sticker*/
 "Failed" = "Fallado";
@@ -245,10 +245,10 @@ similarity of the starting position, approach, take-off and height is not shown.
 "Penalty-38" = "En clavado sincronizado si no se muestra la sincronización del movimiento durante el vuelo.";
 
 /*Penalty 39 - D9.11 - In synchronised diving if similarity of the vertical angles of the entries is not shown.*/
-"Penalty-39" = "En el buceo sincronizado si no se muestra la similitud de los ángulos verticales de las entradas.";
+"Penalty-39" = "En el clavado sincronizado si no se muestra la similitud de los ángulos verticales de las entradas.";
 
 /*Penalty 40 - D9.11 - In synchronised diving if comparative distance from the springboard or platform of the entry is not shown.*/
-"Penalty-40" = "En el buceo sincronizado si no se muestra la distancia comparativa desde el trampolín o la plataforma de la entrada.";
+"Penalty-40" = "En el clavado sincronizado si no se muestra la distancia comparativa desde el trampolín o la plataforma de la entrada.";
 
 /*Penalty 41 - D9.11 - In synchronised diving if coordinated timing of the entries is not shown.*/
 "Penalty-41" = "En clavado sincronizado si no se muestra el tiempo coordinado de las entradas.";
