@@ -31,9 +31,9 @@ struct QuizzResultView: View {
 
             Spacer ()
             if (score >= (questionNumber * 8)) {
-                Sticker(stickerImage: "checkmark.circle", stickerColor: "Good", stickerText: "Passed")
+                Sticker(stickerImage: "checkmark.circle", stickerColor: "Good", stickerText: NSLocalizedString("Passed", comment: "Stiker Status"))
             } else {
-                Sticker(stickerImage: "xmark.octagon.fill", stickerColor: "Bad", stickerText: "Failed")
+                Sticker(stickerImage: "xmark.octagon.fill", stickerColor: "Bad", stickerText: NSLocalizedString("Failed", comment: "Stiker Status"))
             }
             Spacer ()
             
@@ -76,6 +76,17 @@ struct QuizzResultView: View {
 
 struct QuizzResultView_Previews: PreviewProvider {
     static var previews: some View {
-        QuizzResultView(score: 80, questionNumber: 10)
+        Group {
+            QuizzResultView(score: 80, questionNumber: 10)
+                .environment(\.locale, .init(identifier: "en"))
+            QuizzResultView(score: 50, questionNumber: 10)
+                .environment(\.locale, .init(identifier: "en"))
+
+            QuizzResultView(score: 80, questionNumber: 10)
+                .environment(\.locale, .init(identifier: "fr"))
+            QuizzResultView(score: 50, questionNumber: 10)
+                .environment(\.locale, .init(identifier: "fr"))
+        }
+        
     }
 }

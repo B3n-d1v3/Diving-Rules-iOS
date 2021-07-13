@@ -22,8 +22,10 @@ struct QuizzStartView: View {
             Text ("Quizz-Intro-Description")
                 .padding(.all)
             Divider ()
+
             Stepper(value: $questionNumber, in: 5...40, step: 5) {
-                Text("Number of Questions: \(questionNumber)")
+
+                Text (NSLocalizedString("Quizz-Intro-Question-Number", comment: "Question Number") + "\(questionNumber)")
                 }
                 .padding(.all)
             Divider ()
