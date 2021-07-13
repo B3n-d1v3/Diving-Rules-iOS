@@ -65,7 +65,7 @@
 "Quizz-Intro-Description" = "Afin de vous entraîner sur les règles Fina du plongeon, avec ce test, vous serez en mesure de réviser les règles avec des questions sur les différentes règles.\n\n Sélectionnez le type de quiz auquel vous souhaitez répondre et le nombre de questions que vous souhaitez dans votre quiz.";
 
 /* Quizz - Intro Question Number*/
-"Quizz-Intro-Question-Number" = "Nombre de questions: ";
+"Quizz-Intro-Question-Number" = "Nombre de questions : ";
 
 /*Quizz - Intro Start Button*/
 "Quizz-Intro-Start-Button" = "Démarrer";

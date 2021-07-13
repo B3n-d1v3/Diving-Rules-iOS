@@ -9,7 +9,7 @@ import SwiftUI
 
 @main
 struct Diving_RulesApp: App {
-//    environment penalties: Penalty
+    @EnvironmentObject var appState: AppState
     
     var body: some Scene {
         WindowGroup {
@@ -18,18 +18,6 @@ struct Diving_RulesApp: App {
                 NavigationView {
                     RuleBookView()
                         .navigationBarTitle("RuleBook-Title", displayMode: NavigationBarItem.TitleDisplayMode.inline)
-//                        .navigationBarItems(
-//                                trailing:
-//                                    Button(action: {
-//                                        // Button Action
-//                                   }) {
-//                                        Image(systemName: "magnifyingglass.circle.fill")
-//                                            .font(.title2)
-//    //                                        .fontWeight(.black)
-//                                            .foregroundColor(Color.accentColor)
-//                                        }
-//                                    
-//                        )
                 }
                     .tabItem {
                         Image (systemName: "book")
@@ -61,6 +49,17 @@ struct Diving_RulesApp: App {
                     }
                     .navigationViewStyle(StackNavigationViewStyle())
                 
+                
+                NavigationView {
+                    TryOutView()
+                        .navigationBarTitle("Quizz-Title", displayMode: .inline)
+                }
+                    .tabItem {
+                        Image (systemName: "checkmark")
+                        Text ("Navigation-Menu-Quizz")
+                    }
+                    .navigationViewStyle(StackNavigationViewStyle())
+
                 // Search Page
 //                NavigationView {
 //                    SearchView()
@@ -72,9 +71,6 @@ struct Diving_RulesApp: App {
 //                    }
                 
             }
-            //.environmentObject(sanctions)
-            //.environmentObject(quizzQuestions)
-
         }
     }
 }
