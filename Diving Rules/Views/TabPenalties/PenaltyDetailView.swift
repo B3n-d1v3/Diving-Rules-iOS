@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct PenaltyDetailView: View {
+    //    PenaltyList >> [[PenaltyDetail]]
+    
     var penalty: Penalty
     var penaltyIconImageWidth: CGFloat = 40.0
     var penaltyIconImageHeight: CGFloat = 40.0

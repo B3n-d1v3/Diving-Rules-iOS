@@ -36,7 +36,7 @@
 		<key>UIImageName</key>
 		<string>DivingRulesLogo</string>
 		<key>UIImageRespectsSafeAreaInsets</key>
-		<false/>
+		<true/>
 	</dict>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>

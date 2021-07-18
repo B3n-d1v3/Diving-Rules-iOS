@@ -4,10 +4,10 @@
   Created by Benoit SUZANNE on 22/03/2021.
 
  App Name - Diving Rules*/
- "CFBundleDisplayName" = "Diving Rules";
+ "CFBundleDisplayName" = "diving rules";
 
 /*App Name - Short App name 16 car*/
-"CFBundleName" = "Diving Rules";
+"CFBundleName" = "diving rules";
 
  /* Navigation - Rules Menu Item*/
 "Navigation-Menu-Rules" = "Rules";
@@ -81,6 +81,9 @@
 
 /* Quizz - Question Page Next Button*/
 "Quizz-Next" = "Next";
+
+/* Quizz - Question Page Back replace by Exit*/
+"Exit-Quizz" = "End Quizz";
 
 /* Quizz - Question*/
 "Quizz-Question" = "Question";

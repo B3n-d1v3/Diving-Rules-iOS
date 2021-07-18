@@ -23,6 +23,8 @@ extension View {
 
 
 struct QuizzResultAnswerView: View {
+    // QuizzResult >> QuizzResultList >> [[QuizzResultAnswer]]
+    
     var quizzResponse: Penalty
 //    let testBool = true
     

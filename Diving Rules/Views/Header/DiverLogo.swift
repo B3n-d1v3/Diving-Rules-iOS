@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct DiverLogo: Shape {
+    // An svg version of the diver app pictogram
         func path(in rect: CGRect) -> Path {
             var path = Path()
             let width = rect.size.width

@@ -73,19 +73,17 @@
 /*Quizz - Question Page Next Button*/
 "Quizz-Next" = "Suivant";
 
+/* Quizz - Question Page Back replace by Exit*/
+"Exit-Quizz" = "Terminer quizz";
+
 /* Quizz - Question*/
 "Quizz-Question" = "Question";
 
-/*Localizable.strings
-  Diving Rules
-
-  Created by Benoit SUZANNE on 22/03/2021.
-
- App Name - Full App name*/
-"CFBundleDisplayName" = "Règles Plongeon";
+/* App Name - Full App name*/
+"CFBundleDisplayName" = "diving rules";
 
 /*App Name - Short App name 16 car*/
-"CFBundleName" = "Règles Plongeon";
+"CFBundleName" = "diving rules";
 
 /*Quizz Selection Page
  Quizz - Title*/
