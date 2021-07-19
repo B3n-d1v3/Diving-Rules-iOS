@@ -136,7 +136,11 @@ struct QuizzQuestionView: View {
         .navigationBarTitle("Quizz-Title", displayMode: NavigationBarItem.TitleDisplayMode.inline)
         .navigationBarBackButtonHidden(true)
         .navigationBarItems(trailing: Button(action: {
+//            print ("[QuizzQuestionView > Quizz Exit]")
+//            print (" Exit >>> currentQuizz: \(currentQuizz)")
+//            print (" Exit >>> quizzHistory: \(quizzHistory)")
             currentQuizz = Quizz()
+            newQuizz(of: questionList.count)
             buttonStatusReset ()
             self.shouldPopToRootView = false
         }) {
@@ -228,6 +232,8 @@ struct QuizzQuestionView: View {
                 print("Jumpt to the Next Question")
                 currentQuestion += 1
 //                print("[nextQuestion] Question Status after count - currentQuestion: \(currentQuestion)")
+//                print (" [nextQuestion] currentQuizz: \(currentQuizz)")
+//                print (" [nextQuestion] quizzHistory: \(quizzHistory)")
                 buttonStatusReset()
                 
             } else {

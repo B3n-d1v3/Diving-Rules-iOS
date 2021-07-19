@@ -81,7 +81,11 @@ struct QuizzResultView: View {
         .navigationBarTitle("Quizz-Title", displayMode: NavigationBarItem.TitleDisplayMode.inline)
         .navigationBarBackButtonHidden(true)
         .navigationBarItems(trailing: Button(action: {
+//            print ("[QuizzResultView > Quizz Exit]")
+//            print (" Exit >>> currentQuizz: \(currentQuizz)")
+//            print (" Exit >>> quizzHistory: \(quizzHistory)")
             currentQuizz = Quizz()
+            newQuizz(of: questionNumber)
             buttonStatusReset ()
             self.shouldPopToRootView = false
         }) {
