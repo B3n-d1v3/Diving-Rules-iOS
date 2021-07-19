@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct PenaltyViewButton: View {
+    // The button used to show the penalty sanction selection
+    // Within the Penalty Detail View
     var buttonImage: String
     var buttonText: String
     @State var isOn: Bool

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct Sticker: View {
+    // the Quiz Result badge shown to the user
     var stickerImage: String
     var stickerColor: String
     var stickerText: String

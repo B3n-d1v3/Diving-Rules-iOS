@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B54B1AF126A2C534001B97EF /* RuleBookPdfView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54B1AF026A2C534001B97EF /* RuleBookPdfView.swift */; };
 		B580D79C269C4B480032D029 /* 2017-2021_Fina_FR_Reglements_Plongeon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B580D799269C4B470032D029 /* 2017-2021_Fina_FR_Reglements_Plongeon.pdf */; };
 		B580D79D269C4B480032D029 /* 2017-2021_Fina_EN_Diving_Rules.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B580D79A269C4B470032D029 /* 2017-2021_Fina_EN_Diving_Rules.pdf */; };
 		B580D79E269C4B480032D029 /* 2017-2021_Fina_ES_Reglamento_Saltos.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B580D79B269C4B480032D029 /* 2017-2021_Fina_ES_Reglamento_Saltos.pdf */; };
@@ -17,7 +18,6 @@
 		B5B26932262895DD00C16C32 /* AppTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B26931262895DD00C16C32 /* AppTitleView.swift */; };
 		B5B269372628A10600C16C32 /* DiverLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B269362628A10600C16C32 /* DiverLogo.swift */; };
 		B5D0DC6925FA086300CDA3D3 /* Diving_RulesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D0DC6825FA086300CDA3D3 /* Diving_RulesApp.swift */; };
-		B5D0DC6B25FA086300CDA3D3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D0DC6A25FA086300CDA3D3 /* ContentView.swift */; };
 		B5D0DC6D25FA086500CDA3D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5D0DC6C25FA086500CDA3D3 /* Assets.xcassets */; };
 		B5D0DC7025FA086500CDA3D3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5D0DC6F25FA086500CDA3D3 /* Preview Assets.xcassets */; };
 		B5D0DC7925FA0E0300CDA3D3 /* QuizzQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D0DC7825FA0E0300CDA3D3 /* QuizzQuestionView.swift */; };
@@ -39,11 +39,11 @@
 		B5F6976726208C2B00A42E31 /* PenaltyViewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F6976626208C2B00A42E31 /* PenaltyViewButton.swift */; };
 		B5F6976B262093D100A42E31 /* OwnerViewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F6976A262093D100A42E31 /* OwnerViewButton.swift */; };
 		B5FB0CEE268B5B200041FC2B /* QuizzResultAnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FB0CED268B5B200041FC2B /* QuizzResultAnswerView.swift */; };
-		B5FB0CF0268B7B1A0041FC2B /* JustATestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FB0CEF268B7B1A0041FC2B /* JustATestView.swift */; };
 		B5FB0CF2269378930041FC2B /* QuizzResultRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FB0CF1269378920041FC2B /* QuizzResultRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B54B1AF026A2C534001B97EF /* RuleBookPdfView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleBookPdfView.swift; sourceTree = "<group>"; };
 		B580D799269C4B470032D029 /* 2017-2021_Fina_FR_Reglements_Plongeon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "2017-2021_Fina_FR_Reglements_Plongeon.pdf"; sourceTree = "<group>"; };
 		B580D79A269C4B470032D029 /* 2017-2021_Fina_EN_Diving_Rules.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "2017-2021_Fina_EN_Diving_Rules.pdf"; sourceTree = "<group>"; };
 		B580D79B269C4B480032D029 /* 2017-2021_Fina_ES_Reglamento_Saltos.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "2017-2021_Fina_ES_Reglamento_Saltos.pdf"; sourceTree = "<group>"; };
@@ -57,7 +57,6 @@
 		B5B269362628A10600C16C32 /* DiverLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiverLogo.swift; sourceTree = "<group>"; };
 		B5D0DC6525FA086300CDA3D3 /* Diving Rules.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Diving Rules.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5D0DC6825FA086300CDA3D3 /* Diving_RulesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diving_RulesApp.swift; sourceTree = "<group>"; };
-		B5D0DC6A25FA086300CDA3D3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B5D0DC6C25FA086500CDA3D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5D0DC6F25FA086500CDA3D3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B5D0DC7125FA086500CDA3D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -80,7 +79,6 @@
 		B5F6976626208C2B00A42E31 /* PenaltyViewButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenaltyViewButton.swift; sourceTree = "<group>"; };
 		B5F6976A262093D100A42E31 /* OwnerViewButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerViewButton.swift; sourceTree = "<group>"; };
 		B5FB0CED268B5B200041FC2B /* QuizzResultAnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzResultAnswerView.swift; sourceTree = "<group>"; };
-		B5FB0CEF268B7B1A0041FC2B /* JustATestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustATestView.swift; sourceTree = "<group>"; };
 		B5FB0CF1269378920041FC2B /* QuizzResultRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzResultRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +93,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B54B1AF226A407BD001B97EF /* TabRuleBook */ = {
+			isa = PBXGroup;
+			children = (
+				B5D0DC8D25FA1BBD00CDA3D3 /* RuleBookView.swift */,
+				B54B1AF026A2C534001B97EF /* RuleBookPdfView.swift */,
+			);
+			path = TabRuleBook;
+			sourceTree = "<group>";
+		};
+		B54B1AF326A407DC001B97EF /* TabPenalties */ = {
+			isa = PBXGroup;
+			children = (
+				B5D0DCBD25FA6FA200CDA3D3 /* PenaltiesListView.swift */,
+				B5D0DCB925FA6D1600CDA3D3 /* PenaltyRowView.swift */,
+				B5D0DCC625FA836500CDA3D3 /* PenaltyDetailView.swift */,
+			);
+			path = TabPenalties;
+			sourceTree = "<group>";
+		};
+		B54B1AF426A407F2001B97EF /* TabQuizz */ = {
+			isa = PBXGroup;
+			children = (
+				B5E2B4C82609E43300530303 /* QuizzStartView.swift */,
+				B5D0DC7825FA0E0300CDA3D3 /* QuizzQuestionView.swift */,
+				B5F6974F261DEC8E00A42E31 /* QuizzResultView.swift */,
+				B54B1AF526A40800001B97EF /* QuizzResultReview */,
+			);
+			path = TabQuizz;
+			sourceTree = "<group>";
+		};
+		B54B1AF526A40800001B97EF /* QuizzResultReview */ = {
+			isa = PBXGroup;
+			children = (
+				B59C1A432671298C00DBDB22 /* QuizzResultListView.swift */,
+				B5FB0CF1269378920041FC2B /* QuizzResultRowView.swift */,
+				B5FB0CED268B5B200041FC2B /* QuizzResultAnswerView.swift */,
+			);
+			path = QuizzResultReview;
+			sourceTree = "<group>";
+		};
 		B58610972603AE2900A44778 /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,7 +178,6 @@
 				B5D0DC9E25FA32B300CDA3D3 /* Views */,
 				B5D0DC9F25FA32C400CDA3D3 /* Models */,
 				B5D0DCA025FA32D100CDA3D3 /* Ressources */,
-				B5D0DC6A25FA086300CDA3D3 /* ContentView.swift */,
 				B5D0DC6C25FA086500CDA3D3 /* Assets.xcassets */,
 				B5D0DC7125FA086500CDA3D3 /* Info.plist */,
 				B5D0DC6E25FA086500CDA3D3 /* Preview Content */,
@@ -159,17 +196,9 @@
 		B5D0DC9E25FA32B300CDA3D3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				B5D0DC8D25FA1BBD00CDA3D3 /* RuleBookView.swift */,
-				B5D0DCBD25FA6FA200CDA3D3 /* PenaltiesListView.swift */,
-				B5D0DCB925FA6D1600CDA3D3 /* PenaltyRowView.swift */,
-				B5D0DCC625FA836500CDA3D3 /* PenaltyDetailView.swift */,
-				B5E2B4C82609E43300530303 /* QuizzStartView.swift */,
-				B5D0DC7825FA0E0300CDA3D3 /* QuizzQuestionView.swift */,
-				B5F6974F261DEC8E00A42E31 /* QuizzResultView.swift */,
-				B59C1A432671298C00DBDB22 /* QuizzResultListView.swift */,
-				B5FB0CF1269378920041FC2B /* QuizzResultRowView.swift */,
-				B5FB0CED268B5B200041FC2B /* QuizzResultAnswerView.swift */,
-				B5FB0CEF268B7B1A0041FC2B /* JustATestView.swift */,
+				B54B1AF226A407BD001B97EF /* TabRuleBook */,
+				B54B1AF326A407DC001B97EF /* TabPenalties */,
+				B54B1AF426A407F2001B97EF /* TabQuizz */,
 				B5D0DC9025FA1BD000CDA3D3 /* SearchView.swift */,
 				B58610972603AE2900A44778 /* Buttons */,
 				B5F6973C2618591100A42E31 /* Stickers */,
@@ -292,11 +321,11 @@
 				B5D0DCC725FA836500CDA3D3 /* PenaltyDetailView.swift in Sources */,
 				B5F69753261DF01400A42E31 /* Sticker.swift in Sources */,
 				B58610952603976300A44778 /* OwnershipRefereeButton.swift in Sources */,
+				B54B1AF126A2C534001B97EF /* RuleBookPdfView.swift in Sources */,
 				B5F6976726208C2B00A42E31 /* PenaltyViewButton.swift in Sources */,
 				B5B269372628A10600C16C32 /* DiverLogo.swift in Sources */,
 				B5E2B4C92609E43300530303 /* QuizzStartView.swift in Sources */,
 				B5FB0CF2269378930041FC2B /* QuizzResultRowView.swift in Sources */,
-				B5D0DC6B25FA086300CDA3D3 /* ContentView.swift in Sources */,
 				B59C1A442671298C00DBDB22 /* QuizzResultListView.swift in Sources */,
 				B5B26932262895DD00C16C32 /* AppTitleView.swift in Sources */,
 				B5D0DC6925FA086300CDA3D3 /* Diving_RulesApp.swift in Sources */,
@@ -307,7 +336,6 @@
 				B5D0DC8B25FA16FB00CDA3D3 /* Penalty.swift in Sources */,
 				B5F69750261DEC8E00A42E31 /* QuizzResultView.swift in Sources */,
 				B5D0DC9125FA1BD000CDA3D3 /* SearchView.swift in Sources */,
-				B5FB0CF0268B7B1A0041FC2B /* JustATestView.swift in Sources */,
 				B5F697352613212E00A42E31 /* PenaltySelectionButton.swift in Sources */,
 				B586109A2603AE7500A44778 /* OwnershipJudgeButton.swift in Sources */,
 				B5D0DCBA25FA6D1600CDA3D3 /* PenaltyRowView.swift in Sources */,
@@ -382,13 +410,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -438,12 +467,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

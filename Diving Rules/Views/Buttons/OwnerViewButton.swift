@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct OwnerViewButton: View {
+    // The button used to show the penalty owner selection
+    // Within the Penalty Detail View
     var buttonImage: String
     var imageWidth: CGFloat
     var imageHeigth: CGFloat
@@ -21,7 +23,7 @@ struct OwnerViewButton: View {
             VStack {
                 // Ownership Referee
                 Image (systemName: buttonImage)
-                .resizable()
+                    .resizable()
                     .frame(width: imageWidth, height: imageHeigth)
                 Text (buttonText)
                     .font(.caption)

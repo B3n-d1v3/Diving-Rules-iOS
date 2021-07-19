@@ -8,7 +8,7 @@
 import PDFKit
 import SwiftUI
 
-struct RuleBookView: UIViewRepresentable {
+struct RuleBookPdfView : UIViewRepresentable {
     var currentLanguage = Locale.autoupdatingCurrent.languageCode
     
     func makeUIView(context: Context) -> PDFView {
@@ -59,7 +59,7 @@ struct RuleBookView: UIViewRepresentable {
 //    }
 //}
 
-struct RuleBookView_Previews: PreviewProvider {
+struct RuleBookPdfView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             RuleBookView()
@@ -71,3 +71,4 @@ struct RuleBookView_Previews: PreviewProvider {
         }
     }
 }
+

@@ -14,7 +14,8 @@ struct OwnershipJudgeButton: View {
     @Binding var nextQuestion: Bool
 
     var body: some View {
-        
+        // The button used to show the penalty owner Judge selection
+        // Within the Quizz Question View
         Button(action: {
             isOn.toggle()
             if (penaltyButtonStatus.userSanctionSelection > 6) || (!penaltyButtonStatus.ownershipReferee && !isOn) {

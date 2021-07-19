@@ -65,7 +65,7 @@
 "Quizz-Intro-Description" = "Afin de vous entraîner sur les règles Fina du plongeon, avec ce test, vous serez en mesure de réviser les règles avec des questions sur les différentes règles.\n\n Sélectionnez le type de quiz auquel vous souhaitez répondre et le nombre de questions que vous souhaitez dans votre quiz.";
 
 /* Quizz - Intro Question Number*/
-"Quizz-Intro-Question-Number" = "Nombre de questions: ";
+"Quizz-Intro-Question-Number" = "Nombre de questions : ";
 
 /*Quizz - Intro Start Button*/
 "Quizz-Intro-Start-Button" = "Démarrer";
@@ -73,19 +73,17 @@
 /*Quizz - Question Page Next Button*/
 "Quizz-Next" = "Suivant";
 
+/* Quizz - Question Page Back replace by Exit*/
+"Exit-Quizz" = "Terminer quizz";
+
 /* Quizz - Question*/
 "Quizz-Question" = "Question";
 
-/*Localizable.strings
-  Diving Rules
-
-  Created by Benoit SUZANNE on 22/03/2021.
-
- App Name - Full App name*/
-"CFBundleDisplayName" = "Règles Plongeon";
+/* App Name - Full App name*/
+"CFBundleDisplayName" = "diving rules";
 
 /*App Name - Short App name 16 car*/
-"CFBundleName" = "Règles Plongeon";
+"CFBundleName" = "diving rules";
 
 /*Quizz Selection Page
  Quizz - Title*/

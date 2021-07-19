@@ -8,6 +8,13 @@
 import SwiftUI
 
 struct QuizzResultView: View {
+    // QuizzStart >> QuizzQuestion (looped) >> [[QuizzResult]]
+    // QuizzResult >> QuizzResultList >> QuizzResultAnswer
+    // or QuizzResult >> QuizzQuestion (Looped  for a new quizz)
+    
+    // To handle the Quizz Quit
+    @Binding var shouldPopToRootView: Bool
+    
     var score : Int
     var questionNumber : Int
     var body: some View {
@@ -54,7 +61,7 @@ struct QuizzResultView: View {
                 
                 Spacer ()
                 
-                NavigationLink(destination: QuizzQuestionView (questionList: newQuizz(of: questionNumber), penaltyButtonStatus: penaltyButtonStatus)) {
+                NavigationLink(destination: QuizzQuestionView (shouldPopToRootView: self.$shouldPopToRootView, questionList: newQuizz(of: questionNumber), penaltyButtonStatus: penaltyButtonStatus)) {
                     Text("Quizz-Result-Start-Button")
                         .font(.title3)
                         .fontWeight(.semibold)
@@ -69,22 +76,39 @@ struct QuizzResultView: View {
             } // HStack Navigation
             
             Spacer ()
-        }
+        } // VStack
+        // Header info & Exit Button
+        .navigationBarTitle("Quizz-Title", displayMode: NavigationBarItem.TitleDisplayMode.inline)
+        .navigationBarBackButtonHidden(true)
+        .navigationBarItems(trailing: Button(action: {
+//            print ("[QuizzResultView > Quizz Exit]")
+//            print (" Exit >>> currentQuizz: \(currentQuizz)")
+//            print (" Exit >>> quizzHistory: \(quizzHistory)")
+            currentQuizz = Quizz()
+            newQuizz(of: questionNumber)
+            buttonStatusReset ()
+            self.shouldPopToRootView = false
+        }) {
+            Image(systemName: "xmark.circle")
+                .accentColor(.accentColor)
+                .font(.title)
+        })
         .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
     }
 }
 
 struct QuizzResultView_Previews: PreviewProvider {
+    @State static var shouldGoToRoot = false
     static var previews: some View {
         Group {
-            QuizzResultView(score: 80, questionNumber: 10)
+            QuizzResultView(shouldPopToRootView: $shouldGoToRoot, score: 80, questionNumber: 10)
                 .environment(\.locale, .init(identifier: "en"))
-            QuizzResultView(score: 50, questionNumber: 10)
+            QuizzResultView(shouldPopToRootView: $shouldGoToRoot, score: 50, questionNumber: 10)
                 .environment(\.locale, .init(identifier: "en"))
 
-            QuizzResultView(score: 80, questionNumber: 10)
+            QuizzResultView(shouldPopToRootView: $shouldGoToRoot, score: 80, questionNumber: 10)
                 .environment(\.locale, .init(identifier: "fr"))
-            QuizzResultView(score: 50, questionNumber: 10)
+            QuizzResultView(shouldPopToRootView: $shouldGoToRoot, score: 50, questionNumber: 10)
                 .environment(\.locale, .init(identifier: "fr"))
         }
         

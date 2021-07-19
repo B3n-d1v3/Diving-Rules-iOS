@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct QuizzResultListView: View {
+    // QuizzResult >> [[QuizzResultList]] >> QuizzResultAnswer
     let lastQuizz: Int = quizzHistory.count
     var body: some View {
 //        List (penalties) { penalty in

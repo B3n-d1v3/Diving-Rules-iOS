@@ -9,8 +9,6 @@ import SwiftUI
 
 @main
 struct Diving_RulesApp: App {
-//    environment penalties: Penalty
-    
     var body: some Scene {
         WindowGroup {
             TabView {
@@ -18,73 +16,59 @@ struct Diving_RulesApp: App {
                 NavigationView {
                     RuleBookView()
                         .navigationBarTitle("RuleBook-Title", displayMode: NavigationBarItem.TitleDisplayMode.inline)
-//                        .navigationBarItems(
-//                                trailing:
-//                                    Button(action: {
-//                                        // Button Action
-//                                   }) {
-//                                        Image(systemName: "magnifyingglass.circle.fill")
-//                                            .font(.title2)
-//    //                                        .fontWeight(.black)
-//                                            .foregroundColor(Color.accentColor)
-//                                        }
-//                                    
-//                        )
                 }
-                    .tabItem {
-                        Image (systemName: "book")
-                            .resizable()
-                            .frame(width: 50.0, height: 50.0)
-                        Text ("Navigation-Menu-Rules")
-                    }
-
+                .tabItem {
+                    Image (systemName: "book")
+                        .resizable()
+                        .frame(width: 50.0, height: 50.0)
+                    Text ("Navigation-Menu-Rules")
+                }
+                
                 
                 // Penalty explorer
                 NavigationView {
                     PenaltiesListView()
                         .navigationBarTitle("Penalties-List-Title", displayMode: .inline)
                 }
-                    .tabItem {
-                        Image (systemName: "square.fill.text.grid.1x2")
-                        Text ("Navigation-Menu-Penalties")
-                            
-                    }
+                .tabItem {
+                    Image (systemName: "square.fill.text.grid.1x2")
+                    Text ("Navigation-Menu-Penalties")
+                    
+                }
                 
                 // Quizz Access
                 NavigationView {
                     QuizzStartView()
                         .navigationBarTitle("Quizz-Title", displayMode: .inline)
                 }
-                    .tabItem {
-                        Image (systemName: "checkmark")
-                        Text ("Navigation-Menu-Quizz")
-                    }
-                    .navigationViewStyle(StackNavigationViewStyle())
+                .tabItem {
+                    Image (systemName: "checkmark")
+                    Text ("Navigation-Menu-Quizz")
+                }
+                .navigationViewStyle(StackNavigationViewStyle())
                 
                 // Search Page
-//                NavigationView {
-//                    SearchView()
-//                        .navigationBarTitle("Search-Title")
-//                }
-//                    .tabItem {
-//                        Image (systemName: "magnifyingglass")
-//                        Text ("Navigation-Menu-Search")
-//                    }
+                //                NavigationView {
+                //                    SearchView()
+                //                        .navigationBarTitle("Search-Title")
+                //                }
+                //                    .tabItem {
+                //                        Image (systemName: "magnifyingglass")
+                //                        Text ("Navigation-Menu-Search")
+                //                    }
                 
             }
-            //.environmentObject(sanctions)
-            //.environmentObject(quizzQuestions)
-
         }
     }
 }
 
+// to slow the splash screen so that it shows up
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     try! FileManager.default.removeItem(atPath: NSHomeDirectory()+"/Library/SplashBoard")
-
+    
     do {
-        sleep(5)
+        sleep(4)
     }
-
+    
     return true
 }

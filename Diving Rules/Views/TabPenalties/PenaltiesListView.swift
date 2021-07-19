@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct PenaltiesListView: View {
+    //    [[PenaltyList]] >> PenaltyDetail
+    
     var body: some View {
 //        NavigationView {
 //            ZStack {

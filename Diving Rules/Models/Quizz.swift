@@ -91,6 +91,7 @@ func logUserAnswer (userAnswerScore: Int) {
     currentQuizz.score = userAnswerScore
     // Reset the penaltyButtonStatus
     buttonStatusReset()
+//    print ("[logUserAnswer]")
 }
 
 // added to have 2 objects : one for the data of the previous and one ready to be used in the next quizz
@@ -152,6 +153,7 @@ func buttonStatusReset (){
     
     penaltyButtonStatus.nextQuestion = false
     penaltyButtonStatus.userSanctionSelection = 400
+//    print ("[buttonStatusReset]")
 }
 
 func buttonStatusSet (fromPenalty penaltyID: Int) ->  ButtonsStatus {
@@ -168,6 +170,6 @@ func buttonStatusSet (fromPenalty penaltyID: Int) ->  ButtonsStatus {
     
     penaltyButtonStatusResponse.ownershipJudge = penalties[penaltyID].judge
     penaltyButtonStatusResponse.ownershipReferee = penalties[penaltyID].referee
-    
+//    print ("[buttonStatusSet]")
     return penaltyButtonStatusResponse
 }

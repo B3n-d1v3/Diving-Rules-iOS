@@ -16,6 +16,8 @@ struct PenaltySelectionButton: View {
 
     
     var body: some View {
+        // The button used to show the penalty sanction selection
+        // Within the Quizz Question View
              Button(action: {
                 isOn.toggle()
                 // when button is turned on
