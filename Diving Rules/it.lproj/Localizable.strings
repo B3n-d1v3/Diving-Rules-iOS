@@ -23,7 +23,7 @@
 
 /*Penalties List Page 
  Penalties List Page - Title*/
-"Penalties-List-Title" = "IT-Penalty Cases";
+"Penalties-List-Title" = "Casi di penalità";
 
 /*Penalty - Ownership Section Button Judge*/
 "Button-Judge" = "Giudici";
@@ -36,7 +36,7 @@
 "Penalty-Description" = "Descrizione";
 
 /*Penalty - Penalty Section Title*/
-"Penalty-Penalty" = "Penalita";
+"Penalty-Penalty" = "Penalità";
 
 /*Penalty - Ownership Section Title*/
 "Penalty-Ownership" = "Da chi";
@@ -68,13 +68,13 @@
 "Quizz-Title" = "Quiz";
 
 /* Quizz - Intro Title*/
-"Quizz-Intro-Title" = "IT-Take A Quizz";
+"Quizz-Intro-Title" = "Fai un quiz";
 
 /* Quizz - Intro Description*/
 "Quizz-Intro-Description" = "Per allenarti sulle regole della Fina tuffi, con questo test potrai rivedere il regolamento attraverso domande sulle varie regole. \n\nSeleziona il tipo di quiz che vuoi fare e il numero di domande che vuoi nel tuo quiz.";
 
 /* Quizz - Intro Question Number*/
-"Quizz-Intro-Question-Number" = "numero di domande: ";
+"Quizz-Intro-Question-Number" = "Numero di domande: ";
 
 /* Quizz - Intro Start Button*/
 "Quizz-Intro-Start-Button" = "iniziare";
