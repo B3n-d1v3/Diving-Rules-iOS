@@ -6,7 +6,7 @@
   
 
  Navigation - Rules Menu Item*/
-"Navigation-Menu-Rules" = "Règlement";
+"Navigation-Menu-Rules" = "Règles";
 
 /*Navigation - Penalties Menu Item*/
 "Navigation-Menu-Penalties" = "Pénalités";
@@ -64,26 +64,22 @@
 /*Quizz - Intro Description*/
 "Quizz-Intro-Description" = "Afin de vous entraîner sur les règles Fina du plongeon, avec ce test, vous serez en mesure de réviser les règles avec des questions sur les différentes règles.\n\n Sélectionnez le type de quiz auquel vous souhaitez répondre et le nombre de questions que vous souhaitez dans votre quiz.";
 
-/* Quizz - Intro Question Number*/
-"Quizz-Intro-Question-Number" = "Nombre de questions : ";
-
 /*Quizz - Intro Start Button*/
 "Quizz-Intro-Start-Button" = "Démarrer";
 
 /*Quizz - Question Page Next Button*/
 "Quizz-Next" = "Suivant";
 
-/* Quizz - Question Page Back replace by Exit*/
-"Exit-Quizz" = "Terminer quizz";
+/*Localizable.strings
+  Diving Rules
 
-/* Quizz - Question*/
-"Quizz-Question" = "Question";
+  Created by Benoit SUZANNE on 22/03/2021.
 
-/* App Name - Full App name*/
-"CFBundleDisplayName" = "diving rules";
+ App Name - Full App name*/
+"CFBundleDisplayName" = "Règles Plongeon";
 
 /*App Name - Short App name 16 car*/
-"CFBundleName" = "diving rules";
+"CFBundleName" = "Règles Plongeon";
 
 /*Quizz Selection Page
  Quizz - Title*/
@@ -97,18 +93,6 @@
 
 /*Quizz - Result Start Button*/
 "Quizz-Result-Start-Button" = "Nouveau";
-
-/* Quizz - Result Error Review Button*/
-"Quizz-Result-Review-Button" = "Erreurs";
-
-/* Quizz - Result Result Review Legend - unused */
-"Quizz-Result-Legend-unused" = "Non utilisé";
-
-/* Quizz - Result Result Review Legend - unused */
-"Quizz-Result-Legend-user-answer" = "Ma réponse";
-
-/* Quizz - Result Result Review Legend - unused */
-"Quizz-Result-Legend-real-answer" = "Bonne Réponse";
 
 /*Quizz - Good Sticker*/
 "Passed" = "Réussi";
@@ -124,144 +108,165 @@
  Rule Book - Title*/
 "RuleBook-Title" = "Règlement";
 
-/* Penalty Descripion List
+/*Quizz - Question*/
+"Quizz-Question" = "Question";
+
+/*Quizz - Result Error Review Button*/
+"Quizz-Result-Review-Button" = "Erreurs";
+
+/*Quizz - Result Result Review Legend - unused*/
+"Quizz-Result-Legend-unused" = "Non utilisé";
+
+/*Quizz - Result Result Review Legend - unused*/
+"Quizz-Result-Legend-user-answer" = "Ma réponse";
+
+/*Quizz - Result Result Review Legend - unused*/
+"Quizz-Result-Legend-real-answer" = "Bonne Réponse";
+
+/*Penalty Descripion List
  Penalty 0 - D6.12 - If the diver takes more than one minute, after a warning.*/
 "Penalty-0" = "Quand un plongeur, après l'avertissement, attend plus d'une minute pour exécuter un plongeon.";
 
-/* Penalty 1 - D6.16 & D8.3.4 - If a diver double bounces on the end of the springboard or double jump on the end of the platform before take-off.*/
+/*Penalty 1 - D6.16 & D8.3.4 - If a diver double bounces on the end of the springboard or double jump on the end of the platform before take-off.*/
 "Penalty-1" = "Quand, avant l'envol, un plongeur ou une plongeuse rebondit deux fois à l'extrémité du tremplin, ou réalise un double saut à l’extrémité de la plate-forme.";
 
-/* Penalty 2 - D6.17 & D8.3.3 - If the final step is not from one foot.*/
+/*Penalty 2 - D6.17 & D8.3.3 - If the final step is not from one foot.*/
 "Penalty-2" = "Si le dernier pas de l’appel d’un plongeon ou d'une plongeuse avec élan, n’est pas fait sur un seul pied.";
 
-/* Penalty 3 - D6.18 & D8.4.3 - If the take-off on the springboard is not from both feet simultaneously.*/
+/*Penalty 3 - D6.18 & D8.4.3 - If the take-off on the springboard is not from both feet simultaneously.*/
 "Penalty-3" = "Quand l’envol depuis un tremplin n’est pas exécuté simultanément des deux pieds (à pieds joints).";
 
-/* Penalty 4 - D6.20 & D8.6.6- If a twist is greater or less than that announced by 90 degrees or more.*/
+/*Penalty 4 - D6.20 & D8.6.6- If a twist is greater or less than that announced by 90 degrees or more.*/
 "Penalty-4" = "Quand, à l’entrée à l’eau, la vrille est plus grande ou plus petite de 90 degrés ou plus, par rapport à ce qui a été annoncé.";
 
-/* Penalty 5 - D6.21 & D8.1.7 - If a diver has performed a dive of a number other than that announced.*/
+/*Penalty 5 - D6.21 & D8.1.7 - If a diver has performed a dive of a number other than that announced.*/
 "Penalty-5" = "Si un plongeur ou une plongeuse a exécuté un plongeon d’un numéro différent de celui du plongeon annoncé.";
 
-/* Penalty 6 - D6.22.1 - If the feet enter the water before the head or hands in a head first dive.*/
+/*Penalty 6 - D6.22.1 - If the feet enter the water before the head or hands in a head first dive.*/
 "Penalty-6" = "Si les pieds entrent dans l'eau avant la tête ou avant les mains, pour une entrée à l'eau \"par la tête\".";
 
-/* Penalty 7 - D6.22.2 - If the head or hands enter the water before the feet in a feet first dive.*/
+/*Penalty 7 - D6.22.2 - If the head or hands enter the water before the feet in a feet first dive.*/
 "Penalty-7" = "Si la tête ou les mains entrent dans l'eau avant les pieds, pour une entrée à l'eau \"par les pieds\".";
 
-/* Penalty 8 - D6.24 - If assistance has been given to the diver after the starting signal.*/
+/*Penalty 8 - D6.24 - If assistance has been given to the diver after the starting signal.*/
 "Penalty-8" = "Quand une aide a été donnée au plongeur après le signal de départ.";
 
-/* Penalty 9 - D6.27 - When a second attempt\n(a re-start) is unsuccessful.*/
+/*Penalty 9 - D6.27 - When a second attempt
+(a re-start) is unsuccessful.*/
 "Penalty-9" = "Quand un second essai (un nouveau départ) est raté.";
 
-/* Penalty 10 - D6.28 - If a diver refuses the execution of a dive.*/
+/*Penalty 10 - D6.28 - If a diver refuses the execution of a dive.*/
 "Penalty-10" = "Quand un plongeur refuse d’exécuter un plongeon.";
 
-/* Penalty 11 - D9.2 & D9.8 - In synchronised diving if a diver, or both divers, perform a dive of a different number or position.*/
+/*Penalty 11 - D9.2 & D9.8 - In synchronised diving if a diver, or both divers, perform a dive of a different number or position.*/
 "Penalty-11" = "En plongeon synchronisé, si un ou les deux plongeurs exécute(ent) un plongeon de numéro différent ou de position différente du plongeon annoncé.";
 
-/* Penalty 12 - D9.8 - In synchronised diving if all execution judges for one diver award zero (0) points.*/
+/*Penalty 12 - D9.8 - In synchronised diving if all execution judges for one diver award zero (0) points.*/
 "Penalty-12" = "En plongeon synchronisé, si tous les juges d’exécution pour un plongeur attribuent la note zéro (0).";
 
-/* Penalty 13 - D9.10 - In synchronised diving if all synchronisation judges award zero (0) points.*/
+/*Penalty 13 - D9.10 - In synchronised diving if all synchronisation judges award zero (0) points.*/
 "Penalty-13" = "En plongeon synchronisé, si tous les juges de synchronisation attribuent la note zéro (0).";
 
-/* Penalty 14 - D9.8 - If an execution judge considers that a dive of a different number has been performed.*/
+/*Penalty 14 - D9.8 - If an execution judge considers that a dive of a different number has been performed.*/
 "Penalty-14" = "Quand un juge d'exécution considère qu'un plongeon d'un numéro différent du numéro annoncé a été exécuté.";
 
-/* Penalty 15 - D6.25 - If a diver takes a step and stops in a running dive or stops the movement for a standing take-off after the legs have commenced to press.*/
+/*Penalty 15 - D6.25 - If a diver takes a step and stops in a running dive or stops the movement for a standing take-off after the legs have commenced to press.*/
 "Penalty-15" = "Si dans un plongeon avec élan, un plongeur ou une plongeuse fait un pas et s'arrête, ou si dans un plongeon sans élan un plongeur interrompt le mouvement pour l'envol après que les jambes aient commencé leur appui.";
 
-/* Penalty 16 - D6.26 - If there is a \nre-start in a standing, running, or armstand dive.*/
+/*Penalty 16 - D6.26 - If there is a 
+re-start in a standing, running, or armstand dive.*/
 "Penalty-16" = "Quand un plongeur fait un second départ pour un plongeon avec élan, sans élan ou partant de l’équilibre.";
 
-/* Penalty 17 - D9.6 - In synchronised diving if there is a re-start by one or both divers.*/
+/*Penalty 17 - D9.6 - In synchronised diving if there is a re-start by one or both divers.*/
 "Penalty-17" = "En plongeon synchronisé, quand un second départ est exécuté par l'un ou les deux plongeurs.";
 
-/* Penalty 18 - D6.19 & D8.1.4 - If a diver performs a dive in a position other than that announced.*/
+/*Penalty 18 - D6.19 & D8.1.4 - If a diver performs a dive in a position other than that announced.*/
 "Penalty-18" = "Quand un plongeur réalise un plongeon dans une position clairement différente de la position annoncée. ";
 
-/* Penalty 19 - D8.5.4 - If in a dive, a diver is unsafely close to the springboard or platform or touches the end of the springboard or platform with his head.*/
+/*Penalty 19 - D8.5.4 - If in a dive, a diver is unsafely close to the springboard or platform or touches the end of the springboard or platform with his head.*/
 "Penalty-19" = "Si lors de l’exécution d’un plongeon, un plongeur est dangereusement près du tremplin ou de la plate-forme, ou s’il touche l’extrémité du tremplin ou de la plate-forme avec la tête.";
 
-/* Penalty 20 - D6.22, D8.6.3 & D8.6.4 - If a diver has one or both arms held above the head in a feet first entry or below the head in a head first entry.*/
+/*Penalty 20 - D6.22, D8.6.3 & D8.6.4 - If a diver has one or both arms held above the head in a feet first entry or below the head in a head first entry.*/
 "Penalty-20" = "Quand un ou les deux bras d’un plongeur sont placés au-dessus de la tête pour une entrée dans l’eau \"par les pieds\", ou sous la tête pour une entrée dans l’eau \"par la tête\".";
 
-/* Penalty 21 - D8.5.7 - If in a flying dive, a straight position is not clearly shown for at least one quarter of a somersault (90º) in dives with somersault.*/
+/*Penalty 21 - D8.5.7 - If in a flying dive, a straight position is not clearly shown for at least one quarter of a somersault (90º) in dives with somersault.*/
 "Penalty-21" = "Quand, dans un plongeon « pris au vol », une position droite n’est pas clairement maintenue pendant au moins un quart de saut périlleux (90°) pour les plongeons comportant un saut périlleux.";
 
-/* Penalty 22 - D8.5.7 - If in a flying dive, a straight position is not clearly shown for at least a half somersault (180º) in dives with more than 1 somersault.*/
+/*Penalty 22 - D8.5.7 - If in a flying dive, a straight position is not clearly shown for at least a half somersault (180º) in dives with more than 1 somersault.*/
 "Penalty-22" = "Quand, dans un plongeon « pris au vol », une position droite n’est pas clairement maintenue pendant au moins un demi saut périlleux (180°) pour les plongeons comportant plus d’un saut périlleux.";
 
-/* Penalty 23 - D8.1.6 - If a dive is not performed in a position as described.*/
+/*Penalty 23 - D8.1.6 - If a dive is not performed in a position as described.*/
 "Penalty-23" = "Si un plongeon n’est pas réalisé dans une position telle que décrite par les règlements.";
 
-/* Penalty 24 - D8.2.3 - If the starting position is not straight, head erect, with the arms straight in any position.*/
+/*Penalty 24 - D8.2.3 - If the starting position is not straight, head erect, with the arms straight in any position.*/
 "Penalty-24" = "Si, lors de la position de départ, le corps du plongeur ou de la plongeuse n’est pas droit, la tête redressée et les bras tendus quelque soit leur positionnement.";
 
-/* Penalty 25 - D8.2.4.3 - If the feet leave the springboard or platform (crow-hop) before the take-off in a standing dive.*/
+/*Penalty 25 - D8.2.4.3 - If the feet leave the springboard or platform (crow-hop) before the take-off in a standing dive.*/
 "Penalty-25" = "Quand dans un plongeon sans élan, les pieds quittent le tremplin ou la plate-forme (\"décollement\") avant l’envol.";
 
-/* Penalty 26 - D8.2.6.2 - If in an armstand dive, a stationary and steady balance in the straight vertical position is not shown.*/
+/*Penalty 26 - D8.2.6.2 - If in an armstand dive, a stationary and steady balance in the straight vertical position is not shown.*/
 "Penalty-26" = "Quand, dans un plongeon partant de l’équilibre (sur les mains), un équilibre stable et immobile, dans une position droite et verticale, n’est pas tenu.";
 
-/* Penalty 27 - D8.3.2 - If the run is not smooth, aesthetically pleasing in a forward direction to the end of the springboard or platform.*/
+/*Penalty 27 - D8.3.2 - If the run is not smooth, aesthetically pleasing in a forward direction to the end of the springboard or platform.*/
 "Penalty-27" = "Quand l’élan n’est pas fluide, esthétique, ou qu’il ne se fait pas vers l’avant, en direction de l’extrémité du tremplin ou de la plate-forme.";
 
-/* Penalty 28 - D8.4.5 - If the take-off is not bold, high, and confident.*/
+/*Penalty 28 - D8.4.5 - If the take-off is not bold, high, and confident.*/
 "Penalty-28" = "Quand l’envol n’est pas franc, haut et assuré, ou s’il n’est pas exécuté à partir de l’extrémité du tremplin ou de la plate-forme.";
 
-/* Penalty 29 - D8.4.6 - If in a twist dive, the twisting is manifestly done from the springboard or platform.*/
+/*Penalty 29 - D8.4.6 - If in a twist dive, the twisting is manifestly done from the springboard or platform.*/
 "Penalty-29" = "Si pour les plongeons qui comportent des vrilles, la vrille est manifestement déclenchée à partir du tremplin ou de la plate-forme.";
 
-/* Penalty 30 - D8.5.6 - If the straight position is not shown as described.*/
+/*Penalty 30 - D8.5.6 - If the straight position is not shown as described.*/
 "Penalty-30" = "Si la position droite n’est pas exécutée conformément à sa description dans les règles.";
 
-/* Penalty 31 - D8.5.9 - If the pike position is not shown as described.*/
+/*Penalty 31 - D8.5.9 - If the pike position is not shown as described.*/
 "Penalty-31" = "Si la position carpée n’est pas exécutée conformément à sa description dans les règles.";
 
-/* Penalty 32 - D8.5.10 - If in a pike dive with twist, the pike position is not clearly shown.*/
+/*Penalty 32 - D8.5.10 - If in a pike dive with twist, the pike position is not clearly shown.*/
 "Penalty-32" = "Si, dans un plongeon carpé avec vrille, la position carpée n’est pas clairement montrée.";
 
-/* Penalty 33 - D8.5.12 - If the tuck position is not shown as described.*/
+/*Penalty 33 - D8.5.12 - If the tuck position is not shown as described.*/
 "Penalty-33" = "Si la position groupée n’est pas exécutée conformément à sa description dans les règles.";
 
-/* Penalty 34 - D8.5.13 - If in a tuck dive with twist, the tuck position is not clearly shown.*/
+/*Penalty 34 - D8.5.13 - If in a tuck dive with twist, the tuck position is not clearly shown.*/
 "Penalty-34" = "Si, dans un plongeon groupé avec vrille, la position groupée n’est pas clairement montrée.";
 
-/* Penalty 35 - D8.5.15 - If the free position is not shown as described.*/
+/*Penalty 35 - D8.5.15 - If the free position is not shown as described.*/
 "Penalty-35" = "Si la position libre n’est pas exécutée conformément à sa description dans les règles.";
 
-/* Penalty 36 - D8.6.5 - If the arms are not in the correct position in either the head first or feet first entry.*/
+/*Penalty 36 - D8.6.5 - If the arms are not in the correct position in either the head first or feet first entry.*/
 "Penalty-36" = "Si les bras ne sont pas en position correcte lors des entrées dans l’eau \"par la tête\" ou \"par les pieds\".";
 
-/* Penalty 37 - D9.11 - In synchronised diving if\nsimilarity of the starting position, approach, take-off and height is not shown.*/
+/*Penalty 37 - D9.11 - In synchronised diving if
+similarity of the starting position, approach, take-off and height is not shown.*/
 "Penalty-37" = "En plongeon synchronisé, pour un manque de similitude de la position de départ, de l'élan, de l'envol et de la hauteur.";
 
-/* Penalty 38 - D9.11 - In synchronised diving if coordinated timing of the movement during the flight is not shown.*/
+/*Penalty 38 - D9.11 - In synchronised diving if coordinated timing of the movement during the flight is not shown.*/
 "Penalty-38" = "En plongeon synchronisé, pour un manque de coordination gestuelles pendant la phase aérienne.";
 
-/* Penalty 39 - D9.11 - In synchronised diving if similarity of the vertical angles of the entries is not shown.*/
+/*Penalty 39 - D9.11 - In synchronised diving if similarity of the vertical angles of the entries is not shown.*/
 "Penalty-39" = "En plongeon synchronisé, pour un manque de similitude des angles verticaux des entrées dans l'eau.";
 
-/* Penalty 40 - D9.11 - In synchronised diving if comparative distance from the springboard or platform of the entry is not shown.*/
+/*Penalty 40 - D9.11 - In synchronised diving if comparative distance from the springboard or platform of the entry is not shown.*/
 "Penalty-40" = "En plongeon synchronisé, pour un manque de similiyude des distances par rapport au tremplin ou à la plate-forme, au moment de l'entrée dans l'eau.";
 
-/* Penalty 41 - D9.11 - In synchronised diving if coordinated timing of the entries is not shown.*/
+/*Penalty 41 - D9.11 - In synchronised diving if coordinated timing of the entries is not shown.*/
 "Penalty-41" = "En plongeon synchronisé, pour un manque de simultaniété des entrées dans l'eau.";
 
-/* Penalty 42 - D8.1.5 - If a dive is performed partially in a position other than that announced.*/
+/*Penalty 42 - D8.1.5 - If a dive is performed partially in a position other than that announced.*/
 "Penalty-42" = "Quand un plongeon est partiellement réalisé dans une position différente de la position annoncée.";
 
-/* Penalty 43 - D8.5.2 - If in a dive, the diver dives to the side of the direct line of flight.*/
+/*Penalty 43 - D8.5.2 - If in a dive, the diver dives to the side of the direct line of flight.*/
 "Penalty-43" = "Si lors d’un plongeon, le plongeur ou la plongeuse plonge sur le côté, se « déporte », de sa ligne directe d’envol.";
 
-/* Penalty 44 - D8.5.3 - If in a dive, a diver touches the end of the springboard or platform with his feet or hands.*/
+/*Penalty 44 - D8.5.3 - If in a dive, a diver touches the end of the springboard or platform with his feet or hands.*/
 "Penalty-44" = "Si lors d’un plongeon, le plongeur ou la plongeuse touche l’extrémité du tremplin ou de la plate-forme avec ses pieds ou ses mains.";
 
-/* Penalty 45 - D8.6.2 - If the entry into the water is not vertical, or nearly so, or twisted with the body not straight, the feet not together, and the toes not pointed.*/
+/*Penalty 45 - D8.6.2 - If the entry into the water is not vertical, or nearly so, or twisted with the body not straight, the feet not together, and the toes not pointed.*/
 "Penalty-45" = "Si l’entrée dans l’eau n'est pas verticale, ou presque verticale (« plate » ou « passée »), si elle est vrillée, si le corps n’est pas en ligne, si les pieds sont désunis et les pointes de pied relâchés.";
 
-/* Penalty 46 - D9.5 - In synchronised diving if either diver enters the surface of the water before the other diver leaves the springboard or platform.*/
+/*Penalty 46 - D9.5 - In synchronised diving if either diver enters the surface of the water before the other diver leaves the springboard or platform.*/
 "Penalty-46" = "En plongeon synchronisé, si l’un des deux plongeurs touche la surface de l’eau avant que l’autre ait quitté le tremplin ou la plate-forme.";
+
+/*Quizz - Intro Question Number*/
+"Quizz-Intro-Question-Number" = "Nombre de questions : ";
