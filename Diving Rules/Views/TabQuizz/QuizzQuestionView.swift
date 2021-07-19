@@ -142,6 +142,7 @@ struct QuizzQuestionView: View {
             currentQuizz = Quizz()
             newQuizz(of: questionList.count)
             buttonStatusReset ()
+            // Navigation skip example found in https://stackoverflow.com/questions/57334455/swiftui-how-to-pop-to-root-view
             self.shouldPopToRootView = false
         }) {
             Image(systemName: "xmark.circle")

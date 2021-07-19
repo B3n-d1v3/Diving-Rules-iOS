@@ -82,9 +82,6 @@
 /* Quizz - Question Page Next Button*/
 "Quizz-Next" = "Next";
 
-/* Quizz - Question Page Back replace by Exit*/
-"Exit-Quizz" = "End Quizz";
-
 /* Quizz - Question*/
 "Quizz-Question" = "Question";
 

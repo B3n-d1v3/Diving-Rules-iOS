@@ -70,9 +70,6 @@
 /*Quizz - Question Page Next Button*/
 "Quizz-Next" = "Siguiente";
 
-/* Quizz - Question Page Back replace by Exit*/
-"Exit-Quizz" = "EN: End Quizz";
-
 /* App Name - Full App name*/
 "CFBundleDisplayName" = "diving rules";
 
