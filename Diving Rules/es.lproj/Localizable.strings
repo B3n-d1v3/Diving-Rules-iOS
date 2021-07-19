@@ -33,7 +33,7 @@
 "Penalty-Penalty" = "Penalidad";
 
 /*Penalty - Ownership Section Title*/
-"Penalty-Ownership" = "Quien";
+"Penalty-Ownership" = "Quien ?";
 
 /*Penalty Detail Page Buttons 
  Penalty - Penalty Section Button 0 pts*/
@@ -70,11 +70,16 @@
 /*Quizz - Question Page Next Button*/
 "Quizz-Next" = "Siguiente";
 
-/* App Name - Full App name*/
-"CFBundleDisplayName" = "diving rules";
+/*Localizable.strings
+  Diving Rules
+
+  Created by Benoit SUZANNE on 22/03/2021.
+
+ App Name - Full App name*/
+"CFBundleDisplayName" = "Diving Rules";
 
 /*App Name - Short App name 16 car*/
-"CFBundleName" = "diving rules";
+"CFBundleName" = "Diving Rules";
 
 /*Quizz Selection Page
  Quizz - Title*/
@@ -132,7 +137,7 @@
 "Penalty-3" = "Si el despegue en el trampolín no es con los dos pies simultáneamente.";
 
 /*Penalty 4 - D6.20 & D8.6.6- If a twist is greater or less than that announced by 90 degrees or more.*/
-"Penalty-4" = "Si un giro es mayor o menor que el anunciado por 90 grados o más.";
+"Penalty-4" = "Si un giro es mayor o menor que el anunciado de 90 grados o más.";
 
 /*Penalty 5 - D6.21 & D8.1.7 - If a diver has performed a dive of a number other than that announced.*/
 "Penalty-5" = "Si un clavadista ha realizado un clavado de un número distinto al anunciado.";
@@ -215,13 +220,13 @@ re-start in a standing, running, or armstand dive.*/
 "Penalty-30" = "Si la posición extendida no se muestra como se describen el reglamento.";
 
 /*Penalty 31 - D8.5.9 - If the pike position is not shown as described.*/
-"Penalty-31" = "Si la posición en escuadra no se muestra como se describe en el reglamento.";
+"Penalty-31" = "Si la posición en escuadra (B) no se muestra como se describe en el reglamento.";
 
 /*Penalty 32 - D8.5.10 - If in a pike dive with twist, the pike position is not clearly shown.*/
 "Penalty-32" = "Si en un clavado en escuadra con giro, la posición de escuadra no se muestra claramente.";
 
 /*Penalty 33 - D8.5.12 - If the tuck position is not shown as described.*/
-"Penalty-33" = "Si la posición de bola no se muestra como se describen el reglamento.";
+"Penalty-33" = "Si la posición de bola (C) no se muestra como se describen el reglamento.";
 
 /*Penalty 34 - D8.5.13 - If in a tuck dive with twist, the tuck position is not clearly shown.*/
 "Penalty-34" = "Si se trata de un clavado con giro, la posición escuadra no se muestra claramente.";
@@ -262,3 +267,6 @@ similarity of the starting position, approach, take-off and height is not shown.
 
 /*Penalty 46 - D9.5 - In synchronised diving if either diver enters the surface of the water before the other diver leaves the springboard or platform.*/
 "Penalty-46" = "En clavado sincronizado, si uno de los clavadistas entra en la superficie del agua antes de que el otro abandone el trampolín o la plataforma.";
+
+/*Quizz - Intro Question Number*/
+"Quizz-Intro-Question-Number" = "Number of Questions: ";
