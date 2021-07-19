@@ -20,6 +20,8 @@ struct RuleBookPdfView : UIViewRepresentable {
             path = Bundle.main.url(forResource: "2017-2021_Fina_FR_Reglements_Plongeon", withExtension: "pdf")
         } else if (currentLanguage == "es") {
             path = Bundle.main.url(forResource: "2017-2021_Fina_ES_Reglamento_Saltos", withExtension: "pdf")
+        } else if (currentLanguage == "it") {
+            path = Bundle.main.url(forResource: "2017-2021_Fina_IT_Regolamento_Tuffi", withExtension: "pdf")
         }
         let doc = PDFDocument(url: path!)
         pdfView.document = doc
