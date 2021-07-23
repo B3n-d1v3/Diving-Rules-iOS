@@ -148,8 +148,8 @@
 /* Penalty 8 - D6.24 - If assistance has been given to the diver after the starting signal.*/
 "Penalty-8" = "If assistance has been given to the diver after the starting signal.";
 
-/* Penalty 9 - D6.27 - When a second attempt\n(a re-start) is unsuccessful.*/
-"Penalty-9" = "When a second attempt\n(a re-start) is unsuccessful.";
+/* Penalty 9 - D6.27 - When a second attempt(a re-start) is unsuccessful.*/
+"Penalty-9" = "When a second attempt (a re-start) is unsuccessful.";
 
 /* Penalty 10 - D6.28 - If a diver refuses the execution of a dive.*/
 "Penalty-10" = "If a diver refuses the execution of a dive.";
@@ -169,8 +169,8 @@
 /* Penalty 15 - D6.25 - If a diver takes a step and stops in a running dive or stops the movement for a standing take-off after the legs have commenced to press.*/
 "Penalty-15" = "If a diver takes a step and stops in a running dive or stops the movement for a standing take-off after the legs have commenced to press.";
 
-/* Penalty 16 - D6.26 - If there is a \nre-start in a standing, running, or armstand dive.*/
-"Penalty-16" = "If there is a \nre-start in a standing, running, or armstand dive.";
+/* Penalty 16 - D6.26 - If there is a re-start in a standing, running, or armstand dive.*/
+"Penalty-16" = "If there is a re-start in a standing, running, or armstand dive.";
 
 /* Penalty 17 - D9.6 - In synchronised diving if there is a re-start by one or both divers.*/
 "Penalty-17" = "In synchronised diving if there is a re-start by one or both divers.";

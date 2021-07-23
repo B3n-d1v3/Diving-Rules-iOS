@@ -152,8 +152,8 @@
       {"ruleId": "D9.8"}
     ],
     "sanctionValue" : 0,
-    "referee" : true,
-    "judge" : false
+    "referee" : false,
+    "judge" : true
   },
   {
     "id" : 15,
@@ -434,7 +434,7 @@
     "rules" : [
       {"ruleId": "D8.1.5"}
     ],
-    "sanctionValue" : 3,
+    "sanctionValue" : 5,
     "referee" : false,
     "judge" : true
   },
