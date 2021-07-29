@@ -179,7 +179,7 @@ struct QuizzQuestionView: View {
             .padding(10.0)
             .foregroundColor(.white)
             .background((nextQuestion ? Color("AccentColor") : Color.gray))
-            .cornerRadius(400)
+            .cornerRadius(40)
             NavigationLink(destination: QuizzResultView (shouldPopToRootView: self.$shouldPopToRootView, score: score, questionNumber: questionList.count), isActive: $lastQuestion) {}
             
             Spacer ()
