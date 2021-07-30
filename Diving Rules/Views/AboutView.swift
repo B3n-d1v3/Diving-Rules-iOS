@@ -6,10 +6,11 @@
 //
 
 import SwiftUI
+import MessageUI
 
 struct AboutView: View {
     var body: some View {
-        VStack {
+        ScrollView {
             Spacer ()
             Image("DivingRulesLogo")
                 .resizable()
@@ -23,7 +24,6 @@ struct AboutView: View {
                 Spacer ()
             }
             .font(.footnote)
-            ScrollView {
                 Spacer ()
                 Text("About-Description")
                     .font(.footnote)
@@ -31,14 +31,15 @@ struct AboutView: View {
                 Spacer ()
                 Button(action: {
                     // send mail
-                    let email = "BenDivingJudge@gmail.com"
+                    let to = "BenDivingJudge@gmail.com"
                     let subject = "Diving Rules Feedback"
                     let body =  "Please provide your feedback here."
-                    let mailtoString =  "mailto:\(email)?subject=\(subject)&body=\(body)"
-                    print("[About] - Contact us - mailtoString: \(mailtoString)")
-                    let mailtoUrl = URL (string: mailtoString)!
-                    if UIApplication.shared.canOpenURL(mailtoUrl) {
-                        UIApplication.shared.open(mailtoUrl, options: [:])
+                    let subjectEncoded = subject.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
+                    let bodyEncoded = body.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
+                    let defaultUrl = URL(string: "mailto:\(to)?subject=\(subjectEncoded)&body=\(bodyEncoded)")
+//                    print("[About] - Contact us - defaultUrl: \(String( defaultUrl))")
+                    if UIApplication.shared.canOpenURL(defaultUrl!) {
+                        UIApplication.shared.open(defaultUrl!, options: [:])
                     }
                    
                 }) {
@@ -54,8 +55,7 @@ struct AboutView: View {
                 .foregroundColor(Color("AccentColor"))
                 .background(Color.white)
                 .cornerRadius(40)
-            } // ScrollView
-        } // Top VStack
+        } // Top ScrollView
         .padding(10.0)
         .background(Color("LaunchScreenBackgroundColor"))
         .foregroundColor(.white)

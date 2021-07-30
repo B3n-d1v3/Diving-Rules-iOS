@@ -131,14 +131,14 @@
 /* About - Description*/
 "About-Description" = "Rules Reference: 2017-2021
 \nThis application was created to allow users to learn and train on the diving rules from the FINA diving rules. This application is not a FINA official application, but uses the FINA official rules or it’s official translations as a work tool.
-\nThe original version was created by Benoît SUZANNE in 2021 under the xxxx open source licence.
-For any question, feedback and new features, use the contact link below.
+\nThe original version was created in 2021 by Benoît SUZANNE under the GPL 3.0 open source licence. This license is the GNU General Public License is a free copyleft license.
 \n Spécial thanks to :
-- Daniel AZORIN for his support in the finalization of the app
-- Daniel AZORIN & XXX for the Spanish translation
-- XXX for the help in the Italian translation.
+- Daniel AZORIN for his support in the finalization of the app and for the Spanish translation
+- Piero ITALIANI for the help in the Italian translation.
 
-If you are willing to help for new translation updates please use the contact link below.
+Do not hesitate to contact us:
+- If you are willing to help for new translation updates
+- For any question, feedback and new features ideas
 ";
 
 /* About - Contact Link*/
