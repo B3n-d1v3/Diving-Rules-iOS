@@ -1,36 +1,30 @@
+
 /*Localizable.strings
   Diving Rules
 
   Created by Benoit SUZANNE on 22/03/2021.
+  
 
- App Name - Diving Rules*/
-"CFBundleDisplayName" = "diving rules";
-
-/*App Name - Short App name 16 car*/
-"CFBundleName" = "diving rules";
-
- /* Navigation - Rules Menu Item*/
-"Navigation-Menu-Rules" = "Regolamento";
+ Navigation - Rules Menu Item*/
+"Navigation-Menu-Rules" = "Regolamenti";
 
 /*Navigation - Penalties Menu Item*/
-"Navigation-Menu-Penalties" = "Penalita";
+"Navigation-Menu-Penalties" = "Penalità";
 
 /*Navigation - Quizz Menu Item*/
-"Navigation-Menu-Quizz" = "Quiz";
+"Navigation-Menu-Quizz" = "Domande";
 
 /*Navigation - Search Menu Item*/
-"Navigation-Menu-Search" = "IT-Search";
+"Navigation-Menu-Search" = "Ricerca";
 
 /*Penalties List Page 
  Penalties List Page - Title*/
-"Penalties-List-Title" = "Casi di penalità";
-
-/*Penalty - Ownership Section Button Judge*/
-"Button-Judge" = "Giudici";
+"Penalties-List-Title" = "Caso di penalità";
+"Button-Judge" = "Giudice";
 
 /*Penalty Detail Page 
  Penalty - Rule Title*/
-"Penalty-Rule" = "Regola";
+"Penalty-Rule" = "Regolamento";
 
 /*Penalty - Description Section Title*/
 "Penalty-Description" = "Descrizione";
@@ -43,222 +37,236 @@
 
 /*Penalty Detail Page Buttons 
  Penalty - Penalty Section Button 0 pts*/
-"Button-0pts" = "0 pts";
+"Button-0pts" = "0 punti";
 
 /*Penalty - Penalty Section Button max 2 pts*/
-"Button-max2pts" = "max 2 pts";
+"Button-max2pts" = "2 punti al massimo";
 
 /*Penalty - Penalty Section Button max 4 ½ pts*/
-"Button-max4halfpts" = "max 4 ½ pts";
+"Button-max4halfpts" = " 4 ½  al massimo";
 
 /*Penalty - Penalty Section Button -2 pts*/
-"Button--2pts" = "-2 pts";
+"Button--2pts" = "deduzione di 2 punti";
 
 /*Penalty - Penalty Section Button - ½ to 2 pts*/
-"Button--halfto2pts" = "- ½ to 2 pts";
+"Button--halfto2pts" = "da  ½ a 2 punti";
 
 /*Penalty - Penalty Section Button judge Opinion*/
-"Button-judgeOpinion" = "loro discrezione";
+"Button-judgeOpinion" = "a loro discrezione";
 
 /*Penalty - Ownership Section Button Referee*/
-"Button-Referee" = "Arbitro";
+"Button-Referee" = "Giudice Arbitro";
 
-/* Quizz Selection Page
- Quizz - Title*/
-"Quizz-Title" = "Quiz";
-
-/* Quizz - Intro Title*/
+/*Quizz Selection Page
+ Quizz - Intro Title*/
 "Quizz-Intro-Title" = "Fai un quiz";
 
-/* Quizz - Intro Description*/
+/*Quizz - Intro Description*/
 "Quizz-Intro-Description" = "Per allenarti sulle regole della Fina tuffi, con questo test potrai rivedere il regolamento attraverso domande sulle varie regole. \n\nSeleziona il tipo di quiz che vuoi fare e il numero di domande che vuoi nel tuo quiz.";
 
-/* Quizz - Intro Question Number*/
-"Quizz-Intro-Question-Number" = "Numero di domande: ";
+/*Quizz - Intro Start Button*/
+"Quizz-Intro-Start-Button" = "Partenza";
 
-/* Quizz - Intro Start Button*/
-"Quizz-Intro-Start-Button" = "iniziare";
+/*Quizz - Question Page Next Button*/
+"Quizz-Next" = "Quiz successivo";
 
-/* Quizz - Question Page Next Button*/
-"Quizz-Next" = "seguendo";
+/*Localizable.strings
+  Diving Rules
 
-/* Quizz - Question*/
-"Quizz-Question" = "questione";
+  Created by Benoit SUZANNE on 22/03/2021.
 
-/* Quizz - Result Title*/
-"Quizz-Result-Title" = "Risultato del quiz";
+ App Name - Full App name*/
+"CFBundleDisplayName" = "Regolamento Tuffi";
 
-/* Quizz - Intro Description*/
-"Quizz-Result-Description" = "Ecco il tuo risultato al questionario: ";
+/*App Name - Short App name 16 car*/
+"CFBundleName" = "Regolamento Tuffi";
 
-/* Quizz - Result Start Button*/
-"Quizz-Result-Start-Button" = "Nuovo";
+/*Quizz Selection Page
+ Quizz - Title*/
+"Quizz-Title" = "Domande";
 
-/* Quizz - Result Error Review Button*/
-"Quizz-Result-Review-Button" = "Errori";
+/*Quizz - Result Title*/
+"Quizz-Result-Title" = "Riposte delle domande";
 
-/* Quizz - Result Result Review Legend - unused */
-"Quizz-Result-Legend-unused" = "Non utilizzato";
+/*Quizz - Intro Description*/
+"Quizz-Result-Description" = "Ecco le riposte alle vostre domande";
 
-/* Quizz - Result Result Review Legend - unused */
-"Quizz-Result-Legend-user-answer" = "Mia risposta";
+/*Quizz - Result Start Button*/
+"Quizz-Result-Start-Button" = "Nuove domande";
 
-/* Quizz - Result Result Review Legend - unused */
-"Quizz-Result-Legend-real-answer" = "Risposta corretta";
+/*Quizz - Good Sticker*/
+"Passed" = "Vero";
 
-/* Quizz - Good Sticker*/
-"Passed" = "Successo";
+/*Quizz - Good Sticker*/
+"Failed" = "Falso";
 
-/* Quizz - Good Sticker*/
-"Failed" = "Incagliato";
-
-/* Search Selection Page
+/*Search Selection Page
  Search - Title*/
-"Search-Title" = "IT-Search The Rules";
+"Search-Title" = "Ricerca el regolamento";
 
-/* Rule Book Selection Page
+/*Rule Book Selection Page
  Rule Book - Title*/
 "RuleBook-Title" = "Regolamento";
 
-/* Penalty Descripion List
+/*Quizz - Question*/
+"Quizz-Question" = "Domande";
+
+/*Quizz - Result Error Review Button*/
+"Quizz-Result-Review-Button" = "Errori";
+
+/*Quizz - Result Result Review Legend - unused*/
+"Quizz-Result-Legend-unused" = "Non utilizzato";
+
+/*Quizz - Result Result Review Legend - unused*/
+"Quizz-Result-Legend-user-answer" = "Mia riposta";
+
+/*Quizz - Result Result Review Legend - unused*/
+"Quizz-Result-Legend-real-answer" = "Giusta risposta";
+
+/*Penalty Descripion List
  Penalty 0 - D6.12 - If the diver takes more than one minute, after a warning.*/
 "Penalty-0" = "Se il tuffatore impiega più di un minuto dopo un avvertimento.";
 
-/* Penalty 1 - D6.16 & D8.3.4 - If a diver double bounces on the end of the springboard or double jump on the end of the platform before take-off.*/
+/*Penalty 1 - D6.16 & D8.3.4 - If a diver double bounces on the end of the springboard or double jump on the end of the platform before take-off.*/
 "Penalty-1" = "Se un tuffatore esegue un doppio rimbalzo alla fine del trampolino o un doppio balzo della piattaforma prima della partenza.";
 
-/* Penalty 2 - D6.17 & D8.3.3 - If the final step is not from one foot.*/
+/*Penalty 2 - D6.17 & D8.3.3 - If the final step is not from one foot.*/
 "Penalty-2" = "Se l’ultimo passo non è effettuato da un piede.";
 
-/* Penalty 3 - D6.18 & D8.4.3 - If the take-off on the springboard is not from both feet simultaneously.*/
+/*Penalty 3 - D6.18 & D8.4.3 - If the take-off on the springboard is not from both feet simultaneously.*/
 "Penalty-3" = "Se lo stacco dal trampolino non è effettuato simultaneamente con due piedi.";
 
-/* Penalty 4 - D6.20 & D8.6.6- If a twist is greater or less than that announced by 90 degrees or more.*/
+/*Penalty 4 - D6.20 & D8.6.6- If a twist is greater or less than that announced by 90 degrees or more.*/
 "Penalty-4" = "Se un avvitamento è più grande o inferiore a quello annunciato, di 90 gradi o più.";
 
-/* Penalty 5 - D6.21 & D8.1.7 - If a diver has performed a dive of a number other than that announced.*/
+/*Penalty 5 - D6.21 & D8.1.7 - If a diver has performed a dive of a number other than that announced.*/
 "Penalty-5" = "Se un tuffatore ha eseguito un tuffo di numero diverso da quello annunciato.";
 
-/* Penalty 6 - D6.22.1 - If the feet enter the water before the head or hands in a head first dive.*/
+/*Penalty 6 - D6.22.1 - If the feet enter the water before the head or hands in a head first dive.*/
 "Penalty-6" = "Se i piedi toccano l’acqua prima della testa o delle mani in un’entrata di testa.";
 
-/* Penalty 7 - D6.22.2 - If the head or hands enter the water before the feet in a feet first dive.*/
+/*Penalty 7 - D6.22.2 - If the head or hands enter the water before the feet in a feet first dive.*/
 "Penalty-7" = "Se la testa o le mani toccano l’acqua prima dei piedi in un’entrata di piedi.";
 
-/* Penalty 8 - D6.24 - If assistance has been given to the diver after the starting signal.*/
+/*Penalty 8 - D6.24 - If assistance has been given to the diver after the starting signal.*/
 "Penalty-8" = "Se il tuffatore ha ricevuto assistenza dopo il segnale di partenza.";
 
-/* Penalty 9 - D6.27 - When a second attempt\n(a re-start) is unsuccessful.*/
+/*Penalty 9 - D6.27 - When a second attempt
+(a re-start) is unsuccessful.*/
 "Penalty-9" = "Quando fallisce un secondo tentativo (re-start) di partenza.";
 
-/* Penalty 10 - D6.28 - If a diver refuses the execution of a dive.*/
+/*Penalty 10 - D6.28 - If a diver refuses the execution of a dive.*/
 "Penalty-10" = "Se un tuffatore si rifiuta di eseguire un tuffo.";
 
-/* Penalty 11 - D9.2 & D9.8 - In synchronised diving if a diver, or both divers, perform a dive of a different number or position.*/
+/*Penalty 11 - D9.2 & D9.8 - In synchronised diving if a diver, or both divers, perform a dive of a different number or position.*/
 "Penalty-11" = "Nei tuffi sincronizzati, se uno o entrambi i tuffatori eseguono un tuffo di numero o posizione differente rispetto a quanto annunciato.";
 
-/* Penalty 12 - D9.8 - In synchronised diving if all execution judges for one diver award zero (0) points.*/
+/*Penalty 12 - D9.8 - In synchronised diving if all execution judges for one diver award zero (0) points.*/
 "Penalty-12" = "Nei tuffi sincronizzati, se tutti i Giudici di esecuzione di un tuffatore assegnano zero (0) punti.";
 
-/* Penalty 13 - D9.10 - In synchronised diving if all synchronisation judges award zero (0) points.*/
+/*Penalty 13 - D9.10 - In synchronised diving if all synchronisation judges award zero (0) points.*/
 "Penalty-13" = "Nei tuffi sincronizzati, se tutti i Giudici di sincronizzazione assegnano zero (0) punti.";
 
-/* Penalty 14 - D9.8 - If an execution judge considers that a dive of a different number has been performed.*/
+/*Penalty 14 - D9.8 - If an execution judge considers that a dive of a different number has been performed.*/
 "Penalty-14" = "Se un Giudice di esecuzione ritiene che sia stato eseguito un tuffo di un numero diverso.";
 
-/* Penalty 15 - D6.25 - If a diver takes a step and stops in a running dive or stops the movement for a standing take-off after the legs have commenced to press.*/
+/*Penalty 15 - D6.25 - If a diver takes a step and stops in a running dive or stops the movement for a standing take-off after the legs have commenced to press.*/
 "Penalty-15" = "Se un tuffatore esegue un passo e si ferma in un tuffo con rincorsa o interrompe il movimento di partenza da fermo dopo aver iniziato a premere con le gambe.";
 
-/* Penalty 16 - D6.26 - If there is a re-start in a standing, running, or armstand dive.*/
+/*Penalty 16 - D6.26 - If there is a 
+re-start in a standing, running, or armstand dive.*/
 "Penalty-16" = "Se un tuffatore effettua una seconda partenza in un tuffo da fermo, con rincorsa, o dalla verticale.";
 
-/* Penalty 17 - D9.6 - In synchronised diving if there is a re-start by one or both divers.*/
+/*Penalty 17 - D9.6 - In synchronised diving if there is a re-start by one or both divers.*/
 "Penalty-17" = "Nei tuffi sincronizzati se uno o entrambi i tuffatori eseguono una seconda partenza.";
 
-/* Penalty 18 - D6.19 & D8.1.4 - If a diver performs a dive in a position other than that announced.*/
+/*Penalty 18 - D6.19 & D8.1.4 - If a diver performs a dive in a position other than that announced.*/
 "Penalty-18" = "Se un tuffatore esegue un tuffo in una posizione differente da quella annunciata.";
 
-/* Penalty 19 - D8.5.4 - If in a dive, a diver is unsafely close to the springboard or platform or touches the end of the springboard or platform with his head.*/
+/*Penalty 19 - D8.5.4 - If in a dive, a diver is unsafely close to the springboard or platform or touches the end of the springboard or platform with his head.*/
 "Penalty-19" = "Se durante l’esecuzione di un tuffo un tuffatore è pericolosamente vicino al trampolino o alla piattaforma, o tocca la fine del trampolino o della piattaforma con la testa.";
 
-/* Penalty 20 - D6.22, D8.6.3 & D8.6.4 - If a diver has one or both arms held above the head in a feet first entry or below the head in a head first entry.*/
+/*Penalty 20 - D6.22, D8.6.3 & D8.6.4 - If a diver has one or both arms held above the head in a feet first entry or below the head in a head first entry.*/
 "Penalty-20" = "Se in un’entrata di piedi uno o entrambe le braccia sono tenute al di sopra del capo.";
 
-/* Penalty 21 - D8.5.7 - If in a flying dive, a straight position is not clearly shown for at least one quarter of a somersault (90º) in dives with somersault.*/
+/*Penalty 21 - D8.5.7 - If in a flying dive, a straight position is not clearly shown for at least one quarter of a somersault (90º) in dives with somersault.*/
 "Penalty-21" = "Quando in un tuffo al volo la posizione tesa non è mostrata chiaramente per almeno un quarto di salto mortale (90°) in tuffi con salto mortale.";
 
-/* Penalty 22 - D8.5.7 - If in a flying dive, a straight position is not clearly shown for at least a half somersault (180º) in dives with more than 1 somersault.*/
+/*Penalty 22 - D8.5.7 - If in a flying dive, a straight position is not clearly shown for at least a half somersault (180º) in dives with more than 1 somersault.*/
 "Penalty-22" = "Quando in un tuffo al volo la posizione tesa non è mostrata chiaramente per almeno e minimo mezzo salto mortale (180°) in tuffi con più di un (1) salto mortale.";
 
-/* Penalty 23 - D8.1.6 - If a dive is not performed in a position as described.*/
+/*Penalty 23 - D8.1.6 - If a dive is not performed in a position as described.*/
 "Penalty-23" = "Se un tuffo non è eseguito in una posizione come descritta.";
 
-/* Penalty 24 - D8.2.3 - If the starting position is not straight, head erect, with the arms straight in any position.*/
-"Penalty-24" = "Se la posizione di partenza non è eretta con il capo in linea e le braccia protese in una
-posizione qualsiasi.";
+/*Penalty 24 - D8.2.3 - If the starting position is not straight, head erect, with the arms straight in any position.*/
+"Penalty-24" = "Se la posizione di partenza non è eretta con il capo in linea e le braccia protese in una\nposizione qualsiasi.";
 
-/* Penalty 25 - D8.2.4.3 - If the feet leave the springboard or platform (crow-hop) before the take-off in a standing dive.*/
+/*Penalty 25 - D8.2.4.3 - If the feet leave the springboard or platform (crow-hop) before the take-off in a standing dive.*/
 "Penalty-25" = "Se i piedi si staccano dal trampolino o dalla piattaforma (crow hop) prima dello stacco in un tuffo da fermo.";
 
-/* Penalty 26 - D8.2.6.2 - If in an armstand dive, a stationary and steady balance in the straight vertical position is not shown.*/
+/*Penalty 26 - D8.2.6.2 - If in an armstand dive, a stationary and steady balance in the straight vertical position is not shown.*/
 "Penalty-26" = "Se in un tuffo dalla verticale non è mostrato un equilibrio fermo e stabile nella posizione tesa e verticale.";
 
-/* Penalty 27 - D8.3.2 - If the run is not smooth, aesthetically pleasing in a forward direction to the end of the springboard or platform.*/
+/*Penalty 27 - D8.3.2 - If the run is not smooth, aesthetically pleasing in a forward direction to the end of the springboard or platform.*/
 "Penalty-27" = "Se la rincorsa non è scorrevole e esteticamente gradevole nella direzione avanti verso la fine del trampolino o della piattaforma.";
 
-/* Penalty 28 - D8.4.5 - If the take-off is not bold, high, and confident.*/
+/*Penalty 28 - D8.4.5 - If the take-off is not bold, high, and confident.*/
 "Penalty-28" = "Se la partenza non è decisa, ragionevolmente alta e sicura.";
 
-/* Penalty 29 - D8.4.6 - If in a twist dive, the twisting is manifestly done from the springboard or platform.*/
+/*Penalty 29 - D8.4.6 - If in a twist dive, the twisting is manifestly done from the springboard or platform.*/
 "Penalty-29" = "Se in un tuffo con avvitamento, l'avvitamento è anticipato vistosamente dal trampolino o dalla piattaforma.";
 
-/* Penalty 30 - D8.5.6 - If the straight position is not shown as described.*/
+/*Penalty 30 - D8.5.6 - If the straight position is not shown as described.*/
 "Penalty-30" = "Se la posizione tesa non è mostrata come descritta";
 
-/* Penalty 31 - D8.5.9 - If the pike position is not shown as described.*/
+/*Penalty 31 - D8.5.9 - If the pike position is not shown as described.*/
 "Penalty-31" = "Se la posizione carpiata non è mostrata come descritta";
 
-/* Penalty 32 - D8.5.10 - If in a pike dive with twist, the pike position is not clearly shown.*/
+/*Penalty 32 - D8.5.10 - If in a pike dive with twist, the pike position is not clearly shown.*/
 "Penalty-32" = "Se in un tuffo carpiato con avvitamento la posizione carpiata non è mostrata chiaramente.";
 
-/* Penalty 33 - D8.5.12 - If the tuck position is not shown as described.*/
+/*Penalty 33 - D8.5.12 - If the tuck position is not shown as described.*/
 "Penalty-33" = "Se la posizione raggruppata non è mostrata come descritta";
 
-/* Penalty 34 - D8.5.13 - If in a tuck dive with twist, the tuck position is not clearly shown.*/
+/*Penalty 34 - D8.5.13 - If in a tuck dive with twist, the tuck position is not clearly shown.*/
 "Penalty-34" = "Se in un tuffo raggruppato con avvitamento la posizione raggruppata non è mostrata chiaramente.";
 
-/* Penalty 35 - D8.5.15 - If the free position is not shown as described.*/
+/*Penalty 35 - D8.5.15 - If the free position is not shown as described.*/
 "Penalty-35" = "Se la posizione libera non è mostrata come descritta";
 
-/* Penalty 36 - D8.6.5 - If the arms are not in the correct position in either the head first or feet first entry.*/
+/*Penalty 36 - D8.6.5 - If the arms are not in the correct position in either the head first or feet first entry.*/
 "Penalty-36" = "Se le braccia non sono nella posizione corretta sia nel tuffo con entrata di testa che in quello con entrata di piedi.";
 
-/* Penalty 37 - D9.11 - In synchronised diving if similarity of the starting position, approach, take-off and height is not shown.*/
+/*Penalty 37 - D9.11 - In synchronised diving if
+similarity of the starting position, approach, take-off and height is not shown.*/
 "Penalty-37" = "Se nei tuffi sincronizzati non viene mostrato somiglianza nella posizione di partenza, nella rincorsa, nello stacco e nell’elevazione";
 
-/* Penalty 38 - D9.11 - In synchronised diving if coordinated timing of the movement during the flight is not shown.*/
+/*Penalty 38 - D9.11 - In synchronised diving if coordinated timing of the movement during the flight is not shown.*/
 "Penalty-38" = "Se nei tuffi sincronizzati non viene mostrato coordinazione nel tempismo del movimento in volo";
 
-/* Penalty 39 - D9.11 - In synchronised diving if similarity of the vertical angles of the entries is not shown.*/
+/*Penalty 39 - D9.11 - In synchronised diving if similarity of the vertical angles of the entries is not shown.*/
 "Penalty-39" = "Se nei tuffi sincronizzati non viene mostrato somiglianza degli angoli verticali di entrata in acqua";
 
-/* Penalty 40 - D9.11 - In synchronised diving if comparative distance from the springboard or platform of the entry is not shown.*/
+/*Penalty 40 - D9.11 - In synchronised diving if comparative distance from the springboard or platform of the entry is not shown.*/
 "Penalty-40" = "Se nei tuffi sincronizzati non viene mostrato simile distanza dell’entrata in acqua dal trampolino o dalla piattaforma";
 
-/* Penalty 41 - D9.11 - In synchronised diving if coordinated timing of the entries is not shown.*/
+/*Penalty 41 - D9.11 - In synchronised diving if coordinated timing of the entries is not shown.*/
 "Penalty-41" = "Se nei tuffi sincronizzati non viene mostrato coordinazione nel tempismo delle entrate";
 
-/* Penalty 42 - D8.1.5 - If a dive is performed partially in a position other than that announced.*/
+/*Penalty 42 - D8.1.5 - If a dive is performed partially in a position other than that announced.*/
 "Penalty-42" = "Se un tuffo viene eseguito parzialmente in una posizione diversa da quella annunciata.";
 
-/* Penalty 43 - D8.5.2 - If in a dive, the diver dives to the side of the direct line of flight.*/
+/*Penalty 43 - D8.5.2 - If in a dive, the diver dives to the side of the direct line of flight.*/
 "Penalty-43" = "Se in un tuffo un tuffatore si tuffa lateralmente alla linea diretta del volo.";
 
-/* Penalty 44 - D8.5.3 - If in a dive, a diver touches the end of the springboard or platform with his feet or hands.*/
+/*Penalty 44 - D8.5.3 - If in a dive, a diver touches the end of the springboard or platform with his feet or hands.*/
 "Penalty-44" = "Se in un tuffo un tuffatore tocca la fine del trampolino o della piattaforma con i suoi piedi o le sue mani.";
 
-/* Penalty 45 - D8.6.2 - If the entry into the water is not vertical, or nearly so, or twisted with the body not straight, the feet not together, and the toes not pointed.*/
+/*Penalty 45 - D8.6.2 - If the entry into the water is not vertical, or nearly so, or twisted with the body not straight, the feet not together, and the toes not pointed.*/
 "Penalty-45" = "Se l’entrata in acqua non è verticale o quasi, o avvitata con il corpo non teso, i piedi non uniti e le punte non tese.";
 
-/* Penalty 46 - D9.5 - In synchronised diving if either diver enters the surface of the water before the other diver leaves the springboard or platform.*/
+/*Penalty 46 - D9.5 - In synchronised diving if either diver enters the surface of the water before the other diver leaves the springboard or platform.*/
 "Penalty-46" = "Nei tuffi sincronizzati, se uno dei due tuffatori perfora la superficie dell’acqua prima che l’altro tuffatore si sia staccato dal trampolino o dalla piattaforma.";
+
+/*Quizz - Intro Question Number*/
+"Quizz-Intro-Question-Number" = "Numero di domande: ";
