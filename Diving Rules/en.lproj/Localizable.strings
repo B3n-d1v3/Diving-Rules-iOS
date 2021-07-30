@@ -120,6 +120,30 @@
  Rule Book - Title*/
 "RuleBook-Title" = "Rule Book";
 
+
+/* About Selection Page
+ About - Title*/
+"About-Title" = "About";
+
+/* About - Version*/
+"About-Version" = "Version: ";
+
+/* About - Description*/
+"About-Description" = "Rules Reference: 2017-2021
+\nThis application was created to allow users to learn and train on the diving rules from the FINA diving rules. This application is not a FINA official application, but uses the FINA official rules or it’s official translations as a work tool.
+\nThe original version was created in 2021 by Benoît SUZANNE under the GPL 3.0 open source licence. This license is the GNU General Public License is a free copyleft license.
+\n Spécial thanks to :
+- Daniel AZORIN for his support in the finalization of the app and for the Spanish translation
+- Piero ITALIANI for the help in the Italian translation.
+
+Do not hesitate to contact us:
+- If you are willing to help for new translation updates
+- For any question, feedback and new features ideas
+";
+
+/* About - Contact Link*/
+"About-Contact-Link" = "Contact us";
+
 /* Penalty Descripion List
  Penalty 0 - D6.12 - If the diver takes more than one minute, after a warning.*/
 "Penalty-0" = "If the diver takes more than one minute, after a warning.";

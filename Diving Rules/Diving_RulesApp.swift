@@ -47,6 +47,18 @@ struct Diving_RulesApp: App {
                 }
                 .navigationViewStyle(StackNavigationViewStyle())
                 
+                
+                // About the app
+                NavigationView {
+                    AboutView()
+                        .navigationBarTitle("About-Title", displayMode: .inline)
+                }
+                .tabItem {
+                    Image (systemName: "info.circle")
+                    Text ("About-Title")
+                    
+                }
+                
                 // Search Page
                 //                NavigationView {
                 //                    SearchView()
