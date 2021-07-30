@@ -270,3 +270,16 @@ similarity of the starting position, approach, take-off and height is not shown.
 
 /*Quizz - Intro Question Number*/
 "Quizz-Intro-Question-Number" = "Numero di domande: ";
+
+/*About Selection Page
+ About - Title*/
+"About-Title" = "About";
+
+/*About - Version*/
+"About-Version" = "Version: ";
+
+/*About - Description*/
+"About-Description" = "Rules Reference: 2017-2021\n\nThis application was created to allow users to learn and train on the diving rules from the FINA diving rules. This application is not a FINA official application, but uses the FINA official rules or it’s official translations as a work tool.\n\nThe original version was created in 2021 by Benoît SUZANNE under the GPL 3.0 open source licence. This license is the GNU General Public License is a free copyleft license.\n\n Spécial thanks to :\n- Daniel AZORIN for his support in the finalization of the app and for the Spanish translation\n- Piero ITALIANI for the help in the Italian translation.\n\nDo not hesitate to contact us:\n- If you are willing to help for new translation updates\n- For any question, feedback and new features ideas";
+
+/*About - Contact Link*/
+"About-Contact-Link" = "Contact us";
