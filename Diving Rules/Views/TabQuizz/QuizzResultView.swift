@@ -18,7 +18,7 @@ struct QuizzResultView: View {
     var score : Int
     var questionNumber : Int
     var body: some View {
-        VStack {
+        ScrollView {
             Text("Quizz-Result-Title")
                 .font(.largeTitle)
                 .multilineTextAlignment(.center)
@@ -76,7 +76,7 @@ struct QuizzResultView: View {
             } // HStack Navigation
             
             Spacer ()
-        } // VStack
+        } // ScrollView
         // Header info & Exit Button
         .navigationBarTitle("Quizz-Title", displayMode: NavigationBarItem.TitleDisplayMode.inline)
         .navigationBarBackButtonHidden(true)

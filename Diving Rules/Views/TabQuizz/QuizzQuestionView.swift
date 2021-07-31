@@ -150,50 +150,55 @@ struct QuizzQuestionView: View {
                 .font(.title)
         })
         
-        
-        Spacer ()
-        Divider ()
-        // Navigation / Score / Question Number
-        HStack {
-            // Score
-            Text(" \(score) pts")
-                .padding(10.0)
-                .foregroundColor(Color.white)
-                .background(Color("Score"))
-                .cornerRadius(20)
-            Spacer ()
-            //
-            Button (action: {
-                lastQuestion = (currentQuestion + 1 >= questionList.count)
-//                print("[Next Button] lastQuestion: \(lastQuestion)")
-                self.nextQuestion(penalty)
-                //                        print("[Next Button] lastQuestion: \(lastQuestion) - penatlyNumber (questionList[currentQuestion]): \(questionList[currentQuestion])")
-            }) {
-                Text("Quizz-Next")
-                    .font(.title3)
-                    .fontWeight(.semibold)
-                    .padding(.leading, 10.0)
-                Image (systemName: "chevron.right.circle.fill")
-                    .font(.title)
-            } // Button
-            .padding(10.0)
-            .foregroundColor(.white)
-            .background((nextQuestion ? Color("AccentColor") : Color.gray))
-            .cornerRadius(40)
-            NavigationLink(destination: QuizzResultView (shouldPopToRootView: self.$shouldPopToRootView, score: score, questionNumber: questionList.count), isActive: $lastQuestion) {}
+        VStack {
             
-            Spacer ()
-            // Question Number
-            Text(" \(currentQuestion+1) / \(questionList.count)")
-                .padding(10.0)
-                .foregroundColor(Color.white)
-                .background(Color("Score"))
-                .cornerRadius(20)
-        } // HStack Navigation
-        .padding(.top, 2.0)
-        .padding(.bottom, 10.0)
-        .padding(.horizontal, 10.0)
+//            Spacer ()
+            Divider ()
+            // Navigation / Score / Question Number
+            HStack {
+                // Score
+                Text(" \(score) pts")
+                    .padding(10.0)
+                    .foregroundColor(Color.white)
+                    .background(Color("Score"))
+                    .cornerRadius(20)
+                Spacer ()
+                //
+                Button (action: {
+                    lastQuestion = (currentQuestion + 1 >= questionList.count)
+    //                print("[Next Button] lastQuestion: \(lastQuestion)")
+                    self.nextQuestion(penalty)
+                    //                        print("[Next Button] lastQuestion: \(lastQuestion) - penatlyNumber (questionList[currentQuestion]): \(questionList[currentQuestion])")
+                }) {
+                    Text("Quizz-Next")
+                        .font(.title3)
+                        .fontWeight(.semibold)
+                        .padding(.leading, 10.0)
+//                        .padding(5.0)
+                    Image (systemName: "chevron.right.circle.fill")
+                        .font(.title)
+                } // Button
+                .padding(5.0)
+                .foregroundColor(.white)
+                .background((nextQuestion ? Color("AccentColor") : Color.gray))
+                .cornerRadius(40)
+                NavigationLink(destination: QuizzResultView (shouldPopToRootView: self.$shouldPopToRootView, score: score, questionNumber: questionList.count), isActive: $lastQuestion) {}
+                
+                Spacer ()
+                // Question Number
+                Text(" \(currentQuestion+1) / \(questionList.count)")
+                    .padding(10.0)
+                    .foregroundColor(Color.white)
+                    .background(Color("Score"))
+                    .cornerRadius(20)
+            } // HStack Navigation
+            .padding(.bottom, 5.0)
+            .padding(.top, 1.0)
+            .padding(.horizontal, 10)
 
+            
+        } // VStack Navigation
+        .padding(.bottom, 2.0)
     } // Body
     
     

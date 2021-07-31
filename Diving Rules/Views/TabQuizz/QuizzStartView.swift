@@ -53,7 +53,7 @@ struct QuizzStartView: View {
                 Image (systemName: "play.circle.fill")
                     .font(.title)
             }
-            .padding(10.0)
+            .padding(5.0)
             .foregroundColor(.white)
             .background(Color.accentColor)
             .cornerRadius(40)

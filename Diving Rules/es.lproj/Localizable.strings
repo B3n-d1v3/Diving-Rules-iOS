@@ -158,8 +158,8 @@
 /*Penalty 10 - D6.28 - If a diver refuses the execution of a dive.*/
 "Penalty-10" = "Si un clavadista rechaza la ejecución de un Calvados.";
 
-/*Penalty 11 - D9.2 & D9.8 - In synchronised diving if a diver, or both divers, perform a dive of a different number or position.*/
-"Penalty-11" = "En clavado sincronizado, si un clavadista o ambos clavadistas realizan un clavado de un número o posición diferente.";
+/*Penalty 11 - D9.2 & D9.8 - In synchronised diving if a diver, or both divers, perform a dive of a different number..*/
+"Penalty-11" = "En clavado sincronizado, si un clavadista o ambos clavadistas realizan un clavado de un número diferente.";
 
 /*Penalty 12 - D9.8 - In synchronised diving if all execution judges for one diver award zero (0) points.*/
 "Penalty-12" = "En los clavados sincronizados, si todos los jueces de ejecución de un clavadista otorgan cero (0) puntos.";
@@ -167,8 +167,8 @@
 /*Penalty 13 - D9.10 - In synchronised diving if all synchronisation judges award zero (0) points.*/
 "Penalty-13" = "En clavado sincronizado si todos los jueces de sincronización otorgan cero (0) puntos.";
 
-/*Penalty 14 - D9.8 - If an execution judge considers that a dive of a different number has been performed.*/
-"Penalty-14" = "Si un juez de ejecución considera que se ha realizado un clavado de un número diferente.";
+/*Penalty 14 - D9.8 - In synchronised diving if a diver, or both divers, perform a dive of a different position.*/
+"Penalty-14" = "En clavado sincronizado, si un clavadista o ambos clavadistas realizan un clavado de un  posición diferente.";
 
 /*Penalty 15 - D6.25 - If a diver takes a step and stops in a running dive or stops the movement for a standing take-off after the legs have commenced to press.*/
 "Penalty-15" = "Si un clavadista da un paso y se detiene en la caminata o detiene el movimiento para un despegue de pie después de que las piernas hayan comenzado a presionar.";

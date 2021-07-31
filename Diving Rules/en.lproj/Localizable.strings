@@ -178,8 +178,8 @@ Do not hesitate to contact us:
 /* Penalty 10 - D6.28 - If a diver refuses the execution of a dive.*/
 "Penalty-10" = "If a diver refuses the execution of a dive.";
 
-/* Penalty 11 - D9.2 & D9.8 - In synchronised diving if a diver, or both divers, perform a dive of a different number or position.*/
-"Penalty-11" = "In synchronised diving if a diver, or both divers, perform a dive of a different number or position.";
+/* Penalty 11 - D9.2 & D9.8 - In synchronised diving if a diver, or both divers, perform a dive of a different number.*/
+"Penalty-11" = "In synchronised diving if a diver, or both divers, perform a dive of a different number.";
 
 /* Penalty 12 - D9.8 - In synchronised diving if all execution judges for one diver award zero (0) points.*/
 "Penalty-12" = "In synchronised diving if all execution judges for one diver award zero (0) points.";
@@ -187,8 +187,8 @@ Do not hesitate to contact us:
 /* Penalty 13 - D9.10 - In synchronised diving if all synchronisation judges award zero (0) points.*/
 "Penalty-13" = "In synchronised diving if all synchronisation judges award zero (0) points.";
 
-/* Penalty 14 - D9.8 - If an execution judge considers that a dive of a different number has been performed.*/
-"Penalty-14" = "If an execution judge considers that a dive of a different number has been performed.";
+/* Penalty 14 - D9.8 - In synchronised diving if a diver, or both divers, perform a dive of a different position.*/
+"Penalty-14" = "In synchronised diving if a diver, or both divers, perform a dive of a different position.";
 
 /* Penalty 15 - D6.25 - If a diver takes a step and stops in a running dive or stops the movement for a standing take-off after the legs have commenced to press.*/
 "Penalty-15" = "If a diver takes a step and stops in a running dive or stops the movement for a standing take-off after the legs have commenced to press.";

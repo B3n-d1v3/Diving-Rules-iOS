@@ -158,8 +158,8 @@
 /*Penalty 10 - D6.28 - If a diver refuses the execution of a dive.*/
 "Penalty-10" = "Se un tuffatore si rifiuta di eseguire un tuffo.";
 
-/*Penalty 11 - D9.2 & D9.8 - In synchronised diving if a diver, or both divers, perform a dive of a different number or position.*/
-"Penalty-11" = "Nei tuffi sincronizzati, se uno o entrambi i tuffatori eseguono un tuffo di numero o posizione differente rispetto a quanto annunciato.";
+/*Penalty 11 - D9.2 & D9.8 - In synchronised diving if a diver, or both divers, perform a dive of a different number.*/
+"Penalty-11" = "Nei tuffi sincronizzati, se uno o entrambi i tuffatori eseguono un tuffo di numero differente rispetto a quanto annunciato.";
 
 /*Penalty 12 - D9.8 - In synchronised diving if all execution judges for one diver award zero (0) points.*/
 "Penalty-12" = "Nei tuffi sincronizzati, se tutti i Giudici di esecuzione di un tuffatore assegnano zero (0) punti.";
@@ -167,8 +167,8 @@
 /*Penalty 13 - D9.10 - In synchronised diving if all synchronisation judges award zero (0) points.*/
 "Penalty-13" = "Nei tuffi sincronizzati, se tutti i Giudici di sincronizzazione assegnano zero (0) punti.";
 
-/*Penalty 14 - D9.8 - If an execution judge considers that a dive of a different number has been performed.*/
-"Penalty-14" = "Se un Giudice di esecuzione ritiene che sia stato eseguito un tuffo di un numero diverso.";
+/*Penalty 14 - D9.8 - In synchronised diving if a diver, or both divers, perform a dive of a different position.*/
+"Penalty-14" = "Nei tuffi sincronizzati, se uno o entrambi i tuffatori eseguono un tuffo di posizione differente rispetto a quanto annunciato.";
 
 /*Penalty 15 - D6.25 - If a diver takes a step and stops in a running dive or stops the movement for a standing take-off after the legs have commenced to press.*/
 "Penalty-15" = "Se un tuffatore esegue un passo e si ferma in un tuffo con rincorsa o interrompe il movimento di partenza da fermo dopo aver iniziato a premere con le gambe.";

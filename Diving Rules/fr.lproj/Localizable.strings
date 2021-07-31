@@ -158,8 +158,8 @@
 /*Penalty 10 - D6.28 - If a diver refuses the execution of a dive.*/
 "Penalty-10" = "Quand un plongeur refuse d’exécuter un plongeon.";
 
-/*Penalty 11 - D9.2 & D9.8 - In synchronised diving if a diver, or both divers, perform a dive of a different number or position.*/
-"Penalty-11" = "En plongeon synchronisé, si un ou les deux plongeurs exécute(ent) un plongeon de numéro différent ou de position différente du plongeon annoncé.";
+/*Penalty 11 - D9.2 - In synchronised diving if a diver, or both divers, perform a dive of a different number.*/
+"Penalty-11" = "En plongeon synchronisé, si un ou les deux plongeurs exécute(ent) un plongeon de numéro différent du plongeon annoncé.";
 
 /*Penalty 12 - D9.8 - In synchronised diving if all execution judges for one diver award zero (0) points.*/
 "Penalty-12" = "En plongeon synchronisé, si tous les juges d’exécution pour un plongeur attribuent la note zéro (0).";
@@ -167,8 +167,8 @@
 /*Penalty 13 - D9.10 - In synchronised diving if all synchronisation judges award zero (0) points.*/
 "Penalty-13" = "En plongeon synchronisé, si tous les juges de synchronisation attribuent la note zéro (0).";
 
-/*Penalty 14 - D9.8 - If an execution judge considers that a dive of a different number has been performed.*/
-"Penalty-14" = "Quand un juge d'exécution considère qu'un plongeon d'un numéro différent du numéro annoncé a été exécuté.";
+/*Penalty 14 - D9.2 & D9.8 - In synchronised diving if a diver, or both divers, perform a dive of a different position.*/
+"Penalty-14" = "En plongeon synchronisé, si un ou les deux plongeurs exécute(ent) un plongeon dans une position différente du plongeon annoncé.";
 
 /*Penalty 15 - D6.25 - If a diver takes a step and stops in a running dive or stops the movement for a standing take-off after the legs have commenced to press.*/
 "Penalty-15" = "Si dans un plongeon avec élan, un plongeur ou une plongeuse fait un pas et s'arrête, ou si dans un plongeon sans élan un plongeur interrompt le mouvement pour l'envol après que les jambes aient commencé leur appui.";

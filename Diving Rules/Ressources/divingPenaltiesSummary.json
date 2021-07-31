@@ -116,10 +116,9 @@
   },
   {
     "id" : 11,
-    "description" : "In synchronised diving if a diver, or both divers, perform a dive of a different number or position.",
+    "description" : "In synchronised diving if a diver, or both divers, perform a dive of a different number.",
     "rules" : [
-      {"ruleId": "D9.2"},
-      {"ruleId": "D9.8"}
+      {"ruleId": "D9.2"}
     ],
     "sanctionValue" : 0,
     "referee" : true,
@@ -147,12 +146,13 @@
   },
   {
     "id" : 14,
-    "description" : "If an execution judge considers that a dive of a different number has been performed.",
+    "description" : "In synchronised diving if a diver, or both divers, perform a dive of a different position.",
     "rules" : [
+      {"ruleId": "D9.2"},
       {"ruleId": "D9.8"}
     ],
     "sanctionValue" : 0,
-    "referee" : false,
+    "referee" : true,
     "judge" : true
   },
   {
@@ -167,7 +167,7 @@
   },
   {
     "id" : 16,
-    "description" : "If there is a \nre-start in a standing, running, or armstand dive.",
+    "description" : "If there is a re-start in a standing, running, or armstand dive.",
     "rules" : [
       {"ruleId": "D6.26"}
     ],
@@ -380,7 +380,7 @@
   },
   {
     "id" : 37,
-    "description" : "In synchronised diving if\nsimilarity of the starting position, approach, take-off and height is not shown.",
+    "description" : "In synchronised diving if similarity of the starting position, approach, take-off and height is not shown.",
     "rules" : [
       {"ruleId": "D9.11"}
     ],
@@ -475,7 +475,7 @@
       {"ruleId": "D9.5"}
     ],
     "sanctionValue" : 0,
-    "referee" : false,
-    "judge" : true
+    "referee" : true,
+    "judge" : false
   }
 ]
