@@ -122,7 +122,7 @@
     ],
     "sanctionValue" : 0,
     "referee" : true,
-    "judge" : false
+    "judge" : true
   },
   {
     "id" : 12,
@@ -153,7 +153,7 @@
     ],
     "sanctionValue" : 0,
     "referee" : true,
-    "judge" : true
+    "judge" : false
   },
   {
     "id" : 15,
