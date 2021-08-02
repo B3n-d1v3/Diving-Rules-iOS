@@ -37,11 +37,14 @@ struct QuizzResultView: View {
                 .fontWeight(.thin)
 
             Spacer ()
-            if (score >= (questionNumber * 8)) {
-                Sticker(stickerImage: "checkmark.circle", stickerColor: "Good", stickerText: NSLocalizedString("Passed", comment: "Stiker Status"))
-            } else {
-                Sticker(stickerImage: "xmark.octagon.fill", stickerColor: "Bad", stickerText: NSLocalizedString("Failed", comment: "Stiker Status"))
-            }
+            VStack {
+                if (score >= (questionNumber * 8)) {
+                    Sticker(stickerImage: "checkmark.circle", stickerColor: "Good", stickerText: NSLocalizedString("Passed", comment: "Stiker Status"))
+                } else {
+                    Sticker(stickerImage: "xmark.octagon.fill", stickerColor: "Bad", stickerText: NSLocalizedString("Failed", comment: "Stiker Status"))
+                }
+            } // VStack Sticker
+            .padding(.all, 20.0)
             Spacer ()
             
             HStack {
@@ -54,7 +57,7 @@ struct QuizzResultView: View {
                         .fontWeight(.semibold)
                         .padding(.trailing, 10.0)
                 }
-                .padding(10.0)
+                .padding(5.0)
                 .foregroundColor(.white)
                 .background(Color.accentColor)
                 .cornerRadius(40)
@@ -69,7 +72,7 @@ struct QuizzResultView: View {
                     Image (systemName: "play.circle.fill")
                         .font(.title)
                 }
-                .padding(10.0)
+                .padding(5.0)
                 .foregroundColor(.white)
                 .background(Color.accentColor)
                 .cornerRadius(40)
