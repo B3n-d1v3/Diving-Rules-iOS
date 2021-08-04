@@ -1,8 +1,16 @@
 //
-//  Diving_RulesApp.swift
-//  Diving Rules
+//  File name: Diving_RulesApp.swift
+//  Software name: Diving Rules
 //
-//  Created by Benoit SUZANNE on 11/03/2021.
+//  Software Description: This Mobile app is targetting the Fina Diving judges.
+//  It allows the user to train and learn the Fina Diving Rules,
+//  with references to the rule book and quizzes to train.
+//  The mobile app has been created in multiple languages to allow users to train locally.
+//
+//  License: License can be found in the root of the project in the License file
+//  This project has been created under GNU General Public License v3.0
+//
+//  Author: Created by Benoit SUZANNE on 11/03/2021.
 //
 
 import SwiftUI
