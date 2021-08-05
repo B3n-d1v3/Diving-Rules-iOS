@@ -31,6 +31,7 @@ struct Diving_RulesApp: App {
                         .frame(width: 50.0, height: 50.0)
                     Text ("Navigation-Menu-Rules")
                 }
+                .navigationViewStyle(StackNavigationViewStyle())
                 
                 
                 // Penalty explorer
@@ -43,6 +44,7 @@ struct Diving_RulesApp: App {
                     Text ("Navigation-Menu-Penalties")
                     
                 }
+                .navigationViewStyle(StackNavigationViewStyle())
                 
                 // Quizz Access
                 NavigationView {
@@ -66,6 +68,7 @@ struct Diving_RulesApp: App {
                     Text ("About-Title")
                     
                 }
+                .navigationViewStyle(StackNavigationViewStyle())
                 
                 // Search Page
                 //                NavigationView {
