@@ -19,7 +19,7 @@ struct StickerFailed: View {
                     .resizable()
                     .frame(width: 40.0, height: 40.0)
                 Text ("Failed")
-                    .font(.title3)
+                    .font(.body)
                     .fontWeight(.heavy)
             }
             .frame(width: 80.0)

@@ -7,12 +7,26 @@
 
 import Foundation
 
+// The object with all penalties descriptions
 var penalties: [Penalty] = load("divingPenaltiesSummary.json")
 
+// The object with the sanction descriptions
 var sanctions: [Sanction] = load("divingPenaltiesSanctions.json")
 
+// The object with the current Quizz Data Logged in
+var currentQuizz: Quizz = Quizz()
+
+// The object containing the entire quizz history of the user
+var quizzHistory: [Quizz] = []
+
+// The object with the current question status dipslay model
+var penaltyButtonStatus: ButtonsStatus = ButtonsStatus()
+
+// The object to view history of multiple Quizzes // Not Used yet
+//var userQuizzHistory: [Quizz] = []
 
 func load<T: Decodable>(_ filename: String) -> T {
+    // a de-serialization of the json to be inserted in the object model
     let data: Data
 
     guard let file = Bundle.main.url(forResource: filename, withExtension: nil)
@@ -33,3 +47,5 @@ func load<T: Decodable>(_ filename: String) -> T {
         fatalError("Couldn't parse \(filename) as \(T.self):\n\(error)")
     }
 }
+
+
