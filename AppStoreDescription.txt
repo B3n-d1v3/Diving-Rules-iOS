@@ -1,0 +1,19 @@
+Description :
+- EN: "A mobile app to learn and train on the Fina Diving Rules. If you are a Diving judge or a future diving judge this app is made for you. It holds the reference rule book and allows you to train on the penalties associated to the Referee or the Execution or Synchro Judges."
+- FR: "Une application Mobile pour apprendre le règlement Fina du plongeon. Si vous êtes juge ou futur juge, alors cette application est faite pour vous. Elle vous permet de lire le règlement et d'apprendre et de s'entrainer sur les résumés de pénalités qui concerne l'arbitre ou les juges d'exécution ou de synchronisation.
+- ES: « Una aplicación Mobil para aprender el reglamento Fina de clavados. Si usted es juez o futuro juez, esta aplicación fue creada para usted. Ella le permite de leer el reglamento, de aprender y entrenarse sobre el resumen de las penalizaciones que implican el arbitro o los jueces de ejecución o los jueces de sincronización.
+- IT: "Un'applicazione mobile per imparare il Regolamento dei Tuffi della Fina. Se sei un giudice o un futuro giudice, allora questa applicazione è per te. Ti permette di leggere le regole e di imparare ed esercitarti sui riassunti delle penalità che riguardano l'arbitro o i giudici di esecuzione o di sincronizzazione."
+
+
+Keywords :
+- EN: diving, rules, rule book, synchro, synchronized diving, referee, judge, execution, judge, fina
+- FR: plongeon, règles, règlement, fina, arbitre, juge, jugement, synchronisé, synchronisation
+- ES: clavados, reglas, reglamento, fina, arbitro, juez, juzgamiento, sincronizado, sincronización.
+- IT: tuffi, regole, regolamento, fina, giudice arbitro, giudice, giudicare, sincronizzato, sincronizzazione
+
+
+Promotional Text :
+- EN: Train to learn the diving rules
+- FR: Entrainez vous sur les règlement du plongeon.
+- ES: Entrenece sobre el reglamento de clavados.
+- IT: Guida pratica sul regolamento dei tuffi.
