@@ -44,13 +44,81 @@ _-- Insert Structure bluprint image here --_
 * About: a description of the app and a disclamer of the fact that the app is not a fina app
 
 ## Data Model Structure
+### Input Source Data
 The code is structured around
-* a json to declare the penalties sanctions and ownerships
-* a json to list the sanctions descriptions (to check if still needed)
+* [divingPenaltiesSummary.json](https://github.com/B3n-d1v3/Diving-Rules-iOS/blob/main/Diving%20Rules/Ressources/divingPenaltiesSummary.json): a json to declare the penalties sanctions and ownerships
+* [divingPenaltiesSanctions.json](https://github.com/B3n-d1v3/Diving-Rules-iOS/blob/main/Diving%20Rules/Ressources/divingPenaltiesSanctions.json): a json to list the sanctions descriptions (to check if still needed)
+* The [localization files](https://github.com/B3n-d1v3/Diving-Rules-iOS/blob/main/Diving%20Rules/en.lproj/Localizable.strings) holding:
   * the app texts localization
   * the penalties description (the data presented in the app for a penalty is using the localization data and not the json description  - it is used in the description as a reference for the json creation and updates)
 
+### Used Data model
 _-- To be Updated with an image of the data structure --_
+
+#### The penalty mangement
+* Penalty (refering v1.1): The information about one penalty
+``` swift
+    // penalty id number
+    var id: Int = 200
+    // List of the rules associated with this penalty
+    var rules: [Rule]
+    // Rule is a table of strings to list the corresponding penalty reference
+    
+    // The sanction associated with this penalty
+    var sanctionValue: Int
+    // Is the referee concerned by this penalty
+    var referee: Bool
+    // Is the judge concerned by this penalty
+    var judge: Bool
+```
+* Penalties (refering v1.1): The information about all the penalties
+``` swift
+    var penalties: [Penalty]
+```
+
+
+#### The Quizz Management
+
+* Quizz (refering v1.1): The information about the quizz
+``` swift
+    // the list of the id's for the quizz
+    var questions: [Int]
+    // the list of answers provided to the questionnaire using the Penalty Model
+    var answers: [Penalty]
+    // score rewards
+    var score: Int = 0
+``` 
+
+
+* ButtonsStatus (refering v1.1): The information about the status of the button selections from the user in a question page
+``` swift
+    // penalty buttons status
+    var penaltyZeroPts: Bool
+    var penaltyMaxTwoPts: Bool
+    var penaltyMaxFourHalfPts: Bool
+    var penaltyMinusTwoPts: Bool
+    var penaltyMinusHalfToTwoPts: Bool
+    var penaltyJudgeOpinion: Bool
+    
+    // ownership buttons status
+    var ownershipReferee: Bool
+    var ownershipJudge: Bool
+    
+    // Other data needed
+    // Sanction set by the user
+    var userSanctionSelection: Int
+    // has the user answered enough elemets to go to the next question
+    var nextQuestion: Bool
+```
+* currentQuizz (ref v1.1): The object with the current Quizz Data Logged in
+``` swift
+    var currentQuizz: Quizz
+```
+
+* quizzHistory (ref v1.1): The object containing the table of quizz history of the user
+``` swift
+    var quizzHistory: [Quizz]
+```
 
 ## Project Status
 The first version of the app has been releeased as an MVP. There are multiple updates planned.
@@ -63,12 +131,12 @@ New feature will be added
 
 ## Future Updates
 These are the high level fetures to work on next:
-[ ] update the code to alow further OS compatibilities
-[ ] Add the ability to change the language at anytime within the app (user should always be able to switch from local language to EN)
-[ ] update the pdf to read an online version of the file and enclose the english as a fallback
-[ ] allow the user to view the history of his previous tests
-[ ] Add new Quizz not just based on the penalties list (Add multiple choice questions and true/false questions)
-[ ] Add a search functionality to search through the pdf and through the penalties
+- [ ] update the code to alow further OS compatibilities
+- [ ] Add the ability to change the language at anytime within the app (user should always be able to switch from local language to EN)
+- [ ] update the pdf to read an online version of the file and enclose the english as a fallback
+- [ ] allow the user to view the history of his previous tests
+- [ ] Add new Quizz not just based on the penalties list (Add multiple choice questions and true/false questions)
+- [ ] Add a search functionality to search through the pdf and through the penalties
 
 The full list can be found on the [Github iOS Kanban](https://github.com/B3n-d1v3/Diving-Rules/projects/1)
 
