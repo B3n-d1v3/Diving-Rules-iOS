@@ -20,7 +20,7 @@ The [PO Editor](https://poeditor.com/projects/view?id=425927) tool is used to ge
 
 ## Version Control
 The Project repository is hosted on GitHub:
-* [Diving Rules] (https://github.com/B3n-d1v3/Diving-Rules-iOS) holding the stable releases
+* [Diving Rules](https://github.com/B3n-d1v3/Diving-Rules-iOS) holding the stable releases
 * The work on this repo is performed in the [dev Branch](https://github.com/B3n-d1v3/Diving-Rules-iOS/tree/dev)
 * New Baranches are created to create new features
 
@@ -56,13 +56,13 @@ The code is structured around
   * the penalties description (the data presented in the app for a penalty is using the localization data and not the json description  - it is used in the description as a reference for the json creation and updates)
 
 ### Used Data model
-_-- To be Updated with an image of the data structure --_
+![Diving Rules Data Model](readme/DivingRulesDataModel.png)
 
 #### The penalty mangement
 * Penalty (refering v1.1): The information about one penalty
 ``` swift
     // penalty id number
-    var id: Int = 200
+    var id: Int
     // List of the rules associated with this penalty
     var rules: [Rule]
     // Rule is a table of strings to list the corresponding penalty reference
@@ -89,7 +89,7 @@ _-- To be Updated with an image of the data structure --_
     // the list of answers provided to the questionnaire using the Penalty Model
     var answers: [Penalty]
     // score rewards
-    var score: Int = 0
+    var score: Int
 ``` 
 
 
