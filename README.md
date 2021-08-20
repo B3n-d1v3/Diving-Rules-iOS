@@ -20,11 +20,14 @@ The [PO Editor](https://poeditor.com/projects/view?id=425927) tool is used to ge
 
 ## Version Control
 The Project repository is hosted on GitHub:
-* [Diving Rules] ()
+* [Diving Rules] (https://github.com/B3n-d1v3/Diving-Rules-iOS) holding the stable releases
+* The work on this repo is performed in the [dev Branch](https://github.com/B3n-d1v3/Diving-Rules-iOS/tree/dev)
+* New Baranches are created to create new features
 
 ## Scope of functionalities
 The Diving Rules App is organized into the following tabs:
-_-- Insert Structure bluprint image here --_
+![Diving Rules Blueprint](/readme/DivingRulesFlow.png)
+_[Open The Full Blueprint](/readme/DivingRulesFlow.pdf)_
 
 * Rules: A view of the pdf file of the rules
 * Penalties: a list of all the penalties summary that allow to view
@@ -141,11 +144,14 @@ These are the high level fetures to work on next:
 The full list can be found on the [Github iOS Kanban](https://github.com/B3n-d1v3/Diving-Rules/projects/1)
 
 ## Authors
-- Benoit SUZANNE
+This App was created by **[Benoit SUZANNE](mailto:BenDivingJudge@gmail.com?subject=FromGithubReadme)**
 
 
 ## Contributing
--- To be Updated --
+You are more then welcome to contribute to this project weather you're:
+- a mobile developer iOS or Android
+- a localization contributer who can help to add new languages
+- a judge wanting to add new questions to to quizzes as they need to include more than just the penalty summaries
 
 ## License
-This code was created under the GNU 3.0 Open Source License. 
+This code was created under the [GNU 3.0 Open Source License](LICENSE). 
