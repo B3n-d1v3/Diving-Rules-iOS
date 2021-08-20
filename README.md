@@ -62,7 +62,7 @@ _-- To be Updated with an image of the data structure --_
 * Penalty (refering v1.1): The information about one penalty
 ``` swift
     // penalty id number
-    var id: Int = 200
+    var id: Int
     // List of the rules associated with this penalty
     var rules: [Rule]
     // Rule is a table of strings to list the corresponding penalty reference
@@ -89,7 +89,7 @@ _-- To be Updated with an image of the data structure --_
     // the list of answers provided to the questionnaire using the Penalty Model
     var answers: [Penalty]
     // score rewards
-    var score: Int = 0
+    var score: Int
 ``` 
 
 
