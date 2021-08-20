@@ -20,7 +20,7 @@ The [PO Editor](https://poeditor.com/projects/view?id=425927) tool is used to ge
 
 ## Version Control
 The Project repository is hosted on GitHub:
-* [Diving Rules] (https://github.com/B3n-d1v3/Diving-Rules-iOS) holding the stable releases
+* [Diving Rules](https://github.com/B3n-d1v3/Diving-Rules-iOS) holding the stable releases
 * The work on this repo is performed in the [dev Branch](https://github.com/B3n-d1v3/Diving-Rules-iOS/tree/dev)
 * New Baranches are created to create new features
 
