@@ -56,7 +56,7 @@ The code is structured around
   * the penalties description (the data presented in the app for a penalty is using the localization data and not the json description  - it is used in the description as a reference for the json creation and updates)
 
 ### Used Data model
-_-- To be Updated with an image of the data structure --_
+![Diving Rules Data Model](readme/DivingRulesDataModel.png)
 
 #### The penalty mangement
 * Penalty (refering v1.1): The information about one penalty
