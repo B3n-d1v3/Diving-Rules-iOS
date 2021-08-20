@@ -62,7 +62,7 @@
 "Quizz-Intro-Title" = "Testez vos connaissances";
 
 /*Quizz - Intro Description*/
-"Quizz-Intro-Description" = "Afin de vous entraîner sur les règles Fina du plongeon, avec ce test, vous serez en mesure de réviser les règles avec des questions sur les différentes règles.\n\n Sélectionnez le type de quiz auquel vous souhaitez répondre et le nombre de questions que vous souhaitez dans votre quiz.";
+"Quizz-Intro-Description" = "Afin de vous entraîner sur les règles Fina du plongeon, avec ce test, vous serez en mesure de réviser les règles avec des questions sur les différentes règles.\n\n Sélectionnez le nombre de questions que vous souhaitez dans votre quiz.";
 
 /*Quizz - Intro Start Button*/
 "Quizz-Intro-Start-Button" = "Démarrer";
@@ -158,7 +158,7 @@
 /*Penalty 10 - D6.28 - If a diver refuses the execution of a dive.*/
 "Penalty-10" = "Quand un plongeur refuse d’exécuter un plongeon.";
 
-/*Penalty 11 - D9.2 - In synchronised diving if a diver, or both divers, perform a dive of a different number.*/
+/*Penalty 11 - D9.2 & D9.8 - In synchronised diving if a diver, or both divers, perform a dive of a different number or position.*/
 "Penalty-11" = "En plongeon synchronisé, si un ou les deux plongeurs exécute(ent) un plongeon de numéro différent du plongeon annoncé.";
 
 /*Penalty 12 - D9.8 - In synchronised diving if all execution judges for one diver award zero (0) points.*/
@@ -167,7 +167,7 @@
 /*Penalty 13 - D9.10 - In synchronised diving if all synchronisation judges award zero (0) points.*/
 "Penalty-13" = "En plongeon synchronisé, si tous les juges de synchronisation attribuent la note zéro (0).";
 
-/*Penalty 14 - D9.2 & D9.8 - In synchronised diving if a diver, or both divers, perform a dive of a different position.*/
+/*Penalty 14 - D9.8 - If an execution judge considers that a dive of a different number has been performed.*/
 "Penalty-14" = "En plongeon synchronisé, si un ou les deux plongeurs exécute(ent) un plongeon dans une position différente du plongeon annoncé.";
 
 /*Penalty 15 - D6.25 - If a diver takes a step and stops in a running dive or stops the movement for a standing take-off after the legs have commenced to press.*/
