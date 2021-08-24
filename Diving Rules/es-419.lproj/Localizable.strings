@@ -1,0 +1,285 @@
+
+/*Localizable.strings
+  Diving Rules
+
+  Created by Benoit SUZANNE on 22/03/2021.
+  
+
+ Navigation - Rules Menu Item*/
+"Navigation-Menu-Rules" = "Reglas";
+
+/*Navigation - Penalties Menu Item*/
+"Navigation-Menu-Penalties" = "Sanciones";
+
+/*Navigation - Quizz Menu Item*/
+"Navigation-Menu-Quizz" = "Cuestionario";
+
+/*Navigation - Search Menu Item*/
+"Navigation-Menu-Search" = "Buscar";
+
+/*Penalties List Page 
+ Penalties List Page - Title*/
+"Penalties-List-Title" = "Lista de Penalidades";
+"Button-Judge" = "Juez";
+
+/*Penalty Detail Page 
+ Penalty - Rule Title*/
+"Penalty-Rule" = "Regla";
+
+/*Penalty - Description Section Title*/
+"Penalty-Description" = "Descripción";
+
+/*Penalty - Penalty Section Title*/
+"Penalty-Penalty" = "Penalidad";
+
+/*Penalty - Ownership Section Title*/
+"Penalty-Ownership" = "Quien ?";
+
+/*Penalty Detail Page Buttons 
+ Penalty - Penalty Section Button 0 pts*/
+"Button-0pts" = "0 pts";
+
+/*Penalty - Penalty Section Button max 2 pts*/
+"Button-max2pts" = "máx. 2";
+
+/*Penalty - Penalty Section Button max 4 ½ pts*/
+"Button-max4halfpts" = "máx. 4 ½";
+
+/*Penalty - Penalty Section Button -2 pts*/
+"Button--2pts" = "-2";
+
+/*Penalty - Penalty Section Button - ½ to 2 pts*/
+"Button--halfto2pts" = "- ½ a 2";
+
+/*Penalty - Penalty Section Button judge Opinion*/
+"Button-judgeOpinion" = "Según opinión";
+
+/*Penalty - Ownership Section Button Referee*/
+"Button-Referee" = "Árbitro";
+
+/*Quizz Selection Page
+ Quizz - Intro Title*/
+"Quizz-Intro-Title" = "Practique sus conocimientos";
+
+/*Quizz - Intro Description*/
+"Quizz-Intro-Description" = "Para practicar las reglas de clavados de la Fina, con esta prueba podrás revisar  las reglas con preguntas sobre las diferentes reglas.\n\n Seleccione la cantidad de preguntas que deseas en tu cuestionario.";
+
+/*Quizz - Intro Start Button*/
+"Quizz-Intro-Start-Button" = "Comenzar";
+
+/*Quizz - Question Page Next Button*/
+"Quizz-Next" = "Siguiente";
+
+/*Localizable.strings
+  Diving Rules
+
+  Created by Benoit SUZANNE on 22/03/2021.
+
+ App Name - Full App name*/
+"CFBundleDisplayName" = "Diving Rules";
+
+/*App Name - Short App name 16 car*/
+"CFBundleName" = "Diving Rules";
+
+/*Quizz Selection Page
+ Quizz - Title*/
+"Quizz-Title" = "Cuestionario";
+
+/*Quizz - Result Title*/
+"Quizz-Result-Title" = "Resultado del cuestionario";
+
+/*Quizz - Intro Description*/
+"Quizz-Result-Description" = "Aquí está su resultado del cuestionario: ";
+
+/*Quizz - Result Start Button*/
+"Quizz-Result-Start-Button" = "Nuevo";
+
+/*Quizz - Good Sticker*/
+"Passed" = "Exito";
+
+/*Quizz - Good Sticker*/
+"Failed" = "Fallado";
+
+/*Search Selection Page
+ Search - Title*/
+"Search-Title" = "Buscar la regla";
+
+/*Rule Book Selection Page
+ Rule Book - Title*/
+"RuleBook-Title" = "Reglamento";
+
+/*Quizz - Question*/
+"Quizz-Question" = "Pregunta";
+
+/*Quizz - Result Error Review Button*/
+"Quizz-Result-Review-Button" = "Errores";
+
+/*Quizz - Result Result Review Legend - unused*/
+"Quizz-Result-Legend-unused" = "Sin utilización";
+
+/*Quizz - Result Result Review Legend - unused*/
+"Quizz-Result-Legend-user-answer" = "Mi respuesta";
+
+/*Quizz - Result Result Review Legend - unused*/
+"Quizz-Result-Legend-real-answer" = "Respuesta correcta";
+
+/*Penalty Descripion List
+ Penalty 0 - D6.12 - If the diver takes more than one minute, after a warning.*/
+"Penalty-0" = "Si el clavadista tarda más de un minuto, después de una advertencia.";
+
+/*Penalty 1 - D6.16 & D8.3.4 - If a diver double bounces on the end of the springboard or double jump on the end of the platform before take-off.*/
+"Penalty-1" = "Si un clavadista realiza un doble rebote en el extremo del trampolín o un doble salto en el extremo de la plataforma antes del despegue.";
+
+/*Penalty 2 - D6.17 & D8.3.3 - If the final step is not from one foot.*/
+"Penalty-2" = "Si el paso final no es con un pie.";
+
+/*Penalty 3 - D6.18 & D8.4.3 - If the take-off on the springboard is not from both feet simultaneously.*/
+"Penalty-3" = "Si el despegue en el trampolín no es con los dos pies simultáneamente.";
+
+/*Penalty 4 - D6.20 & D8.6.6- If a twist is greater or less than that announced by 90 degrees or more.*/
+"Penalty-4" = "Si un giro es mayor o menor que el anunciado de 90 grados o más.";
+
+/*Penalty 5 - D6.21 & D8.1.7 - If a diver has performed a dive of a number other than that announced.*/
+"Penalty-5" = "Si un clavadista ha realizado un clavado de un número distinto al anunciado.";
+
+/*Penalty 6 - D6.22.1 - If the feet enter the water before the head or hands in a head first dive.*/
+"Penalty-6" = "Si los pies entran en el agua antes que la cabeza o las manos en una entrada con la cabeza por delante.";
+
+/*Penalty 7 - D6.22.2 - If the head or hands enter the water before the feet in a feet first dive.*/
+"Penalty-7" = "Si la cabeza o las manos entran en el agua antes que los pies en una entrada con los pies por delante.";
+
+/*Penalty 8 - D6.24 - If assistance has been given to the diver after the starting signal.*/
+"Penalty-8" = "Si se ha prestado ayuda al clavadista después de la señal de salida.";
+
+/*Penalty 9 - D6.27 - When a second attempt
+(a re-start) is unsuccessful.*/
+"Penalty-9" = "Cuando un segundo intento (un reinicio) no tiene éxito.";
+
+/*Penalty 10 - D6.28 - If a diver refuses the execution of a dive.*/
+"Penalty-10" = "Si un clavadista rechaza la ejecución de un Calvados.";
+
+/*Penalty 11 - D9.2 & D9.8 - In synchronised diving if a diver, or both divers, perform a dive of a different number or position.*/
+"Penalty-11" = "En clavado sincronizado, si un clavadista o ambos clavadistas realizan un clavado de un número diferente.";
+
+/*Penalty 12 - D9.8 - In synchronised diving if all execution judges for one diver award zero (0) points.*/
+"Penalty-12" = "En los clavados sincronizados, si todos los jueces de ejecución de un clavadista otorgan cero (0) puntos.";
+
+/*Penalty 13 - D9.10 - In synchronised diving if all synchronisation judges award zero (0) points.*/
+"Penalty-13" = "En clavado sincronizado si todos los jueces de sincronización otorgan cero (0) puntos.";
+
+/*Penalty 14 - D9.8 - If an execution judge considers that a dive of a different number has been performed.*/
+"Penalty-14" = "En clavado sincronizado, si un clavadista o ambos clavadistas realizan un clavado de un  posición diferente.";
+
+/*Penalty 15 - D6.25 - If a diver takes a step and stops in a running dive or stops the movement for a standing take-off after the legs have commenced to press.*/
+"Penalty-15" = "Si un clavadista da un paso y se detiene en la caminata o detiene el movimiento para un despegue de pie después de que las piernas hayan comenzado a presionar.";
+
+/*Penalty 16 - D6.26 - If there is a 
+re-start in a standing, running, or armstand dive.*/
+"Penalty-16" = "Si hay un nuevo intento en un clavado de pie, corriendo o un clavado en équilibrio.";
+
+/*Penalty 17 - D9.6 - In synchronised diving if there is a re-start by one or both divers.*/
+"Penalty-17" = "En clavado sincronizado, si hay un nuevo intento  por parte de uno o ambos clavadistas.";
+
+/*Penalty 18 - D6.19 & D8.1.4 - If a diver performs a dive in a position other than that announced.*/
+"Penalty-18" = "Si un clavadista realiza un clavado en una posición distinta a la anunciada.";
+
+/*Penalty 19 - D8.5.4 - If in a dive, a diver is unsafely close to the springboard or platform or touches the end of the springboard or platform with his head.*/
+"Penalty-19" = "Si en un clavado, un clavadista esta muy cerca del trampolín o a la plataforma o toca el extremo del trampolín o de la plataforma con la cabeza.";
+
+/*Penalty 20 - D6.22, D8.6.3 & D8.6.4 - If a diver has one or both arms held above the head in a feet first entry or below the head in a head first entry.*/
+"Penalty-20" = "Si un clavadista tiene uno o ambos brazos por encima de la cabeza en una entrada con los pies  o por debajo de la cabeza en una entrada con la cabeza.";
+
+/*Penalty 21 - D8.5.7 - If in a flying dive, a straight position is not clearly shown for at least one quarter of a somersault (90º) in dives with somersault.*/
+"Penalty-21" = "Si en un clavado al vuelo no se muestra claramente una posición extendida durante al menos un cuarto de salto mortal (90º) en los clavados con salto mortal.";
+
+/*Penalty 22 - D8.5.7 - If in a flying dive, a straight position is not clearly shown for at least a half somersault (180º) in dives with more than 1 somersault.*/
+"Penalty-22" = "Si en un clavado al vuelo no se muestra claramente una posición extendida durante al menos medio salto mortal (180º) en clavados con más de 1 salto mortal.";
+
+/*Penalty 23 - D8.1.6 - If a dive is not performed in a position as described.*/
+"Penalty-23" = "Si un clavado no se realiza en una posición como la descrita en el reglamento.";
+
+/*Penalty 24 - D8.2.3 - If the starting position is not straight, head erect, with the arms straight in any position.*/
+"Penalty-24" = "Si la posición de partida no es recta, cabeza erguida, con los brazos rectos en cualquier posición.";
+
+/*Penalty 25 - D8.2.4.3 - If the feet leave the springboard or platform (crow-hop) before the take-off in a standing dive.*/
+"Penalty-25" = "Si los pies abandonan el trampolín o la plataforma (crow-hop) antes del despegue en una entrada de pie.";
+
+/*Penalty 26 - D8.2.6.2 - If in an armstand dive, a stationary and steady balance in the straight vertical position is not shown.*/
+"Penalty-26" = "Si en un clavado con equilibrio, no se muestra un equilibrio estacionario y firme en la posición vertical recta.";
+
+/*Penalty 27 - D8.3.2 - If the run is not smooth, aesthetically pleasing in a forward direction to the end of the springboard or platform.*/
+"Penalty-27" = "Si la caminata no es suave, estéticamente agradable en una dirección hacia adelante hasta el final del trampolín o plataforma.";
+
+/*Penalty 28 - D8.4.5 - If the take-off is not bold, high, and confident.*/
+"Penalty-28" = "Si el despegue no es audaz, alto y seguro.";
+
+/*Penalty 29 - D8.4.6 - If in a twist dive, the twisting is manifestly done from the springboard or platform.*/
+"Penalty-29" = "Si se trata de un clavado con giro, el giro se realiza manifiestamente desde el trampolín o la plataforma.";
+
+/*Penalty 30 - D8.5.6 - If the straight position is not shown as described.*/
+"Penalty-30" = "Si la posición extendida no se muestra como se describen el reglamento.";
+
+/*Penalty 31 - D8.5.9 - If the pike position is not shown as described.*/
+"Penalty-31" = "Si la posición en escuadra (B) no se muestra como se describe en el reglamento.";
+
+/*Penalty 32 - D8.5.10 - If in a pike dive with twist, the pike position is not clearly shown.*/
+"Penalty-32" = "Si en un clavado en escuadra con giro, la posición de escuadra no se muestra claramente.";
+
+/*Penalty 33 - D8.5.12 - If the tuck position is not shown as described.*/
+"Penalty-33" = "Si la posición de bola (C) no se muestra como se describen el reglamento.";
+
+/*Penalty 34 - D8.5.13 - If in a tuck dive with twist, the tuck position is not clearly shown.*/
+"Penalty-34" = "Si se trata de un clavado con giro, la posición escuadra no se muestra claramente.";
+
+/*Penalty 35 - D8.5.15 - If the free position is not shown as described.*/
+"Penalty-35" = "Si la posición libre no se muestra como se describe en el reglamento.";
+
+/*Penalty 36 - D8.6.5 - If the arms are not in the correct position in either the head first or feet first entry.*/
+"Penalty-36" = "Si los brazos no están en la posición correcta tanto en la entrada de cabeza como de pies.";
+
+/*Penalty 37 - D9.11 - In synchronised diving if
+similarity of the starting position, approach, take-off and height is not shown.*/
+"Penalty-37" = "En clavado sincronizado si no se muestra la similitud de la posición inicial, la aproximación, el despegue y la altura.";
+
+/*Penalty 38 - D9.11 - In synchronised diving if coordinated timing of the movement during the flight is not shown.*/
+"Penalty-38" = "En clavado sincronizado si no se muestra la sincronización del movimiento durante el vuelo.";
+
+/*Penalty 39 - D9.11 - In synchronised diving if similarity of the vertical angles of the entries is not shown.*/
+"Penalty-39" = "En el clavado sincronizado si no se muestra la similitud de los ángulos verticales de las entradas.";
+
+/*Penalty 40 - D9.11 - In synchronised diving if comparative distance from the springboard or platform of the entry is not shown.*/
+"Penalty-40" = "En el clavado sincronizado si no se muestra la distancia comparativa desde el trampolín o la plataforma de la entrada.";
+
+/*Penalty 41 - D9.11 - In synchronised diving if coordinated timing of the entries is not shown.*/
+"Penalty-41" = "En clavado sincronizado si no se muestra el tiempo coordinado de las entradas.";
+
+/*Penalty 42 - D8.1.5 - If a dive is performed partially in a position other than that announced.*/
+"Penalty-42" = "Si un clavado se realiza parcialmente en una posición distinta a la anunciada.";
+
+/*Penalty 43 - D8.5.2 - If in a dive, the diver dives to the side of the direct line of flight.*/
+"Penalty-43" = "Si en un clavado, el clavadista se sumerge hacia el lado de la línea directa de vuelo.";
+
+/*Penalty 44 - D8.5.3 - If in a dive, a diver touches the end of the springboard or platform with his feet or hands.*/
+"Penalty-44" = "Si en un clavado, un clavadista toca el extremo del trampolín o la plataforma con los pies o las manos.";
+
+/*Penalty 45 - D8.6.2 - If the entry into the water is not vertical, or nearly so, or twisted with the body not straight, the feet not together, and the toes not pointed.*/
+"Penalty-45" = "Si la entrada en el agua no es vertical, o casi, o se tuerce con el cuerpo no recto, los pies no están juntos y los dedos no son puntiagudos.";
+
+/*Penalty 46 - D9.5 - In synchronised diving if either diver enters the surface of the water before the other diver leaves the springboard or platform.*/
+"Penalty-46" = "En clavado sincronizado, si uno de los clavadistas entra en la superficie del agua antes de que el otro abandone el trampolín o la plataforma.";
+
+/*Quizz - Intro Question Number*/
+"Quizz-Intro-Question-Number" = "Number of Questions: ";
+
+/*About Selection Page
+ About - Title*/
+"About-Title" = "About";
+
+/*About - Version*/
+"About-Version" = "Version: ";
+
+/*About - Description*/
+"About-Description" = "Rules Reference: 2017-2021\n\nThis application was created to allow users to learn and train on the diving rules from the FINA diving rules. This application is not a FINA official application, but uses the FINA official rules or it’s official translations as a work tool.\n\nThe original version was created in 2021 by Benoît SUZANNE under the GPL 3.0 open source licence. This license is the GNU General Public License is a free copyleft license.\n\n Spécial thanks to :\n- Daniel AZORIN for his support in the finalization of the app and for the Spanish translation\n- Piero ITALIANI for the help in the Italian translation.\n\nDo not hesitate to contact us:\n- If you are willing to help for new translation updates\n- For any question, feedback and new features ideas";
+
+/*About - Contact Link*/
+"About-Contact-Link" = "Contact us";

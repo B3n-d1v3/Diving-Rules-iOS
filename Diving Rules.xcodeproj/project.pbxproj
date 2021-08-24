@@ -47,6 +47,7 @@
 /* Begin PBXFileReference section */
 		B5011AA826A593DD00D7BB51 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B5011AA926A5957E00D7BB51 /* 2017-2021_Fina_IT_Regolamento_Tuffi.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "2017-2021_Fina_IT_Regolamento_Tuffi.pdf"; sourceTree = "<group>"; };
+		B51D966926D5587500563480 /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		B54B1AF026A2C534001B97EF /* RuleBookPdfView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleBookPdfView.swift; sourceTree = "<group>"; };
 		B580D799269C4B470032D029 /* 2017-2021_Fina_FR_Reglements_Plongeon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "2017-2021_Fina_FR_Reglements_Plongeon.pdf"; sourceTree = "<group>"; };
 		B580D79A269C4B470032D029 /* 2017-2021_Fina_EN_Diving_Rules.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "2017-2021_Fina_EN_Diving_Rules.pdf"; sourceTree = "<group>"; };
@@ -288,6 +289,7 @@
 				fr,
 				es,
 				it,
+				"es-419",
 			);
 			mainGroup = B5D0DC5C25FA086300CDA3D3;
 			productRefGroup = B5D0DC6625FA086300CDA3D3 /* Products */;
@@ -362,6 +364,7 @@
 				B58610CF2608FFEF00A44778 /* es */,
 				B58610D02608FFF000A44778 /* en */,
 				B5011AA826A593DD00D7BB51 /* it */,
+				B51D966926D5587500563480 /* es-419 */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
