@@ -10,16 +10,25 @@ import SwiftUI
 
 struct RuleBookPdfView : UIViewRepresentable {
     var currentLanguage = Locale.autoupdatingCurrent.languageCode
+    var latAmLanguage = Bundle.main.preferredLocalizations[0]
     
     func makeUIView(context: Context) -> PDFView {
         let pdfView = PDFView()
         // PDF File Access
 //        let path = Bundle.main.url(forResource: "2017-2021_fina-diving_16032018", withExtension: "pdf")
         var path = Bundle.main.url(forResource: "2017-2021_Fina_EN_Diving_Rules", withExtension: "pdf")
+        
+        print ("[RuleBook>makeUIView]: currentLanguage = \(String(describing: currentLanguage))")
+//        print ("[RuleBook>makeUIView]: preferredLocalizations = \(Bundle.main.preferredLocalizations)")`
+        print ("[RuleBook>makeUIView]: preferredLocalizations = \(Bundle.main.preferredLocalizations[0])")
+        
         if (currentLanguage == "fr") {
             path = Bundle.main.url(forResource: "2017-2021_Fina_FR_Reglements_Plongeon", withExtension: "pdf")
         } else if (currentLanguage == "es") {
             path = Bundle.main.url(forResource: "2017-2021_Fina_ES_Reglamento_Saltos", withExtension: "pdf")
+            if latAmLanguage == "es-419" {
+                path = Bundle.main.url(forResource: "2017-2021_Fina_MX_Reglas_Clavados", withExtension: "pdf")
+            }
         } else if (currentLanguage == "it") {
             path = Bundle.main.url(forResource: "2017-2021_Fina_IT_Regolamento_Tuffi", withExtension: "pdf")
         }
