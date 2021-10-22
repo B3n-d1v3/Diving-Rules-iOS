@@ -14,6 +14,7 @@
 //
 
 import SwiftUI
+import IntentsUI
 
 @main
 struct Diving_RulesApp: App {
@@ -80,10 +81,10 @@ struct Diving_RulesApp: App {
                 //                        Text ("Navigation-Menu-Search")
                 //                    }
                 
-            }
-        }
-    }
-}
+            } // TabView
+        } // WindowsGroup
+    } // Dinvig-Rules App Body
+} // Dinvig-Rules App
 
 // to slow the splash screen so that it shows up
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {

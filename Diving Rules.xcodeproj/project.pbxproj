@@ -16,6 +16,7 @@
 		B58610952603976300A44778 /* OwnershipRefereeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58610942603976300A44778 /* OwnershipRefereeButton.swift */; };
 		B586109A2603AE7500A44778 /* OwnershipJudgeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58610992603AE7500A44778 /* OwnershipJudgeButton.swift */; };
 		B58610CB2608FFE800A44778 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B58610CD2608FFE800A44778 /* Localizable.strings */; };
+		B58D786A26F1CF6600F50EEA /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = B58D786C26F1CF6600F50EEA /* Intents.intentdefinition */; };
 		B59C1A442671298C00DBDB22 /* QuizzResultListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59C1A432671298C00DBDB22 /* QuizzResultListView.swift */; };
 		B5B26932262895DD00C16C32 /* AppTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B26931262895DD00C16C32 /* AppTitleView.swift */; };
 		B5B269372628A10600C16C32 /* DiverLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B269362628A10600C16C32 /* DiverLogo.swift */; };
@@ -59,6 +60,8 @@
 		B58610CC2608FFE800A44778 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B58610CF2608FFEF00A44778 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B58610D02608FFF000A44778 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B58D786726E0BBE600F50EEA /* Diving Rules.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Diving Rules.entitlements"; sourceTree = "<group>"; };
+		B58D786B26F1CF6600F50EEA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; name = en; path = en.lproj/Intents.intentdefinition; sourceTree = "<group>"; };
 		B59C1A432671298C00DBDB22 /* QuizzResultListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzResultListView.swift; sourceTree = "<group>"; };
 		B5B26931262895DD00C16C32 /* AppTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTitleView.swift; sourceTree = "<group>"; };
 		B5B269362628A10600C16C32 /* DiverLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiverLogo.swift; sourceTree = "<group>"; };
@@ -88,6 +91,7 @@
 		B5F6976A262093D100A42E31 /* OwnerViewButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerViewButton.swift; sourceTree = "<group>"; };
 		B5FB0CED268B5B200041FC2B /* QuizzResultAnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzResultAnswerView.swift; sourceTree = "<group>"; };
 		B5FB0CF1269378920041FC2B /* QuizzResultRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzResultRowView.swift; sourceTree = "<group>"; };
+		B5FFF653272299E200430BEA /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; name = fr; path = fr.lproj/Intents.intentdefinition; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +185,7 @@
 		B5D0DC6725FA086300CDA3D3 /* Diving Rules */ = {
 			isa = PBXGroup;
 			children = (
+				B58D786726E0BBE600F50EEA /* Diving Rules.entitlements */,
 				B5D0DC6825FA086300CDA3D3 /* Diving_RulesApp.swift */,
 				B58610CD2608FFE800A44778 /* Localizable.strings */,
 				B5D0DC9E25FA32B300CDA3D3 /* Views */,
@@ -189,6 +194,7 @@
 				B5D0DC6C25FA086500CDA3D3 /* Assets.xcassets */,
 				B5D0DC7125FA086500CDA3D3 /* Info.plist */,
 				B5D0DC6E25FA086500CDA3D3 /* Preview Content */,
+				B58D786C26F1CF6600F50EEA /* Intents.intentdefinition */,
 			);
 			path = "Diving Rules";
 			sourceTree = "<group>";
@@ -332,6 +338,7 @@
 				B5D0DC8E25FA1BBD00CDA3D3 /* RuleBookView.swift in Sources */,
 				B5D0DC8825FA16DE00CDA3D3 /* Sanction.swift in Sources */,
 				B5D0DCBE25FA6FA200CDA3D3 /* PenaltiesListView.swift in Sources */,
+				B58D786A26F1CF6600F50EEA /* Intents.intentdefinition in Sources */,
 				B5FB0CEE268B5B200041FC2B /* QuizzResultAnswerView.swift in Sources */,
 				B5EDBC6D26B532D4001FB730 /* AboutView.swift in Sources */,
 				B5D0DCC725FA836500CDA3D3 /* PenaltyDetailView.swift in Sources */,
@@ -371,6 +378,15 @@
 				B51D966926D5587500563480 /* es-419 */,
 			);
 			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		B58D786C26F1CF6600F50EEA /* Intents.intentdefinition */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B58D786B26F1CF6600F50EEA /* en */,
+				B5FFF653272299E200430BEA /* fr */,
+			);
+			name = Intents.intentdefinition;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -501,6 +517,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Diving Rules/Diving Rules.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Diving Rules/Preview Content\"";
 				DEVELOPMENT_TEAM = B69P4NXAU3;
@@ -511,7 +528,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "fr.suzanne.benoit.diving.Diving-Rules";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bendivingjudge.diving-rules";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -523,6 +540,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Diving Rules/Diving Rules.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Diving Rules/Preview Content\"";
 				DEVELOPMENT_TEAM = B69P4NXAU3;
@@ -533,7 +551,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "fr.suzanne.benoit.diving.Diving-Rules";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bendivingjudge.diving-rules";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
