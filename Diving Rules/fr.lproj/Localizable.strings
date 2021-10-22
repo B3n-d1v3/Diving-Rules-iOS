@@ -131,7 +131,7 @@
 "Penalty-1" = "Quand, avant l'envol, un plongeur ou une plongeuse rebondit deux fois à l'extrémité du tremplin, ou réalise un double saut à l’extrémité de la plate-forme.";
 
 /*Penalty 2 - D6.17 & D8.3.3 - If the final step is not from one foot.*/
-"Penalty-2" = "Si le dernier pas de l’appel d’un plongeon ou d'une plongeuse avec élan, n’est pas fait sur un seul pied.";
+"Penalty-2" = "Si le dernier pas de l’appel d’un plongeon avec élan, n’est pas fait sur un seul pied.";
 
 /*Penalty 3 - D6.18 & D8.4.3 - If the take-off on the springboard is not from both feet simultaneously.*/
 "Penalty-3" = "Quand l’envol depuis un tremplin n’est pas exécuté simultanément des deux pieds (à pieds joints).";
