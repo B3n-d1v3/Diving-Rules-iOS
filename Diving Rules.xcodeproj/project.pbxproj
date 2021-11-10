@@ -35,6 +35,7 @@
 		B5D0DCC725FA836500CDA3D3 /* PenaltyDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D0DCC625FA836500CDA3D3 /* PenaltyDetailView.swift */; };
 		B5E2B4C92609E43300530303 /* QuizzStartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E2B4C82609E43300530303 /* QuizzStartView.swift */; };
 		B5EDBC6D26B532D4001FB730 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EDBC6C26B532D4001FB730 /* AboutView.swift */; };
+		B5F2056A273C22BA002CCB9E /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F20569273C22BA002CCB9E /* Language.swift */; };
 		B5F697352613212E00A42E31 /* PenaltySelectionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F697342613212D00A42E31 /* PenaltySelectionButton.swift */; };
 		B5F69750261DEC8E00A42E31 /* QuizzResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F6974F261DEC8E00A42E31 /* QuizzResultView.swift */; };
 		B5F69753261DF01400A42E31 /* Sticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F69752261DF01400A42E31 /* Sticker.swift */; };
@@ -80,6 +81,7 @@
 		B5D0DCC625FA836500CDA3D3 /* PenaltyDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenaltyDetailView.swift; sourceTree = "<group>"; };
 		B5E2B4C82609E43300530303 /* QuizzStartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzStartView.swift; sourceTree = "<group>"; };
 		B5EDBC6C26B532D4001FB730 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		B5F20569273C22BA002CCB9E /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 		B5F697342613212D00A42E31 /* PenaltySelectionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenaltySelectionButton.swift; sourceTree = "<group>"; };
 		B5F6974F261DEC8E00A42E31 /* QuizzResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzResultView.swift; sourceTree = "<group>"; };
 		B5F69752261DF01400A42E31 /* Sticker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sticker.swift; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 				B5D0DC8725FA16DE00CDA3D3 /* Sanction.swift */,
 				B5D0DC9625FA2FF600CDA3D3 /* ModelData.swift */,
 				B5F6975F2620522300A42E31 /* Quizz.swift */,
+				B5F20569273C22BA002CCB9E /* Language.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 				B5F697602620522400A42E31 /* Quizz.swift in Sources */,
 				B5D0DC9725FA2FF600CDA3D3 /* ModelData.swift in Sources */,
 				B5D0DC8B25FA16FB00CDA3D3 /* Penalty.swift in Sources */,
+				B5F2056A273C22BA002CCB9E /* Language.swift in Sources */,
 				B5F69750261DEC8E00A42E31 /* QuizzResultView.swift in Sources */,
 				B5D0DC9125FA1BD000CDA3D3 /* SearchView.swift in Sources */,
 				B5F697352613212E00A42E31 /* PenaltySelectionButton.swift in Sources */,

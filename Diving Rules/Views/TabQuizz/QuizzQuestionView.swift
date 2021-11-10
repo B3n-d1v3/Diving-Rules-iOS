@@ -30,6 +30,12 @@ struct QuizzQuestionView: View {
     
     @ObservedObject var penaltyButtonStatus: ButtonsStatus
     
+    // Language switch to EN variables
+    var defaultLanguage = Locale.autoupdatingCurrent.languageCode
+    @State private var switchLanguage = Locale.autoupdatingCurrent.languageCode
+    @State private var penaltyDescriptionTranslation = ""
+    
+    
     var body: some View {
         let penalty = penalties[questionList[currentQuestion]]
         
@@ -46,15 +52,51 @@ struct QuizzQuestionView: View {
                     .foregroundColor(Color.accentColor)
                     .padding(.bottom, 1.0)
                     
-                    Text("Penalty-Description")
-                        .font(.title2)
-                        .foregroundColor(Color.accentColor)
-                        .padding(.bottom)
+                    HStack {
+                        Text("Penalty-Description")
+                            // the rest of the style
+                            .font(.title2)
+                            .foregroundColor(Color.accentColor)
+                            .padding(.bottom)
+                        Spacer()
+                        // Do not show the button when default Language is EN
+                        if defaultLanguage != "en" {
+                            // Button to switch to EN
+                            Button {
+                                if (switchLanguage != "en"){
+                                    switchLanguage = "en"
+                                } else {
+                                    switchLanguage = defaultLanguage
+                                }
+                            } label: {
+                                // Show the current language
+                                Text(selectFlag(of:switchLanguage!))
+                                Image (systemName: "arrow.left.arrow.right")
+                                    .resizable()
+                                    .frame(width: 15.0, height: 15.0)
+                                    .opacity(0.4)
+                                // Show the target language
+                                if (switchLanguage != "en") {
+                                    Text("🇺🇸")
+                                        .opacity(0.4)
+                                } else {
+                                    Text(selectFlag(of:defaultLanguage!))
+                                        .opacity(0.4)
+                                }
+                            } // Button Label
+                        } // if the deflaut language is not EN show the button
+                    } // HSTack Penalty Title
                     
-                    //                    Text(penalty.description)
-                    // Using tranlated penalty desciprion
                     let penaltyDescription = "Penalty-" + String(penalty.id)
-                    Text(LocalizedStringKey( penaltyDescription))
+
+                    // Allow PenaltyDescription language selection
+                    let pathLanguage = Bundle.main.path(forResource: switchLanguage, ofType: "lproj")
+                    let bundleLanguage = Bundle(path: pathLanguage!)
+                    let penaltyDescriptionTranslation = bundleLanguage?.localizedString(forKey: penaltyDescription, value: nil, table: nil)
+
+                    
+                    Text(penaltyDescriptionTranslation!)
+//                    Text(LocalizedStringKey(penaltyDescription))
                         .fixedSize(horizontal: false, vertical: true)
                 } // VStack Penalty Description
                 

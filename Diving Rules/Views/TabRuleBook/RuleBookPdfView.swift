@@ -15,24 +15,48 @@ struct RuleBookPdfView : UIViewRepresentable {
     func makeUIView(context: Context) -> PDFView {
         let pdfView = PDFView()
         // PDF File Access
-//        let path = Bundle.main.url(forResource: "2017-2021_fina-diving_16032018", withExtension: "pdf")
-        var path = Bundle.main.url(forResource: "2017-2021_Fina_EN_Diving_Rules", withExtension: "pdf")
+        // old file management with if's
+////        let path = Bundle.main.url(forResource: "2017-2021_fina-diving_16032018", withExtension: "pdf")
+//        var path = Bundle.main.url(forResource: "2017-2021_Fina_EN_Diving_Rules", withExtension: "pdf")
+//
+//        print ("[RuleBook>makeUIView]: currentLanguage = \(String(describing: currentLanguage))")
+////        print ("[RuleBook>makeUIView]: preferredLocalizations = \(Bundle.main.preferredLocalizations)")`
+//        print ("[RuleBook>makeUIView]: preferredLocalizations = \(Bundle.main.preferredLocalizations[0])")
+//
+//        if (currentLanguage == "fr") {
+//            path = Bundle.main.url(forResource: "2017-2021_Fina_FR_Reglements_Plongeon", withExtension: "pdf")
+//        } else if (currentLanguage == "es") {
+//            path = Bundle.main.url(forResource: "2017-2021_Fina_ES_Reglamento_Saltos", withExtension: "pdf")
+//            if latAmLanguage == "es-419" {
+//                path = Bundle.main.url(forResource: "2017-2021_Fina_MX_Reglas_Clavados", withExtension: "pdf")
+//            }
+//        } else if (currentLanguage == "it") {
+//            path = Bundle.main.url(forResource: "2017-2021_Fina_IT_Regolamento_Tuffi", withExtension: "pdf")
+//        }
         
-        print ("[RuleBook>makeUIView]: currentLanguage = \(String(describing: currentLanguage))")
-//        print ("[RuleBook>makeUIView]: preferredLocalizations = \(Bundle.main.preferredLocalizations)")`
-        print ("[RuleBook>makeUIView]: preferredLocalizations = \(Bundle.main.preferredLocalizations[0])")
+        var language = "en"
+        language = findLanguage()
+        print ("[RuleBook>makeUIView]: language = \(language)")
+        var path: URL
         
-        if (currentLanguage == "fr") {
-            path = Bundle.main.url(forResource: "2017-2021_Fina_FR_Reglements_Plongeon", withExtension: "pdf")
-        } else if (currentLanguage == "es") {
-            path = Bundle.main.url(forResource: "2017-2021_Fina_ES_Reglamento_Saltos", withExtension: "pdf")
-            if latAmLanguage == "es-419" {
-                path = Bundle.main.url(forResource: "2017-2021_Fina_MX_Reglas_Clavados", withExtension: "pdf")
-            }
-        } else if (currentLanguage == "it") {
-            path = Bundle.main.url(forResource: "2017-2021_Fina_IT_Regolamento_Tuffi", withExtension: "pdf")
+        // Select Document depending on language
+        switch language {
+        case "en":
+            path = Bundle.main.url(forResource: "2017-2021_Fina_EN_Diving_Rules", withExtension: "pdf")!
+        case "fr":
+            path = Bundle.main.url(forResource: "2017-2021_Fina_FR_Reglements_Plongeon", withExtension: "pdf")!
+        case "it":
+            path = Bundle.main.url(forResource: "2017-2021_Fina_IT_Regolamento_Tuffi", withExtension: "pdf")!
+        case "es":
+            path = Bundle.main.url(forResource: "2017-2021_Fina_ES_Reglamento_Saltos", withExtension: "pdf")!
+        case "mx":
+            path = Bundle.main.url(forResource: "2017-2021_Fina_MX_Reglas_Clavados", withExtension: "pdf")!
+        default:
+            path = Bundle.main.url(forResource: "2017-2021_Fina_EN_Diving_Rules", withExtension: "pdf")!
         }
-        let doc = PDFDocument(url: path!)
+        
+        // Display Document
+        let doc = PDFDocument(url: path)
         pdfView.document = doc
         pdfView.autoScales = true
         return pdfView
