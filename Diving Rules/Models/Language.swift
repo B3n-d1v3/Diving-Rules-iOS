@@ -20,9 +20,9 @@ func findLanguage() -> String {
     // returns the language used by the app including Latin America (set to Mx)
     var currentLanguage = "en"
     currentLanguage = Locale.autoupdatingCurrent.languageCode!
-    if (currentLanguage == "es") && (Bundle.main.preferredLocalizations[0] == "es-419"){
-        currentLanguage = "mx"
-    }
+//    if (currentLanguage == "es") && (Bundle.main.preferredLocalizations[0] == "es-419"){
+//        currentLanguage = "mx"
+//    }
     return currentLanguage
 }
 

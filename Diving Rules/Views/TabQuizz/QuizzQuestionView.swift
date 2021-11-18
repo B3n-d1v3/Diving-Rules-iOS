@@ -67,7 +67,7 @@ struct QuizzQuestionView: View {
                                 } else {
                                     language.current = language.app
                                 }
-                                print("[QuizzQuestion > FlagButton] language.current = \(language.current) / language.app = \(language.app)")
+//                                print("[QuizzQuestion > FlagButton] language.current = \(language.current) / language.app = \(language.app)")
                             } label: {
                                 // Show the current language
                                 Text(selectFlag(of:language.current))
@@ -249,7 +249,7 @@ struct QuizzQuestionView: View {
         if (penaltyButtonStatus.userSanctionSelection > 6) || (!penaltyButtonStatus.ownershipReferee && !penaltyButtonStatus.ownershipJudge) {
             // Has the user provided an answer at least one penalty and one owner
             askForAnswer = true
-            print("[nextQuestion] Missing answer")
+//            print("[nextQuestion] Missing answer")
         } else {
             // else user has answered items
             if penaltyButtonStatus.userSanctionSelection == penalty.sanctionValue {
@@ -257,17 +257,17 @@ struct QuizzQuestionView: View {
                 if (penaltyButtonStatus.ownershipReferee == penalty.referee) && (penaltyButtonStatus.ownershipJudge == penalty.judge) {
                     // if the Ownership answer is correct
                     score += 10
-                    print("[nextQuestion] Good answer")
+//                    print("[nextQuestion] Good answer")
                 } else if (penaltyButtonStatus.ownershipReferee == penalty.referee) || (penaltyButtonStatus.ownershipJudge == penalty.judge){
                     // if the ownership is shared between Referee and Judge and only one was selected
                     score += 5
-                    print("[nextQuestion] Partial answer")
+//                    print("[nextQuestion] Partial answer")
                 }
-                print("[nextQuestion] Score updated to: \(score)")
+//                print("[nextQuestion] Score updated to: \(score)")
                 
             } else {
                 // if the penalty is wrong
-                print("[nextQuestion] Wrong answer")
+//                print("[nextQuestion] Wrong answer")
             }
             //log user answer
             logUserAnswer (userAnswerScore: score)

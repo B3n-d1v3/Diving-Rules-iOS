@@ -47,8 +47,9 @@ struct RuleBookPdfView : UIViewRepresentable {
             path = Bundle.main.url(forResource: "2017-2021_Fina_IT_Regolamento_Tuffi", withExtension: "pdf")!
         case "es":
             path = Bundle.main.url(forResource: "2017-2021_Fina_ES_Reglamento_Saltos", withExtension: "pdf")!
-        case "mx":
-            path = Bundle.main.url(forResource: "2017-2021_Fina_MX_Reglas_Clavados", withExtension: "pdf")!
+            if Bundle.main.preferredLocalizations[0] == "es-419" {
+                path = Bundle.main.url(forResource: "2017-2021_Fina_MX_Reglas_Clavados", withExtension: "pdf")!
+            }
         default:
             path = Bundle.main.url(forResource: "2017-2021_Fina_EN_Diving_Rules", withExtension: "pdf")!
         } // end Switch
