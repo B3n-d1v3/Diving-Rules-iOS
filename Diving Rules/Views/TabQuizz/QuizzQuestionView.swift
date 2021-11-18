@@ -31,8 +31,7 @@ struct QuizzQuestionView: View {
     @ObservedObject var penaltyButtonStatus: ButtonsStatus
     
     // Language switch to EN variables
-    var defaultLanguage = Locale.autoupdatingCurrent.languageCode
-    @State private var switchLanguage = Locale.autoupdatingCurrent.languageCode
+    @EnvironmentObject var language: LanguageSettings
     @State private var penaltyDescriptionTranslation = ""
     
     
@@ -60,27 +59,28 @@ struct QuizzQuestionView: View {
                             .padding(.bottom)
                         Spacer()
                         // Do not show the button when default Language is EN
-                        if defaultLanguage != "en" {
+                        if language.app != "en" {
                             // Button to switch to EN
                             Button {
-                                if (switchLanguage != "en"){
-                                    switchLanguage = "en"
+                                if (language.current != "en"){
+                                    language.current = "en"
                                 } else {
-                                    switchLanguage = defaultLanguage
+                                    language.current = language.app
                                 }
+                                print("[QuizzQuestion > FlagButton] language.current = \(language.current) / language.app = \(language.app)")
                             } label: {
                                 // Show the current language
-                                Text(selectFlag(of:switchLanguage!))
+                                Text(selectFlag(of:language.current))
                                 Image (systemName: "arrow.left.arrow.right")
                                     .resizable()
                                     .frame(width: 15.0, height: 15.0)
                                     .opacity(0.4)
                                 // Show the target language
-                                if (switchLanguage != "en") {
-                                    Text("🇺🇸")
+                                if (language.current != "en") {
+                                    Text(language.englishFlag)
                                         .opacity(0.4)
                                 } else {
-                                    Text(selectFlag(of:defaultLanguage!))
+                                    Text(selectFlag(of:language.app))
                                         .opacity(0.4)
                                 }
                             } // Button Label
@@ -90,13 +90,11 @@ struct QuizzQuestionView: View {
                     let penaltyDescription = "Penalty-" + String(penalty.id)
 
                     // Allow PenaltyDescription language selection
-                    let pathLanguage = Bundle.main.path(forResource: switchLanguage, ofType: "lproj")
+                    let pathLanguage = Bundle.main.path(forResource: language.current, ofType: "lproj")
                     let bundleLanguage = Bundle(path: pathLanguage!)
                     let penaltyDescriptionTranslation = bundleLanguage?.localizedString(forKey: penaltyDescription, value: nil, table: nil)
-
                     
                     Text(penaltyDescriptionTranslation!)
-//                    Text(LocalizedStringKey(penaltyDescription))
                         .fixedSize(horizontal: false, vertical: true)
                 } // VStack Penalty Description
                 

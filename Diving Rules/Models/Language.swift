@@ -6,6 +6,15 @@
 //
 
 import Foundation
+import SwiftUI
+import Combine
+
+// the Language object
+class LanguageSettings: ObservableObject {
+    @Published var app = findLanguage()
+    @Published var current = findLanguage()
+    @Published var englishFlag = "🇬🇧"
+}
 
 func findLanguage() -> String {
     // returns the language used by the app including Latin America (set to Mx)
@@ -23,7 +32,7 @@ func selectFlag (of languageId: String) -> String {
     
     switch languageId {
     case "en":
-        selectedFlag = "🇺🇸"
+        selectedFlag = "🇬🇧"
     case "fr":
         selectedFlag = "🇫🇷"
     case "it":
@@ -61,6 +70,7 @@ func selectFlag (of languageId: String) -> String {
 
 // Flag correspondance
 //Text("🇺🇸") -> us
+//Text("🇬🇧") -> uk
 //Text("🇫🇷") -> fr
 //Text("🇮🇹") -> it
 //Text("🇪🇸") -> sp

@@ -33,19 +33,7 @@ struct QuizzStartView: View {
             .padding(.all)
             Divider ()
             Spacer ()
-            NavigationLink(destination: QuizzQuestionView (shouldPopToRootView: self.$isActive, questionList: newQuizz(of: questionNumber), penaltyButtonStatus: penaltyButtonStatus)
-//                            .navigationBarTitle("Quizz-Title", displayMode: NavigationBarItem.TitleDisplayMode.inline)
-//                            .navigationBarBackButtonHidden(true)
-//                            .navigationBarItems(trailing: Button(action: {
-//                                self.shouldPopToRootView = false
-//                            }) {
-//                                Image(systemName: "xmark.circle")
-//                                    .accentColor(.accentColor)
-//                                    .font(.title)
-//                            })
-                           ,
-                           isActive: self.$isActive
-            ) {
+            NavigationLink(destination: QuizzQuestionView (shouldPopToRootView: self.$isActive, questionList: newQuizz(of: questionNumber), penaltyButtonStatus: penaltyButtonStatus), isActive: self.$isActive) {
                 Text("Quizz-Intro-Start-Button")
                     .font(.title3)
                     .fontWeight(.semibold)

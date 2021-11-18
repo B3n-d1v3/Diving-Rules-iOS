@@ -17,6 +17,9 @@ import SwiftUI
 
 @main
 struct Diving_RulesApp: App {
+    // Language switch to EN variables
+    @StateObject var language = LanguageSettings()
+    
     var body: some Scene {
         WindowGroup {
             TabView {
@@ -80,8 +83,8 @@ struct Diving_RulesApp: App {
                 //                        Text ("Navigation-Menu-Search")
                 //                    }
                 
-            }
-        }
+            }.environmentObject(language)  // end TabView
+        } // end WindowsGroup
     }
 }
 
