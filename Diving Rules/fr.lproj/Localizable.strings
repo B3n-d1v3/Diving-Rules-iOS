@@ -248,7 +248,7 @@ similarity of the starting position, approach, take-off and height is not shown.
 "Penalty-39" = "En plongeon synchronisé, pour un manque de similitude des angles verticaux des entrées dans l'eau.";
 
 /*Penalty 40 - D9.11 - In synchronised diving if comparative distance from the springboard or platform of the entry is not shown.*/
-"Penalty-40" = "En plongeon synchronisé, pour un manque de similiyude des distances par rapport au tremplin ou à la plate-forme, au moment de l'entrée dans l'eau.";
+"Penalty-40" = "En plongeon synchronisé, pour un manque de similitude des distances par rapport au tremplin ou à la plate-forme, au moment de l'entrée dans l'eau.";
 
 /*Penalty 41 - D9.11 - In synchronised diving if coordinated timing of the entries is not shown.*/
 "Penalty-41" = "En plongeon synchronisé, pour un manque de simultaniété des entrées dans l'eau.";
