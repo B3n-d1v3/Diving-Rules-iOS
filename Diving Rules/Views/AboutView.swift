@@ -110,8 +110,17 @@ struct AboutView: View {
         let shareImage : UIImage = UIImage(named: "AppIcon")!
 //        let shareImage : UIImage = UIImage(named: "qrcode-DivingRules-Logo")!
         
-        let av = UIActivityViewController(activityItems: [shareText, shareLink, shareImage], applicationActivities: nil)
-        UIApplication.shared.windows.first?.rootViewController?.present(av, animated: true, completion: nil)
+        let activityVC = UIActivityViewController(activityItems: [shareText, shareLink, shareImage], applicationActivities: nil)
+        
+        // iPad Crash correction
+        // found at https://stackoverflow.com/questions/29550849/uiactivityviewcontroller-in-swift-crashes-on-ipad
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            activityVC.popoverPresentationController?.sourceView = UIApplication.shared.windows.first
+            activityVC.popoverPresentationController?.sourceRect = CGRect(x: 0, y: 0, width: 300, height: 350)
+            activityVC.popoverPresentationController?.permittedArrowDirections = [.left]
+        }
+
+        UIApplication.shared.windows.first?.rootViewController?.present(activityVC, animated: true, completion: nil)
     }
 
 }
