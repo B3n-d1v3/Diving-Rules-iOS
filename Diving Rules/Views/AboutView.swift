@@ -24,11 +24,12 @@ struct AboutView: View {
                 Spacer ()
             }
             .font(.footnote)
-                Spacer ()
-                Text("About-Description")
-                    .font(.footnote)
-                    .multilineTextAlignment(.leading)
-                Spacer ()
+            Spacer ()
+            Text("About-Description")
+                .font(.footnote)
+                .multilineTextAlignment(.leading)
+            Spacer ()
+            Spacer ()
                 Button(action: {
                     // send mail
                     let to = "BenDivingJudge@gmail.com"
@@ -55,13 +56,66 @@ struct AboutView: View {
                 .foregroundColor(Color("AccentColor"))
                 .background(Color.white)
                 .cornerRadius(40)
+            // Link
+            Button(action: actionSheet) {
+                HStack {
+                    Spacer ()
+                    VStack {
+                        Spacer ()
+                        Spacer ()
+                        Text ("Share this app")
+                            .font(.headline)
+                            .foregroundColor(Color("AccentColor"))
+                          
+                        Spacer ()
+                        Image("qrcode-DivingRules-Logo")
+                            .resizable()
+                            .frame(width: 150, height: 150)
+                        Spacer ()
+                        Spacer ()
+                    } // Link VStack
+                    Spacer ()
+                } // Link HStack
+                .background(Color.white)
+                .cornerRadius(20)
+                .padding(10.0)
+            } // Link Button
+            
         } // Top ScrollView
         .padding(10.0)
         .background(Color("LaunchScreenBackgroundColor"))
         .foregroundColor(.white)
+        
+        .toolbar {
+            ToolbarItem(placement: .automatic) {
+                Button(action: actionSheet) {
+                            Image(systemName: "square.and.arrow.up")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .foregroundColor(Color("AccentColor"))
+                                .frame(width: 20, height: 20
+                                )
+                        } // end Button
+            }
+        } // end Toobar
     }
-}
+    func actionSheet() {
+        // set text
+        let shareText = "I 😍 this app to learn the Diving Rules"
+        // set Link URL
+//        guard let shareLink = URL(string : "bit.ly/DivingRulesApp") else { return }
+        guard let shareLink: URL = URL(string : "bit.ly/DivingRulesApp") else { return }
+//        guard let data = URL(string: "https://apps.apple.com/app/diving-rules/id1579861867") else { return }
+        // set Image
+        let shareImage : UIImage = UIImage(named: "AppIcon")!
+//        let shareImage : UIImage = UIImage(named: "qrcode-DivingRules-Logo")!
+        
+        let av = UIActivityViewController(activityItems: [shareText, shareLink, shareImage], applicationActivities: nil)
+        UIApplication.shared.windows.first?.rootViewController?.present(av, animated: true, completion: nil)
+    }
 
+}
+    
 struct AboutView_Previews: PreviewProvider {
     static var previews: some View {
         AboutView()
