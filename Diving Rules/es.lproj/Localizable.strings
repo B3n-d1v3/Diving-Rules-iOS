@@ -279,7 +279,37 @@ similarity of the starting position, approach, take-off and height is not shown.
 "About-Version" = "Version: ";
 
 /*About - Description*/
-"About-Description" = "Rules Reference: 2017-2021\n\nThis application was created to allow users to learn and train on the diving rules from the FINA diving rules. This application is not a FINA official application, but uses the FINA official rules or it’s official translations as a work tool.\n\nThe original version was created in 2021 by Benoît SUZANNE under the GPL 3.0 open source licence. This license is the GNU General Public License is a free copyleft license.\n\n Spécial thanks to :\n- Daniel AZORIN for his support in the finalization of the app and for the Spanish translation\n- Piero ITALIANI for the help in the Italian translation.\n\nDo not hesitate to contact us:\n- If you are willing to help for new translation updates\n- For any question, feedback and new features ideas";
+"About-Description" = "This application was created to allow users to learn and train on the diving rules from the FINA diving rules. This application is not a FINA official application, but uses the FINA official rules or it’s official translations as a work tool.";
+
+/*About - Rules Reference*/
+"About-RulesReference" = "Rules Reference : ";
+
+/*About - License*/
+"About-License" = "The original version was created in 2021 by Benoît SUZANNE under the GPL 3.0 open source licence. This license is the GNU General Public License is a free copyleft license.";
+
+/*About - Thanks*/
+"About-Thanks" = "Spécial thanks to :\n- Daniel AZORIN for his support in the finalization of the app and for the Spanish translation\n- Piero ITALIANI for the help in the Italian translation.";
+
+/*About - Help*/
+"About-Help" = "Do not hesitate to contact us:\n- If you are willing to help for new translation updates\n- For any question, feedback and new features ideas\n";
+
+/*About - Description Title*/
+"About-Description-Title" = "App Desctiption";
+
+/*About - License Title*/
+"About-License-Title" = "License";
+
+/*About - Help Title*/
+"About-Thanks-Title" = "Thanks";
+
+/*About - Contact Title*/
+"About-Contact-Title" = "Contacts";
+
+/*About - Share Title*/
+"About-Share-Title" = "Share";
+
+/*About - Share*/
+"About-Share" = "Share this App with this link";
 
 /*About - Contact Link*/
 "About-Contact-Link" = "Contact us";

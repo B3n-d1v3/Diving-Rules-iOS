@@ -42,6 +42,11 @@ struct RuleBookView: View {
 
 struct RuleBookView_Previews: PreviewProvider {
     static var previews: some View {
-        RuleBookPdfView()
+        Group {
+            RuleBookView().environment(\.locale, .init(identifier: "en"))
+            RuleBookView().environment(\.locale, .init(identifier: "fr"))
+            RuleBookView().environment(\.locale, .init(identifier: "es"))
+            RuleBookView().environment(\.locale, .init(identifier: "it"))
+        }
     }
 }

@@ -16,20 +16,18 @@ struct AboutView: View {
                 .resizable()
                 .frame(width: 130, height: 210)
             Spacer ()
-            HStack {
-                Text("About-Version")
-                // Add the marketing version Number
-                let appVarsion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String
-                Text(appVarsion ?? "X.X")
-                Spacer ()
-            }
-            .font(.footnote)
-            Spacer ()
-            Text("About-Description")
-                .font(.footnote)
-                .multilineTextAlignment(.leading)
+            AboutDescriptionView()
             Spacer ()
             Spacer ()
+            Spacer ()
+            // Contact Us
+            VStack {
+                HStack {
+                    Text("About-Contact-Title")
+                        .font(.title)
+                        .multilineTextAlignment(.leading)
+                    Spacer ()
+                }
                 Button(action: {
                     // send mail
                     let to = "BenDivingJudge@gmail.com"
@@ -56,30 +54,43 @@ struct AboutView: View {
                 .foregroundColor(Color("AccentColor"))
                 .background(Color.white)
                 .cornerRadius(40)
-            // Link
-            Button(action: actionSheet) {
+            } // VStack Contact Us
+            Spacer ()
+            // Share
+            VStack {
                 HStack {
+                    Text("About-Share-Title")
+                        .font(.title)
+                        .multilineTextAlignment(.leading)
                     Spacer ()
-                    VStack {
-                        Spacer ()
-                        Spacer ()
-                        Text ("Share this app")
-                            .font(.headline)
-                            .foregroundColor(Color("AccentColor"))
-                          
-                        Spacer ()
-                        Image("qrcode-DivingRules-Logo")
-                            .resizable()
-                            .frame(width: 150, height: 150)
-                        Spacer ()
-                        Spacer ()
-                    } // Link VStack
-                    Spacer ()
-                } // Link HStack
-                .background(Color.white)
-                .cornerRadius(20)
-                .padding(10.0)
-            } // Link Button
+                }
+                Spacer ()
+                Button(action: actionSheet) {
+                    HStack {
+//                        Spacer ()
+                        VStack {
+                            Spacer ()
+                            Spacer ()
+                            Text("About-Share")
+                                .font(.headline)
+                                .foregroundColor(Color("AccentColor"))
+                                .padding([.top, .leading, .trailing], 15.0)
+                              
+                            Spacer ()
+                            Image("qrcode-DivingRules-Logo")
+                                .resizable()
+                                .padding([.leading, .bottom, .trailing], 15.0)
+                                .frame(width: 150, height: 150)
+                            Spacer ()
+                            Spacer ()
+                        } // Link VStack
+//                        Spacer ()
+                    } // Link HStack
+                    .background(Color.white)
+                    .cornerRadius(20)
+                    .padding(10.0)
+                } // Link Button
+            } // VStack Link
             
         } // Top ScrollView
         .padding(10.0)
@@ -99,6 +110,9 @@ struct AboutView: View {
             }
         } // end Toobar
     }
+    
+    
+    
     func actionSheet() {
         // set text
         let shareText = "I 😍 this app to learn the Diving Rules"
@@ -128,5 +142,11 @@ struct AboutView: View {
 struct AboutView_Previews: PreviewProvider {
     static var previews: some View {
         AboutView()
+//        Group {
+//            AboutView().environment(\.locale, .init(identifier: "en"))
+//            AboutView().environment(\.locale, .init(identifier: "fr"))
+//            AboutView().environment(\.locale, .init(identifier: "it"))
+//            AboutView().environment(\.locale, .init(identifier: "es"))
+//        }
     }
 }

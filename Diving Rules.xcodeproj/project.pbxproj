@@ -10,6 +10,7 @@
 		B5011AAA26A5957E00D7BB51 /* 2017-2021_Fina_IT_Regolamento_Tuffi.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B5011AA926A5957E00D7BB51 /* 2017-2021_Fina_IT_Regolamento_Tuffi.pdf */; };
 		B51D966B26DD448300563480 /* 2017-2021_Fina_MX_Reglas_Clavados.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B51D966A26DD448300563480 /* 2017-2021_Fina_MX_Reglas_Clavados.pdf */; };
 		B54B1AF126A2C534001B97EF /* RuleBookPdfView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54B1AF026A2C534001B97EF /* RuleBookPdfView.swift */; };
+		B580318B2750EA920067C3C5 /* AboutDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B580318A2750EA920067C3C5 /* AboutDescriptionView.swift */; };
 		B580D79C269C4B480032D029 /* 2017-2021_Fina_FR_Reglements_Plongeon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B580D799269C4B470032D029 /* 2017-2021_Fina_FR_Reglements_Plongeon.pdf */; };
 		B580D79D269C4B480032D029 /* 2017-2021_Fina_EN_Diving_Rules.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B580D79A269C4B470032D029 /* 2017-2021_Fina_EN_Diving_Rules.pdf */; };
 		B580D79E269C4B480032D029 /* 2017-2021_Fina_ES_Reglamento_Saltos.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B580D79B269C4B480032D029 /* 2017-2021_Fina_ES_Reglamento_Saltos.pdf */; };
@@ -52,6 +53,7 @@
 		B51D966926D5587500563480 /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		B51D966A26DD448300563480 /* 2017-2021_Fina_MX_Reglas_Clavados.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "2017-2021_Fina_MX_Reglas_Clavados.pdf"; sourceTree = "<group>"; };
 		B54B1AF026A2C534001B97EF /* RuleBookPdfView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleBookPdfView.swift; sourceTree = "<group>"; };
+		B580318A2750EA920067C3C5 /* AboutDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutDescriptionView.swift; sourceTree = "<group>"; };
 		B580D799269C4B470032D029 /* 2017-2021_Fina_FR_Reglements_Plongeon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "2017-2021_Fina_FR_Reglements_Plongeon.pdf"; sourceTree = "<group>"; };
 		B580D79A269C4B470032D029 /* 2017-2021_Fina_EN_Diving_Rules.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "2017-2021_Fina_EN_Diving_Rules.pdf"; sourceTree = "<group>"; };
 		B580D79B269C4B480032D029 /* 2017-2021_Fina_ES_Reglamento_Saltos.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "2017-2021_Fina_ES_Reglamento_Saltos.pdf"; sourceTree = "<group>"; };
@@ -143,6 +145,15 @@
 			path = QuizzResultReview;
 			sourceTree = "<group>";
 		};
+		B58031892750EA400067C3C5 /* TabAbout */ = {
+			isa = PBXGroup;
+			children = (
+				B5EDBC6C26B532D4001FB730 /* AboutView.swift */,
+				B580318A2750EA920067C3C5 /* AboutDescriptionView.swift */,
+			);
+			path = TabAbout;
+			sourceTree = "<group>";
+		};
 		B58610972603AE2900A44778 /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,10 +220,10 @@
 				B54B1AF226A407BD001B97EF /* TabRuleBook */,
 				B54B1AF326A407DC001B97EF /* TabPenalties */,
 				B54B1AF426A407F2001B97EF /* TabQuizz */,
+				B58031892750EA400067C3C5 /* TabAbout */,
 				B58610972603AE2900A44778 /* Buttons */,
 				B5F6973C2618591100A42E31 /* Stickers */,
 				B5B269352628A0C400C16C32 /* Header */,
-				B5EDBC6C26B532D4001FB730 /* AboutView.swift */,
 				B5D0DC9025FA1BD000CDA3D3 /* SearchView.swift */,
 			);
 			path = Views;
@@ -359,6 +370,7 @@
 				B5F697352613212E00A42E31 /* PenaltySelectionButton.swift in Sources */,
 				B586109A2603AE7500A44778 /* OwnershipJudgeButton.swift in Sources */,
 				B5D0DCBA25FA6D1600CDA3D3 /* PenaltyRowView.swift in Sources */,
+				B580318B2750EA920067C3C5 /* AboutDescriptionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,7 +518,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"Diving Rules/Preview Content\"";
 				DEVELOPMENT_TEAM = B69P4NXAU3;
 				ENABLE_PREVIEWS = YES;
@@ -529,7 +541,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"Diving Rules/Preview Content\"";
 				DEVELOPMENT_TEAM = B69P4NXAU3;
 				ENABLE_PREVIEWS = YES;

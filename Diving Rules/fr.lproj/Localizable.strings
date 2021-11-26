@@ -279,7 +279,37 @@ similarity of the starting position, approach, take-off and height is not shown.
 "About-Version" = "Version : ";
 
 /*About - Description*/
-"About-Description" = "Rules Reference: 2017-2021\n\nThis application was created to allow users to learn and train on the diving rules from the FINA diving rules. This application is not a FINA official application, but uses the FINA official rules or it’s official translations as a work tool.\n\nThe original version was created in 2021 by Benoît SUZANNE under the GPL 3.0 open source licence. This license is the GNU General Public License is a free copyleft license.\n\n Spécial thanks to :\n- Daniel AZORIN for his support in the finalization of the app and for the Spanish translation\n- Piero ITALIANI for the help in the Italian translation.\n\nDo not hesitate to contact us:\n- If you are willing to help for new translation updates\n- For any question, feedback and new features ideas";
+"About-Description" = "Cette application a été créée pour vous permettre d'apprendre et de s'entraîner sur les règles de plongeon à partir du règlement de la FINA. Cette application n'est pas une application officielle de la FINA, mais utilise le règlement officiel de la FINA ou ses traductions officielles comme outil de travail.";
+
+/*About - Rules Reference*/
+"About-RulesReference" = "Règlement de référence : ";
+
+/*About - License*/
+"About-License" = "La version originale a été créée en 2021 par Benoît SUZANNE sous la licence GPL 3.0 open source. Cette licence est la GNU General Public License, une licence libre de type copyleft.";
+
+/*About - Thanks*/
+"About-Thanks" = "Remerciements à :\n- Daniel AZORIN pour son soutien dans la finalisation de l'appli et pour la traduction en espagnol.\n- Piero ITALIANI pour son aide dans la traduction italienne.";
+
+/*About - Help*/
+"About-Help" = "N'hésitez pas à nous contacter :\n- Si vous êtes prêt à aider pour les nouvelles mises à jour de traductions.\n- Pour toutes questions, commentaires et idées de nouvelles fonctionnalités.\n";
+
+/*About - Description Title*/
+"About-Description-Title" = "Désctiption de l'application";
+
+/*About - License Title*/
+"About-License-Title" = "License";
+
+/*About - Help Title*/
+"About-Thanks-Title" = "Remerciements";
+
+/*About - Contact Title*/
+"About-Contact-Title" = "Contacts";
+
+/*About - Share Title*/
+"About-Share-Title" = "Partage";
+
+/*About - Share*/
+"About-Share" = "Partagez cette application";
 
 /*About - Contact Link*/
-"About-Contact-Link" = "Contactez nous";
+"About-Contact-Link" = "Contactez-nous";
