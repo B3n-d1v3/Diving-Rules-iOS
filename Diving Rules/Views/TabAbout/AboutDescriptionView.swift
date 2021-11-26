@@ -15,14 +15,8 @@ struct AboutDescriptionView: View {
             // App Version
             HStack {
                 Text("About-Version")
-                // Add the marketing version Number
-                let appReleaseVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String
-                let appBundleVersion = Bundle.main.infoDictionary?["CFBundleVersion"] as? String
-                Text(appReleaseVersion ?? "X.X")
-                Text("-")
-                    .fontWeight(.thin)
-                Text(appBundleVersion ?? "x")
-                    .fontWeight(.thin)
+                // Add the marketing (Build) version Number
+                Text(getAppVersion())
                 Spacer ()
             }
             .font(.footnote)
@@ -88,6 +82,20 @@ struct AboutDescriptionView: View {
         } // VStack
             
     } // View body
+    
+    func getAppVersion () -> String {
+        // Find the marketing version Number
+        let appReleaseVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String
+        // Find the Bundle / Build Version
+        let appBundleVersion = Bundle.main.infoDictionary?["CFBundleVersion"] as? String
+        // Formats the version number display: marketing (Build)
+        var fullVersion = ""
+        fullVersion += appReleaseVersion ?? "X.X"
+        fullVersion += " ("
+        fullVersion += appBundleVersion ?? "x"
+        fullVersion += ")"
+        return fullVersion
+    }
 }
 
 struct AboutDescriptionView_Previews: PreviewProvider {
