@@ -279,7 +279,7 @@ similarity of the starting position, approach, take-off and height is not shown.
 "About-Version" = "Version : ";
 
 /*About - Description*/
-"About-Description" = "Cette application a été créée pour vous permettre d'apprendre et de s'entraîner sur les règles de plongeon à partir du règlement de la FINA. Cette application n'est pas une application officielle de la FINA, mais utilise le règlement officiel de la FINA ou ses traductions officielles comme outil de travail.";
+"About-Description" = "Cette application a été créée pour vous permettre d'apprendre et de s'entraîner sur les règles de plongeon à partir du règlement de la FINA.\nCette application n'est pas une application officielle de la FINA, mais utilise le règlement officiel de la FINA ou ses traductions officielles comme outil de travail.\n\n Avec cette application, vous pouvez :\n✔︎ Retrouver le regelment dans votre langue.\n✔︎ Réviser le résumé des penalités.\n✔︎ Vous entrainer avec un quizz sur le résumé des pénalités.\n✔︎ Choisir de réviser l'ensemble en Anglais.";
 
 /*About - Rules Reference*/
 "About-RulesReference" = "Règlement de référence : ";
@@ -288,10 +288,10 @@ similarity of the starting position, approach, take-off and height is not shown.
 "About-License" = "La version originale a été créée en 2021 par Benoît SUZANNE sous la licence GPL 3.0 open source. Cette licence est la GNU General Public License, une licence libre de type copyleft.";
 
 /*About - Thanks*/
-"About-Thanks" = "Remerciements à :\n- Daniel AZORIN pour son soutien dans la finalisation de l'appli et pour la traduction en espagnol.\n- Piero ITALIANI pour son aide dans la traduction italienne.";
+"About-Thanks" = "Remerciements à :\n• Daniel AZORIN pour son soutien dans la finalisation de l'appli et pour la traduction en espagnol.\n• Piero ITALIANI pour son aide dans la traduction italienne.";
 
 /*About - Help*/
-"About-Help" = "N'hésitez pas à nous contacter :\n- Si vous êtes prêt à aider pour les nouvelles mises à jour de traductions.\n- Pour toutes questions, commentaires et idées de nouvelles fonctionnalités.\n";
+"About-Help" = "N'hésitez pas à nous contacter :\n• Si vous êtes prêt à aider pour les nouvelles mises à jour de traductions.\n• Pour toutes questions, commentaires et idées de nouvelles fonctionnalités.\n";
 
 /*About - Description Title*/
 "About-Description-Title" = "Désctiption de l'application";

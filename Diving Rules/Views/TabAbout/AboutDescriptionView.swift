@@ -16,8 +16,13 @@ struct AboutDescriptionView: View {
             HStack {
                 Text("About-Version")
                 // Add the marketing version Number
-                let appVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String
-                Text(appVersion ?? "X.X")
+                let appReleaseVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String
+                let appBundleVersion = Bundle.main.infoDictionary?["CFBundleVersion"] as? String
+                Text(appReleaseVersion ?? "X.X")
+                Text("-")
+                    .fontWeight(.thin)
+                Text(appBundleVersion ?? "x")
+                    .fontWeight(.thin)
                 Spacer ()
             }
             .font(.footnote)
