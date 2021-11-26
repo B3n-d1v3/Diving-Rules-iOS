@@ -279,9 +279,7 @@ similarity of the starting position, approach, take-off and height is not shown.
 "About-Version" = "Versione : ";
 
 /*About - Description*/
-"About-Description" = "Questa applicazione è stata creata per permetterti di imparare e praticare le regole di immersione dalle regole FINA.\nQuesta applicazione non è un'applicazione ufficiale FINA, ma utilizza le regole ufficiali FINA o le loro traduzioni ufficiali come strumento di lavoro.\n\nCon questa applicazione è possibile:\n✔︎ Recupera il regolamento nella tua lingua.\n✔︎ Rivedere il riassunto delle sanzioni.\n✔︎ Esercitatevi con un quiz di riepilogo delle pene.\n✔︎ Scegliete di rivedere il tutto in inglese
-
-Tradotto con www.DeepL.com/Translator (versione gratuita)";
+"About-Description" = "Questa applicazione è stata creata per permetterti di imparare e praticare le regole di immersione dalle regole FINA.\nQuesta applicazione non è un'applicazione ufficiale FINA, ma utilizza le regole ufficiali FINA o le loro traduzioni ufficiali come strumento di lavoro.\n\nCon questa applicazione è possibile:\n✔︎ Recupera il regolamento nella tua lingua.\n✔︎ Rivedere il riassunto delle sanzioni.\n✔︎ Esercitatevi con un quiz di riepilogo delle pene.\n✔︎ Scegliete di rivedere il tutto in inglese";
 
 /*About - Rules Reference*/
 "About-RulesReference" = "Regole di riferimento : ";
