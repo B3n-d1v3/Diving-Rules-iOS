@@ -279,7 +279,7 @@ similarity of the starting position, approach, take-off and height is not shown.
 "About-Version" = "Version : ";
 
 /*About - Description*/
-"About-Description" = "Cette application a été créée pour vous permettre d'apprendre et de s'entraîner sur les règles de plongeon à partir du règlement de la FINA.\nCette application n'est pas une application officielle de la FINA, mais utilise le règlement officiel de la FINA ou ses traductions officielles comme outil de travail.\n\n Avec cette application, vous pouvez :\n✔︎ Retrouver le regelment dans votre langue.\n✔︎ Réviser le résumé des penalités.\n✔︎ Vous entrainer avec un quizz sur le résumé des pénalités.\n✔︎ Choisir de réviser l'ensemble en Anglais.";
+"About-Description" = "Cette application a été créée pour vous permettre d'apprendre et de s'entraîner sur les règles de plongeon à partir du règlement de la FINA.\nCette application n'est pas une application officielle de la FINA, mais utilise le règlement officiel de la FINA ou ses traductions officielles comme outil de travail.\n\n Avec cette application, vous pouvez :\n✔︎ Retrouver le règelment dans votre langue.\n✔︎ Réviser le résumé des penalités.\n✔︎ Vous entrainer avec un quizz sur le résumé des pénalités.\n✔︎ Choisir de réviser l'ensemble en Anglais.";
 
 /*About - Rules Reference*/
 "About-RulesReference" = "Règlement de référence : ";
