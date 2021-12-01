@@ -30,6 +30,11 @@ struct QuizzQuestionView: View {
     
     @ObservedObject var penaltyButtonStatus: ButtonsStatus
     
+    // Language switch to EN variables
+    @EnvironmentObject var language: LanguageSettings
+    @State private var penaltyDescriptionTranslation = ""
+    
+    
     var body: some View {
         let penalty = penalties[questionList[currentQuestion]]
         
@@ -46,15 +51,50 @@ struct QuizzQuestionView: View {
                     .foregroundColor(Color.accentColor)
                     .padding(.bottom, 1.0)
                     
-                    Text("Penalty-Description")
-                        .font(.title2)
-                        .foregroundColor(Color.accentColor)
-                        .padding(.bottom)
+                    HStack {
+                        Text("Penalty-Description")
+                            // the rest of the style
+                            .font(.title2)
+                            .foregroundColor(Color.accentColor)
+                            .padding(.bottom)
+                        Spacer()
+                        // Do not show the button when default Language is EN
+                        if language.app != "en" {
+                            // Button to switch to EN
+                            Button {
+                                if (language.current != "en"){
+                                    language.current = "en"
+                                } else {
+                                    language.current = language.app
+                                }
+//                                print("[QuizzQuestion > FlagButton] language.current = \(language.current) / language.app = \(language.app)")
+                            } label: {
+                                // Show the current language
+                                Text(selectFlag(of:language.current))
+                                Image (systemName: "arrow.left.arrow.right")
+                                    .resizable()
+                                    .frame(width: 15.0, height: 15.0)
+                                    .opacity(0.4)
+                                // Show the target language
+                                if (language.current != "en") {
+                                    Text(language.englishFlag)
+                                        .opacity(0.4)
+                                } else {
+                                    Text(selectFlag(of:language.app))
+                                        .opacity(0.4)
+                                }
+                            } // Button Label
+                        } // if the deflaut language is not EN show the button
+                    } // HSTack Penalty Title
                     
-                    //                    Text(penalty.description)
-                    // Using tranlated penalty desciprion
                     let penaltyDescription = "Penalty-" + String(penalty.id)
-                    Text(LocalizedStringKey( penaltyDescription))
+
+                    // Allow PenaltyDescription language selection
+                    let pathLanguage = Bundle.main.path(forResource: language.current, ofType: "lproj")
+                    let bundleLanguage = Bundle(path: pathLanguage!)
+                    let penaltyDescriptionTranslation = bundleLanguage?.localizedString(forKey: penaltyDescription, value: nil, table: nil)
+                    
+                    Text(penaltyDescriptionTranslation!)
                         .fixedSize(horizontal: false, vertical: true)
                 } // VStack Penalty Description
                 
@@ -209,7 +249,7 @@ struct QuizzQuestionView: View {
         if (penaltyButtonStatus.userSanctionSelection > 6) || (!penaltyButtonStatus.ownershipReferee && !penaltyButtonStatus.ownershipJudge) {
             // Has the user provided an answer at least one penalty and one owner
             askForAnswer = true
-            print("[nextQuestion] Missing answer")
+//            print("[nextQuestion] Missing answer")
         } else {
             // else user has answered items
             if penaltyButtonStatus.userSanctionSelection == penalty.sanctionValue {
@@ -217,17 +257,17 @@ struct QuizzQuestionView: View {
                 if (penaltyButtonStatus.ownershipReferee == penalty.referee) && (penaltyButtonStatus.ownershipJudge == penalty.judge) {
                     // if the Ownership answer is correct
                     score += 10
-                    print("[nextQuestion] Good answer")
+//                    print("[nextQuestion] Good answer")
                 } else if (penaltyButtonStatus.ownershipReferee == penalty.referee) || (penaltyButtonStatus.ownershipJudge == penalty.judge){
                     // if the ownership is shared between Referee and Judge and only one was selected
                     score += 5
-                    print("[nextQuestion] Partial answer")
+//                    print("[nextQuestion] Partial answer")
                 }
-                print("[nextQuestion] Score updated to: \(score)")
+//                print("[nextQuestion] Score updated to: \(score)")
                 
             } else {
                 // if the penalty is wrong
-                print("[nextQuestion] Wrong answer")
+//                print("[nextQuestion] Wrong answer")
             }
             //log user answer
             logUserAnswer (userAnswerScore: score)

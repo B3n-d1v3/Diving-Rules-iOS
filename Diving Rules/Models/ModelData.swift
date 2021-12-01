@@ -7,11 +7,14 @@
 
 import Foundation
 
+
 // The object with all penalties descriptions
 var penalties: [Penalty] = load("divingPenaltiesSummary.json")
 
 // The object with the sanction descriptions
 var sanctions: [Sanction] = load("divingPenaltiesSanctions.json")
+
+
 
 // The object with the current Quizz Data Logged in
 var currentQuizz: Quizz = Quizz()
@@ -24,6 +27,8 @@ var penaltyButtonStatus: ButtonsStatus = ButtonsStatus()
 
 // The object to view history of multiple Quizzes // Not Used yet
 //var userQuizzHistory: [Quizz] = []
+
+
 
 func load<T: Decodable>(_ filename: String) -> T {
     // a de-serialization of the json to be inserted in the object model

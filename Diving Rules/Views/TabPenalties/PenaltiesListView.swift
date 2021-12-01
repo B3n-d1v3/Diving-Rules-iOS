@@ -9,6 +9,7 @@ import SwiftUI
 
 struct PenaltiesListView: View {
     //    [[PenaltyList]] >> PenaltyDetail
+    @EnvironmentObject var language: LanguageSettings
     
     var body: some View {
 //        NavigationView {
@@ -25,6 +26,23 @@ struct PenaltiesListView: View {
                             //PenaltyRowView (penalties: penalty, sanctions: sanction)
                         }
                     }
+                    .toolbar {
+                        // Adds Flag in the header
+                        ToolbarItem(placement: .automatic) {
+                            if language.app != "en" {
+                                Button {
+                                    if (language.current != "en"){
+                                        language.current = "en"
+                                    } else {
+                                        language.current = language.app
+                                    }
+                                } label: {
+                                    // Show the current language
+                                    Text(selectFlag(of:language.current))
+                                } // en Button Label
+                            } // end if
+                        }
+                    } // Toolbar
 //                    Spacer ()
 //                } // VStack
 //            } // Zstack

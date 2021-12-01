@@ -76,10 +76,10 @@
   Created by Benoit SUZANNE on 22/03/2021.
 
  App Name - Full App name*/
-"CFBundleDisplayName" = "Regolamento Tuffi";
+"CFBundleDisplayName" = "diving rules";
 
 /*App Name - Short App name 16 car*/
-"CFBundleName" = "Regolamento Tuffi";
+"CFBundleName" = "diving rules";
 
 /*Quizz Selection Page
  Quizz - Title*/
@@ -273,13 +273,43 @@ similarity of the starting position, approach, take-off and height is not shown.
 
 /*About Selection Page
  About - Title*/
-"About-Title" = "About";
+"About-Title" = "Su";
 
 /*About - Version*/
-"About-Version" = "Version: ";
+"About-Version" = "Versione : ";
 
 /*About - Description*/
-"About-Description" = "Rules Reference: 2017-2021\n\nThis application was created to allow users to learn and train on the diving rules from the FINA diving rules. This application is not a FINA official application, but uses the FINA official rules or it’s official translations as a work tool.\n\nThe original version was created in 2021 by Benoît SUZANNE under the GPL 3.0 open source licence. This license is the GNU General Public License is a free copyleft license.\n\n Spécial thanks to :\n- Daniel AZORIN for his support in the finalization of the app and for the Spanish translation\n- Piero ITALIANI for the help in the Italian translation.\n\nDo not hesitate to contact us:\n- If you are willing to help for new translation updates\n- For any question, feedback and new features ideas";
+"About-Description" = "Questa applicazione è stata creata per permetterti di imparare e praticare le regole di immersione dalle regole FINA.\nQuesta applicazione non è un'applicazione ufficiale FINA, ma utilizza le regole ufficiali FINA o le loro traduzioni ufficiali come strumento di lavoro.\n\nCon questa applicazione è possibile:\n✔︎ Recupera il regolamento nella tua lingua.\n✔︎ Rivedere il riassunto delle sanzioni.\n✔︎ Esercitatevi con un quiz di riepilogo delle pene.\n✔︎ Scegliete di rivedere il tutto in inglese";
+
+/*About - Rules Reference*/
+"About-RulesReference" = "Regole di riferimento : ";
+
+/*About - License*/
+"About-License" = "La versione originale è stata creata nel 2021 da Benoît SUZANNE sotto la licenza open source GPL 3.0. Questa licenza è la GNU General Public License, una licenza libera con copyleft.";
+
+/*About - Thanks*/
+"About-Thanks" = "Grazie a :\n• Daniel AZORIN per il suo sostegno nella finalizzazione della domanda e per la traduzione in spagnolo.\n• Piero ITALIANI per il suo aiuto nella traduzione italiana.";
+
+/*About - Help*/
+"About-Help" = "Non esitate a contattarci:\n• Se siete disposti ad aiutare con gli aggiornamenti delle nuove traduzioni.\n• Per domande, commenti e idee per nuove funzionalità.";
+
+/*About - Description Title*/
+"About-Description-Title" = "Scaricare l'applicazione";
+
+/*About - License Title*/
+"About-License-Title" = "Licenza";
+
+/*About - Help Title*/
+"About-Thanks-Title" = "Grazie";
+
+/*About - Contact Title*/
+"About-Contact-Title" = "Contatta";
+
+/*About - Share Title*/
+"About-Share-Title" = "Condividi";
+
+/*About - Share*/
+"About-Share" = "Condividi questa applicazione";
 
 /*About - Contact Link*/
-"About-Contact-Link" = "Contact us";
+"About-Contact-Link" = "Contattateci";

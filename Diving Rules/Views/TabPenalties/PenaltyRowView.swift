@@ -9,6 +9,8 @@ import SwiftUI
 
 struct PenaltyRowView: View {
     var penalties: Penalty
+    @EnvironmentObject var language: LanguageSettings
+    
     var body: some View {
         // show one line of penalty
 
@@ -20,9 +22,17 @@ struct PenaltyRowView: View {
 //            Text(penalties.description)
             // Using tranlated penalty desciprion
             let penaltyDescription = "Penalty-" + String(penalties.id)
-            Text(LocalizedStringKey(penaltyDescription))
+            
+            // Allow PenaltyDescription language selection
+            let pathLanguage = Bundle.main.path(forResource: language.current, ofType: "lproj")
+            let bundleLanguage = Bundle(path: pathLanguage!)
+            let penaltyDescriptionTranslation = bundleLanguage?.localizedString(forKey: penaltyDescription, value: nil, table: nil)
+            
+            Text(penaltyDescriptionTranslation!)
+            
+//            Text(LocalizedStringKey(penaltyDescription))
             Spacer ()
-        }
+        } // end HStack
         .padding(.all, 5.0)
     }
 }
