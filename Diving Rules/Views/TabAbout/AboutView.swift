@@ -9,6 +9,11 @@ import SwiftUI
 import MessageUI
 
 struct AboutView: View {
+//    @State var xTap: CGFloat = 0
+//    @State var yTap: CGFloat = 0
+    @State private var tapLocation: CGPoint = CGPoint(x: 300, y: 350)
+    @State private var dragLocation: CGPoint = CGPoint(x: 0, y: 0)
+    
     var body: some View {
         ScrollView {
             Spacer ()
@@ -65,7 +70,9 @@ struct AboutView: View {
                     Spacer ()
                 }
                 Spacer ()
-                Button(action: actionSheet) {
+//                Button(action: {
+//                    actionSheet(displayLocation: tapLocation)
+//                       }) {
                     HStack {
 //                        Spacer ()
                         VStack {
@@ -89,7 +96,15 @@ struct AboutView: View {
                     .background(Color.white)
                     .cornerRadius(20)
                     .padding(10.0)
-                } // Link Button
+//                } // Link Button
+                
+                   .gesture(DragGesture(minimumDistance: 0, coordinateSpace: .global).onEnded { dragGesture in
+                            self.tapLocation = dragGesture.location
+//                       print("[About] - Share - Bottom Share button >> gesture: width \(tapLocation.x) & height \(tapLocation.y)")
+                       actionSheet(displayLocation: tapLocation)
+                           })
+                
+                
             } // VStack Link
             
         } // Top ScrollView
@@ -99,21 +114,24 @@ struct AboutView: View {
         
         .toolbar {
             ToolbarItem(placement: .automatic) {
-                Button(action: actionSheet) {
-                            Image(systemName: "square.and.arrow.up")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .foregroundColor(Color("AccentColor"))
-                                .frame(width: 20, height: 20
-                                )
-                        } // end Button
-            }
+                Image(systemName: "square.and.arrow.up")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .foregroundColor(Color("AccentColor"))
+                    .frame(width: 20, height: 20)
+                    .gesture(DragGesture(minimumDistance: 0, coordinateSpace: .global)
+                            .onEnded { dragGesture in
+                           tapLocation = dragGesture.location
+//                           print("[About] - Share - toolbar button >> gesture: width \(dragGesture.location.x) & height \(dragGesture.location.y)")
+                           actionSheet(displayLocation: tapLocation)
+                               }) // gesture end
+            } // end ToolbarItem
         } // end Toobar
     }
     
     
     
-    func actionSheet() {
+    func actionSheet(displayLocation: CGPoint) {
         // set text
         let shareText = "I 😍 this app to learn the Diving Rules"
         // set Link URL
@@ -129,9 +147,10 @@ struct AboutView: View {
         // iPad Crash correction
         // found at https://stackoverflow.com/questions/29550849/uiactivityviewcontroller-in-swift-crashes-on-ipad
         if UIDevice.current.userInterfaceIdiom == .pad {
+//            print("[About] - Share - actionSheet: width \(displayLocation.x) & height \(displayLocation.y)")
             activityVC.popoverPresentationController?.sourceView = UIApplication.shared.windows.first
-            activityVC.popoverPresentationController?.sourceRect = CGRect(x: 0, y: 0, width: 300, height: 350)
-            activityVC.popoverPresentationController?.permittedArrowDirections = [.left]
+            activityVC.popoverPresentationController?.sourceRect = CGRect(x: 0, y: 0, width: displayLocation.x, height: displayLocation.y)
+            activityVC.popoverPresentationController?.permittedArrowDirections = [.any]
         }
 
         UIApplication.shared.windows.first?.rootViewController?.present(activityVC, animated: true, completion: nil)
