@@ -74,14 +74,14 @@ struct Diving_RulesApp: App {
                 .navigationViewStyle(StackNavigationViewStyle())
                 
                 // Search Page
-                //                NavigationView {
-                //                    SearchView()
-                //                        .navigationBarTitle("Search-Title")
-                //                }
-                //                    .tabItem {
-                //                        Image (systemName: "magnifyingglass")
-                //                        Text ("Navigation-Menu-Search")
-                //                    }
+                NavigationView {
+                    SearchView()
+                        .navigationBarTitle("Search-Title", displayMode: .inline)
+                }
+                    .tabItem {
+                        Image (systemName: "magnifyingglass")
+                        Text ("Navigation-Menu-Search")
+                    }
                 
             }.environmentObject(language)  // end TabView
         } // end WindowsGroup

@@ -166,6 +166,14 @@
 			path = Buttons;
 			sourceTree = "<group>";
 		};
+		B586C72E276CEC54001A91DE /* TabSearch */ = {
+			isa = PBXGroup;
+			children = (
+				B5D0DC9025FA1BD000CDA3D3 /* SearchView.swift */,
+			);
+			path = TabSearch;
+			sourceTree = "<group>";
+		};
 		B5B269352628A0C400C16C32 /* Header */ = {
 			isa = PBXGroup;
 			children = (
@@ -221,10 +229,10 @@
 				B54B1AF326A407DC001B97EF /* TabPenalties */,
 				B54B1AF426A407F2001B97EF /* TabQuizz */,
 				B58031892750EA400067C3C5 /* TabAbout */,
+				B586C72E276CEC54001A91DE /* TabSearch */,
 				B58610972603AE2900A44778 /* Buttons */,
 				B5F6973C2618591100A42E31 /* Stickers */,
 				B5B269352628A0C400C16C32 /* Header */,
-				B5D0DC9025FA1BD000CDA3D3 /* SearchView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -307,6 +315,7 @@
 				es,
 				it,
 				"es-419",
+				Base,
 			);
 			mainGroup = B5D0DC5C25FA086300CDA3D3;
 			productRefGroup = B5D0DC6625FA086300CDA3D3 /* Products */;
@@ -518,7 +527,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Diving Rules/Preview Content\"";
 				DEVELOPMENT_TEAM = B69P4NXAU3;
 				ENABLE_PREVIEWS = YES;
@@ -542,7 +551,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Diving Rules/Preview Content\"";
 				DEVELOPMENT_TEAM = B69P4NXAU3;
 				ENABLE_PREVIEWS = YES;
